@@ -1,0 +1,54 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı"
+  author: "Ahmet Çıtıpıtıoğlu, Serkan Elliborlar"
+  cover-image: images/cover.png
+ # site-url: https://rstudio-education.github.io/hopr/
+ # repo-url: https://github.com/jjallaire/hopr/
+  repo-branch: master
+  repo-actions: [edit]
+  sharing: [twitter, facebook, linkedin]
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - part: 01.bolum.qmd
+      chapters:
+        - 01.01.qmd
+        - 01.02.qmd
+    - part: 02.bolum.qmd
+      chapters:
+        - 02.01.qmd
+        - 02.02.qmd
+        - 02.03.qmd
+        - 02.04.qmd
+        - 02.05.qmd
+        - 02.06.qmd
+    - part: 03.bolum.qmd
+      chapters:
+        - 03.01.qmd
+        - 03.02.qmd
+    - part: 04.bolum.qmd
+      chapters:
+        - 04.01.qmd
+        - 04.02.qmd
+    - part: 05.bolum.qmd
+      chapters:
+        - 05.01.qmd
+    - part: 06.bolum.qmd
+      chapters:
+        - 06.01.qmd
+    - part: 07.bolum.qmd
+      chapters:
+        - 07.01.qmd
+        - 07.02.qmd
+format:
+  html:
+    theme: cosmo
+    cover-image: cover.png
+    code-link: true
+    number-sections: false 
+    anchor-sections: true
+

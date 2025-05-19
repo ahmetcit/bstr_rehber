@@ -1,0 +1,51 @@
+
+# VI Açık Veri Standartları ve Kullanımları {.unnumbered}
+
+| | |
+|-|--------------|
+|**Hazırlayan:**| Teknoloji Çalışma Grubu |
+|**Tarih:**|25.09.2023     |
+|**Versiyon:**|00     |
+
+&nbsp;
+
+Bu bölüm, buildingSMART International tarafından geliştirilen açık ve uluslararası standartlar, kullanımları ve beraberinde gelen bazı kavramlar hakkında genel bilgilerin paylaşılması için hazırlanmıştır. Bu bölüm hazırlanırken, Teknoloji Çalışma Grubu tarafından hazırlanan “IFC Aktarım El Kitabı” çalışmasından faydalanılmıştır. “IFC Aktarım El Kitabı” farklı yazılımlarda yapılan çalışmaların, proje paydaşları arasında bilgi alışverişi yapabilmesi için IFC aktarım örnekleri ile sektör kullanımına sunulmuş önemli bir çalışmadır. Bu çalışmaya link üzerinden ulaşabilirsiniz: https://www.buildingsmartturkiye.org/paylasimlar/yayinlar
+
+&nbsp;
+
+Editör
+: Serkan ELİBOLLAR, bSTR Proje Geliştirme Çalışma Grubu Koordinatörü (ProCS Mühendislik)
+
+&nbsp;
+
+**Katkıda Bulunanlar**
+
+Çalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.
+
+##### TEKNOLOJİ ÇALIŞMA GRUBU İCRA KURULU#
+| | |
+|---|---|
+| A. Sinan ALEMDAR, *Emay* | Orhan ERTUĞRUL, *Prota Mühendislik* |
+| Dr. Ahmet ÇITIPITIOĞLU, *TAV* | Osman ÖZKAN, *EAE Elektrik* |
+| Ahmet Melih DİNEKLİ, *Aluplan* | Ozan KÜÇÜK, *Penguen* |
+| Alev YALÇINKAYA, *Rönesans Türkiye İnşaat Grubu* | Serdar BİRDEN, *BIMMADE* |
+| Yrd. Doç Dr. Aslı Akçamete GÜNGÖR, *ODTÜ* | Serhat KAŞ, *Yüksel Proje* |
+| Aygen ERKAL, *Türkiye İMSAD* | Serkan ELİBOLLAR, *ProCS Mühendislik* |
+| Bahadır DEMİRTAŞ, *Emay* | Songül BİLGE, *Prota Bilgisayar* |
+| Daniel KAZADO, *ProCS Mühendislik* | Tolga CANÖZKAN, *Penguen* |
+| Emrah KINAV, *Ford Otosan* | Tuğçe N. Güney MERMER, *HILTI-BIM Competence Center* |
+| Prof. Dr. Esin Ergen PEHLEVAN, *İTÜ* | Tunç KARABOĞALI, *Ejot Tezmak* |
+| Fatih GÜNDOĞDU, *Bimsoft* | Uğur KAYA, *Emay* |
+| İlknur ÖZ, *Nika Proje* | Ümit BALABAN, *Anel* |
+| Müge SÜMEROL, *RamaIS* |  |
+
+&nbsp;
+
+##### IFC AKTARIM EL KİTABI'NI HAZIRLAYAN EDİTÖRLER
+| | |
+|---|---|
+| Alev YALÇINKAYA, *Rönesans Türkiye* | İsmail BESLER, *ideCAD* |
+| Altuğ GÜLER, *Prota Yazılım* | Melih DİNEKLİ, *Aluplan* |
+| Bahadır DEMİRTAŞ, *Emay* | Ramazan BELLEK, *İdeCAD* |
+| Emre TEPE, *FGA Mimarlık* | Songül BİLGE, *Prota Bilgisayar* |
+| Fatih GÜNDOĞDU, *Bimsoft* | Uğur KAYA, *Emay* |

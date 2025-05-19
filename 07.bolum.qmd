@@ -1,0 +1,36 @@
+# VII Uygulama Örnekleri {.unnumbered}
+
+| | |
+|-|--------------|
+|**Hazırlayan:**| Proje Geliştirme Çalışma Grubu ve Standartlar & Yayınlar Çalışma Grubu |
+|**Tarih:**|29.09.2022     |
+|**Versiyon:**|00     |
+
+&nbsp;
+
+Bu bölümde *İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi* ve *Yükleniciler için bSTR BIM Uygulama Planı Rehberi* ile birlikte dahil edilebilecek ekler için örnekler yer almaktadır. Her proje için gerekli ekler ve içerikleri farklı olacaktır.
+
+&nbsp;
+
+Editör
+: Dr. Ahmet ÇITIPITIOĞLU, bSTR Standartlar ve Yayınlar Çalışma Grubu Koordinatörü (TAV İnşaat)
+
+&nbsp;
+
+**Katkıda Bulunanlar**
+
+Çalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.
+
+##### STANDARTLAR ve YAYINLAR ÇALIŞMA GRUBU İCRA KURULU
+| | |
+|---|---|
+| Dr. Ahmet ÇITIPITIOĞLU, *TAV İnşaat* | Öncü Ceren Varol ALİCİK, *Sika* |
+| Yrd. Doç. Dr. Aslı Akçamete GÜNGÖR, *ODTÜ* | Osman ÖZKAN, *EAE Elektrik* |
+| Aygen ERKAL, *Türkiye İMSAD* | Prof. Dr. Salih OFLUOĞLU, *ABÜ* |
+| Bahadır DEMİRTAŞ, *Arup* | Serdar BİRDEN, *BIMMade* |
+| Behnam AGHBALİ, *Saina* | Serhat KAŞ, *Yüksel Proje* |
+| Berke ÇELİKEL, *Freelance* | Serkan ELİBOLLAR, *ProCS* |
+| Çağdaş Ilgaz ŞENEL, *Hilti* | Uğur KAYA, *Emay* |
+| Prof. Dr. Esin Ergen PEHLEVAN, *İTÜ* | Utku BAŞYAZICI, *Doxa87* |
+| İdris BAHADUR, *Saina* | Yudum DEMİRKOL, *Şişecam* |
+| Melis ATAY, *Turner* | |

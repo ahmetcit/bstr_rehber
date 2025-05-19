@@ -1,0 +1,49 @@
+# Bilgi Yönetim Sürecinde Yüklenicilerin Rolü {.unnumbered}
+Tasarım, yapım ve işletme sürecindeki her bir hizmet tedarikinde, bilgi yönetim sürecindeki taraflar @sec-bim-taraflar
+ bölümünde tanımlanmaktadır. Atanan taraflar BIM Teknik Şartnamesi'nde belirlenen kapsama uygun şekilde çalışmalarını yürütür. Aşağıdaki bölümlerde atanan taraf(lar)ın süreç boyunca yapacağı işler verilmiştir. Bu girdilerin BIM Uygulama Planı'nın şekillendirilmesinde önemli bir payı vardır.
+
+##	Teklif Hazırlığı
+Teklif hazırlayan olası ana atanan tarafın çalışacağı bir veya birden fazla olası iş ekibi ile yapacağı işler:
+
+* Bilgi yönetimi görevini üstlenecek kişilerin tayin edilmesi
+* Teslim ekibinin (atama öncesi) BIM Uygulama Planı'nın belirlenmesi
+* İş ekibinin/ekiplerinin yetenek ve kapasitesinin değerlendirilmesi
+* Teslim ekibinin yetenek ve kapasitesinin belirlenmesi
+* Önerilen teslim ekibinin mobilizasyon planının oluşturulması
+* Teslim ekibinin risk kaydının oluşturulması
+* Teslim ekibinin ihale davetine yanıtlarının derlenmesi
+
+## Proje Atama
+Proje sürecindeki bilgi planlama aşamasında her bir atamadaki ana atanan tarafın çalışacağı iş ekipleriyle gerçekleştirilen faaliyetler:
+
+* Teslim ekibinin BIM Uygulama Planı'nın teyit edilmesi
+* Teslim ekibinin ayrıntılı sorumluluk matrisinin oluşturulması
+* Ana atanan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi
+* İş bilgi teslim plan(lar)ının oluşturulması
+* Ana bilgi teslim planının oluşturulması
+* Ana atanan tarafın atanmasında gerekli belgelerin tamamlanması
+* Atanan taraf(lar)ın atanmasında gerekli belgelerin tamamlanması
+
+##	Mobilizasyon
+Her bir atamadaki ana atanan tarafın yapacağı işler:
+
+* Kaynakların mobilize edilmesi
+* Bilişim altyapısının mobilize edilmesi
+* Projenin bilgi üretim yöntemlerinin ve prosedürlerinin sınanması
+
+## İşbirliği ile Bilgi Üretimi
+Proje sürecindeki bilgi üretim aşamasında her bir atamadaki iş ekiplerinin teslim ekibiyle gerçekleştirdikleri faaliyetler:
+
+* Referans bilgilerin ve müşterek kaynakların kullanılabilirliğinin kontrol edilmesi
+* Bilgilerin üretilmesi
+* Kalite güvence kontrolünün tamamlanması
+* Bilgilerin değerlendirilip paylaşım için onaylanması
+* Bilgi modelinin değerlendirilmesi
+
+## Bilgi Modeli Teslimi
+Her bir atamadaki iş ekipleri ile ana atanan tarafın yapacağı işler:
+
+* Ana atanan tarafın onaylaması için bilgi modelinin sunulması
+* Bilgi modelinin değerlendirilmesi ve onaylanması
+* Bilgi modelinin atayan tarafın onayı için sunulması
+* Bilgi modelinin değerlendirilmesi ve kabul edilmesi

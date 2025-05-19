@@ -1,0 +1,22 @@
+# BIM Teknik Şartname Ek Örnekleri {#sec-şartname-ek-örnekleri}
+
+## Ek 1 Bilgi Yönetimi Sorumluluk Matrisi {#sec-şartname-ek1}
+
+![](./images/tbl.01.ek1.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.01.ek1.pdf){.download-link target="blank"}
+
+## Ek 2 Bilgi Gereksinimleri {#sec-şartname-ek2}
+
+![](./images/tbl.01.ek2.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.01.ek2.pdf){.download-link target="blank"}
+
+
+## Ek 3 Bilgi Kapları Kodlama Yapısı {#sec-şartname-ek3}
+
+![](./images/tbl.01.ek3.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.01.ek3.pdf){.download-link target="blank"}
+
+

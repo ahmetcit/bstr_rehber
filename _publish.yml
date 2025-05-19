@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: abb7124c-8280-48c5-a37d-5b4d12ce4926
+      url: https://ahmetc.quarto.pub/bstr-rehber

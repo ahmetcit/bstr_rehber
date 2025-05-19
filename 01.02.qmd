@@ -1,0 +1,17 @@
+# Yapı Geliştirme Aşamaları Teslim Gereksinimleri {.unnumbered}
+
+İşveren veya işletmeci kuruluş, yatırımı sonucunda geliştirilen varlıklarla ilgili kendi stratejik hedeflerine ulaşmak için ihtiyaç duyduğu tüm bilgileri Kurumsal Bilgi Gereksinimleri [_Organizational Information Requierments (OIR)_] aracılığıyla tanımlar. Bu bilgiler uzun vadede yatırımın işletilmesi, varlık yönetimi sistemleri ve diğer kurumsal işlevler için gerekli olan bilgilerdir. Proje geliştirme aşamaları boyunca teslim edilecek bilgiler ve bilgilerin nitelikleri konusunda genel anlamdan Kurumsal Bilgi Gereksinimleri belirleyici olacaktır.
+
+Projenin farklı geliştirme aşamalarındaki teslim gereksinimleri, bu rehberin 3. bölümü *İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi *'nde tarif edildiği gibi, proje şartnamesinin ekinde yer alan "Bilgi Gereksinimleri" çalışmasında tanımlanacaktır. Proje şartnamesi, Bilgi Alışverişi Gereksinimlerini [_Exchange Information Requirements (EIR)_] kapsayacak şekilde proje aşamalarında üretilecek bilgilerin standartlarının, üretim yöntemlerinin ve süreçlerinin onay kriterlerini tarif edecektir.
+
+Her yapı geliştirme aşamasında, farklı paydaşlara farklı sorumluluklar yüklenmektedir. Bu sorumlulukların yerine getirilebilmesi için bilgi alışverişinin anlaşılır bir şekilde planlanması gerekmektedir. Bu rehberin 2. bölümü *Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci *'nde detaylı olarak aktarılan TS EN ISO 19650-2 ile tanımlanan bilgi yönetim sürecinde, bir proje başlangıcında her paydaşın kendi kapsamı için İş Bilgi Teslim Planı (İBTP) [_Task Information Delivery Plan (TIDP)_] hazırlayıp, bunların bir araya getirilmesiyle bilgi üretimi ve teslimini topluca tarif eden bir Ana Bilgi Teslim Planı (ABTP) [_Master Information Delivery Plan (MIDP)_] oluşturulması gerekmektedir.
+
+Proje yüklenicileri, şartnamede tanımlanan bilgi teslim gereksinimlerini esas alarak, bu rehberin 4. bölümü *Yükleniciler için bSTR BIM Uygulama Planı Rehberi *'nde tarif edildiği gibi bilgi gereksinimlerinin kırımlarıyla detaylandırarak, İş ve Ana Bilgi Teslim Planı'na altlık olacak "Bilgi Teslim Planlama Dökümü"nü hazırlayacaktır.
+
+## Ek Bölüm İçeriklerine Sektörden Gelen Yorumlar {.unnumbered}
+
+Yapı Geliştirme Aşamaları çalışmasına, buildingSMART Türkiye Proje Geliştirme Çalışma Grubu İcra Kurulu bünyesinde ilk taslağının hazırlanmasından, mevcut haline gelmesine kadar geçen süreçte, buildingSMART Türkiye tüm çalışma grubu üyeleri ve buildingSMART Türkiye web sitesi üzerinden çalışmaları takip edenlerin görüşleri alınmıştır. Gelen öneriler, buildingSMART Türkiye Proje Geliştirme Çalışma Grubu İcra Kurulu'nda görüşülmüş, değerlendirilmiş ve içerikte gerekli düzenlemeler yapılarak çalışma son haline kavuşturulmuştur.
+
+Bu bölümde, çalışmanın gelişimi süresince geniş bir kullanıcı yelpazesinden alınan görüşleri ve buildingSMART Türkiye Proje Geliştirme Çalışma Grubu İcra Kurulu cevaplarını derleyerek, sektör geri dönüşlerinin de paylaşımı ile çalışmanın daha iyi anlaşılmasını sağlamak ve kullanımı sırasında karşılaşılabilecek yorum hatalarını azaltmak amacıyla bir içerik hazırlanmıştır. Çalışmanın geneli hakkında yapılan değerlendirmelerden sonra aynı konu hakkında birbirine benzer gelen yorumlar birleştirilerek Yapı Geliştirme Aşamaları özelinde gruplandırılmıştır.
+
+![](./images/tbl.00.ek1.pdf){width=100% height=2100px .lightbox}

@@ -1,0 +1,47 @@
+# Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü {.unnumbered}
+
+Tasarım, yapım ve işletme sürecindeki her bir hizmet tedarikinde, bilgi yönetim sürecinde hizmetlerin tedarikini yapan taraf olarak işverenler ve işletmeciler TS EN ISO 19650'de atayan taraf olarak tanımlanmaktadır. Aşağıdaki görselde TS EN ISO 19650'de tanımlanan bilgi yönetim süreci akışında atayan tarafın sorumlu olduğu adımlar AT (Atayan Taraf) olarak etiketlenmiştir. Bilgi yönetim sürecindeki taraflar Bölüm 2'de tanımlanmaktadır. Atayan taraf tedarik sürecinde kapsamı belirleyici girdiler sağlar. Aşağıdaki bölümlerde atayan tarafın süreç boyunca yapacağı işler anlatılmıştır. Bu girdilerin BIM Teknik Şartnamesi'nin şekillendirilmesinde önemli bir payı vardır.
+
+##	Bilgi Yönetimi Süreci Öncesi
+Tedarik öncesinde atayan tarafın aşağıda listelenen gereksinimleri, BIM Teknik Şartnamesi'ne girdi olacak şekilde belirleyip, belgelemesi gerekmektedir:
+
+* Atayan tarafın kurumsal bilgi gereksinimlerini belirlemesi: kurumsal hedeflerle ilgili bilgi gereksinimleri (TS EN ISO 19650-1)
+* Atayan tarafın varlık bilgi gereksinimlerini belirlemesi: varlıkların işletilmesiyle ilgili bilgi gereksinimleri (TS EN ISO 19650-1)
+* Atayan tarafın bilgi güvenliği gereksinimlerini belirlemesi: bilgiye yetkisiz erişim, bilgi kaybı veya kirlenmesi, bozulması gibi konuları ele almak için varlığın tüm ömrü boyunca bilgi güvenliği ile ilgili gereksinimleri (TS EN ISO 19650-5)
+
+## Değerlendirme ve İhtiyaçlar
+Teslim aşamasının başlangıcında atayan tarafın yapacağı işler:
+
+* Bilgi yönetimi işlevini üstlenecek kişilerin atanması
+* Projenin bilgi gereksinimlerinin belirlenmesi
+* Projenin bilgi teslim aşamalarının belirlenmesi
+* Projenin bilgi standardının belirlenmesi
+* Projenin bilgi üretimi yöntem ve prosedürlerin belirlenmesi
+* Projenin referans bilgilerinin ve müşterek kaynaklarının belirlenmesi
+* Projenin ortak veri ortamının oluşturulması
+* Projenin bilgi protokolünün belirlenmesi
+
+## Teklif Daveti
+Proje sürecindeki tedarik aşamasında her bir atamada atayan tarafından gerçekleştirilen faaliyetler:
+
+* Atayan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi
+* Referans bilgilerinin ve müşterek kaynakların derlenmesi
+* Teklif gereksinimleri ve değerlendirme kriterlerinin oluşturulması
+* İhale daveti için ilgili bilgilerin derlenmesi
+
+## Proje Atama
+Proje sürecindeki bilgi planlama aşamasında her bir atamadaki ana atanan tarafın çalışacağı iş ekipleriyle gerçekleştirilen faaliyetler:
+
+* Ana atanan tarafın atanmasında gerekli belgelerin tamamlanması
+
+##	Bilgi Modeli Teslimi
+Her bir atamadaki iş ekipleri ile ana atanan tarafın yapacağı işler:
+
+* Bilgi modelinin değerlendirilmesi ve kabul edilmesi
+
+## Proje Kapanışı
+Teslim aşamasının sonunda atayan tarafın yapacağı işler:
+
+* Proje bilgi modelinin arşivlenmesi
+* Gelecek projeler için öğrenilen derslerin derlenmesi
+

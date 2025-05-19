@@ -1,0 +1,21 @@
+# Ortak Veri Ortamı Kurgusu {.unnumbered}
+
+
+TS EN ISO 19650 varlıkların teslimi ve yönetimi sırasında bilgileri yönetmek için bir Ortak Veri Ortamı (OVO) ve tanımlanan süreçlere uygun iş akışları kullanılmasını gerektirmektedir. Teslim aşamasında, OVO çözümü tanımlanan bilgi yönetimi süreçlerini destekler. Bir projenin sonunda, varlık yönetimi için gerekli bilgi kapları Proje Bilgi Modelinden (PIM), Varlık Bilgi Modeline (AIM) taşınmalıdır.
+
+OVO içindeki her bilgi kabının mevcut durumu Şekil 5'te gösterildiği gibi aşağıdaki üç durumdan birinde olmalıdır
+
+* Çalışılan
+* Paylaşılan
+* Yayınlanan
+
+Tüm bilgi kabı işlemlerini ve gelişiminin denetim kayıtlarını içeren bir arşiv tutulmalıdır.
+
+Ayrıca OVO aracılığıyla yönetilen her bir bilgi kabı aşağıdaki meta verilere sahip olmalıdır:
+
+* Tanımlanmış standarda uygun bir *revizyon kodu*
+* İzin verilen bilgilerin kullanımını gösteren bir *statü kodu*
+
+Meta veriler önce bilgiyi hazırlayan yazar tarafından belirlenir ve ardından onay ve yetkilendirme süreçleri ile güncellenir. Bir bilgi kabının, statü koduyla belirtilen kullanımı dışında herhangi amaç için kullanmanın riski kullanıcıya aittir. OVO çözümü hem bilgi kabı öznitelikleri ve meta verileri yönetmek için bir veritabanı yönetim yeteneği, hem de paydaşlara güncelleme bildirimleri yayınlama ve süreç kayıtlarını tutma yeteneği içermelidir.
+
+![TS EN ISO 19650'da tanımlanan Ortak Veri Ortamındaki bilgi kaplarının tanımlı durum süreci.](/images/ovo.png){width=70% .lightbox}

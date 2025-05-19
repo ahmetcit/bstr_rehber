@@ -1,0 +1,73 @@
+# BIM Teknik Şartname Şablonu {.unnumbered}
+
+## Genel
+Proje kapsamı ve künye bilgisi verilecektir.
+
+## Temel Hedefler
+Proje kapsamında BIM kullanımıyla amaçlanan temel hedefler listelenecektir.
+
+## Kısaltmalar ve Tanımlar
+Teknik şartnamede geçen tüm kısaltmaların ve teknik terimlerin tanımı yapılacaktır.
+
+## Geçerli Standartlar ve Şartnameler
+Projede geçerli referans standartlar ve şartnameler belirtilecektir.
+
+## Bilgi Modellerinin Kullanımı
+Projede oluşturulacak bilgi modellerinin kullanımı tanımlanacaktır.
+
+## Görev ve Sorumluluklar
+Bilgi yönetimi ve BIM süreçleriyle ilgili görev ve sorumluluklar @sec-şartname-ek1 doldurularak tanımlanacaktır.
+
+## Süreçsel Gereksinimler Yönetimi
+BIM Uygulama Planı'nda tarif edilecek uygulamaların kapsamların ile süreçlerine esas olan sözleşme maddeleri ve referans dokümanlar özetlenecektir.
+
+##	Bilgi Süreçleri
+Bilgi süreçleri ve bu süreçlerdeki paydaşların sorumlulukları tanımlanacaktır.
+
+##	Veri Güvenliği
+Saklanması ve paylaşımı sırasında verinin güvenliğiyle ilgili proje gereksinimleri tanımlanacaktır.
+
+## Eğitim ve Destek
+Proje boyunca BIM süreçlerin ihtiyaca yönelik yürütülmesinin sağlanması; tüm paydaşların ortak bir anlayışla çalışması için gerekli eğitim ve destek kapsamı ile sorumlu paydaşlar tanımlanacaktır.
+
+## Teknik Altyapı Gereksinimleri
+Projede bilgi ve BIM süreçlerin yürütülmesi için gerekli yazılım ve donanımsal altyapı gereksinimleri tanımlanacaktır. Ortak Veri Ortamı (OVO) kurgusu ve kullanım sorumlulukları detaylı olarak tanımlanacaktır.
+
+## Bilgi Kapları Kodlama Yapısı
+Projede üretilecek tüm bilgi kaplarının, (2b ve 3b) bilgi modelleri ile belge kodlama yapısı tanımlanacaktır.
+
+## Bilgi Modellerinin Yapısı
+Üretilen bilgilerin ve modellerin kullanım alanlarına göre yapıları tanımlanacaktır.
+
+## Bilgi Model İçerikleri ve Detayları {#sec-bilgi-model-içerikleri}
+Proje aşamalarına uygun model içerikleri ve detayları tanımlanacaktır.
+
+## Bilgi Modellerin Teslimi
+Üretilen bilgilerin ve modellerin teslimleriyle ilgili gereksinimler tanımlanacaktır.
+
+## BIM Teknik Şartnamesi Ekleri
+
+### Ek 1 Bilgi Yönetimi Sorumluluk Matrisi
+TS EN ISO 19650-2'de tanımlanan faaliyetlerin paydaşlar tarafından sorumlulukları Bilgi Yönetimi Sorumluluk Matrisi'yle tanımlanacaktır. Her faaliyet için projede tanımlanan farklı paydaşların sorumlulukları, kodlamalarla matrise işlenecektir. Kullanılacak matris, rehberin 7. bölümü @sec-şartname-ek-örnekleri altında, @sec-şartname-ek1 'de verilmiştir.
+
+### Ek 2 Bilgi Gereksinimleri
+Projenin farklı aşamalarında yükleniciler [ana atanan taraf ve iş ekipleri] tarafından hazırlanacak bilgilerin dökümü tanımlanacaktır. Her aşamadaki bilgilerin kapsamı, ölçeği ve detay seviyeleri belirtilecektir. Bir bina projesi için örnek bilgi gereksinimleri, rehberin 7. bölümü @sec-şartname-ek-örnekleri altında, @sec-şartname-ek2 'de verilmiştir.
+
+### Ek 3 Bilgi Kapları Kodlama Yapısı
+Projenin farklı aşamalarında yükleniciler [ana atanan taraf ve iş ekipleri] tarafından hazırlanacak bilgi kaplarının kodlama yapısı tanımlanacaktır. Bir proje için örnek bilgi gereksinimleri, rehberin 7. bölümü @sec-şartname-ek-örnekleri altında, @sec-şartname-ek3 'de verilmiştir.
+
+### Ek 4 BIM Uygulama Planı Şablonu
+Rehberin, 4. bölümü *Yükleniciler için bSTR BIM Uygulama Planı Rehberi *'nde [@sec-bim-şablonu] esas alınarak, yüklenici(ler) [ana atanan taraf ve iş ekipleri] tarafından doldurulmak üzere şablon olarak veya gerekli görülen eklerlerle beraber kısmi doldurulmuş olarak hazırlanacaktır.
+
+### Ek 5 BIM Modelleme Standardı
+İşveren ve/veya ana atayan taraf, projede BIM modellerinin hazırlanmasında takip edilecek modeleme standartlarını tanımlayacaktır. Kurumsal BIM Modelleme Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.
+
+### Ek 6 Bilgi Standardı
+İşveren ve/veya ana atayan taraf, projede bilgilerin üretilmesinde ve isimlendirilmesinde takip edilecek standartları tanımlayacaktır. Kurumsal Bilgi Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.
+
+### EK 7 Süreç Akış Şemaları
+İşveren ve/veya ana atayan taraf, proje bilgilerinin üretim, paylaşım ve onay süreçlerinin akış şemalarını paylaşacaktır.
+
+### Ek 8 Mevcut Bilgi Modelleri
+Projenin yürütülmesi için ilgili tüm bilgi (belgeler, çizimler, modeller vb.) veya erişim yöntem ve linkleri paylaşılacaktır.
+

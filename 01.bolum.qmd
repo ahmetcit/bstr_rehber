@@ -1,0 +1,75 @@
+# I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri
+
+| | |
+|--|--------------|
+| **Hazırlayan:** | Proje Geliştirme Çalışma Grubu ve Standartlar & Yayınlar Çalışma Grubu|
+| **Tarih:** | 25.05.2023     |
+| **Versiyon:** | 01     |
+
+&nbsp;
+
+İnşaat projelerinin başarılı yürütülmesi için görev alan tüm disiplinlerin iş birliği ve iletişimi her zaman önemli olmuştur. Bu bölümde, inşaat proje süreçlerinde artan bir şekilde kullanılan sayısal araçların anlamlı katkı sağlayabilmesi amacıyla ortak yapı geliştirme aşamaları belirlenmiş ve her aşamada tüm disiplinlerden temel beklentiler tanımlanmıştır. Teslim gereksinimlerin tanımı için sağlanan tablolar, aynı zamanda işleri yürüten paydaşların, teslim edeceği bilgi ve modellerin planlamasını için bir referans olacaktır.
+
+&nbsp;
+
+Editör
+: Serkan ELİBOLLAR, *bSTR Proje Geliştirme Çalışma Grubu Koordinatörü (ProCS Mühendislik)*
+
+&nbsp;
+
+**Katkıda Bulunanlar**
+
+Çalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.
+
+##### PROJE GELİŞTİRME ÇALIŞMA GRUBU İCRA KURULU
+| | |
+|---|---|
+| Dr. Ahmet ÇITIPITIOĞLU, *TAV İnşaat* | Figen İnam BAKIRCIALİOĞLU, *Turner* |
+| Ahu ÜMMETOĞLU, *Prefabrik Yapı* | Gizem YILDIRIM, *BIMChief* |
+| Yrd. Doç. Dr. Aslı Akçamete GÜNGÖR, *ODTÜ* | İlayda ÖNER, *Turner* |
+| Aygen ERKAL, *Türkiye İMSAD* | Osman ÖZKAN, *EAE Elektrik* |
+| Bahadır DEMİRTAŞ, *Emay* | Saniye ÖKTEM, *Prota Mühendislik* |
+| Berke ÇELİKEL, *Arup* | Serkan ELİBOLLAR, *ProCS Mühendislik* |
+| Burcu Esen BARUTCU, *Drees & Sommer* | Sinan ALEMDAR, *Emay* |
+| Cenk ÇETİN, *Dorçe* | Uğur ÇELİK, *Emay* |
+| Daniel KAZADO, *ProCS Mühendislik* | Uğur KAYA, *Emay* |
+| Dinçer KÖSE, *Turner* | Utku BAŞYAZICI, *Doxa87* |
+| Prof. Dr. Esin Ergen PEHLEVAN, *İTÜ*| |
+
+&nbsp;
+
+**Görüş Verenler**
+
+##### Yapı Geliştirme Aşamaları
+| | |
+|---|---|
+| Dr. Ahmet ÇITIPITIOĞLU, *TAV İnşaat* | Kerem BUĞDAYCIOĞLU, *Archimco* |
+| Alp Eren ÇON, *Freelance* | M. Bilgehan ŞAHİN, *Rönesans Endüstri Tesisleri* |
+| Alparslan GÜRE, *Freelance* | Meltem YILMAZ, *BİTÜDER* |
+| Dr. Atila GÜRSES, *Onduline Avrasya* | Muhammed MARAŞLI, *Fibrobeton* |
+| Ayşe Hasol ERKTİN, *Has Mimarlık* | Dr. Nuray Benli YILDIZ, *Düzce Üniversitesi* |
+| Berke ÇELİKEL, *Arup* | Onur ERKAN, *ProCS Mühendislik* |
+| Buket SAĞIROĞLU, *ÇŞB Yüksek Fen Kurulu* | Onur İŞBİLİR, *Beos Cephe Danışmanlığı* |
+| Burak GÖKÇEN, *Freelance* | Prof. Dr. Salih OFLUOĞLU, *ABÜ* |
+| Burcu Esen BARUTÇU, *Drees & Sommer* | Saniye ÖKTEM, *Prota Mühendislik* |
+| Deniz PEHLİVAN, *TAV İnşaat* | Sinan ALEMDAR, *Emay* |
+| Durmuş DİLEKÇİ, *İSMD* | Süleyman AKIM, *Akım Mühendislik* |
+| Dr. Duygu ERTEN, *İstanbul Medipol Üniversitesi* | TMMOB İnşaat Mühendisleri Odası |
+| Erkan ŞAHMALI, *Proud Proje Yönetim* | Tuna ÖZYURT, *arCHitect TO-tasarım* |
+| Prof. Dr. Esin Ergen PEHLEVAN, *İTÜ* | Uğur KAYA, *Emay* |
+| Evren ÖZSOY, *İGA* | Ümit BALABAN, *Anel* |
+| Göker Malik ALTUNTAŞ, *Klafs Technical* | Utku BAŞYAZICI, *Doxa87* |
+| Dr. Hasan Burak ÇAVKA, *İzmir İleri Teknoloji Enstitüsü* | Yasin ENGİN, *Freelance* |
+| Hasan Furkan YILDIZ, *Oytaş-Yıldız Uluslararası İnşaat* | |
+
+&nbsp;
+
+##### Yapı Geliştirme Aşamaları Teslim Gereksinimleri
+| | |
+|---|---|
+| Dr. Ahmet ÇITIPITIOĞLU, *TAV İnşaat* | Prof. Dr. Esin Ergen PEHLEVAN, *İTÜ* |
+| Ayşe Hasol ERKTİN, *HAS Mimarlık Ltd.* |	Figen İnam BAKIRCIALİOĞLU, *Turner* |
+| Bahadır DEMİRTAŞ, *Emay* | Kerem İlhami BUĞDAYCIOĞLU, *Archimco* |
+| Daniel KAZADO. *ProCS Mühendislik*	|	Dr. Nuray Benli YILDIZ, *Düzce Üniversitesi* |
+| Dinçer KÖSE, *Turner*	|	Onur ERKAN, *ProCS Mühendislik* |
+| Elif Zeynep CEYLAN, *MSGSÜ* | Uğur KAYA, *Emay* |

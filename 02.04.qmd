@@ -1,0 +1,59 @@
+# Bilgi Gereksinimlerinin Tanımı ve Bilgi Modelleri {.unnumbered}
+
+
+Atayan taraf olarak işveren, kurumsal veya proje hedeflerini desteklemek için varlıkları veya projeleri ile ilgili hangi bilgilerin gerekli olduğunu tanımlamalıdır. Bu gereksinimler kurum içinden veya ilgili paydaşlardan gelebilir. Atayan taraf, bu gereksinimleri, bilmesi gereken diğer paydaşların çalışmalarını belirlemek veya bilgilendirmek için aktarmalıdır. Bu, her büyüklükteki varlık ve projeler için geçerlidir, ancak bu gereksinimler proje büyüklüğüne göre uyarlanabilir. Az deneyimli atayan taraflar, bu konuda uzman yardımı alabilirler.
+
+Ana atanan ve atanan taraflar, ihtiyaçlarına göre kendi bilgi gereksinimlerini ekleyebilirler. Bilgi gereksinimlerinin bir kısmı taraflardan birinin kendi çalışmasında gerekli olduğu durumlarda, sadece kendi içindeki iş ekiplerine iletilebilir ve atayan tarafla paylaşılmayabilir.
+
+Farklı tipte bilgi gereksinimleri ve bilgi modelleri, aşağıdaki şekilde gösterilmekte ve ilgili bölüm başlıklarıyla açıklanmaktadır. Projenin yeni bir yatırım olması, mevcut varlığın yenilenmesi veya genişleme olmasına bağlı olarak görseldeki oklarla gösterilen uygun farklı süreçler takip edilecektir.
+
+![TS EN ISO 19650'da tanımlanan inşaat projesinde sayısal bilgi gereksinimleri ile üretim ilişkisi.](/images/pim_aim.png){width=80% .lightbox}
+
+Kurumsal bilgi gereksinimleri (*OIR*)
+: Atayan taraftaki üst düzey stratejik hedefleri cevaplamak veya bilgilendirmek için gereken bilgileri açıklar. Bu gereksinimler, aşağıdakiler de dahil olmak üzere çeşitli nedenlerle ortaya çıkabilir: stratejik iş operasyonu, stratejik varlık yönetimi, portföy planlaması, düzenleyici görevler veya politika oluşturma.
+
+Varlık bilgi gereksinimleri (*AIR*)
+: Varlık bilgisi üretmenin yönetimsel, ticari ve teknik yönlerini ortaya koyar. Yönetimsel ve ticari yönler, bilgi standardını ve teslim ekibi tarafından uygulanacak üretim yöntem ve prosedürlerini içermelidir.
+
+Proje bilgi gereksinimleri (*PIR*)
+: Varlık projesiyle ilgili olarak atayan tarafın üst düzey stratejik hedeflerine yönelik gerekli bilgileri açıklar. Hem proje yönetimi, hem de varlık yönetimi sürecinde tanımlanır.
+
+Bilgi alışverişi gereksinimleri (*EIR*)
+: Proje bilgisi üretmenin yönetimsel, ticari ve teknik yönlerini ortaya koymaktadır. Yönetimsel ve ticari yönler, bilgi standardını ve teslim ekibi tarafından uygulanacak üretim yöntem ve prosedürlerini içermelidir.
+
+Varlık bilgi modeli (*AIM*)
+: Atayan tarafça oluşturulan stratejik ve günlük varlık yönetimi süreçlerini destekler. Ayrıca proje teslim sürecinin başlangıcında bilgi sağlayabilir. Örneğin Varlık Bilgi Modeli ekipman kayıtları, bakım maliyetleri, kurulum ve bakım kayıtları, mülk sahipliği ayrıntılarıyla atayan tarafın önemli görüp sistematik bir şekilde takip edip yönetmek istediği diğer ayrıntıları içerebilir.
+
+Proje bilgi modeli (*PIM*)
+: Projenin teslimini destekler ve varlık yönetimi faaliyetlerini desteklemek için Varlık Bilgi Modeline girdi sağlar. Proje Bilgi Modeli projenin uzun vadeli bir arşivini sağlamak için ve denetim amacıyla saklanmalıdır. Örneğin Proje Bilgi Modeli proje geometrisi, ekipman konumları, proje tasarımı sırasındaki performans gereksinimleri, yapım yöntemi, planlama, maliyet ve bakım gereksinimleri de dahil olmak üzere yapım sırasında kurulu sistemlerin, bileşenlerin ve ekipmanın ayrıntılarını içerebilir.
+
+Yapı Bilgi Modellemesi (BIM), teslim ve işletme süreçlerinde oluşturulan Proje Bilgi Modelleri (PIM) ile Varlık Bilgi Modelleri'nin (AIM) üst ölçekte derlenmesiyle meydana gelen bilgi modellerinin tümü olarak düşünülebilir.
+
+Atayan taraf, varlığın yönetilmesi amaçlanan yönleriyle birlikte teslim edilecek bilgileri talep etme isteğini belirtmelidir. Bu amaçlar şunları içerebilir:
+
+* Varlık kaydı: doğru denetim ve raporlamayı desteklemek için bir varlık kaydı sağlanmalıdır; bu hem mekansal, hem de fiziksel varlıkları ve gruplamalarını içermelidir.
+
+* Mevzuatlara uyumluluk ve hukuki sorumluluklar için destek: atayan taraf, varlık kullanıcılarının sağlığını ve güvenliğini desteklemek için gerekli bilgileri belirtmelidir.
+
+* Risk yönetimi: risk yönetimini desteklemek için bilgi talep edilmeli; özellikle  projenin veya varlığın maruz kalabileceği doğal afetler, hava olayları veya yangın gibi risklerinin tanımlanması ve değerlendirmesini sağlayacak bilgiler istenmelidir.
+
+* Ticari konulara destek: atayan taraf, varlığın mülkiyeti ve işletilmesi için iş gerekçesinin gözden geçirilmesini desteklemek amacıyla gereken bilgileri belirtmelidir; bu, en erken teslimden itibaren varlığın aşağıdaki etkilerinin ve faydalı yönlerinin sürekli gelişimini içermelidir:
+
+
+  + *Kapasite ve kullanım yönetimi:* kapasite ile gerçek kullanımın karşılaştırılması ve portföy yönetiminin desteklemesi amacıyla, varlığın planlanan kapasitesinin ve kullanımının belgelenmesi sağlanmalıdır
+
+  + *Güvenlik ve gözetim yönetimi:* güvenlik gereksinimleri doğrultusunda varlığın ve komşu veya bitişik alanların güvenlik ve gözetim yönetimini desteklemek için bilgiler derlenmeli veya gizlenmelidir
+
+  + *Yenileme desteği:* her bir mahal ve yer ile tüm varlığın yenilenmesine yönelik, alanlar, hacimler, doluluk, çevre koşulları ve yapısal yük bakımından ayrıntılı bilgilerile destekleyebilmelidir
+
+  + *Öngörülen ve fiili etkiler:* atayan taraf kalite, maliyet, zamanlama, karbon salımı, enerji, atık, su tüketimi veya diğer çevresel etkiler ile ilişkili bilgi istemelidir
+
+  + *İşletme:* atayan tarafın varlık işletme maliyetini öngörmesine yardımcı olmak için varlığın normal işletme koşulları altında ilgili bilgiler sağlanmalıdır
+
+  + *Bakım ve onarım:* atayan tarafın bakım maliyetlerini öngörmesine ve planlamasına yardımcı olmak için planlanan önleyici bakım da dahil olmak üzere önerilen bakım işleriyle ilgili bilgi sağlanmalıdır
+
+  + *Yenileme:* atayın tarafın yenileme veya beklenen servis ömrü ve maliyetleri ile ilgili bilgiler, değiştirme maliyetlerini öngörmek için ilgili bilgiler sağlanmalıdır; fiziki varlıkların geri dönüşümünü desteklemek için ana bileşen malzemelerle ilgili ayrıntılı bilgi dahil edilmelidir
+
+  + *Servisten çıkarma ve imha:* Atayan tarafın hizmet sonu maliyetlerini öngörmesine ve planlamasına yardımcı olmak için önerilen servisten çıkarma ile ilgili bilgi sağlanmalıdır
+
+Varlığın teslim aşaması olan tasarım ve inşaat ile ilişkili bilgi gereksinimleri, atayan tarafın veya ana atanan tarafın kullanmak istediği proje aşamasıyla uygun olarak tanımlanmalıdır. Varlığın işletme aşaması ile ilgili bilgi gereksinimleri, planlı veya reaktif bakım, yangın ekipmanı denetimi, sarf malzeme veya parça değişimi veya varlık yönetimi sağlayıcısının değişimi gibi öngörülebilir yaşam döngüsünün tetikleyici olaylarıyla uygun olarak tanımlanmalıdır.

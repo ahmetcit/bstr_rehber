@@ -1,0 +1,44 @@
+# BIM Uygulama Planı Ek Örnekleri {#sec-bim-plan-örnek}
+
+## Ek 1 Model Kalite Kontrol Formu {#sec-bim-plan-ek1}
+
+![](./images/tbl.02.ek1.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek1.pdf){.download-link target="blank"}
+
+## Ek 2 Model İçerik Oluşturmada Kullanılan Kaynak Takip Listesi {#sec-bim-plan-ek2}
+
+![](./images/tbl.02.ek2.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek2.pdf){.download-link target="blank"}
+
+## Ek 3 Model Eleman Bilgi Gereksinimleri Tablosu {#sec-bim-plan-ek3}
+
+![](./images/tbl.02.ek3.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek3.pdf){.download-link target="blank"}
+
+## Ek 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü  {#sec-bim-plan-ek5}
+
+![](./images/tbl.02.ek5a.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek5a.pdf){.download-link target="blank"}
+
+### bSTR Bilgi Teslimi Planlama Dökümü Örneği {#sec-bim-plan-ek5-örnek}
+
+![](./images/tbl.02.ek5b.pdf){width=100% height=1100px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek5b.pdf){.download-link target="blank"}
+
+## Ek 6 BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP) {#sec-bim-plan-ek6}
+
+![](./images/tbl.02.ek6a.pdf){width=100% height=600px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek6a.pdf){.download-link target="blank"}
+
+### bSTR İş ve Ana Bilgi Teslim Planı Tablosu Örneği {#sec-bim-plan-ek6-örnek}
+
+![](./images/tbl.02.ek6b.pdf){width=100% height=600px .lightbox}
+
+[⬇ PDF dosyasını indirin](./images/tbl.02.ek6b.pdf){.download-link target="blank"}
+ 

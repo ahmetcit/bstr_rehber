@@ -1,0 +1,80 @@
+# Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları {.unnumbered}
+İnşaat projeleri, birden çok disiplinin ortak çalışması ile yürütülmektedir. Farklı süreçlere veya disiplinlere özgü BIM yazılımları ile her bir disiplin ihtiyacına uygun modelleme yapılabilmektedir. Farklı disiplinlerin birlikte yürüttüğü çalışmaların verimi, doğrudan birbirleri ile bilgi paylaşma yeteneklerine bağlıdır. Bu sebeple, BIM yazılımlarının farklı formattaki dosyalarının birbiri ile veri aktarımı, iki insanın farklı dilde konuşmaya çalışmasına benzer bir durum oluşturmaktadır. Akla gelen ilk çözüm tüm yazılımların birbirlerinin dilini anlamasıdır. Kullanılan yazılımların sayısı ve sürekli güncellenen veritabanları göz önüne alındığında her birinin uyumluluğunu sağlamak pratikte mümkün değildir. Başka bir çözüm ise, iki yabancının ortak bir dilde konuşmayı tercih etmesi gibi, farklı yazılımların birbirlerine verileri ortak bir formatta aktarmasıdır. Farklı disiplinlerin ürettikleri sayısal bilgileri birbirlerine aktarırken bilgi kayıplarını azaltmak veya önlemek amacıyla ortak ve açık veri standartları kullanılmaktadır.
+
+IFC, inşaat projelerinde çalışan ekiplerin farklı BIM yazılımlarını kullanmalarına olanak sağlar. Bu sayede ekibe özel ihtiyaçları en iyi destekleyen yazılımları seçme özgürlüğünü verir. IFC’nin temel amacı, “akıllı” üç boyutlu (3b) BIM elemanlarının geometrisini ve özellik verilerini etkili bir şekilde farklı disiplinler veya proje paydaşları arasında paylaşabilmektir. Farklı yazılımlarla oluşturulmuş üç boyutlu modeller arasında koordinasyon çalışmalarını yapmak için yaygın olarak modelleme yazılımlarından IFC formatına dışa aktarım yapılmaktadır.
+
+Yapı yaşam döngüsünde üretilen bilginin, üretildiği yazılımdan bağımsız olarak kullanabilmesi, birçok paydaşın katıldığı iş akışlarının ortak anlayış ve erişilebilirlik ile işbirlikçi bir şekilde kurulması amacıyla openBIM olarak adlandırılan açık veri paylaşım standartları geliştirilmektedir. IFC ile bilgi paylaşımı imkanı beraberinde, açık ve ortak iletişim standartlarının ve paylaşılacak bilginin yapısının standartlarının geliştirmesine de yol açmıştır.
+
+openBIM açık veri standartları ile paylaşım ve işbirliği süreçleri bir çok yazılım firması tarafından da desteklenmektedir. buildingSMART International tarafından geliştirilen standartlar ve beraberinde gelen bazı kavramlar bu bölümde tarif edilmiştir ve daha detaylı bilgi edinilebilecek kaynaklara ulaşım sağlanması hedeflenmiştir.
+
+## Endüstri Temel Sınıfları (Industry Foundation Classes - IFC)
+
+### IFC Nedir?
+Genel olarak, IFC veya “Industry Foundation Classes”, binalar ve altyapı dahil olmak üzere yapılı çevrenin standartlaştırılmış, dijital bir tanımıdır. Tedarikçiden bağımsız veya agnostik olması amaçlanan açık, uluslararası bir standarttır (TS EN ISO 16739-1:2018) ve birçok farklı kullanım durumu için çok çeşitli donanım aygıtlarında, yazılım platformlarında ve arabirimlerde kullanılabilir. IFC şema spesifikasyonu, openBIM’i teşvik etme hedefini gerçekleştirmek için buildingSMART International’ın ana teknik çıktısıdır.
+
+Daha spesifik olarak, IFC şeması:
+
+* nesnelerin (kolonlar veya döşemeler gibi)
+* soyut kavramların (performans, maliyet)
+* süreçlerin (kurulum, işlemler)
+* ve insanların (mal sahibi, tasarımcılar, müteahhitler, tedarikçiler vb.)
+* kimliğini ve anlambilimini (ad, makine tarafından okunabilen benzersiz tanımlayıcı, nesne tipi veya işlevi)...
+* özelliklerini veya özniteliklerini (malzeme, renk ve termal özellikler gibi)...
+* ve ilişkilerini (konumlar, bağlantılar ve sahiplik dahil) mantıksal bir şekilde kodlayan standartlaştırılmış bir veri modelidir.
+
+Şema spesifikasyonu, bir tesisin veya kurulumun nasıl kullanıldığını, nasıl inşa edildiğini ve nasıl işletildiğini açıklayabilir. IFC, yapıların fiziksel bileşenlerini, üretilen ürünleri, mekanik/elektrik sistemlerini ve ayrıca daha soyut yapısal analiz modellerini, enerji analiz modellerini, maliyet dağılımlarını, çalışma programlarını ve çok daha fazlasını tanımlayabilir.
+
+### IFC Nasıl Kullanılır?
+Günümüzde, IFC tipik olarak belirli bir ticari işlem için bir taraftan diğerine bilgi alışverişinde bulunmak için kullanılmaktadır. Örneğin, bir mimar mal sahibine yeni bir tesis tasarımının bir modelini sağlayabilir, bir mal sahibi bu yapı modelini müteahhitlere ihale aşamasında taleplerini iletmek için paylaşabilir ve bir müteahhit mal sahibine kurulu ekipmanı ve üretici bilgilerini açıklayan ayrıntıları içeren bir bitmiş model sağlayabilir. IFC, ister tasarım, tedarik ve inşaat aşamalarında aşamalı olarak, isterse uzun vadeli saklama ve işletme amaçları için “as-built” bir bilgi koleksiyonu olarak, proje bilgilerini arşivleme aracı olarak da kullanılabilir.
+
+İstenen IFC verileri XML, JSON ve STEP gibi çeşitli formatlarda kodlanabilir ve internet servisleri üzerinden iletilebilir, dosyalarda içe/dışa aktarılabilir, merkezi veya bağlantılı veritabanlarında yönetilebilir. Model oluşturma, tasarım, simülasyon ve analiz, görüntüleme ve daha fazlasını içeren bilgi modelleme araçları oluşturan yazılım firmaları, son kullanıcılara bazı IFC formatındaki verileri dışa aktarma, içe aktarma ve iletme içi arayüzler sağlayacaktır. IFC aracılığıyla neyi paylaşmak istediklerine karar vermek kullanıcılara kalmıştır.
+
+### IFC'yi Kimler Kullanır?
+Süreçte birçok farklı paydaş tarafından kullanılmak üzere yüzlerce yazılım uygulaması IFC verilerini gönderip alabilir. 1997’den beri, IFC birçok defa denenmiş ve test edilmiş, dünyanın her yerinden projeler sunmanın bir yolu olarak dünya çapında güven kazanmıştır.
+
+### IFC Dosya Formatları
+IFC, her biri yazılım desteği, ölçeklenebilirlik ve okunabilirlik avantajlarına sahip olan çeşitli elektronik formatlarda kodlanabilir.
+
+Dosya tabanlı içe ve dışa aktarmada, en geniş uyumluluk ve en küçük boyut için STEP Physical File Format (SPFF) önerilir. STEP için dosya uzantısı *.ifc’dir. *.ifcZIP, çok daha düşük dosya boyutuna sahip sıkıştırılmış bir .ifc dosyasıdır. IFC’yi destekleyen çoğu yazılım uygulaması tarafından okunabilir. Sıkıştırılmamış .ifc dosyası ZIP paketinden çıkarılabilir.
+
+Bağlantıdan IFC versiyonları ve açıklamaları ile ilgili detaylara ulaşılabilir: <https://technical.buildingsmart.org/standards/ifc/ifc-formats>
+
+### IFC Versiyonları ve Kullanım Amaçları
+IFC versiyonları, buildingSMART tarafından sürekli olarak güncellenmektedir. Bağlantıdan IFC resmi yayınları ve güncel versiyonlar takip edilebilir: <https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications>
+
+Günümüzde birçok BIM yazılımı, IFC model verilerinin içe aktarılmasını ve/veya dışa aktarılmasını desteklemektedir. buildingSMART, belli kriterlere uygun bir şekilde IFC verilerini işleyebilen uygulamaları test edip, tasdik eder. IFC ile sağlanan bilgi akışı, tesis yönetimi, yapısal modelleme ve analiz uygulamaları gibi farklı uygulamaların bir arada uyumlu olarak kullanıma izin verir. Paydaşlar arasındaki iş birliği açısından bu imkan kritik bir öneme sahiptir.
+
+buildingSMART International, yazılım firmaları için IFC sertifikasyonlarından sorumlu tek yönetim organıdır. Bağlantıdan buildingSMART International’ın sertifikasyon gereksinimlerini karşılayan yazılım uygulamalarının listesine erişilebilir: <https://www.buildingsmart.org/compliance/software-certification/certified-software>
+
+### IFC Model Hiyerarşisi
+IFC dosya formatını destekleyen modelleme yazılımları, modellenen her bir elemanın gerçek hayattaki anlamlarını sayısal ortama aktarabilme yeteneğine sahiptir. Bu elemanlar fiziksel hayatta ihtiyacımız olan bilgileri depolamanın yanında diğer elemanlarla belirli kurallar çerçevesinde haberleşebilmektedir. Yine bu kurallar sayesinde IFC dosyaları diğer BIM yazılımları ile ortak bir dilde iletişim kurabilmektedir. Bu kuralların yazıldığı programlama diline “nesne yönelimli programlama” denilmektedir. Nesne yönelimli programlama dili model elemanlarına anlam yüklemek için onları bir veritabanı içinde, belirli sınıflar altında, hiyerarşik olarak konumlandırmaktadır. Sınıflar, model elemanlarını benzer kategorilerde kümelemek için kullanılır.
+
+IFC dosyaları ile yazılımlar arasında bilgi aktarırken, bu yazılımların özgün veritabanlarının IFC veritabanı ile ilişkisi doğru kurgulanmalıdır. Bilgi kayıplarını önlemek için sınıfların kimlikleri doğru bir şekilde eşleştirilmelidir. IFC dosya formatı, IFC sınıflarını hiyerarşik olarak sıralar.
+
+Bir IFC nesnesi, IFC veri modelinde benzersiz olarak tanımlanır. Sınıf atamasına ve tip tanımına bağlı olarak, nesnenin IFC versiyonu içinde varsayılan belirli parametreleri ve ilişkileri vardır. Örneğin; hangi nesne olduğu, hangi nesneleri etkilediği, ölçülerinin ne olduğu, hangi nesnelerden daha üst seviyede olduğu veya olmadığı, ya da genellikle hangi bilgileri sağladığı gibi.
+
+BIM modelini IFC olarak dışa aktarırken nesneler için doğru sınıfların/kategorilerin (Class/Category) seçilmesi çok önemlidir: Eğer duvar IfcWall sınıfına/kategorisine atanmamışsa, tanımlanabilmesi için gereken parametrelerin tümü duvara tanımlanmaz. Bu da, diğer koordinasyon veya değerlendirme yazılımları tarafından doğru şekilde yorumlanamamasına neden olur.
+
+Sadece belirli kategoriler arasında ayrım yapılmaz, bazen bir bileşenin IFC veri modeli içinde daha doğru bir şekilde yeniden üretilmesi için tip olarak atanması da gerekebilir. Örneğin, kullanım amacına göre bir bileşenin tip olarak atanması gibi.
+
+Karmaşık yapılar bu sistem temelinde ortaya çıkar ve her bir elemanın geometrik ve alfa-nümerik olarak temsil edilebildiği ve açıkça tanımlanabildiği bir veri modelinin oluşturulması sağlanır. Bağlantıdan buildingSMART International tarafından tanımlanmış olan “IFC Specifications Database” tablosundan her birinin ayrıntılarına erişilebilir: <https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications>
+
+## Bilgi Teslim Rehberi (Information Delivery Manual - IDM)
+Yapı varlık endüstrisi (binalar ve altyapı dahil), birçok farklı şirketi ve otoriteyi projeye özel bir organizasyonda bir araya getirmesiyle karakterize edilir. Verimli çalışmak için organizasyondaki tüm katılımcıların, hangi tür bilgilerin ne zaman iletilmesi gerektiğini bilmesi gerekir. Dijital verileri yorumlama yeteneği söz konusu olduğunda, çoğu endüstri aracının çok düşük bir tolerans eşiğine sahip olması nedeniyle dijital araçlar kullanıldığında konu daha da önem kazanır. TS EN ISO 29481 1:2010 “Yapı Bilgi Modellemesi - Bilgi Teslim Rehberi - Bölüm 1: Metodoloji ve Format” standardı, bir tesisin yaşam döngüsü boyunca süreçleri ve bilgi akışını yakalamak ve belirlemek için bir metodolojiye sahip olmak amacıyla buildSMART tarafından geliştirilmiştir.
+
+IDM içeriği, üretilen modelin diğer paydaşlar ile paylaşımı için gerekli tüm bilgileri tanımlamaktadır. Özellikle tasarım ekiplerinin birbirleri ile olan koordinasyon sorunlarının çoğu, BIM modellerinin yapılmasına başlamadan önceki anlaşma eksikliğinden kaynaklanmaktadır. Farklı tasarım ekipleri tarafından üretilen modellerin birleştirilmesindeki temel sorunlar, ortak bir koordinat sistemi, yapının kuzeye olan açısı ve proje kotları gibi konularla ilgilidir. Bununla birlikte, birleştirilen modelde her ekibin çalışmasını net bir şekilde ayırmak ve farklı yazılımlara içeriği eksiksiz aktarmak için teslim edilecek bilgiler gereksiz içeriklerden arındırılmış olmalıdır. Belirli kapsamda model içeriklerinin yazılımlar arası alışverişinde Model Görünüm Tanımları (MVD – Model View Definition) kullanılmaktadır. IFC sertifikalı yazılımlarda MVD içeriklerine ait şablonlar da ayrıca yer almaktadır. BIM tabanlı iş birliği, paydaşlar arasındaki açık anlaşmalarla en iyi sonucu verir. Bu nedenle, paydaşların IFC kullanım hedeflerine yönelik bilgi gereksinimleri öncelikli olarak BIM teknik şartnamesinde yer almalıdır. Tasarım ekipleri arasında bilgi alışverişinin nasıl yapılacağı ise BIM uygulama planında detaylandırılarak uygulamaya aktarılmalıdır.
+
+IFC uzantılı dosya kullanılarak bilgi paylaşımı yapılacak projelerde IDM ve MVD, BIM uygulama planının bir parçası olarak projeye dahil edilmelidir. Bağlantıdan IDM ile ilgili kılavuz ve şablonlara ulaşılabilir: <https://technical.buildingsmart.org/standards/information-delivery-manual/>
+
+## Model Görünümü Tanımı(Model View Definition - MVD)
+Bir IFC dosyası genellikle çok büyük miktarda veri içerdiğinden buildingSMART, MVD (Model View Definitions) adı verilen bir dizi özel veri seti tanımlamıştır. MVD’ler, tanımlanan ihtiyaca yönelik ilgili verilerin dışa aktarılan IFC dosyasıyla birlikte gelmesini sağlar.
+
+Bağlantıdan buildingSMART International tarafından tanımlanmış olan MVD’lerin listesine erişilebilir: <https://technical.buildingsmart.org/standards/ifc/mvd/mvd-database>
+
+## BIM İşbirliği Formatı (BIM Collaboration Format - BCF)
+Bahsedilen tüm açık veri standartlarını kullanarak veri paylaşımı yapıldığında, modeldeki nesneler hakkında iletişim kurmak istenir. Bunu e-posta üzerinden veya telefon ile yapmak riskler ve açıklıklar getirir. Bu nedenle BCF oluşturulmuştur.
+
+BCF, daha önce proje ortak çalışanları arasında paylaşılan IFC verilerinden yararlanarak farklı BIM uygulamalarının model tabanlı sorunları birbirlerine iletmesine olanak tanır. BCF, tescilli formatları ve iş akışlarını atlayarak BIM yazılım araçları arasındaki model tabanlı sorunları daha kolay tanımlamak, alışverişi için açık iletişimi kolaylaştırmak ve IFC tabanlı süreçleri iyileştirmek için oluşturulmuştur.
+
+Bağlantıdan BCF ile ilgili detaylı bilgilere ulaşılabilir: <https://www.buildingsmart.org/standards/bsi-standards/bim-collaboration-format-bcf/>
+

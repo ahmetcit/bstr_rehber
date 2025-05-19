@@ -1,0 +1,2383 @@
+// document definitions
+:my-title: Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı
+:imagesdir: resources/assets
+:pdf-theme: resources/theme/bstr-theme.yml
+:pdf-fontsdir: resources/fonts
+:icons: font
+:toc: macro
+:toclevels: 5
+:toc-title: {my-title}
+:partnums:
+:part-signifier: Bölüm
+:sectnums:
+:sectnumlevels: 5
+:chapter-signifier:
+:figure-caption: Şekil
+:table-caption: Tablo
+:blank: {empty} +
+
+
+//////////////////////////
+// KAPAK BİLGİSİ
+//////////////////////////
+= Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi: Rehber Kitabı
+// document metadata
+[.text-justify]
+:doctype: book
+:author: buildingSMART Türkiye
+:email: info@buildingsmartturkiye.org
+:url-org: www.buildingsmartturkiye.org
+:title-page-background-image: image:rehber-kapak.jpg[]
+:back-cover-image: image:rehber-arka-kapak.jpg[]
+:date: 01.04.2025
+:revision: 0.1
+:version-label: Ver.
+:revnumber: {revision}
+:revdate: {date}
+:revremark: Ön sürüm
+/
+
+<<<
+
+[%noheader]
+[cols="3,2"]
+|===
+2+|*Genel Değerlendirmeler*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Çalışmanın adı "Yapı Geliştirme Aşamaları" olarak belirlenmiş, bu durumda mimari yapı işlerinin dışında yol, köprü, baraj vb. altyapı işleri ile bütünleşik bir kavram olarak düşünülmelidir. Aksi takdirde yanlış anlaşılmaya mahal vermemesi için çalışmanın adının "Mimari Yapılar Gelişim Aşamaları" olarak değiştirilmesi önerilmektedir.
+|Çalışmanın amacı üstyapı ve mimari yapılar ile birlikte belirtilen altyapı projeleri içinde kullanılabilir yapı geliştirme aşamalarını ortak olarak belirlemektir.
+
+|Tanımlanan yapı geliştirme aşamaları ve teslim edilecek bilgiler için sorumluların da belirtilmesi önerilmektedir.
+|Önerilen yapı gelişim aşamaları için, tüm disiplinlerin özelinde gerekli detay tanımlamalar, teslim edilmesi gereken dokümanlar ile aralarındaki ilişkilerin ve sorumlulukların netleştirilmesi için ayrı bir "Teslim Gereksinimleri" çalışması başlatılmış ve yayınlanmıştır.
+
+2+|*Aşama 0 Stratejik Planlama*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|"Etüt Aşaması"ndan önce projenin stratejik planı ve stratejik tanımının yapıldığı bir aşamanın eklenmesi önerilmektedir. Genelde bu aşama sağlıklı bir şekilde yürütülmediği için sonraki süreçlerde karşılaşılan sorunlar ile başa çıkılmada zorluklar yaşanmaktadır.
+|Öneri doğrultusunda, etüt aşaması öncesine bir aşama eklenmiştir. Eklenen "Stratejik Planlama Aşaması" ile ilerideki yapı geliştirme aşamalarına stratejik tanım içeriği sağlanması hedeflenmektedir.
+
+|Bu aşamada benzer geçmiş projelerden edinilen deneyim, benzer projelerin avantaj ve dezavantajlarının incelenmesi ile proje risk ve bütçesinin değerlendirilmesi ile en uygun çözüm ve yatırım vizyonu tespit edilerek planlama ve sonraki etüt aşaması için girdi sağlanması önerilmektedir.
+|Öneri doğrultusunda gerekli düzenleme yapılmıştır.
+
+|Yapı geliştirme aşamalarına en son aşama olarak "Geri Dönüşüm Aşaması" eklenmesi önerilmektedir. Geri dönüştürme işlerinin sürdürülebilirlik kriterlerine uygun şekilde projenin bir parçası olması sağlanmalıdır. Yapıların ekonomik ya da teknik olarak ömürlerini tamamlamaları ile birlikte yapılacak geri dönüşüm çalışmaları, yıkım, atık yönetimi, yıkımdaki çevresel etkiler, yıkımın yönetilmesi ve tüm bu aşamalar için yapılacak AR-GE faaliyetleri bu madde altında ele alınabilir. Yapıların tasarımı aşamalarında geri dönüşüm aşaması ile ilgili temel bilgiler tasarıma eklenmeli ve yapı ömrü boyunca muhafaza edilmelidir.
+|Yapı ömürlerinin tamamlanması ile başlayan sürecin genel yapı yaşam döngüsünde temsili için farklı görüşler vardır. Özellikle bazı yapı türlerinde bu süreçte yapılması gereken çalışmalar çok kapsamlı ve uzun olduğundan, önerildiği gibi yeni bir aşama talep edilirken, uluslararası güncel standartlar yıkım, geri dönüşüm vb. çalışmalarına stratejik planlama aşamasında kararlaştırılmasını ve sonraki aşamalarda planlı bir şekilde, yeni bir inşaat projesine benzer şekilde detaylandırılmasını önermektedir. Bu sebeple, çalışmaya yeni eklenen Stratejik Planlama aşamasında gerekli yönlendirme yapılmıştır.
+
+2+|*Aşama 1 Etüt*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Bu aşamada, proje için ihtiyaç programının ve mekansal kullanım alanlarının tanımlanması, mekân ve işlev şemasının hazırlanması, imar durumu, kadastro, arsanın doğal ve zemin özelliklerinin saptanması, yapının çevre ile ilişkisinin analiz edilmesi çalışmalarının yürütülmesi, projenin ileriki aşamalarında izlenecek yol ve uygulanacak çalışma yöntemi, sözleşme tipi ve iş programı kararlaştırılması önerilmektedir. Yine bu aşamada yapının enerji kullanımı, sürdürülebilirlik hedefleri, kabul-teslim aşaması için gerekli varlıkların belirlenmesi ve bu varlıkların takiplerinin yapılması dikkate alınabilecek hususlardır.
+|Öneri doğrultusunda gerekli düzenleme yapılmıştır.
+
+2+|*Aşama 2 Kavramsal Tasarım*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Bu aşama için kavramsal tasarım, konsept tasarım veya şematik tasarım ifadeleri yaygın olarak kullanılsa da birçok üniversitede, yarışmalarda ve Mimarlar Odası'nda projenin detay seviyesini de tanımlamak için "Fikir Projesi" ifadesi tercih edilmektedir. "Kavramsal Tasarım Aşaması" yerine "Fikir Projesi Aşaması" olarak adlandırılmalıdır.
+|"Fikir Projesi Aşaması", Mimar'ın telif hakkını kazandığı iş aşaması olarak bilindiği ve diğer tasarım disiplinlerinde yaygın olarak kullanılmadığı için "Kavramsal Tasarım Aşaması" tercih edilmiştir
+
+|Birçok projede, bu aşamada birden fazla kavramsal tasarım önerisinin oluşturulması arzu edilmektedir. Ayrıca, modern tümleşik proje teslimi (IPD) yöntemlerinde paydaşların da bu erken aşamada sürece dahil olabildiği bilinmektedir.  Bu sebeple, "Kavramsal Tasarım Aşaması", "Etüt Aşaması" çalışmalarında onaylanmış bilgilerin projeye yansıtılması ile erken evre tasarım önerilerinin oluşturulması amacını taşır. Güncel etüt çalışmalarına, projenin ihtiyaç programına, öngörülen bütçeye, arsa ve çevre verilerine, zemin özelliklerine, İşveren ve gereksinim durumunda proje paydaşlarının idari ve teknik önerilerine uygun olarak şekillenen kavramsal tasarım için belirlenen ölçek ve detayda, vaziyet planı, planlar, kesitler, görünüşler, görseller ve raporlar bu aşamada hazırlanır.
+|Öneri doğrultusunda gerekli düzenleme yapılmıştır.
+
+2+|*Aşama 3 Ön Tasarım*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Proje paydaşlarına sadece "Ön Tasarım Aşaması"nda atıfta bulunulmuş. Proje paydaşlarının belirlenmesi stratejik bir karardır ve projenin başlangıç aşamasında yapılmalıdır. Bu "Stratejik Planlama Aşaması" veya "Etüt Aşaması" olabilir.
+|Proje paydaşlarının yapacağı çalışmaları ve bunların koordinasyon ve iletişim şeklinin netleştirilmesinin "Etüt Aşaması"nda, diğer gelen önerilerde dikkate alınarak modern tümleşik proje teslimi (IPD) yöntemlerine uygun olarak gerekli ise paydaşların "Kavramsal Tasarım Aşaması"nda belirlenmesi benimsenmiştir. Teslim gereksinimleri ihtiyacı da dikkate alınarak bazı paydaşların daha erken belirlenmesi proje özelinde planlanabilir.
+
+|"Kavramsal Tasarım Aşaması"nın, "Ön Tasarım Aşaması" ile ilişkisini biraz daha netleştirmesi önerilmektedir. "Ön Tasarım Aşaması", "Kavramsal Tasarım Aşaması" çalışmalarında belirlenmiş ve onaylanmış üst düzey kararlar çerçevesinde tasarımın geliştirilmesi, tüm disiplinlerin sistem kararlarını içerecek bilgilerin projeye yansıtılması amacını taşır.
+|Öneri doğrultusunda gerekli düzenleme yapılmıştır.
+
+2+|*Aşama 4 Kesin Tasarım*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|"Kesin Tasarım Aşaması" çalışmaları yerel yönetimlerin inceleme yapabilecekleri ve onay verebilecekleri nitelikte olmalıdır. Bu sebeple halihazırda yerel yönetimlere göre farklılık arz eden "Ruhsat Projesi" kavramı ayrı, farklı bir aşama olarak ele alınmamalı yada "Kesin Tasarım Aşaması" çalışmaları ruhsata esas tasarım olarak idareye teslim edilmelidir. Yerel yönetimlerin de bu anlamda bilgilendirilmeleri önemlidir.
+|Öneri doğrultusunda çalışmanın amacı kısmında gerekli öneri yapılmıştır.
+
+2+|*Aşama 5 Uygulama Tasarımı*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Yapım öncesi yapılması gereken son aşamalardan biri, tasarımı tamamlamak için gerekli tüm kaynakları ve unsurları güvence altına almaktır. Bu, yapım aşamasında ihtiyaç duyulan tüm ekipman, ham madde ve hizmetleri içerir. Satın alma aşamasında önemli husus, maliyetleri azaltmak ve verimliliği artırmak için malzeme, ekipman ve hizmetlerin ne zaman, nerede ve nasıl satın alınacağının belirlenmesidir. Özellikle sanat yapıları, toplu konut, AVM gibi büyük projelerde inşaat aşamasından önceki mobilizasyon aşaması oldukça önemlidir. İnsanların barınacağı alanlar, ofis binaları, stok alanları, depo, atölye, araç parkı, sosyal alanlar vb.  gereksinimlerin önceden belirlenmesi ve inşa edilmesi gerekmektedir. İş bitiminde ise bunların kaldırılması, sahanın düzeltilmesi gerekecektir. Bu gerekçeler sebebiyle "Uygulama Tasarımı Aşaması" sonrası ve "Yapım Aşaması" öncesine teknik şartnameler, metrajların ve ihale dosyasının hazırlanması için "İhale ve Satın Alma Aşaması" ve "Mobilizasyon Aşaması" eklenmelidir. Benzer şekilde "İşletme ve Bakım Aşaması" öncesine de "Demobilizasyon Aşaması" ilave edilmelidir.
+|İnşaat projelerinde gelişen farklı tedarik stratejileri ve sözleşme tipleri, tasarım ilerlemesini ve farklı aşamalardaki çalışmaları değiştirmeyeceğinden, teknik şartnamelerin, keşif listelerinin, ihale belgelerinin hazırlanması, ihale yapılması ve mobilizasyon vb. süreçler yapı geliştirme aşamalarına dahil edilmemiştir. Tedarik stratejilerine uygun bilgi paylaşım ve teslim süreçleri proje özelinde planlanmalıdır.
+
+|===
+
+<<<
+
+[%noheader]
+[cols="3,2"]
+|===
+
+2+|*Aşama 6 İmalat Tasarımı*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|"İmalat Tasarımı Aşaması" ve "Yapım Aşaması" içeriğinde tarif edilen hizmetler, pratikte birbirinin aynıdır ve tek aşama olarak ele alınmalıdır, birleştirilmesi önerilmektedir.
+|"İmalat Tasarımı Aşaması" ve "Yapım Aşaması" birçok projede eş zamanlı olarak gerçekleşebilmektedir ve kademeli olarak tamamlanan İmalat Projeleri ile sahada imalatların yürütülebileceği belirtilmiştir. Yapım öncesinde tasarımın imalata uygunluğunun teyidini temin etmek için ayrı bir aşama olarak önerilmektedir.
+
+2+|*Aşama 7 Yapım*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|"Yapım Aşaması" aynı zamanda tesis yönetiminde gerekli olabilecek varlıklarla ilgili bilgilerin kayıt altına alınması gereken bir aşamadır. Bu aşamada, imalat ve montajı tamamlanarak işletmeye alınma aşamasına gelmiş olan yapının tamamlanmış, gerçekleşen durumunu gösteren "Kayıt Belgeleri" hazırlanır ve kurulumu gerçekleşen varlıkla ilgili bilgiler işletme-bakım işlemleri için kaydedilir.
+|Öneri doğrultusunda gerekli düzenleme yapılmıştır.
+
+2+|*Aşama 8 Kabul-Teslim*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Kayıt belgelerinin hazırlanmasının, "Yapım Aşaması"ndan çıkarılarak "Kabul-Teslim Aşaması"na eklenmesi gerekmektedir.
+|Kayıt belgelerinin sahada imalat devam ederken hazırlanması ve güncel tutulması önemli görüldüğü için "Yapım Aşaması"nda belirtilmiştir, belgelerin teslim planlaması belirttiğiniz gibi "Kabul-Teslim Aşaması"nda olabilecektir, bu konuda da gerekli düzenleme yapılmıştır.
+
+2+|*Aşama 9 İşletme ve Bakım*
+
+^|*Görüş ve Teklif Özeti*
+^|*İcra Kurul Notu*
+
+|Bu aşama, tasarım ve inşa bilgilerinden faydalanarak yapının kullanıldığı, işletildiği, bakım ve onarımının yürütüldüğü ve yaşam döngüsünün bir parçası olarak kısmı veya tümüyle yenilendiği, onarıldığı veya tadil edildiği aşamadır. İşveren ve/veya proje ekibi hizmetlerini iyileştirmek üzere binanın kullanım sonrası yapının performansını ve kullanıcı memnuniyetini ölçmek üzere "Kullanım Sonrası Değerlendirme" gerçekleştirebilir.
+|Öneri doğrultusunda gerekli düzenleme yapılmıştır.
+
+|===
+
+
+
+
+
+
+
+
+<<<
+== BIM Teknik Şartname Ek Örnekleri
+
+<<<
+:sectnums!:
+
+=== Ek 1 Bilgi Yönetimi Sorumluluk Matrisi
+Her faaliyet için projede tanımlanan farklı paydaşların sorumlulukları, aşağıdaki anahtarda gösterilen kodlamalarla matrise işlenecektir.
+
+Anahtar
+
+[none]
+* *Y* - _Yapan_: Faaliyeti yapmakla sorumlu taraf
+* *O* - _Onaylayan_: Faaliyetin doğru yapılmasından sorumlu ve onaylayan taraf
+* *D* - _Danışılan_: Faaliyet yapılırken danışılan taraf(lar)
+* *B* - _Bilgilendirilen_: Faaliyetin tamamlanmasından sonra bilgilendirilen taraf(lar)
+
+:table-caption!:
+
+.Bilgi Yönetimi Sorumluluk Matrisi
+[cols="^1,8,2,2,2,2"]
+|===
+^|{set:cellbgcolor:#C6D9F1} *Adım*
+^|*Faaliyet*
+^|*Atayan Taraf*
+^|*Üçüncü Taraf*
+^|*Ana Atanan Taraf*
+^|*Atanan Taraf*
+
+|{set:cellbgcolor:#00FFFFFF} 1.1 |Bilgi yönetimi işlevini üstlenecek kişilerin atanması ||||
+|1.2 |Projenin bilgi gereksinimlerinin belirlenmesi ||||
+|1.3 |Projenin bilgi teslim aşamalarının belirlenmesi ||||
+|1.4 |Projenin bilgi standardının belirlenmesi ||||
+|1.5 |Projenin bilgi üretimi yöntem ve prosedürlerin belirlenmesi ||||
+|1.6 |Projenin referans bilgilerinin ve müşterek kaynaklarının belirlenmesi ||||
+|1.7 |Projenin ortak veri ortamının oluşturulması ||||
+|1.8 |Projenin bilgi protokolünün belirlenmesi ||||
+|2.1 |Atayan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi ||||
+|2.2 |Referans bilgilerinin ve müşterek kaynakların derlenmesi ||||
+|2.3 |Teklif gereksinimleri ve değerlendirme kriterlerinin oluşturulması ||||
+|2.4 |İhale daveti için ilgili bilgilerin derlenmesi ||||
+|3.1 |Bilgi yönetimi görevini üstlenecek kişilerin tayin edilmesi ||||
+|3.2 |Teslim ekibinin (atama öncesi) BIM uygulama planının belirlenmesi ||||
+|3.3 |İş ekibinin/ekiplerinin yetenek ve kapasitesinin değerlendirilmesi ||||
+|3.4 |Teslim ekibinin yetenek ve kapasitesinin belirlenmesi ||||
+|3.5 |Önerilen teslim ekibinin mobilizasyon planının oluşturulması ||||
+|3.6 |Teslim ekibinin risk kaydının oluşturulması ||||
+|3.7 |Teslim ekibinin ihale davetine yanıtlarının derlenmesi ||||
+|4.1 |Teslim ekibinin BIM uygulama planının teyit edilmesi ||||
+|4.2 |Teslim ekibinin ayrıntılı sorumluluk matrisinin oluşturulması ||||
+|4.3 |Ana atanan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi ||||
+|4.4 |İş bilgi teslim plan(lar)ının oluşturulması ||||
+|4.5 |Ana bilgi teslim planının oluşturulması ||||
+|4.6 |Ana atanan tarafın atanmasında gerekli belgelerin tamamlanması ||||
+|4.7 |Atanan taraf(lar)ın atanmasında gerekli belgelerin tamamlanması ||||
+|5.1 |Kaynakların mobilize edilmesi ||||
+|5.2 |Bilişim altyapısının mobilize edilmesi ||||
+|5.3 |Projenin bilgi üretim yöntem ve prosedürlerin sınanması ||||
+|6.1 |Referans bilgilerinin ve müşterek kaynaklarının kullanılabilirliğinin kontrol edilmesi ||||
+|6.2 |Bilgilerin üretilmesi ||||
+|6.3 |Kalite güvence kontrolünün tamamlanması ||||
+|6.4 |Bilgilerin değerlendirilip paylaşım için onaylanması ||||
+|6.5 |Bilgi modelinin değerlendirilmesi ||||
+|7.1 |Ana atanan tarafın onaylaması için bilgi modelinin sunulması ||||
+|7.2 |Bilgi modelinin değerlendirilmesi ve onaylanması ||||
+|7.3 |Bilgi modelinin atayan tarafın onayı için sunulması ||||
+|7.4 |Bilgi modelinin değerlendirilmesi ve kabul edilmesi ||||
+|8.1 |Proje bilgi modelinin arşivlenmesi ||||
+|8.2 |Gelecek projeler için öğrenilen derslerin derlenmesi ||||
+|===
+
+
+<<<
+=== Ek 2 Bilgi Gereksinimleri
+
+.AŞAMA 0 - Stratejik Planlama Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Stratejik Planlama Teslim Gereksinimleri - Aşama 0 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Stratejik Planlama Raporu*
+|===
+
+
+.AŞAMA 1 - Etüt Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Etüt Teslim Gereksinimleri - Aşama 1 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Etüt Raporu*
+
+|===
+
+
+.AŞAMA 2 - Kavramsal Tasarım Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Kavramsal Tasarım Teslim Gereksinimleri - Aşama 2 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Proje Tasarım Süreçleri Kılavuzu*
+Genel proje kapsam tanımı, proje tasarım organizasyonu, iletişim ve bilgi paylaşım yönetimi, tasarım yönetimi, teslim gereksinimlerinin üretimi, geçerli şartnameler, tasarım sorumluluk matrisi, belge ve çizim isimlendirme ve numaralandırma standardı, belge ve pafta şablonları, CAD çizim standartları.
+||*Tasarım Kapsam Sunumu*
+||*Stratejik Tasarım Programı*
+||*Tasarım ve Koordinasyon Yönetim ve Raporlama Planı*
+||*BIM Uygulama Planı*
+||*Proje Risk Kaydı - tüm disiplinler için*
+
+2+|*Mimari* Kavramsal Tasarım Teslim Gereksinimleri - Aşama 2 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mimari Kavramsal Tasarım Raporu*
+Genel tasarım özeti, tasarım kriterleri, şartname ve standartlar, sürdürülebilirlik kriterleri, üç boyutlu iç ve dış render görseller.
+||*1:5000-1:1000 Masterplan*
+||*1:500 Kat Planları*
+||*1:500 Kesitler*
+||*1:500 Görünüşler*
+||*Mimari Keşif*
+||*BIM Modelleri LOD200-LOD100*
+
+2+|*Mühendislik* Kavramsal Tasarım Teslim Gereksinimleri - Aşama 2 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mühendislik Kavramsal Tasarım Raporları*
+Yapısal Sistemler, Mekanik Sistemler, Elektrik Elektronik Sistemler, Yol ve Altyapı, Özel Sistemler, Bilişim Sistemleri (IT), Yangın Güvenliği, Aydınlatma, Akustik Konfor tasarımı için esas alınan standardlar, kriterler, sistem çözümlerine yönelik fizibilite, alternatif cözümler, sistem seçimleri ve açıklamaları içeren tasarım raporları.
+
+2+|*Yol ve Altyapı* Kavramsal Tasarım Teslim Gereksinimleri - Aşama 2 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:1000-1:500 Genel Vaziyet Planı*
+Mevcut altyapı ile beraber öngörülen yeni yapımlar.
+
+2+|*Özel Sistemler* Kavramsal Tasarım Teslim Gereksinimleri - Aşama 2 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:500-1:200 Özel Sistemler Genel Vaziyet Planı*
+||*1:100-1:50 Özel Sistemler Plan ve Kesitler*
+
+|===
+
+
+.AŞAMA 3 - Ön Tasarım Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+
+2+|*Genel* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Proje Tasarım Süreçleri Kılavuzu - Güncelleme*
+Genel proje kapsam tanımı, proje tasarım organizasyonu, iletişim ve bilgi paylaşım yönetimi, tasarım yönetimi, teslim gereksinimlerinin üretimi, geçerli şartnameler, tasarım sorumluluk matrisi, belge ve çizim isimlendirme ve numaralandırma standardı, belge ve pafta şablonları, CAD çizim standartları.
+||*Tasarım Kapsam Sunumu - Güncelleme*
+||*Stratejik Tasarım Programı - Güncelleme*
+||*Tasarım, Koordinasyon Yönetim ve Raporlama Planı - Güncelleme*
+||*BIM Uygulama Planı - Güncelleme*
+||*Değer Mühendisliği ve Tasarım Optimizasyon Raporu*
+Kesin tasarım öncesinde tüm disiplinlerden gelen girdilerin değerlendirilip projeye değer katacak değişikliklerin özeti.
+||*İdare Onayları için Strateji ve Başvuru Programı*
+||*BIM Modelleri LOD300-LOD200*
+||*Proje Risk Kayıdı - Güncelleme*
+
+
+2+|*Mimari* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mimari Tasarım Raporu*
+Güncel genel tasarım özeti, tasarım kriterleri, şartname ve standartlar, sürdürülebilirlik kriterleri, üç boyutlu iç ve dış render görselleri.
+||*1:5000-1:1000 Masterplan - Güncelleme*
+||*1:500 Kat Planları - Güncelleme*
+||*1:500 Kesitler - Güncelleme*
+||*1:200 Bina Aksları*
+Harita çalşmalarından elde edilen yerel koordinatlarda tanımlanmış bina referans noktaları ve bunlara göre tanımlanmış akslar.
+||*1:200 Kat Planları*
+||*1:200 Çatı Planları*
+||*1:200 Kesitler*
+||*1:200 Görünüşler*
+||*1:50 Kısmi Görünüşler ve Sistem Detayları*
+Cephe tiplerinin ve kesitlerle yapıyla olan ilişkilerini gösteren detaylar.
+||*Cephe Ön Tasarım ve Strateji Raporu*
+||*1:200 Temel Su Yalıtımı Planları*
+Temel yalıtım sistemi, malzemeleri ve detay referanslarını gösteren planlar.
+||*1:10 Temel Su Yaltımı Tipik Detaylar*
+||*1:200 Islak Alanlar Yerleşim Planları*
+||*1:50 Islak Alanlar Tipik Detaylar*
+Islak alanlar için tipik ön detayları gösteren plan ve kesitler.
+||*1:200 Merdiven Yerleşim Planları*
+Merdivenlerin yerleşimleri ve detay referanslarını gösteren planlar.
+||*1:50 Merdiven Çekirdek Sistem Detayları*
+Yapısal tasarım koordinasyonu için merdiven çekirdeklerinin ön detay, plan ve kesitler.
+||*1:50 Betonarme Asansör Şaft Duvar Sistem Detayları*
+Yapısal tasarım koordinasyonu için betonarme asansör şaft duvar sistemlerinin ön detay, plan ve kesitler.
+||*1:50 Çelik Merdiven Sistem Detayları*
+Yapısal tasarım koordinasyonu için çelik merdivenlerin ön detay, plan ve kesitler.
+||*1:50 Çelik Asansör Şaft Sistem Detayları*
+Yapısal tasarım koordinasyonu için çelik asansör şaft sistemlerinin ön detay, plan ve kesitler.
+||*1:200 Yer Kaplama Planları*
+Yer kaplama tiplerini gösteren planlar.
+||*1:200 Tavan Planları*
+Tavan kaplama tiplerini gösteren planlar.
+||*1:200 Bölme Duvar Görünüşleri*
+Duvar kaplama tiplerini gösteren görünüşler.
+||*1:50 Bölme Duvarları Sistem Detayları*
+Bölme duvar tiplerinin prensip bağlantı ve ilişkilerini gösteren detay plan ve kesitler.
+||*1:200 Sabit ve Hareketli Mobilya Yerleşim Planları*
+||*Mobilya ve Armatür Ön Listesi*
+||*1:200 Özel Sistemler Yerleşim Planları*
+||*Mahal Alanları Hesaplamaları*
+||*Taslak Şartname*
+||*Ön Keşif*
+||*1:500 İnsan, Mal, Atık Akış Şema Planları*
+||*1:500 Mahal Kullanım Planları*
+||*Tasarım Referansları Bilgileri*
+İç ve dış tasarım öğelerinin referans bilgileri ve tasarım skeçleri.
+||*İç ve Dış Perspektif Renderlar (CGI)*
+
+
+2+|*Mimari Aydınlatma* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mimari Aydınlatma Tasarım Raporu*
+||*1:500 Genel Aydınlatma Vaziyet Planları*
+||*Ön Keşif*
+
+
+2+|*Akustik Konfor* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Akustik Konfor Tasarım Raporu*
+||*Mimari Tasarım İçin Gerekli Çizimler*
+||*Ön Keşif*
+
+
+2+|*Yangın Güvenliği* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yangın Güvenliği Tasarım Raporu*
+||*1:200 Yangın Güvenliği Strateji Planları*
+Yangın güvenliği gereksinimlerini mahal bazında gösteren planlar.
+
+
+2+|*Peyzaj* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:200 Peyzaj Planları*
+Peyzaj ve çevre düzenlenmesi unsurlarını mahal bazında gösteren planlar.
+||*1:50 Peyzaj Kesitleri ve Detayları*
+||*Ön Keşif*
+||*Taslak Şartname*
+
+
+2+|*Yol ve Altyapı* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:1000-1:500 Genel Vaziyet Planı - Güncelleme*
+Mevcut altyapı ile beraber öngörülen yeni yapımlar.
+||*1:500 Kazı ve Dolgu Planları ve Kesitler*
+||*Kazı ve Dolgu Hacim Tabloları*
+||*1:200 Yol Genel Vaziyet Planı*
+||*1:200 Yol Boy Kesitleri*
+||*1:200 Yol Tipik Kesitler*
+||*1:500 Kaplama ve Yüzey Su Tahliye Planları ve Gider Detayları*
+||*1:500 Aydınlatma Planları ve Detayları*
+||*1:500 Yer Aydınlatmaları Kanal ve Pit Detayları*
+||*1:500 Orta ve Alçak Gerilim Kablolama Kanal ve Pit Detayları*
+||*1:500 İletişim Kablolama Kanal ve Pit Detayları*
+||*1:500 Yangın Suyu Şebeke Planı ve Tipik Detaylar*
+||*1:500 Isıtma ve Soğutma Suyu Şebeke Planı ve Tipik Detaylar*
+||*1:500 Kullanım Suyu Şebeke Planı ve Tipik Detaylar*
+||*1:500 Gri Su Şebeke Planı ve Tipik Detaylar (gerekliyse)*
+||*1:500 Atık Su Şebeke Planları ve Tipik Detaylar*
+||*1:500 Yağmur Suyu Şebeke Planı ve Tipik Detaylar*
+||*1:500 Sulama Şebekesi Planı ve Tipik Detaylar*
+||*1:500 Güvenlik Tel Örgü Yerleşim Planı ve Tipik Detaylar*
+||*Ön Keşif*
+||*Taslak Şartname*
+||*Geoteknik ve Zemin Değerlendirme Raporu*
+||*Saha Topoğrafya Değerlendirme Raporu*
+||*Yeraltı Suyu Tahliye Şeması*
+||*Yeraltı Suyu Koruma veya Tahliye Detayları*
+
+
+2+|*Yapısal* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapısal Tasarım Raporu*
+Tasarım kriterleri, standartlar ve yapısal sistem tanımı.
+||*1:500 Yapısal Yük Planları*
+||*Geoteknik, Zemin ve Temel Sistemi Değerlendirme Raporu*
+||*Kazı ve İksa İşleri için Uygulama Planı*
+||*1:200 Temel Kalıp Planları, Kesitler ve Tipik Detaylar*
+||*1:200 Zemin Katı Döşemesi Kalp Planları, Kesitler ve Tipik Detaylar*
+||*1:200 Kat Döşemeleri Kalp Planları, Kesitler ve Tipik Detaylar*
+||*1:200 Kolon ve Perde Duvarlar Yerleşim Planları, Kesitler ve Detaylar*
+||*1:50 Betonarme Merdiven Çekirdek Kalıp Planları, Kesitler ve Görünüşler*
+||*1:50 Betonarme Merdiven Donatı Detayları*
+||*1:50 Betonarme Asansör Şaft Duvar Kalıp Planları, Kesitler ve Görünüşler*
+||*1:200 Çatı Plan, Kesit, Görünüşler ve Detaylar*
+||*1:200 Cephe Çelikleri Planları, Kesitler ve Görünüşler*
+||*1:50 Çelik Merdiven Çekirdek Planları, Kesitler, Görünüşler ve Detaylar*
+||*1:50 Asansör Çelik Şaft Duvar Planları, Kesitler, Görünüşler ve Detaylar*
+||*1:100 İkincil Çelik Yapıların Planları, Kesitler, Görünüşler ve Detaylar*
+||*Mevcut Yapılara Geçici Koruma ve Destek Gereksinimleri ile Yapım Metodolojisi*
+||*Yıkım İşleri Gereksinimleri ve Şartname*
+||*Ön Donatı Metraj*
+||*Ön Çelik Metraj*
+||*Taslak Şartname*
+
+
+2+|*Mekanik Sistemler* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mekanik Tasarım Raporu*
+Tasarım kriterleri, standartlar ve mekanik sistemleri tanımı.
+||*1:1000 Mekanik Tesisatı Vaziyet Planları*
+||*1:1000 Mekanik Tesisatı Vaziyet Planları*
+||*1:500 Isıtma Soğutma Tesisatı Planları*
+||*1:500 Havalandırma Tesisatı Planları*
+||*1:500 Duman Kontrol ve Tahliye Sistemi Planları*
+||*1:500 Sıcak ve Soğuk Temiz Kullanım Suyu Tesisatı Planları*
+||*1:500 Atık Su Tesisatı Planları*
+||*1:500 Yangın Suyu Tesisatı Planları*
+||*1:500 Yağmur Suyu Tesisatı Planları*
+||*Isıtma Soğutma Tesisatı Sistem Şemaları*
+||*Havalandırma Tesisatı Sistem Şemaları*
+||*Duman Kontrol ve Tahliye Sistem Şemaları*
+||*Sıcak ve Soğuk Temiz Kullanım Suyu Tesisatı Sistem Şemaları*
+||*Atık Su Tesisatı Sistem Şemaları*
+||*Yangın Suyu Tesisatı Sistem Şemaları*
+||*Yangın Suyu Depo Hesapları*
+||*1:200 Enerji Merkezi Ekip Yerleşim Planları ve Kesitler*
+||*Islak Alanlar Ekipman ve Donanım Listeleri*
+||*Ön Keşif*
+||*Taslak Şartname*
+||*Ana Ekipman Listeleri*
+||*Enerji Merkezi ve Tesisat Galerisi Tasarım Kriterleri*
+||*Mevcut Ekipman Kapasite Kontrolü ve İlave Tesis Entegrasyon Planı*
+||*Mekanik Ekipmanlar Elektrik Güçleri*
+
+
+2+|*Elektrik ve Elektronik Sistemler* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Elektrik ve Elektronik Sistemler Tasarım Raporu*
+Tasarım kriterleri, standartlar ve elektrik elektronik sistemleri tanımı, dağıtım sistemi etüdleri.
+||*Orta Gerilim Tesisatı Şemaları*
+||*Alçak Gerilim Tesisatı Ön Şemaları*
+||*Topraklama Tesisatı Sistem Şemaları*
+||*Enerji İzleme ve Faturalandırma Sistemi Ön Şemaları*
+||*Aydınlatma Otomasyon Sistemi Ön Şemaları*
+Panel açılımları ve sistem şemaları.
+||*Yangın Algılama ve İhbar (Alarm) Sistemi Tek Hat Şemaları*
+||*Kapalı Devre TV Sistemi (CCTV) Tek Hat Şemaları*
+||*Kartlı Geçiş Sistemi Tek Hat Şemaları*
+||*Master Clock Sistemi Tek Hat Şemaları*
+||*Güvenlik Seslendirme ve Acil Anons Tek Hat Şemaları*
+||*1:1000 Elektrik ve Elektronik Tesisatı Vaziyet Planları*
+||*1:500 Orta ve Alçak Gerilim Dağıtım Planları*
+||*1:200 Teknik Oda Yerleşim Planları*
+Alçak gerilim, UPS, ULV vb. dağıtım odaları.
+||*1:200 Topraklama ve Yıldırımdan Korunma Sistem Plan ve Detayları*
+Yüzeysel ve derin topraklayıcı planları, korunma topraklaması ve potansiyel dengeleme planları, sistem şeması.
+||*1:200 Dış Korunma Sistem Plan ve Şemaları*
+Çatı, iniş iletkenleri, temel topraklayıcı planları.
+||*1:200 İç Korunma Sistem Plan ve Şemaları*
+Parafudr, aşırı gerilim sönümleyici cihazları ile güç dağıtım ve panoları belirten prensip sistem planlar ve tek hat şeması.
+||*1:200 Kablo Tava Plan and Detayları*
+||*1:200 Bina Otomasyon (BMS) ve SCADA Master Planı ve Şemaları*
+Nokta cetvelleri ve saha panellerin (DDC) yerleşim planları.
+||*1:200 Aydınlatma Plan ve Detayları*
+İç, dış, BoH ve FoH alanları için planlar ve otomasyon modülleri dahil tek hat şeması.
+||*1:200 Aydınlatma Kontrol Sistemleri Planları*
+||*1:200 Orta Gerilim Dağıtım Planları*
+Ana dağıtım merkezi ve trafo merkezlerinin, şalter eleman, hücre sistem, trafo alçak gerilim ana tabloları, koruma-ölçü-kumanda elemanları, orta gerilim akü-redresör grubu yerleşimleri.
+||*1:200 Alçak Gerilim Dağıtım Planları*
+Ara ve alt panel yerleşimi, kablo yolları ve yerleşimi, tesisat eleman ve alıcıların yerleşim planları.
+||*1:200 Reaktif Güç Kompanzasyon Tesisatı Planları*
+Sistem yerleşim planları, bağlantılar ve ön şema.
+||*1:200 Haberleşme Tesisatı Planları*
+Ana dağıtım planları; tesistat planları; kablo taşıma yolları; kablo yolu, cihaz özel nokta ve bağlantı detayları.
+||*1:200 Yangın Algılama ve İhbar (Alarm) Tesisatı Sistem Planları*
+Ana dağıtım planları; tesistat planları; sistem şemaları; kablo taşıma yolları; kablo yolu, cihaz özel nokta ve bağlantı detayları.
+||*1:200 Güvenlik Seslendirme ve Acil Anons, Kapalı Devre TV Sistemi (CCTV), Kartlı Geçiş Tesisat ve Master Clock Sistemleri Tesistat Planları*
+Ana dağıtım planları; tesisat planları; sistem şemaları; kablo taşıma yolları; kablo yolu, cihaz özel nokta ve bağlantı detayları.
+||*1:200 Güç Yönetimi Sistemi Plan ve Şemaları*
+Prosesör ve girdi-çıktı modülleri yerleşim planları.
+||*1:200 Yedek Güç Tesista Plan ve Detayları*
+Transfer sistemi ön şeması, dağıtım ve transfer panelleri yerleşimleri, kablo yolları, jenaratör ve akü yerleşim planları.
+||*1:200 Kesintisiz Güç Kaynağı Tesisatı Planı ve Şeması*
+||*1:25, 1:50, 1:100 Prensip Detaylar*
+||*Ön Keşif*
+||*Taslak Şartname*
+
+
+2+|*Bilişim Sistemleri* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Bilişim Sistemleri Tasarım Raporu*
+||*1:500 Saha İletişim Kablo Kanal ve Pit Detayları*
+||*1:200 Aktif Ağ Şeması*
+||*1:200 Kablosuz Ağ  Şeması*
+||*1:200 Yapısal Kablolama Sistemi Şeması*
+||*1:200 Teknik Odaların Tipik Plan, Kesit ve Görünüşleri*
+||*Ön Keşif*
+||*Taslak Şartname*
+
+
+2+|*Asansör ve Yürüyen Merdivenler* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Asansör ve Yürüyen Merdivenler Tasarım Raporu*
+||*1:200 Asansör ve Yürüyen Merdivenler Yerleşim Planları*
+Tüm asansör ve yürüyen merdivenler için detay referansları belirten planlar.
+||*1:50 Asansör Sistemleri Detayları*
+Yapısal tasarım koordinasyonu için gerekli tüm asansör kabin ön detay, plan ve kesitler.
+||*1:50 Yürüyen Merdiven Sistem Detayları*
+Yapısal tasarım koordinasyonu için gerekli tüm yürüyen merdiven ön detay, plan ve kesitler.
+||*Asansör ve Yürüyen Merdivenler Tablosu*
+||*Ön Keşif*
+||*Taslak Şartname*
+
+
+2+|*Özel Sistemler* Ön Tasarım Teslim Gereksinimleri - Aşama 3 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:500-1:200 Özel Sistemler Genel Vaziyet Planı - Güncelleme*
+||*1:100-1:50 Özel Sistemler Plan ve Kesitler - Güncelleme*
+||*1:50 Sistem Detayları*
+||*Ön Keşif*
+||*Taslak Şartname*
+
+
+|===
+
+.AŞAMA 4 - Kesin Tasarım Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Proje Tasarım Süreçleri Kılavuzu - Güncelleme*
+Genel proje kapsam tanımı, proje tasarım organizasyonu, iletişim ve bilgi paylaşım yönetimi, tasarım yönetimi, teslim gereksinimlerinin üretimi, geçerli şartnameler, tasarım sorumluluk matrisi, belge ve çizim isimlendirme ve numaralandırma standardı, belge ve pafta şablonları, CAD çizim standartları.
+||*Tasarım Kapsam Sunumu - Güncelleme*
+||*Stratejik Tasarım Programı - Güncelleme*
+||*Tasarım, Koordinasyon Yönetim ve Raporlama Planı - Güncelleme*
+||*BIM Uygulama Planı - Güncelleme*
+||*Değer Mühendisliği ve Tasarım Optimizasyon Raporu - Güncelleme*
+Kesin tasarım öncesinde tüm disiplinlerden gelen girdilerin değerlendirilip projeye değer katacak değişikliklerin özeti.
+||*İdare Onayları için Strateji ve Başvuru Program - Güncelleme*
+||*BIM Modelleri LOD400-LOD300 - Güncelleme*
+||*Proje Risk Kayıdı - Güncelleme*
+
+
+2+|*Mimari* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mimari Tasarım Raporu - Güncelleme*
+Güncel genel tasarım özeti, tasarım kriterleri, şartname ve standartlar, sürdürülebilirlik kriterleri, üç boyutlu iç ve dış render görseller.
+||*1:5000-1:1000 Masterplan - Güncelleme*
+||*1:500 Kat Planları - Güncelleme*
+||*1:500 Kesitler - Güncelleme*
+||*1:200 Bina Aksları - Güncelleme*
+Harita çalşmalarından elde edilen yerel koordinatlarda tanımlanmış bina referans noktaları ve bunlara göre tanımlanmış akslar.
+||*1:200 Genel Bina Vaziyet Planları*
+Diğer disiplinlerle koordinasyona esas alınması için bina kat ve çatı planları.
+||*1:200 Kat Planları - Güncelleme*
+||*1:100 Kat Planları*
+Kaplama malzemeleri, detay refereansları ve duvar yerleşimleriyle boyutlarını gösteren planlar.
+||*1:10 Tip Duvar Detay Görünüşleri*
+İç ve dış duvar tiplerinin detaylarını gösteren görünüşler.
+||*1:200 Çatı Planları - Güncelleme*
+||*1:100 Çatı Planları*
+Çatı eğim, oluk, gider, parapet, ışıklık, derz çizgilerini gösteren planlar.
+||*1:10 Çatı Detayları*
+||*1:200 Kesitler - Güncelleme*
+İki aks yönününden gerekli tüm görünüşler.
+||*1:200 Görünüşler - Güncelleme*
+||*1:50 Kısmi Görünüşler ve Sistem Detayları*
+Cephe tipleri için plan ve kesitler üzerinden yapıyla olan ilişki detayları.
+||*Cephe Ön Tasarım ve Strateji Raporu - Güncelleme*
+||*1:200 Temel Su Yalıtımı Planları - Güncelleme*
+Temel yalıtım sistemi, malzemeleri ve detay referanslarını gösteren planlar.
+||*1:10 Temel Su Yaltımı Tipik Detaylar - Güncelleme*
+||*1:200 Islak Alanlar Yerleşim Planları - Güncelleme*
+||*1:50 Islak Alanlar Tipik Detaylar - Güncelleme*
+Islak alanlar için tipik ön detayları gösteren plan ve kesitler.
+||*1:200 Merdivenler Yerleşim Planları - Güncelleme*
+Merdivenlerin yerleşimleri ve detay referanslarını gösteren planlar.
+||*1:50 Merdiven Çekirdek Sistem Detayları - Güncelleme*
+Yapısal tasarım koordinasyonu için merdiven çekirdeklerinin detay, plan ve kesitleri.
+||*1:50 Betonarme Asansör Şaft Duvar Sistem Detayları - Güncelleme*
+Yapısal tasarım koordinasyonu için betonarme asansör şaft duvar sisteminin detay, plan ve kesitleri.
+||*1:50 Çelik Merdiven Sistem Detayları - Güncelleme*
+Yapısal tasarım koordinasyonu için çelik merdiven detay, plan ve kesitleri.
+||*1:50 Çelik Asansör Şaft Sistem Detayları - Güncelleme*
+Yapısal tasarım koordinasyonu için çelik asansör şaft sistem ön detay, plan ve kesitleri.
+||*1:200 Yer Kaplama Planları - Güncelleme*
+Yer kaplama tiplerini gösteren planlar.
+||*1:100 Yer Kaplama Planları*
+||*1:10 Yer Kaplama Detayları*
+||*1:200 Tavan Planları - Güncelleme*
+Tavan kaplama tiplerini gösteren planlar.
+||*1:100 Tavan Planları*
+||*1:10 Tavan Detayları*
+||*1:200 Bölme Duvarları Görünüşleri - Güncelleme*
+Duvar kaplama tiplerini gösteren görünüşler.
+||*1:50 Bölme Duvarları Sistem Detayları - Güncelleme*
+Bölme duvar tiplerinin prensip bağlantı ve ilişkilerini gösteren detay, plan ve kesitler.
+||*1:5 Bölme Duvarları Detay Görünüşleri*
+||*1:200 Kapı Yerleşim Planları*
+İç ve dış kapı tiplerini gösteren çizimler.
+||*1:20 Kapı Detayları*
+İç ve dış kapı tiplerinin görünüş ve kesit detaylarını gösteren çizimler.
+||*Kapı ve Donanım Listesi*
+||*1:200 Pencere Yerleşim Planları*
+İç ve dış pencere tiplerini gösteren çizimler.
+||*1:20 Pencere Detayları*
+Tüm pencere tiplerinin görünüş ve kesit detaylarını gösteren çizimler.
+||*Pencere ve Donanım Listesi*
+||*1:200 Bölme Cam Duvar ve Aksam Planları*
+Malzeme, detay referanslarını, yerleşimlerini ve boyutlarını gösteren planlar.
+||*1:10 Bölme Cam Duvar Detayları*
+Bölme cam duvar tiplerinin görünüş ve kesit detaylarını gösteren çizimler.
+||*1:10 Korkuluk Detayları*
+Korkuluk tiplerinin görünüş ve kesit detaylarını gösteren çizimler.
+||*1:10 Koruma Bariyerleri Detayları*
+Koruma bariyer tiplerinin görünüş ve kesit detaylarını gösteren çizimler.
+||*1:200 Süpürgelik Planları*
+Malzeme, detay referanslarını, yerleşimlerini ve boyutlarını gösteren planlar.
+||*1:10 Süpürgelik Detayları*
+||*1:200 Kolon Kaplama Planları*
+Malzeme, detay referanslarını, yerleşimlerini ve boyutlarını gösteren planlar.
+||*1:10 Kolon Kaplama Detayları*
+Kolon kaplama tiplerinin görünüş ve kesit detaylarını gösteren çizimler.
+||*1:200 Sabit ve Hareketli Mobilya Yerleşim Planları - Güncelleme*
+||*1:20 Sabit ve Hareketli Mobilya Detayları*
+||*Mobilya ve Armatür Listesi - Güncelleme*
+||*1:200 Genişleme Derz Planı*
+Malzeme, detay referanslarını, çatı ve duvar yerleşimleriyle boyutlarını belirten planlar.
+||*1:5 Genişleme Derz Detayları*
+||*1:200 Özel Sistemler Yerleşim Planları*
+||*Mahal Alanları Hesaplamaları*
+||*Taslak Şartname*
+||*Metraj*
+||*1:500 İnsan, Mal, Atık vb. Akış Şema Planları - Güncelleme*
+||*1:500 Mahal Kullanım Planları - Güncelleme*
+||*Tasarım Referansları Bilgileri - Güncelleme*
+İç ve dış tasarım öğelerinin referans bilgileri ve tasarım skeçleri.
+||*İç ve Dış Perspektif Renderlar (CGI) - Güncelleme*
+
+
+2+|*Mimari Aydınlatma* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mimari Aydınlatma Tasarım Raporu - Güncelleme*
+||*1:500 Genel Aydınlatma Vaziyet Planları - Güncelleme*
+||*Metraj*
+
+
+2+|*Akustik Konfor* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Akustik Konfor Tasarım Raporu - Güncelleme*
+||*Mimari Tasarım İçin Gerekli Çizimler - Güncelleme*
+||*Metraj*
+
+
+2+|*Yangın Güvenliği* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yangın Güvenliği Tasarım Raporu - Güncelleme*
+||*1:200 Yangın Güvenliği Strateji Planları - Güncelleme*
+Yangın güvenliği gereksinimlerini mahal bazında tanımlayan plan çizimleri.
+||*1:200 Yangın Kaçış Planları*
+||*1:100 Yangın Güvenliği Strateji Planları*
+Yangın güvenliği tasarım gereksinimlerini mahal bazında tanımlayan plan çizimleri.
+||*1:20 Yangın Dolapları Detayları*
+||*Metraj*
+
+
+2+|*Peyzaj* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:200 Peyzaj Planları - Güncelleme*
+Peyzaj ve çevre düzenlenmesi unsurlarını mahal bazında tanımlayan plan çizimleri.
+||*1:100 Peyzaj Planları*
+||*1:50 Peyzaj Kesitleri ve Detayları - Güncelleme*
+||*Metraj*
+||*Teknik Şartname*
+
+
+2+|*Yol ve Altyapı* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:000-1:500 Genel Vaziyet Planı - Güncelleme*
+Mevcut altyapı ile beraber öngörülen yeni yapımlar.
+||*1:500 Kazı ve Dolgu Planları ve Kesitler - Güncelleme*
+||*1:200 Kazı ve Dolgu Planları ve Kesitler*
+||*Kazı ve Dolgu Hacim Tabloları - Güncelleme*
+||*1:200 Yol Genel Vaziyet Planı - Güncelleme*
+||*1:200 Yol Boy Kesitleri - Güncelleme*
+||*1:200 Yol Tipik Kesitleri - Güncelleme*
+||*1:20 Tipik Yol ve Kaldırım Detayları*
+||*1:500-1:200 Kaplama Markalama Planları ve Detayları*
+||*1:500 Kaplama ve Yüzey Su Tahliye Planları ve Gider Detayları - Güncelleme*
+||*1:500 Aydınlatma Planları ve Detayları - Güncelleme*
+||*1:500 Yer Aydınlatmaları Kanal ve Pit Detayları - Güncelleme*
+||*1:500 Orta ve Alçak Gerilim Kablolama Kanal ve Pit Detayları - Güncelleme*
+||*1:500 İletişim Kablolama Kanal ve Pit Detayları - Güncelleme*
+||*1:500 Yangın Suyu Şebeke Planı ve Tipik Detaylar - Güncelleme*
+||*1:500 Isıtma ve Soğutma Suyu Şebeke Planı ve Tipik Detaylar - Güncelleme*
+||*1:500 Kullanım Suyu Şebeke Planı ve Tipik Detaylar - Güncelleme*
+||*1:500 Gri Su Şebeke Planı ve Tipik Detaylar - Güncelleme*
+||*1:500 Atık Su Şebeke Planları ve Tipik Detaylar - Güncelleme*
+||*1:500 Yağmur Suyu Şebeke Planı ve Tipik Detaylar - Güncelleme*
+||*1:500 Sulama Şebekesi Planı ve Tipik Detaylar - Güncelleme*
+||*1:500 Güvenlik Tel Örgü Yerleşim Planı ve Tipik Detaylar - Güncelleme*
+||*1:200-1:100 Yön, İşaret ve Yer Çizgileri Planları*
+||*Diğer Kalıp ve Donatı Detay Çizimleri*
+Manhole, pit, kontrol bacası, menfez, kanal vb.
+||*İstinat Duvarları Kalıp Planları, Kesitler, ve Görünüşler*
+||*İstinat Duvarı Donatı Detayları*
+||*Metraj*
+||*Taslak Şartname*
+||*Geoteknik ve Zemin Değerlendirme Raporu - Güncelleme*
+||*Saha Topoğrafya Değerlendirme Raporu - Güncelleme*
+||*Yeraltı Suyu Tahliye Şeması - Güncelleme*
+||*Yeraltı Suyu Koruma veya Tahliye Detayları - Güncelleme*
+||*Teknik Şartname*
+
+
+2+|*Yapısal* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapısal Tasarım Raporu - Güncelleme*
+Tasarım kriterleri, standartlar ve yapısal sistemlerin hesapları.
+||*1:500 Yapısal Yük Planları - Güncelleme*
+||*Geoteknik, Zemin ve Temel Sistemi Değerlendirme Raporu - Güncelleme*
+||*Kazı ve İksa İşleri için Uygulama Planı - Güncelleme*
+||*1:200 Temel Kalıp Planları, Kesitler ve Tipik Detaylar - Güncelleme*
+||*1:100 Temel Kalıp Planları, Kesitler ve Tipik Detaylar*
+||*1:100 Temel Donatı Yerleşim Planları ve Detaylar*
+||*1:200 Zemin Kat Döşemesi Kalıp Planları, Kesitler ve Tipik Detaylar - Güncelleme*
+||*1:100 Zemin Kat Döşemesi Kalıp Planları, Kesitler ve Tipik Detaylar*
+||*1:200 Kat Döşemeleri Kalıp Planları, Kesitler ve Tipik Detaylar - Güncelleme*
+||*1:100 Kat Döşemeleri Kalıp Planları, Kesitler ve Tipik Detaylar*
+||*1:100 Kiriş Donatı Yerleşim ve Detaylar*
+||*1:200 Kolon ve Perde Duvarlar Yerleşim Planları, Kesitler ve Detaylar - Güncelleme*
+||*1:100 Kolon ve Perde Duvarlar Yerleşim Planları, Kesitler ve Detaylar*
+||*1:100 Kolon ve Perde Duvarlar Donatı Yerleşim Planları ve Detaylar*
+||*1:50 Betonarme Merdiven Çekirdek Kalıp Planları, Kesitler ve Görünüşler - Güncelleme*
+||*1:50 Betonarme Merdiven Donatı Detayları - Güncelleme*
+||*1:50 Betonarme Asansör Şaft Duvar Kalıp Planları, Kesitler ve Görünüşler - Güncelleme*
+||*1:50 Betonarme Asansör Şaft Donatı Detayları - Güncelleme*
+||*1:200 Çatı Plan, Kesit, Görünüşler ve Detayları - Güncelleme*
+||*1:200 Çatı Ankraj Yerleşim Planları ve Detaylar*
+||*Çatı Çelik Yapısal Sistemi 3B Modeli*
+||*1:200 Cephe Çelikleri Planları, Kesitler ve Görünüşler - Güncelleme*
+||*1:200 Cephe Ankraj Yerleşim Planları ve Detaylar*
+||*Cephe Çelik Yapısal Sistemi 3b Modeli*
+||*1:50 Çelik Merdiven Çekirdek Planları, Kesitler, Görünüşler ve Detayları - Güncelleme*
+||*1:50 Çelik Merdiven Çekirdek Ankraj Yerleşim Planları ve Detaylar*
+||*Çelik Merdiven Yapısal Sistemi 3b Modeli*
+||*1:50 Asansör Çelik Şaft Duvar Planları, Kesitler, Görünüşler ve Detaylar*
+||*1:50 Asansör Çelik Şaft Duvar Ankraj Yerleşim Planları ve Detaylar*
+||*Asansör Çelik Şaft Duvar Yapısal Sistemi 3b Modeli*
+||*1:100 İkinci Çelik Yapıların Planları, Kesitler, Görünüşler ve Detaylar - Güncelleme*
+||*1:100 İkinci Çelik Yapıların Ankraj Yerleşim Planları ve Detaylar*
+||*İkinci Çelik Yapıların 3b Modeli*
+||*Mevcut Yapılara Geçici Koruma ve Destek Gereksinimleri ile Metodoloji - Güncelleme*
+||*Yıkım İşleri Gereksinimleri ve Şartname - Güncelleme*
+||*Dİğer İkincil Çelik İşleri için Yapısal Çelik Detayları*
+||*Donatı Metraj Tabloları*
+||*Çelik Metraj*
+||*Teknik Şartname*
+
+
+2+|*Mekanik Sistemler* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Mekanik Tasarım Raporu - Güncelleme*
+Tasarım kriterleri, standartlar ve mekanik sistemlerin hesapları.
+||*1:1000 Mekanik Tesisat Vaziyet Planları - Güncelleme*
+||*1:500 Isıtma Soğutma Tesisatı Planları - Güncelleme*
+||*1:500 Havalandırma Tesisatı Planları - Güncelleme*
+||*1:500 Duman Kontrol ve Tahliye Sistemi Planları - Güncelleme*
+||*1:500 Sıcak ve Soğuk Temiz Kullanım Suyu Tesisatı Planları - Güncelleme*
+||*1:500 Atık Su Tesisatı Planları - Güncelleme*
+||*1:500 Yangın Suyu Tesisatı Planları - Güncelleme*
+||*1:500 Yağmur Suyu Tesisatı Planları - Güncelleme*
+||*1:200 Havalandırma Kanal Planları*
+||*1:200 Havalandırma Tesisatı Planları*
+||*1:200 Duman Kontrol ve Tahliye Sistemi Planları*
+||*1:200 Sıcak ve Soğuk Temiz Kullanım Suyu Tesisatı Planları*
+||*1:200 Atık Su Tesisatı Planları*
+||*1:200 Yangın Suyu Tesisatı Planları*
+||*1:200 Yağmur Suyu Tesisatı Planları*
+||*1:100 Mekanik Tesisat Kat Planları*
+||*1:100 Mekanik Hacimler Yerleşimi*
+||*1:100 Isıtma Soğutma Tesisatı Planları ve Kolon Şemaları*
+||*1:100 Havalandırma Tesisatı Planları ve Kolon Şeması*
+||*1:100 Duman Kontrol ve Tahliye Sistemi Planları ve Kolon Şemaları*
+||*1:100 Sıcak ve Soğuk Temiz Su Planları ve Kolon Şemaları*
+||*1:100 Atık Su Tesisatı Plan ve Kolon Şemaları*
+||*1:100 Yangın Tesisatı Plan ve Kolon Şemaları*
+||*1:100 Yağmur Suyu Tesisatı Plan ve Kolon Şemaları*
+||*1:100 Yangın Basınçlandırma Sistemleri Plan ve Kolon Şemaları*
+||*1:100 Enerji Merkezi ile Tesisat Galerisi Yerleşimi ve Kesitleri*
+||*1:100 Bina Otomasyon Sistemi (BMS) Planları, Şemaları ve Nokta Listesi*
+||*1:20 Şaft Kesitleri ve Delik Yerleri*
+||*1:20-1:10 Ekipman Montaj ve Sismik Bağlantı Detayları*
+||*1:20-1:10 Boru, Kanal vb. Montaj Detayları*
+||*Isıtma Soğutma Tesisatı Sistem Şemaları - Güncelleme*
+||*Havalandırma Tesisatı Sistem Şemaları - Güncelleme*
+||*Duman Kontrol ve Tahliye Sistem Şemaları - Güncelleme*
+||*Sıcak ve Soğuk Temiz Kullanım Suyu Tesisatı Sistem Şemaları - Güncelleme*
+||*Atık Su Tesisatı Sistem Şemaları - Güncelleme*
+||*Yangın Suyu Tesisatı Sistem Şemaları - Güncelleme*
+||*Yangın Suyu Depo Hesapları - Güncelleme*
+||*Islak Alanlar Ekipman ve Donanım Listeleri - Güncelleme*
+||*Bina Otomasyon Sistemi Detay ve Nokta Listesi*
+||*Metraj*
+||*Taslak Şartname*
+||*Ana Ekipman Listeleri - Güncelleme*
+||*Enerji Merkezi ve Tesisat Galerisi Tasarım Kriterleri*
+||*Mekanik Ekipmanlar Elektrik Güçleri - Güncelleme*
+||*İdare Tarafından Talep Edilen ve Ruhsat Alınması için Tüm Hesaplar, Raporlar ve Keşif Listeleri*
+
+2+|*Elektrik ve Elektronik Sistemler* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Elektrik ve Elektronil Sistemler Tasarım Raporu*
+Tasarım kriterleri, standartlar ve eletrik elektronik sistemleri tanımı, dağıtım sistemlerinin hesapları.
+||*Orta Gerilim Tesisatı Şemasları - Güncelleme*
+||*Alçak Gerilim Tesisatı Şemasları - Güncelleme*
+||*Topraklama Tesisatı Sistem Şemaları - Güncelleme*
+||*Enerji İzleme ve Faturalandırma Sistemi Şemaları - Güncelleme*
+||*Aydınlatma Otomasyon Sistemi Şemaları - Güncelleme*
+||*Yangın Algılama ve İhbar (Alarm) Sistemi Tek Hat Şema - Güncelleme*
+||*Kapalı Devre TV Sistemi (CCTV) Tek Hat Şemaları - Güncelleme*
+||*Kartlı Geçiş Sistemi Tek Hat Şemaları - Güncelleme*
+||*Master Clock Sistemi Tek Hat Şemaları - Güncelleme*
+||*Güvenlik Seslendirme ve Acil Anons Tek Hat Şemaları - Güncelleme*
+||*1:1000 Elektrik ve Elektronik Tesisatı Vaziyet Planları - Güncelleme*
+||*1:500 Orta ve Alçak Gerilim Dağıtım Planları - Güncelleme*
+||*1:200 Teknik Oda Yerleşim Planları - Güncelleme*
+||*1:200-1:100-1:25 Topraklama ve Yıldırımdan Korunma Sistem Plan ve Detayları - Güncelleme*
+||*1:200-1:100-1:25 Dış Korunma Sistem Plan ve Şemaları - Güncelleme*
+||*1:200-1:100-1:25 İç Korunma Sistem Plan ve Şemaları - Güncelleme*
+||*1:200 Kablo Tava Plan ve Detayları - Güncelleme*
+||*1:200 Bina Otomasyon (BMS) ve SCADA Master Planı ve Şemaları - Güncelleme*
+||*1:200 Aydınlatma Plan ve Detayları - Güncelleme*
+||*1:200 Aydınlatma Kontrol Sistemleri Planları*
+||*1:200-1:100-1:50 Orta Gerilim Dağıtım Planları - Güncelleme*
+||*1:200-1:100-1:50 Alçak Gerilim Dağıtım Planları - Güncelleme*
+||*1:200-1:100-1:50 Reaktif Güç Kompanzasyon Tesisatı Planları - Güncelleme*
+||*1:200 Haberleşme Tesisatı Planları - Güncelleme*
+||*1:200-1:100-1:50 Yangın Algılama ve İhbar (Alarm) Tesisatı Sistem Planları - Güncelleme*
+||*1:200-1:100-1:50 Güvenlik Seslendirme ve Acil Anons, Kapalı Devre TV Sistemi (CCTV), Kartlı Geçiş Tesisat ve Master Clock Sistemleri Tesisat Planları*
+||*1:200 Güç Yönetimi Sistemi Plan ve Şemaları - Güncelleme*
+||*1:200 Yedek Güç Tesisatı Plan ve Detayları - Güncelleme*
+||*1:200 Kesintisiz Güç Kaynağı Tesisatı Planı ve Şemaları - Güncelleme*
+||*1:i100-1:500-1:25 Prensip Detaylar*
+||*Metraj*
+||*Teknik Şartname*
+
+
+2+|*Bilişim Sistemleri* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Bilişim Sistemleri Tasarım Raporu - Güncelleme*
+||*1:500 Saha İletişim Kablo Kanal ve Pit Detayları - Güncelleme*
+||*1:200 Aktif Ağ Şeması - Güncelleme*
+||*1:200 Kablosuz Ağ Şeması - Güncelleme*
+||*1:200 Yapısal Kablolama Sistemi Şeması - Güncelleme*
+||*1:200 Teknik Odaların Tipik Plan, Kesit ve Görünüşleri - Güncelleme*
+||*1:200 Kablosuz Ağ Plan ve Detayları*
+||*1:200 IT Sistemi Yatay Kablolama Plan ve Detayları*
+||*1:200 IT Sistemi Fiber Backbone Dağıtım Plan ve Detayları*
+||*1:200 IT Teknik Odaları Plan ve Detaylar*
+||*1:100-1:50-1:25 Tipik Sistem Detayları*
+||*Metraj*
+||*Teknik Şartname*
+
+
+2+|*Asansör ve Yürüyen Merdivenler* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Asansör ve Yürüyen Merdivenler Tasarım Raporu - Güncelleme*
+||*1:200 Asansör ve Yürüyen Merdivenler Yerleşim Planları - Güncelleme*
+||*1:50 Asansör Sistemleri Detayları - Güncelleme*
+||*1:50 Yürüyen Merdiven Sistem Detayları - Güncelleme*
+||*Asansör ve Yürüyen Merdivenler Tablosu - Güncelleme*
+||*Metraj*
+||*Teknik Şartname*
+
+
+2+|*Özel Sistemler* Kesin Tasarım Teslim Gereksinimleri - Aşama 4 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*1:500-1:200 Özel Sistemler Genel Vaziyet Planı - Güncelleme*
+||*1:100-1:50 Özel Sistemler Plan ve Kesitler - Güncelleme*
+||*1:50 Sistem Detayları - Güncelleme*
+||*Metraj*
+||*Teknik Şartname*
+
+|===
+
+
+.AŞAMA 5 - Uygulama Tasarımı Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Proje Tasarım Süreçleri Kılavuzu - Güncelleme*
+||*Tasarım Kapsam Sunumu - Güncelleme*
+||*BIM Uygulama Planı - Güncelleme*
+||*BIM Modelleri LOD400-LOD300 - Güncelleme*
+
+
+2+|*Mimari* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Mimari Aydınlatma* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Akustik Konfor* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yangın Güvenliği* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yol ve Altyapı* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yapısal* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Mekanik Sistemler* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Elektrik ve Elektronik Sistemler* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Bilişim Sistemler* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Asansör ve Yürüyen Merdivenler* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Özel Sistemler* Uygulama Tasarımı Teslim Gereksinimleri - Aşama 5 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Kesin tasarım aşamasında hazırlanan tüm çizimler ve belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+|===
+
+
+.AŞAMA 6 - İmalat Tasarımı Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Proje Kapsam ve Metodoloji Sunumu - Yükleniciler*
+||*BIM Uygulama Planı - Yükleniciler*
+||*BIM Modelleri LOD400-LOD300 - Koordine Edilmiş Proje Bilgi Modeli (PIM)*
+
+
+2+|*Mimari* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Mimari Aydınlatma* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Akustik Konfor* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yangın Güvenliği* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yol ve Altyapı* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yapısal* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+||*Betonarme Eleman Kalıp Planları*
+||*Betonarme Eleman Donatı Detay Çizimleri*
+||*Betonarme Eleman Donatı Tabloları - Metraj*
+||*Çelik Yapı 3b Modeller*
+||*Çelik Eleman Tabloları - Metraj*
+
+
+2+|*Mekanik Sistemler* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Elektrik ve Elektronik Sistemler* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Bilişim Sistemler* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Asansör ve Yürüyen Merdivenler* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ile tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Özel Sistemler* İmalat Tasarımı Teslim Gereksinimleri - Aşama 6 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Uygulama tasarımı aşamasında hazırlanan tüm çizimler sahada imalata yönelik diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra, satın alma süreçleri ve tedarik paketleriyle uyumlu bir şekilde derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+|===
+
+
+.AŞAMA 7 - Yapım Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Proje Yapım Planı ve Metodoloji*
+||*Proje İş Planı*
+||*Kalite Kontrol Süreç ve Belgeleri*
+||*İş Sağlığı ve Güvenliği Süreç ve Belgeleri*
+||*BIM Uygulama Planı - Güncelleme*
+||*BIM Modelleri LOD400-LOD300 - Koordine Edilmiş Güncel Proje Bilgi Modeli (PIM)*
+
+
+2+|*Mimari* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Mimari Aydınlatma* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Akustik Konfor* Yapım Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yangın Güvenliği* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yol ve Altyapı* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Yapısal* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+||*Betonarme Eleman Kalıp Planları - Güncelleme*
+||*Betonarme Eleman Donatı Detay Çizimleri - Güncelleme*
+||*Betonarme Eleman Donatı Tabloları - Metraj Güncelleme*
+||*Çelik Yapı 3b Modeller - Güncellene*
+||*Çelik Eleman Tabloları - Metraj Güncelleme*
+
+
+2+|*Mekanik Sistemler* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Elektrik ve Elektronik Sistemler* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Bilişim Sistemler* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Asansör ve Yürüyen Merdivenler* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Özel Sistemler* Yapım Teslim Gereksinimleri - Aşama 7 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*İmalat tasarımı aşamasında hazırlanan tüm çizimler sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla yapılan değişikliklerin işlenip, diğer tüm disiplinlerle yapılan güncel koordinasyon çalışmalarına uygun güncellenip; tüm belgeler, işverenin ve yetkililerin onayından sonra yapım için yayınlanacaktır.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+|===
+
+.AŞAMA 8 - Kabul ve Teslim Aşaması Teslim Gereksinimleri
+[grid=none]
+[cols="1,20"]
+|===
+
+2+|*Genel* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Saha Yapım Kayıt Belgeleri*
+||*Bakım ve İşletme Kılavuzları*
+||*Malzeme ve Yedek Parça Listeleri*
+||*Garanti Belgeleri*
+||*Kalite Kontrol Süreç ve Belgeleri*
+||*BIM Uygulama Planı*
+||*BIM Modelleri LOD400-LOD300 - Saha Verileriyle Güncellenmiş Proje Bilgi Modeli (PIM)/Varlık Bilgi Modeli (AIM)*
+
+
+2+|*Mimari* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+
+
+2+|*Mimari Aydınlatma* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Akustik Konfor* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Yangın Güvenliği* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Yol ve Altyapı* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Yapısal* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler ve metraj.
+||*Betonarme Eleman Kalıp Planları - Gerçekleşen*
+||*Betonarme Eleman Donatı Detay Çizimleri - Gerçekleşen*
+||*Betonarme Eleman Donatı Tabloları - Metraj Gerçekleşen*
+||*Çelik Yapı 3b Modeller - Gerçekleşen*
+||*Çelik Eleman Tabloları - Metraj Gerçekleşen*
+
+
+2+|*Mekanik Sistemler* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Elektrik ve Elektronik Sistemler* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Bilişim Sistemler* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Asansör ve Yürüyen Merdivenler* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+
+2+|*Özel Sistemler* Kabul ve Teslim Aşaması Teslim Gereksinimleri - Aşama 8 {set:cellbgcolor:#C6D9F1}
+
+|{set:cellbgcolor:#00FFFFFF}|*Yapım aşamasında hazırlanan tüm çizimlerin sahada gerçekleşen durumun tespit edilen değişiklikleriyle güncellenip; ilgili tüm bilgi ve belgeler derlenip teslim edilecektir.*
+Tüm çizimler (planlar, kesitler, görünüşler, detaylar, donanım/ekipman listeleri vb.), BIM modelleri, hesaplar ile teknik şartnameler (malzeme, kalite, performans, işçilik vb.) dahil belgeler, metraj ile tüm test, ayar, ölçüm ve doğrulama raporları.
+
+|===
+
+[.landscape]
+<<<
+
+=== Ek 3 Bilgi Kapları Kodlama Yapısı
+
+//.Bilgi Kapları Kodlama Yapısı
+[header,cols="^2s,4,1,^2s,6,1,^2s,6,1,^2s,3,1,^2s,5,1,^2s,5,1,^2s,7,1,^2s,4,1,^2s,3,1,^2s,4"]
+|===
+29+^|Proje Bilgi Kapları Kodlama Şablonu
+
+2+^s| Proje |  2+^s| Aşama |  2+^s| Bilgi | 2+^s| Bina | 2+^s| Kat/Konum | 2+^s| Disiplin/Rol | 2+^s| Sistem/Alt Disiplin | 2+^s| Üreten | 2+^s| Sıra | 2+^s|Revizyon
+2+^s|{set:cellbgcolor:#C6D9F1} PRJ ^s| - 2+^s| XX ^| - 2+^s| XXX ^| - 2+^s| XXX ^| - 2+^s| XX ^| - 2+^s| XXX ^s| - 2+^s| XXXX ^s| - 2+^s| XXX ^s| - 2+^s| XXX ^s| - 2+^s| XX
+|{set:cellbgcolor:#00FFFFFF} *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_*| | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_*
+| PRJ | Proje kodu | | 00 | Stratejik Plan | | GEN | Genel Yazışma | | GEN | Genel | | XX | Yok | | GEN | Genel | | XX | Yok | | ABC | Firma XYZ | | 001 | 001 | | 00 | İlk Yayın
+| | | | 01 | Etüt | | MDL | Model | | ABL | A Blok | | ZZ | Tüm Katlar | | M | Mimari | | GEN | Genel | | GHI | Firma GHI | | 002 | 002 | | 01 | 1. Revizyon
+| | | | 02 | Kavramsal | | CZM | Çizim | | BBL | B Blok | | TM | Temel | | S | Statik | | VAZ | X-Vaziyet Plan| | MNO | Firma MNO | | 003 | 003 | | 02 | 2. Revizyon
+| | | | 03 | Ön Tasarım | | CPK | Çizim Paketi | | … | … | | BK | Bodrum Katı | | T | Tesisat | | KAT | X-Kat Plan | | RST | Firma RST | | … | … | | 03 | 3. Revizyon
+| | | | 04 | Kesin Tasarım | | DEN | Denetim | | | | | ZK | Zemin Katı | | E | Elektrik | | KES | X-Kesit | | XYZ | Firma XYZ | | | | | … | …
+| | | | 05 | Uygyulama Tasarımı | | DGR | Diğer | | | | | 01 | 1. Kat | | Y | Yangın | | DET | X-Detay | | … | … | | | | | |
+| | | | 06 | İmalat Tasarımı | | EGK | Eğitim Kayıdı | | | | | 02 | 2. Kat | | J | Jeoteknik | | ... | ... | | | | | | | | |
+| | | | 07 | Yapım | | HSP | Hesap | | | | | ... | ... | | H | Harita | | * | _Ek tabloya bkz_ | | | | | | | | |
+| | | | 08 | Kabul-Teslim | | IAY | Aylık İlerleme | | | | CT | Çatı | | | C | Cephe | | |  | | | | | | | | |
+| | | | 09 | İşletme-Bakım | | IHF | Haftalık İlerleme | | | | | | | | P | Peyzaj | | | | | | | | | | | |
+| | | | | | | ISG | İSG | | | | | | | | A | Altyapı | | | | | | | | | | | |
+| | | | | | | KAL | Kalite Kontrol | | | | | | | | I | İç Mimari | | | | | | | | | | | |
+| | | | | | | KON | Kontrat | | | | | | | | B | Bilişim | | | | | | | | | | | |
+| | | | | | | LST | Liste | | | | | | | | O | Özel Sistemler | | | | | | | | | | | |
+| | | | | | | LOJ | Lojistik | | | | | | | | V | İşveren | | | | | | | | | | | |
+| | | | | | | MAL | Malzeme Listesi | | | | | | | | D | İdare | | | | | | | | | | | |
+| | | | | | | MDR | Malzeme Denetim | | | | | | | | PY | Proje Yönetimi | | | | | | | | | | | |
+| | | | | | | MEK | Mektup | | | | | | | | AY | Ana Yüklenici | | | | | | | | | | | |
+| | | | | | | MET | Metraj | | | | | | | | ... | ... | | | | | | | | | | | |
+| | | | | | | MTD | Metodoloji | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | NUM | Numune | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | ODE | Ödeme Kayıdı | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | ONY | İdare Onay | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | PLN | Planlama | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | PRO | Prosedür | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | RPR | Rapor | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | SER | Sertifika | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | SKT | Skeç | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | SRT | Şartname | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | SUN | Sunum | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | SUR | Sürdürülebilirlik | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | TOP | Toplantı Notu | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | TST | Test Raporu | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | UYR | Uygunsuzluk Raporu | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | … | … | | | | | | | | | | | | | | | | | | | | |
+|===
+
+<<<
+[header,cols="^2s,6,1,^2s,4,1,^2s,6,1,^2s,6,1,^2s,6,1,^2s,6,1,^2s,5"]
+[options="header"]
+|===
+20+^|Sistem/Alt Disiplin
+2+^s|{set:cellbgcolor:#C6D9F1} M - Mimari |  2+^s| S - Statik |  2+^s| T - Tesiat | 2+^s| E - Elektrik | 2+^s| A - Altyapı | 2+^s| Y - Yangın | 2+^s| B - Bilişim
+|{set:cellbgcolor:#00FFFFFF} *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_* | | *_Kod_* | *_Tanım_*
+| XX | Yok | | XX | Yok | | XX | Yok | | XX | Yok | | XX | Yok | | XX | Yok | | XX | Yok
+| GEN | M-Genel | | GEN | S-Genel | | GEN | T-Genel | | GEN | E-Genel | | GEN | A-Genel | | GEN | Y-Genel | | GEN | Genel
+| VAZ | M-Vaziyet Plan | | VAZ | S-Vaziyet Plan | | VAZ | T-Vaziyet Plan | | VAZ | E-Vaziyet Plan | | VAZ | A-Vaziyet Plan | | VAZ | Y-Vaziyet Plan | | VAZ | B-Vaziyet Plan
+| KAT | M-Kat Plan | | KAT | S-Kat Plan | | KAT | T-Kat Plan | | KAT | E-Kat Plan | | … | … | | KAT | Y-Kat Plan | | KAT | B-Kat Plan
+| KES | M-Kesit | | KES | S-Kesit | | KES | T-Kesit | | KES | E-Kesit | | YOLP | A-Yol Plan | | KES | Y-Kesit | | KES | B-Kesit
+| DET | M-Detay | | DET | S-Detay | | DET | T-Detay | | DET | E-Detay | | YOLK | A-Yol En Kesit | | DET | Y-Detay | | DET | B-Detay
+| … | … | | … | … | | … | … | | … | … | | YOLB | A-Yol Boy Kesit | | … | … | | … | …
+| CATI | M-Çatı | | KALP | S-Kalıp | | ISTP | T-Isıtma Plan | | ALCS | E-Alçak Gerilim Şebeke | | YOLD | A-Yol Detay | | KORS | Y-Yangın Koruma Sistemi | | KABP | B-Kablolama Plan
+| CATD | M-Çatı Detay | | KALD | S-Kalıp Detay | | ISTD | T-Isıtma Detay | | ALCD | E-Alçak Gerilim Hat Diag. | | YOLS | A-Yol Statik | | KORD | Y-Yangın Koruma Diag. | | PANP | B-Panel Yerleşim Plan
+| ZEMK | M-Zemin Kaplama | | TEME | S-Temel | | SGTP | T-Soğutma Plan | | ORTS | E-Orta Gerilim Şebeke | | YAGP | A-Yağmur Suyu Plan | | HORS | Y-Yangın Koruma Hortum | | NETP | B-Network Ağ Plan
+| ZEMD | M-Zemin Detay | | TEMD | S-Temel Detay | | SGTD | T-Soğutma Detay | | ORTD | E-Orta Gerilim Hat Diag. | | YAGK | A-Yağmur Suyu En Kesit | | … | … | | … | …
+| DUVA | M-Duvar | | CELK | S-Çelik | | SGKD | T-Soğutma Diag. | | YUKS | E-Yüksek Gerilim Şebeke | | YAGB | A-Yağmur Suyu Boy Kesit | | | | | |
+| DUVK | M-Duvar Kaplama | | CELD | S-Çelik Detay | | HVLP | T-Havalandırma Plan | | YUKD | E-Yüksek Gerilim Hat Diag. | | YAGD | A-Yağmur Suyu Detay |{set:cellbgcolor:#C6D9F1} 2+^s| J - Jeoteknik | |{set:cellbgcolor:#00FFFFFF} |
+| DUVD | M-Duvar Kaplama Detay | | DOSE | S-Döşeme | | HVLD | T-Havalandırma Detay | | ZAYS | E-Zayıf Akım Şebeke | | YAGS | A-Yağmur Suyu Statik | | *_Kod_* | *_Tanım_* | | |
+| TAVA | M-Tavan | | DOSD | S-Döşeme Detay | | HVKD | T-Havalandırma Diag. | | ZAYD | E-Zayıf Akım Hat Diag. | | ASUP | A-Atık Su Plan | | XX | Yok | | |
+| TAVD | M-Tavan Detay | | KOLO | S-Kolon | | SHTP | T-Sıhhi Tesisat Plan | | TRAF | E-Trafo | | ASUK | A-Atık Su En Kesit | | GEN | J-Genel | | |
+| KAPI | M-Kapı | | KOLD | S-Kolon Detay | | SHTD | T-Sıhhi Tesisat Detay | | JENE | E-Jenerator | | ASUB | A-Atık Su Boy Kesit | | VAZ | J-Vaziyet Plan | | |
+| KAPD | M-Kapı Detay | | DUVA | S-Duvar | | SHKD | T-Sıhhi Tesisat Diag. | | PRZS | E-Priz Şebeke | | ASUD | A-Atık Su Detay | | ... | ... | | |
+| MERN | M-Merdiven | | DUVD | S-Duvar Detay | | SISD | T-Sismik Detay | | AYDS | E-Aydınlatma | | ASUS | A-Atık Su Statik | | TOPO | J-Topografik Plan | | |
+| MERD | M-Merdiven Detay | | DONP | S-Donatı Plan | | OTMS | T-Otomasyon | | TOPS | E-Topraklama | | ASUM | A-Atık Su Mekanik | | ... | ... | | |
+| LEJN | M-Lejant | | DONA | S-Donatı Alt | | … | … | | YILS | E-Yıldırımdan Korunma | | ASUE | A-Atık Su Elektrik | | | | | |
+| ASAN | M-Asansör | | DONU | S-Donatı Üst | | | | | YUKT | E-Yük Tablo | | KSUP | A-Kullanım Suyu Plan | | | | | |
+| ASAD | M-Asansör Detay | | … | … | | | | | OTMS | E-Otomasyon | | KSUK | A-Kullanım Suyu Kesit | | | | | |
+| CEPH | M-Cephe | | | | | | | | … | … | | KSUB | A-Kullanım Suyu Boy Kesit | | | | | |
+| CEPD | M-Cephe Detay | | | | | | | | | | | KSUD | A-Kullanım Suyu Detay | | | | | |
+| IZOL | M-İzolasyon | | | | | | | | | | | KSUS | A-Kullanım Suyu Statik | | | | | |
+| IZOD | M-İzolasyon Detay | | | | | | | | | | | KSUM | A-Kullanım Suyu Mekanik | | | | | |
+| … | … | | | | | | | | | | | KSUE | A-Kullanım Suyu Elektrik | | | | | |
+| | | | | | | | | | | | | … | …  | | | | | |
+|===
+
+[.portrait]
+<<<
+:sectnums:
+
+== BIM Uygulama Planı Ek Örnekleri
+
+<<<
+:sectnums!:
+
+=== Ek 1 Model Kalite Kontrol Formları
+
+[.portrait]
+
+//.Model Kalite Kontrol Formu
+
+[cols="4,1,1,4"]
+|===
+4+^s|Model Kalite Kontrol Formu
+
+4+s|Proje:
+4+s|Model İsmi ve Açıklama:
+4+s|Kontrol Eden:
+4+s|Tarih:
+
+^s|Kontrol {set:cellbgcolor:#C6D9F1}
+^s|Onay/Var
+^s|Ret/Yok
+^s|Açıklama/Notlar
+
+^s|{set:cellbgcolor:#00FFFFFF}GENEL |||
+|Kullanılan yazılım versiyonu doğru mu? |||
+|Dosya boyutu xxx MB'dan küçük mü? |||
+|Model bölümlemesi Model Dosya Listesi'ne uygun mu? |||
+|Proje bilgileri doğru girilmiş mi? |||
+|İlgisiz eleman ve bilgiler temizlenmiş mi? |||
+|Model dosyasında hata uyarılarından arındırılmış mı? |||
+|Model kaynak takip listesi var mı? |||
+
+^s|BAĞLANTILAR (LİNKLER) |||
+|Gerekli bağlı dosyalar mevcut ve doğru mu? |||
+|Gerekli olmayan bağlı dosyalar ve linkleri temizlenmiş mi? |||
+
+^s|İSİMLENDİRME |||
+|Dosya isimlendirmesi doğru mu? |||
+|Kot ve aks isimlendirmeleri doğru mu? |||
+|Elemanların isimlendirmesi doğru mu? |||
+|Mahal isimlendirmesi doğru mu? |||
+|Malzeme isimlendirmesi doğru mu? |||
+|Pafta isimlendirmesi doğru mu? |||
+|Görünüm isimlendirmeleri uygun mu? |||
+|Tablo isimlendirmeleri uygun mu? |||
+
+^s|MODEL YAPILANMASI |||
+|BIM Uygulama Planı ve/ya BIM Standardına uygun mu? |||
+|Doğru ölçü birimleri kullanılmış mı? |||
+|Doğru koordinat sistemi kullanılmış mı? |||
+|Doğru referans noktaları kullanılmış mı? |||
+|Referans noktaların koordinatları doğru girilmiş mi? |||
+|Kot tanımları doğru mu? |||
+|Kotlar doğru referansa göre yerleştirilmiş mi? |||
+|Kapsam ve detay seviye tablosuna göre model elemanları uygun mu? |||
+|Elemanların malzeme tanımlamaları doğru mu? |||
+|Elemanların gerekli tanımlı parametreleri ve verileri girilmiş mi? |||
+|Disiplin içi koordinasyon sağlanmış mı? |||
+|Disiplinler arası koordinasyon sağlanmış mı? |||
+|Poz no bilgileri doğru tanımlanmış mı? |||
+
+^s|PAFTALAR |||
+|Doğru/güncel proje antet dosyası kullanılmış mı? |||
+|Pafta anteni bilgileri doğru girilmiş mi? |||
+|Paftalar ve görünüş gruplandırması uygun mu? |||
+
+|===
+
+//[.portrait]
+<<<
+
+[.landscape]
+
+=== Ek 2 Model İçerik Oluşturmada Kullanılan Kaynak Takip Listesi
+
+//.Model Kaynak Takip Listesi Formu
+
+//[%header,%autowidth, %width=100%]
+[cols="3,3,2,2,2,2,1,2,1"]
+|===
+9+^s|Model Kaynak Takip Listesi
+
+9+s|Proje:
+9+s|Model İsmi ve Açıklama:
+
+^s|Referans Belge İsmi (pdf,dwg,rvt vb.) {set:cellbgcolor:#C6D9F1}
+^s|Referans Belge Açıklama
+^s|Tarih ve Revizyon No.
+^s|Belge Durumu
+^s|Belgeyi Hazırlayan
+^s|Modeli Hazırlayan
+^s|Model Tarihi
+^s|Kontrolü Yapan
+^s|Kontrol Tarihi
+
+|{nbsp}{set:cellbgcolor:#00FFFFFF}||||||||
+
+306*|{nbsp} +
+
+|===
+
+[.landscape]
+<<<
+
+=== Ek 3 Model Eleman Bilgi Gereksinimleri Tablosu
+
+.bSTR Model Eleman Bilgi Gereksinimleri Tablosu Şablonu
+[header,cols="^1,1,2,1,1,^1,^1,^1,^1,^1,^1,2,2,^1,^1,^1,^1,^1,^1"]
+|===
+^.^s|[.tbltights]#Eleman Grubu#
+^.^s|[.tbltights]#Eleman Kodu#
+^.^s|[.tbltights]#Eleman
+^.^s|[.tbltights]#Sınıflandırma#
+^.^s|[.tbltights]#Açıklama#
+^.^s|[.tbltights]#Sorumlu Disiplin / Rol#
+^.^s|[.tbltights]#Ön Tasarım#
+^.^s|[.tbltights]#Kesin Tasarım#
+^.^s|[.tbltights]#Uygulama Tasarımı#
+^.^s|[.tbltights]#İmalat Tasarımı#
+^.^s|[.tbltights]#Yapım Kabul-Teslim#
+^.^s|[.tbltights]#Parametre İsmi#
+^.^s|[.tbltights]#Eleman Parametre Gereksinimi#
+^.^s|[.tbltights]#Parametre Tipi#
+^.^s|[.tbltights]#Ön Tasarım#
+^.^s|[.tbltights]#Kesin Tasarım#
+^.^s|[.tbltights]#Uygulama Tasarımı#
+^.^s|[.tbltights]#İmalat Tasarımı#
+^.^s|[.tbltights]#Yapım Kabul-Teslim#
+
+|{set:cellbgcolor:#78D6CD} 18+s|<DİSİPLİN/ROL01>
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> 18+s|<Sistem/Alt-Disiplin01>
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> |{set:cellbgcolor:#FFFFFF} D-XXX-01 |<Eleman01>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre01>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> |{set:cellbgcolor:#FFFFFF} D-XXX-02 |<Eleman02>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre02>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> |{set:cellbgcolor:#FFFFFF} D-XXX-03 |<Eleman03>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre03>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> |{set:cellbgcolor:#FFFFFF} D-XXX-04 |<Eleman04>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre04>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> |{set:cellbgcolor:#FFFFFF} ... | ... | | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx | | | | | | | |
+s|{set:cellbgcolor:#C8EEEA} <GRUP01> |{set:cellbgcolor:#FFFFFF} D-XXX-.. |<Eleman..>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx | | | | | | | |
+
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> 18+s|<Sistem/Alt-Disiplin02>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} D-XXX-01 |<Eleman01>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre01>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} D-XXX-02 |<Eleman02>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre02>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} D-XXX-03 |<Eleman03>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre03>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} D-XXX-04 |<Eleman04>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre04>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} ... | ...| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre05>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} D-XXX-.. |<Eleman..>| | | D s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre06>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6} ... | ... |<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP02> |{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}<Parametre..>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+
+|{set:cellbgcolor:#78D6CD} 18+s|<DİSİPLİN/ROL02>
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> 18+s|<Sistem/Alt-Disiplin03>
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> |{set:cellbgcolor:#FFFFFF} R-XXX-01 |<Eleman01>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre01>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> |{set:cellbgcolor:#FFFFFF} R-XXX-02 |<Eleman02>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre02>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> |{set:cellbgcolor:#FFFFFF} R-XXX-03 |<Eleman03>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre03>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> |{set:cellbgcolor:#FFFFFF} R-XXX-04 |<Eleman04>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre04>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> |{set:cellbgcolor:#FFFFFF} ... | ... | | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx | | | | | | | |
+s|{set:cellbgcolor:#C8EEEA} <GRUP03> |{set:cellbgcolor:#FFFFFF} R-XXX-.. |<Eleman..>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx | | | | | | | |
+
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> 18+s|<Sistem/Alt-Disiplin04>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} R-XXX-01 |<Eleman01>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre01>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} R-XXX-02 |<Eleman02>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre02>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} R-XXX-03 |<Eleman03>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre03>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} R-XXX-04 |<Eleman04>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre04>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} ... | ...| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre05>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} R-XXX-.. |<Eleman..>| | | R s| LODxxx s| LODxxx s| LODxxx s| LODxxx s| LODxxx |{set:cellbgcolor:#FEF1E6}<Parametre06>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6} ... | ... |<TipXX>|<x>|<x>|<x>|<x>|<x>
+s|{set:cellbgcolor:#C8EEEA} <GRUP04> |{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}<Parametre..>|<Eleman/lar>|<TipXX>|<x>|<x>|<x>|<x>|<x>
+|===
+
+<<<
+
+.bSTR Model Eleman Bilgi Gereksinimleri Düzeyi Tablosu Örneği
+[header,cols="^1,1,2,1,1,^1,^1,^1,^1,^1,^1,2,2,^1,^1,^1,^1,^1,^1"]
+|===
+^.^s|[.tbltights]#Eleman Grubu#
+^.^s|[.tbltights]#Eleman Kodu#
+^.^s|[.tbltights]#Eleman#
+^.^s|[.tbltights]#Sınıflandırma#
+^.^s|[.tbltights]#Açıklama#
+^.^s|[.tbltights]#Sorumlu Disiplin / Rol#
+^.^s|[.tbltights]#Ön Tasarım#
+^.^s|[.tbltights]#Kesin Tasarım#
+^.^s|[.tbltights]#Uygulama Tasarımı#
+^.^s|[.tbltights]#İmalat Tasarımı#
+^.^s|[.tbltights]#Yapım Kabul-Teslim#
+^.^s|[.tbltights]#Parametre İsmi#
+^.^s|[.tbltights]#Eleman Parametre Gereksinimi#
+^.^s|[.tbltights]#Parametre Tipi#
+^.^s|[.tbltights]#Ön Tasarım#
+^.^s|[.tbltights]#Kesin Tasarım#
+^.^s|[.tbltights]#Uygulama Tasarımı#
+^.^s|[.tbltights]#İmalat Tasarımı#
+^.^s|[.tbltights]#Yapım Kabul-Teslim#
+
+|{set:cellbgcolor:#78D6CD} 18+s|GENEL
+s|{set:cellbgcolor:#C8EEEA}GRİD|{set:cellbgcolor:#FFFFFF}GEN-01|Akslar| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Bina katı|GEN-KOT|Evet/Hayır|x|x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GRİD|{set:cellbgcolor:#FFFFFF}GEN-02|Kotlar| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|| | | | | | |
+|{set:cellbgcolor:#78D6CD} 18+s|MİMARİ
+s|{set:cellbgcolor:#C8EEEA}DUVAR 18+s|Duvar Elemanları
+s|{set:cellbgcolor:#C8EEEA}DUVAR|{set:cellbgcolor:#FFFFFF}M-DUV-01|Dış Duvar| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Yangın sınıfı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}DUVAR|{set:cellbgcolor:#FFFFFF}M-DUV-02|Bölme Duvar| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Renk kodu|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}DUVAR|{set:cellbgcolor:#FFFFFF}M-DUV-03|Cam Bölme Duvar| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Profil sınıfı|M-DUV-06|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}DUVAR|{set:cellbgcolor:#FFFFFF}M-DUV-04|Duvar Kaplama Tip 01| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Mahal kodu ve adı|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}DUVAR|{set:cellbgcolor:#FFFFFF}M-DUV-05|Duvar Kaplama Tip 02| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Fonksiyon|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}DUVAR|{set:cellbgcolor:#FFFFFF}M-DUV-06|Süpürgelik| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ZEMİN 18+s|Zemin Elemanları
+s|{set:cellbgcolor:#C8EEEA}ZEMİN|{set:cellbgcolor:#FFFFFF}M-ZMN-01|Zemin Kaplaması| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Anti-slip değeri|M-ZEM|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ZEMİN|{set:cellbgcolor:#FFFFFF}M-ZMN-02|Yükseltilmiş Döşeme| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6} adı|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ZEMİN|{set:cellbgcolor:#FFFFFF}M-ZMN-03|U Kanal| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Renk Kodu|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ZEMİN|{set:cellbgcolor:#FFFFFF}M-ZMN-04|Süpürgelik| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}TAVAN 18+s|Asma Tavan Elemanları
+s|{set:cellbgcolor:#C8EEEA}TAVAN|{set:cellbgcolor:#FFFFFF}M-AST-01|Asma Tavan| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Renk kodu|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}TAVAN|{set:cellbgcolor:#FFFFFF}M-AST-02|Tavan Kaplaması| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Akustik sınıfı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}TAVAN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |Mahal kodu ve adı|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}MERDİVEN 18+s|Merdivan Elemanları
+s|{set:cellbgcolor:#C8EEEA}MERDİVEN|{set:cellbgcolor:#FFFFFF}M-MER-01|Düz Merdiven| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Fonksiyon|M-MER|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MERDİVEN|{set:cellbgcolor:#FFFFFF}M-MER-02|Gemici Merdiveni| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Renk Kodu|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}MERDİVEN|{set:cellbgcolor:#FFFFFF}M-MER-03|Merdiven Kaplama| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}KAPI 18+s|Kapı Elemanları
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF}M-KAP-01|Menteşeli Kapı| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Yangın sınıfı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF}M-KAP-02|Katlanır Kapı| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Açılış yönü|M-KAP-05 hariç|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF}M-KAP-03|Sarmal Kapı (Kepenk)| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Fonksiyon|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF}M-KAP-04|Cam Kapı| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Gözetleme penceresi|M-KAP-05 hariç|Yes/No| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF}M-KAP-05|Döner Kapı| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Havalandırma menfezi|M-KAP-03|Yes/No| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Renk kodu|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Cam kalınlığı|M-KAP-04|Sayı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}KAPI|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Cam rengi|M-KAP-04|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}PENCERE 18+s|Pencere Elemanları
+s|{set:cellbgcolor:#C8EEEA}PENCERE|{set:cellbgcolor:#FFFFFF}M-PNC-01|Pencere| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Yangın sınıfı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PENCERE|{set:cellbgcolor:#FFFFFF}M-PNC-02|Işıklık| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Fonksiyon|M-PNC-01/04|Yazı|x|x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PENCERE|{set:cellbgcolor:#FFFFFF}M-PNC-03|Parapet/Denizlik| | |M|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Renk Kodu|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}PENCERE|{set:cellbgcolor:#FFFFFF}M-PNC-04|Camekan| | |M|-|- s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Cam kalınlığı|M-PNK-04|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PENCERE|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Cam rengi|M-PNC-04|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ÇATI 18+s|Catı Elemanlar
+s|{set:cellbgcolor:#C8EEEA}ÇATI|{set:cellbgcolor:#FFFFFF}M-CAT-01|Çatı Kaplama| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Renk kodu|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÇATI|{set:cellbgcolor:#FFFFFF}M-CAT-02|Çatı Konstrüksyon| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ÇATI|{set:cellbgcolor:#FFFFFF}M-CAT-03|Yağmur Oluğu| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ÇATI|{set:cellbgcolor:#FFFFFF}M-CAT-04|İnşai Baca| | |M|- s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK HACIM 18+s|Sıhhi Tesisat Elemanları
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-01|Lavabo| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Marka adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-02|Hela Taşı| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Model adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-03|Pisuvar| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-04|Pisuvar Bölmesi| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-05|Eviye| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-06|Küvet / Duş Tekneleri| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-07|Musluk| | |M|- s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-08|Sabunluk| | |M|-|- s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-09|Kağıtlık| | |M|-|- s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-10|Askı| | |M|-|- s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ISLAK|{set:cellbgcolor:#FFFFFF}M-SHT-11|Tutunma Barları| | |M s|- s|- s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}MAHAL 18+s|Mahal, Hacim, Zon Tanımlama Elemanları
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF}M-MAH-01|Mimari Zonlama| | |M s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Mahal kodu|Tümü|Yazı|x|x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF}M-MAH-02|MEP Zonlama| | |M|- s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Mahal adı|Tümü|Yazı|x|x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Alan (M2)|Tümü|Sayı|x|x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Tavan kaplama|M-MAH-01|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Tavan yüksekliği|M-MAH-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Duvar kaplama|M-MAH-01|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Duvar kalınlığı|M-MAHA-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Döşeme kaplama|M-MAH-01|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Döşeme kalınlığı|M-MAH-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Asma tavan|M-MAH-01|Evet/Hayır| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Asma tavan tipi|M-MAH-01|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}MAHAL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Teknik alan|M-MAH-01|Evet/Hayır| |x|x|x|x
+s|{set:cellbgcolor:#78D6CD} 18+s| STATİK
+s|{set:cellbgcolor:#C8EEEA}BETON 18+s|Betonarme Elemanları
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-01|Temel Kirişi (Bağ vb.)| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400|{set:cellbgcolor:#FEF1E6}Etiket|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-02|Temel Pabucu| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400|{set:cellbgcolor:#FEF1E6}Yapısal|Tümü|Evet/Hayır| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-03|Temel Döşemesi| | |S s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-04|Kazık Başlığı| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-05|Kazık (Temel)| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-06|Perde Duvar | | |S s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-07|İstinat Duvarı| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-08|Döşeme| | |S s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-09|Kolon| | |S s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-10|Kiriş| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-11|Merdiven | | |S s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-12|Rezervasyon (Boşluk)| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}BETON|{set:cellbgcolor:#FFFFFF}S-BET-13|Su Yalıtımı| | |S|- s|LOD300 s|LOD300 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ÇELİK 18+s|Çelik Elemanları
+s|{set:cellbgcolor:#C8EEEA}ÇELİK|{set:cellbgcolor:#FFFFFF}S-CEL-01|Döşeme| | |S s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Etiket|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ÇELİK|{set:cellbgcolor:#FFFFFF}S-CEL-02|Kolon| | |S s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Yapısal|Tümü|Evet/Hayır| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ÇELİK|{set:cellbgcolor:#FFFFFF}S-CEL-03|Kiriş| | |S|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Çelik Sınıfı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ÇELİK|{set:cellbgcolor:#FFFFFF}S-CEL-04|Merdiven| | |S s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ÇELİK|{set:cellbgcolor:#FFFFFF}S-CEL-05|Gergi Sistemleri| | |S|- s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ÇELİK|{set:cellbgcolor:#FFFFFF}S-CEL-06|Uzay Kafes Sistemler| | |S|- s|LOD300 s|LOD300 s|LOD400 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#78D6CD}JEOLOJİ 18+s|Jeoteknik Elemanları
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF}J-JEO-01|Topografik Yuzey| | |J|-|- s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Etiket|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF}J-JEO-01|Sondaj Kuyuları| | |J|-|- s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Derinlik|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF}J-JEO-02|Araştırma Çukurları| | |J|-|- s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Üst kot|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Etüt raporu_URL|Tümü|URL| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Alt kot|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Koordinat_X|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}JEOLOJİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Koordinat_Y|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#78D6CD} 18+s| ALTYAPI
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI 18+|Altyapı Elemanları
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-01|Baca| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Etiket|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-02|Boru| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Debi|A-ALT-02|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-03|Trench| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Eğim|A-ALT-02|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-04|Vano Odaları| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Kot|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-05|Kuyu| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Derinlik|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-06|Elektrik Direkleri| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-07|Rögar Kapakları| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-08|Kablo Taşıma Kanalı| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#C8EEEA}ALTYAPI|{set:cellbgcolor:#FFFFFF}A-ALT-09|Su depoları| | |A|- s|LOD200 s|LOD300 s|LOD300 s|LOD300| | | | | | | |
+s|{set:cellbgcolor:#78D6CD} 18+s| MEKANİK SİSTEMLER
+s|{set:cellbgcolor:#C8EEEA}ÖZEL 18+s|Özel Sistemler Elemanları
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF}O-SİS-01|Asansör| | |O s|LOD100 s|LOD200 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF}O-SİS-02|Yürüyen Merdiven| | |O s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF}O-SİS-03|Yürüyen Bant| | |O s|LOD200 s|LOD300 s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}Sürücü gücü|Tümü|Sayı/Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Sürücü markası|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Sürücü modeli|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Motor gücü|Tümü|Sayı/Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Motor markası|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Motor modeli|Tümü|Yazı| | | |x|x
+s|{set:cellbgcolor:#C8EEEA}ÖZEL|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Hız|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#78D6CD} 18+s| TESİSAT
+s|{set:cellbgcolor:#C8EEEA}HAVA 18+s|Havalandırma Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-01|Fanlar| | |T s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-02|Klima Üniteleri| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-03|Klima Santrali| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Debi|T-HAV-01/08/11|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-04|Damperler| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Basınç|T-HAV-01/11|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-05|Kanal Isıtıcılar| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sogutma kapasitesi|T-HAV-02/03|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-06|Duman Kapakları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Isitma kapasitesi|T-HAV-2/3/5/7/8/9/10/14|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-07|Radyant Isıtıcısı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Gerilim|T-HAV-07 hariç Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-08|Fan Coil| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Hacim|T-HAVA-12|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-09|Sıcak Hava Apareyleri| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|T-HAV-07 hariç Tümü|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-10|Kazan ve Brülör| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Yangın dayanımı|T-HAV-01/04/17|Sayı/Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-11|Sirkülasyon Pompası| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sürücü gücü|T-HAV-01/03|Sayı/Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-12|Genleşme Tankı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sürücü markası|T-HAV-01/03|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-13|Denge Kabı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sürücü modeli|T-HAV-01/03|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-14|Radyatör| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Motor gücü|T-HAV-07 hariç Tümü|Sayı/Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-15|Duman Atış Bacaları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Motor markası|T-HAV-07 hariç Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-16|Davlumbaz| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Motor modeli|T-HAV-07 hariç Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-17|Hava Perdesi| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Akım değeri|T-HAV-07 hariç Tümü|Sayı/Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF}T-HAV-18|Kontrol Panelleri| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Kayış uzunluğu|T-HAV-01|Sayı/Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Gaz cinsi|T-HAV-02|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Dıs unite sayısı|T-HAV-02|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ic unite sayısı|T-HAV-02|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}HAVA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anakart/Plc markası|T-HAV-07 hariç Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ 18+s|Sıhhi Tesisat Elemanları
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF}T-SHT-01|Hidrofor| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF}T-SHT-02|Su Isıtıcısı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Gerilim|T-SHT-01/02/03|Sayı, Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF}T-SHT-03|Sirkülasyon Pompası| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF}T-SHT-04|Kullanma Suyu Tankı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Debi|T-SHT-01/03|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF}T-SHT-05|Su Yumuşatma Sistemi| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Güç|T-SHT-01/02/03|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Hacim|T-SHT-02/04|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SIHHİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|T-SHT-01/02/03|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN 18+s|Kanalizasyon Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF}T-KAN-01|Pis Su Pompası| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF}T-KAN-02|Pissu Toplama Tankı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Gerilim|T-KAN-01/05|Sayı,Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF}T-KAN-03|Süzgeç| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF}T-KAN-04|Yağ Ayırıcıları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Debi|T-KAN-01/05|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF}T-KAN-05|Arıtma Sistemi| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Basınç|T-KAN-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Güç|T-KAN-01/05|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Hacim|T-KAN-01/05|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KNLZSYN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|T-KAN-01/05|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER 18+s|Gider Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF}T-GİD-01|Drenaj Pompası| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF}T-GİD-02|Süzgeç | | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Gerilim|T-GİD-01|Sayı,Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF}T-GİD-03|Izgara| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Debi|T-GİD-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Basınç|T-GİD-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Güç|T-GİD-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GİDER|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|T-GİD-01|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KANAL 18+s|Hava Kanalları Elemanları
+s|{set:cellbgcolor:#C8EEEA}KANAL|{set:cellbgcolor:#FFFFFF}T-HAVA-01|Kanal Tesisatı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KANAL|{set:cellbgcolor:#FFFFFF}T-HAVA-02|Sensör Elemanları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|T-HAVA-02/03/04|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KANAL|{set:cellbgcolor:#FFFFFF}T-HAVA-03|Tesisat Elemanları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Debi|T-HAVA-04|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KANAL|{set:cellbgcolor:#FFFFFF}T-HAVA-04|Dağıtım Aksesuarları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|T-HAVA-02 |Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}BORU 18+s|Boru Tesisatı Elemanları
+s|{set:cellbgcolor:#C8EEEA}BORU|{set:cellbgcolor:#FFFFFF}T-BOR-01|Boru Tesisatı| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}BORU|{set:cellbgcolor:#FFFFFF}T-BOR-02|Vanalar| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|T-BOR-02/03/04|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}BORU|{set:cellbgcolor:#FFFFFF}T-BOR-03|Test ve Ölçüm Aletleri| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Bağlantı parçaları|T-BOR-01/03|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}BORU|{set:cellbgcolor:#FFFFFF}T-BOR-04|Diğer Boru Elemanları| | |T|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Yalıtım|T-BOR-01|Yazı| | |x|x|x
+s|{set:cellbgcolor:#78D6CD} 18+| YANGIN
+s|{set:cellbgcolor:#C8EEEA}YANGIN 18+s|Yangın Koruma Elemanları
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-01|Yangın Pompaları| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-02|Sprinkler| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-03|Yangın Dolapları| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Debi|Y-YAN-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-04|İtfaiye Su Ağızları| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Basınc|Y-YAN-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-05|Hidrant| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Güç|Y-YAN-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-06|Taşınabilir Söndürücü| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Gerilim|Y-YAN-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YAN-07|Islak Alarm Vanası| | |Y|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Y-YAN-01|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN 18+s|Gazlı Yangın Söndürme Elemanları
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YNS-01|Basınçlı Tüpler| | |Y|-|- s|LOD200 s|LOD300 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YNS-02|Tüp Ekipmanları| | |Y|-|- s|LOD200 s|LOD300 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YNS-03|Nozullar| | |Y|-|- s|LOD200 s|LOD300 s|LOD400|{set:cellbgcolor:#FEF1E6}Hacim|Y-YNS-01|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YNS-04|Kontrol Paneli| | |Y|-|- s|LOD200 s|LOD300 s|LOD400|{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Y-YNS-04|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}Y-YNS-05|Relief Damperi| | |Y|-|- s|LOD200 s|LOD300 s|LOD400| | | | | | | |
+s|{set:cellbgcolor:#78D6CD} 18+s| ELEKTRİK
+s|{set:cellbgcolor:#C8EEEA}ORTA 18+s|Orta Gerilim Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF}E-ORG-01|OG Hücreler| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF}E-ORG-02|Trafolar| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tip|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF}E-ORG-03|Jeneratör| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma gücü|Tümü|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma gerilimi|Tümü|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çıkış gücü|E-ORG-03|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çalışma gerilimi|Tümü|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Faz numarası|E-ORG-02/03|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Tümü|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Kesme akımı|E-ORG-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}OG hücre sayısı|E-ORG-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}OG servis kaybı sınıfı|E-ORG-01|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}OG bara kapasitesi|E-ORG-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}OG kesici akım|E-ORG-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Trafo hizmet tipi|E-ORG-02|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Trafo çevirme oranı|E-ORG-02|Sayı,Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Trafo bağlantı grubu|E-ORG-02|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ORTA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}İzolasyon sınıfı|E-ORG-02|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC 18+s|DC Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF}E-DAK-01|DC Hücre| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF}E-DAK-02|DC Ayırıcı| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF}E-DAK-03|Kaçak Akım Takıp| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF}E-DAK-04|VLD Panosu| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Anma Gerilimi|E-DAK-02|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çalışma gerilimi|E-DAK-01/03/04|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Tümü|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Kesme akımı|Tümü|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}DC hücre tipi|E-DAK-01|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}DC kesici tipi|E-DAK-01|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}DC kesici akım|E-DAK-01|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}CER hücre sayısı|E-DAK-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}CER doğrultucu kapasitesi|E-DAK-01|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}DC tahrik tipi|E-DAK-02|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}DC ayırıcı akım|E-DAK-02|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}DC|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}DC topraklı-topraksız|E-DAK-02|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS 18+|Kesintisiz Güç Kaynağı Elemanları
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF}E-UPS-01|UPS| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF}E-UPS-02|Redresör| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF}E-UPS-03|Akü Sehpası| | |E|-|- s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman kodu|Tümü|Sayı/Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF}E-UPS-04|Akü| | |E|-|- s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Anma gücü|Tümü|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma gerilimi|Tümü|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çikiş gücü|Tümü|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çalişma gerilimi|Tümü|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Tümü|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Redresör giriş-çıkış gerilimi|E-UPS-01/02|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}UPS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Redresör akım değeri|E-UPS-02|Sayı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK GERİLİM 18+s|Alçak Gerilim Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF}E-ALG-01|AG Ana Dağıtım Pano| | |E s|LOD200 s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF}E-ALG-02|AG Tali Dağıtım Pano| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|{set:cellbgcolor:#FEF1E6}Tümü|Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF}E-ALG-03|Kompanzasyon Panosu| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|{set:cellbgcolor:#FEF1E6}Tümü|Sayı/Yazı| |X|X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çıkış Gücü|{set:cellbgcolor:#FEF1E6}Tümü|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çalışma Gerilimi|{set:cellbgcolor:#FEF1E6}E-ALG-01/02|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|{set:cellbgcolor:#FEF1E6}Tümü|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Kesme Akımı|{set:cellbgcolor:#FEF1E6}Tümü|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ağ Kesici Giriş Akımı|{set:cellbgcolor:#FEF1E6}E-ALG-01/03|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ağ Hücre Sayısı|{set:cellbgcolor:#FEF1E6}E-ALG-01/03|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ağ Kesici Akım|{set:cellbgcolor:#FEF1E6}E-ALG-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ağ Kesici Kutup Sayısı|{set:cellbgcolor:#FEF1E6}E-ALG-01|Sayı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}ALÇAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Formlandırma sınıfı|{set:cellbgcolor:#FEF1E6}E-ALG-01/02|Yazı| | |X|X|X
+s|{set:cellbgcolor:#C8EEEA}AYDIN 18+s|Aydınlatma Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF}E-AYD-01|Aydınlatma Armatürleri| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF}E-AYD-02|Anahtarlar| ||E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF}E-AYD-03|Buatlar| | |E|-|- s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma gücü|E-AYD-01/02|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma Gerilimi|E-AYD-01|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Faz Numarası|E-AYD-02|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|E-AYD-01|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}AYDIN|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Renk Sıcaklığı|E-AYD-01|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}PRİZ 18+s|Priz Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}PRİZ|{set:cellbgcolor:#FFFFFF}E-PRZ-01|Prizler| ||E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PRİZ|{set:cellbgcolor:#FFFFFF}E-PRZ-02|Buatlar| | |E|-|- s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|E-PRZ-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PRİZ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PRİZ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma Gerilimi|E-PRZ-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PRİZ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Faz Numarası|E-PRZ-01|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}PRİZ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Akım Değeri|E-PRZ-01|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}YILDIRIM 18+s|Yıldırımdan Koruma Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}YILDIRIM|{set:cellbgcolor:#FFFFFF}E-YIL-01|Paratoner| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YILDIRIM|{set:cellbgcolor:#FFFFFF}E-YIL-02|Yakalama Çubukları| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YILDIRIM|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ekipman Kodu|E-YIL-01|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YILDIRIM|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Kısa Devre Dayanımı|E-YIL-01|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}TOPRAK 18+s|Topraklama Sistemi Elemanlar
+s|{set:cellbgcolor:#C8EEEA}TOPRAK|{set:cellbgcolor:#FFFFFF}E-TOP-01|Topraklama Bara| | |E|- s|LOD200 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}TOPRAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}TOPRAK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO 18+s|Kablo Taşıma Sistemleri Elemanlar
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF}E-KAB-01|Kablo Tavaları| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF}E-KAB-02|Kablo Boruları| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|E-KAB-01/02/04|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF}E-KAB-03|Kablo| | |E|-|-|-|-|-|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|E-KAB-01|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF}E-KAB-04|Busbar| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}İzalosyon Voltajı|E-KAB-04|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Akım Değeri|E-KAB-05|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}İletken Sayısı|E-KAB-06|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KABLO|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|E-KAB-07|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}İLETİM 18+s|İletim Sistem Elemanları
+s|{set:cellbgcolor:#C8EEEA}İLETİM|{set:cellbgcolor:#FFFFFF}E-ILT-01|İletim Ekipmanları| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}İLETİM|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}İLETİM|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN 18+s|Yangın Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}E-YAN-01|Yangın Alarm Panelleri| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}E-YAN-02|Dedektörler| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}E-YAN-03|Buton| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|E-YAN-01/02/03/04/05|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}E-YAN-04|Uyarı Sistemleri| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Anma Gerilimi|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}E-YAN-05|IOM Modülleri| | |E|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Güç|E-YAN-01/02/03/04/05|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}YANGIN|{set:cellbgcolor:#FFFFFF}E-YAN-06|LHD Kablo| | |E|-|- s|LOD300 s|LOD300 s|LOD300|{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|E-YAN-01/02/03/04/05|Yazı| | |x|x|x
+s|{set:cellbgcolor:#78D6CD} 18+| BİLİŞİM
+s|{set:cellbgcolor:#C8EEEA}VERİ 18+s|Telefon ve Veri Ağ Elemanları
+s|{set:cellbgcolor:#C8EEEA}VERİ|{set:cellbgcolor:#FFFFFF}B-VER-01|Telefon Dağıtım| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}VERİ|{set:cellbgcolor:#FFFFFF}B-VER-02|Telefonlar| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}VERİ|{set:cellbgcolor:#FFFFFF}B-VER-03|Telefon ve Data Prizleri| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}VERİ|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|B-VER-01/02|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ANONS 18+s|Anons Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}ANONS|{set:cellbgcolor:#FFFFFF}B-ANO-01|Anons Konsolları| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ANONS|{set:cellbgcolor:#FFFFFF}B-ANO-02|Hoparlörler (SPK)| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ANONS|{set:cellbgcolor:#FFFFFF}B-ANO-03|Gürültü Mikrofonu| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ANONS|{set:cellbgcolor:#FFFFFF}B-ANO-04|Mikrofon Amplifikatörü| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Güç|B-ANO-02|Sayı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}ANONS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma Gerilimi|B-ANO-02/03/04|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}ANONS|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|B-ANO-02/03/04|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA 18+s|Kapalı Devre Kamera Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF}B-CCTV-01|Kamera| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IK Koruma Sınıfı|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma Gerilimi|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Güç|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}KAMERA|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Çözünürlük|Tümü|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}SAAT 18+s|Saat Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}SAAT|{set:cellbgcolor:#FFFFFF}B-SAAT-01|Dijital Saatler| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SAAT|{set:cellbgcolor:#FFFFFF}B-SAAT-02|GPS Anteni| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}SAAT|{set:cellbgcolor:#FFFFFF}B-SAAT-03|İstasyon Master Saat| | | | | | | | |{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}SAAT|{set:cellbgcolor:#FFFFFF}B-SAAT-04|Analog Saat| | | | | | | | |{set:cellbgcolor:#FEF1E6}Karakter Boyutu|B-SAAT-04|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}SAAT|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}Anma Gerilimi|B-SAAT-04|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}SAAT|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|B-SAAT-01|Yazı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}GÜVENLİK 18+s|Güvenlik Sistemi Elemanları
+s|{set:cellbgcolor:#C8EEEA}GÜVENLİK|{set:cellbgcolor:#FFFFFF}B-GUV-01|I/O Modülü| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Sistem adı|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GÜVENLİK|{set:cellbgcolor:#FFFFFF}B-GUV-02|Buton| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Tipi|Tümü|Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GÜVENLİK|{set:cellbgcolor:#FFFFFF}B-GUV-03|Kart Okuyucu| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Ekipman Kodu|Tümü|Sayı/Yazı| |x|x|x|x
+s|{set:cellbgcolor:#C8EEEA}GÜVENLİK|{set:cellbgcolor:#FFFFFF}B-GUV-04|Kapı Kontağı| | |B|- s|LOD300 s|LOD300 s|LOD400 s|LOD400|{set:cellbgcolor:#FEF1E6}Anma Gerilimi|Tümü|Sayı| | |x|x|x
+s|{set:cellbgcolor:#C8EEEA}GÜVENLİK|{set:cellbgcolor:#FFFFFF} | | | | | | | | | |{set:cellbgcolor:#FEF1E6}IP koruma sınıfı|Tümü|Yazı| | |x|x|x
+|===
+
+
+<<<<
+
+=== Ek 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü
+
+.bSTR Bilgi Teslimi Planlama Dökümü Şablonu
+[header,cols="^1,^1,^1,^1,^2,^1,^2,5,2,1,1,1,^1,^1,1,1"]
+|===
+^.^| Yapı Geliştirme Aşaması Kodu ^.^| Bilgi Tip Kodu ^.^| Bina Kodu ^.^| Disiplin Kodu ^.^| Teslim Kategorisi ^.^| Sıra Numarası ^.^| Teslim Kodu ^.^| Tanım ve Açıklama ^.^| Ölçek / Detay Seviyesi ^.^| Öncül Teslim Kodu / Kategorisi ^.^| Bağımlı Teslim Kodu / Kategorisi ^.^| Teslim Açıklaması ^.^| Sorumlu Disiplin / Rol - Kurum / Firma ^.^| Süreç Onayı Disiplin / Rol - Kurum / Firma ^.^| İdari Onay Otoritesi ^.^| Planlanan Pafta Adedi
+
+|{set:cellbgcolor:#FFFFFF} 01 15*|
+|... 15*|
+| 01 15*|
+|... 15*|
+| 02 15*|
+|... 15*|
+| 03 15*|
+|... 15*|
+| 04 15*|
+|... 15*|
+| 05 15*|
+|... 15*|
+| 06 15*|
+|... 15*|
+| 07 15*|
+|... 15*|
+| 08 15*|
+|... 15*|
+| 09 15*|
+|... 15*|
+|===
+
+[horizontal]
+Yapı Geliştirme Aşaması Kodu :: bSTR "Yapı Geliştirme Aşamaları" kodu.
+Bilgi Tip Kodu :: İlgili bilgi kabının bilgi kodu.
+Bina Kodu :: İlgili bilgi kabının bina kodu.
+Disiplin Kodu :: İlgili bilgi kabı üretecek sorumlu disiplin kodu.
+Teslim Kategorisi :: Yapı geliştirme aşaması kodu + Bilgi kodu + Bina Kodu + Disiplin kodundan oluşan ve filtreleme için oluşturulur.
+Sıra Numarası :: Her bilgi kabına benzersiz bir kod tanımlamak için verilen sıra numarası, her yeni aşama ve her farklı disiplin için sıra numarası yeniden başlatılır.
+Teslim Kodu :: Yapı Geliştirme Aşaması kodu + Bilgi kodu + Bina Kodu + Disiplin kodu + Sıra numarasından üretilmiş benzersiz kod.
+Tanım ve Açıklama:: Bilgi Teslim Planlama Dökümü'nde belirlenecek bilgi kabının tanımı ve açıklaması.
+Ölçek / Detay Seviyesi :: Bilgi kabının, varsa içeriğinin ölçek veya detay seviyesi.
+Öncül Teslim Kodu / Kategorisi :: Teslimi yapılacak bilgi kabının oluşturulması için varsa öncesinde tamamlanması gereken bilgi kabı teslim kodu veya teslim kodu.
+Bağımlı Teslim Kodu / Kategorisi :: Oluşturulması için teslimi yapılacak bilgi kabı için ihtiyaç duyulan veya birlikte tamamlanabilecek bağımlı bilgi kabı.
+Teslim Açıklaması :: Teslimi yapılacak bilgi kabının oluşturulması için öncesinde veya birlikte tamamlanması gereken bilgi kabı teslim kodu veya özellikle istenilen bilgiler.
+Sorumlu Disiplin / Rol - Kurum / Firma :: Bilgi kabını üretecek ve/veya sorumlu kurum veya firma kodu.
+Süreç Onayı Disiplin / Rol - Kurum / Firma:: Bilgi kabının üretim sürecini yürütecek, denetleyecek ve gerektiği takdirde ilgili kararların alınmasını sağlayacak kurum, firma veya temsilci kodu.
+İdari Onay Otoritesi :: Üretilen bilgi kabına, varsa yerel, yasal ve/veya resmi onayı verecek idari otorite.
+Planlanan Pafta Adedi :: Opsiyonel
+
+<<<
+
+.bSTR Bilgi Teslimi Planlama Dökümü Örneği
+[header,cols="^1,^1,^1,^1,^2,^1,^2,5,2,1,1,1,^1,^1,1,1"]
+|===
+^.^| Yapı Geliştirme Aşaması Kodu ^.^| Bilgi Tip Kodu ^.^| Bina Kodu ^.^| Disiplin Kodu ^.^| Teslim Kategorisi ^.^| Sıra Numarası ^.^| Teslim Kodu ^.^| Tanım ve Açıklama ^.^| Ölçek / Detay Seviyesi ^.^| Öncül Teslim Kodu / Kategorisi ^.^| Bağımlı Teslim Kodu / Kategorisi ^.^| Teslim Açıklaması ^.^| Sorumlu Disiplin / Rol - Kurum / Firma ^.^| Süreç Onayı Disiplin / Rol - Kurum / Firma ^.^| İdari Onay Otoritesi ^.^| Planlanan Pafta Adedi
+
+| 00 | RPR | GEN | V | 00-RPR-GEN-V | 1 | 00-RPR-GEN-V-001 | İnşaat Projesi Stratejik Tanım ve Plan Raporu | - | | | | V-ABC | - | |
+| 00 | RPR | GEN | V | 00-RPR-GEN-V | 2 | 00-RPR-GEN-V-002 | Proje Risk Değerlendirmesi | - | | | | V-ABC | - | |
+|{set:cellbgcolor:#C8EEEA} 01 | DGR | GEN | PY | 01-DGR-GEN-PY | 1 | 01-DGR-GEN-PY -001 | Proje İhtiyaç Programının Oluşturulması | - | | | | PY-XYZ | V-ABC | |
+| 01 | DGR | GEN | M | 01-DGR-GEN-M | 1 | 01-DGR-GEN-M-001 | Proje Alanı Topografik Analiz Çalışmaları | - | | | | M-RST | PY-XYZ | |
+| 01 | DGR | GEN | M | 01-DGR-GEN-M | 2 | 01-DGR-GEN-M-002 | Proje Alanı Doğal Çevre Analiz Çalışmaları | - | | | | M-RST | PY-XYZ | |
+| 01 | DGR | GEN | M | 01-DGR-GEN-M | 3 | 01-DGR-GEN-M-003 | Proje Alanı Yapay Çevre Analiz Çalışmaları | - | | | | M-RST | PY-XYZ | |
+| 01 | SEM | GEN | M | 01-SEM-GEN-M | 4 | 01-SEM-GEN-M-004 | Mekan ve İşlev Şemaları | - | | | | M-RST | PY-XYZ | |
+| 01 | DGR | GEN | M | 01-DGR-GEN-M | 5 | 01-DGR-GEN-M-005 | Mimari Konsept Maketleri | - | | | | M-RST | PY-XYZ | |
+| 01 | RPR | GEN | M | 01-RPR-GEN-M | 6 | 01-RPR-GEN-M-006 | Mimari Konsept ve Tasarım, Koordinasyon Raporu | - | | | | M-RST | PY-XYZ | |
+| 01 | DGR | GEN | M | 01-DGR-GEN-M | 7 | 01-DGR-GEN-M-007 | Mimari Konsept ve Tasarım Sunumu | - | | | | M-RST | PY-XYZ | |
+| 01 | RPR | GEN | M | 01-RPR-GEN-M | 8 | 01-RPR-GEN-M-008 | Proje Prosedürleri ve El Kitabı | - | | | | M-RST | PY-XYZ | |
+| 01 | RPR | GEN | M | 01-RPR-GEN-M | 9 | 01-RPR-GEN-M-009 | Stratejik Tasarım Programı | - | | | | M-RST | PY-XYZ | |
+| 01 | DGR | GEN | M | 01-DGR-GEN-M | 10 | 01-DGR-GEN-M-010 | Bilgi Teslimi Planlama Dökümü Çalışması | - | | | | M-RST | PY-XYZ | |
+|{set:cellbgcolor:#FFFFFF} 02 | CZM | ABL | M | 02-CZM-ABL-M | 1 | 02-M-CZM-0001 | Vaziyet Planı | 1/2000 - 1/1000 | | | | M-RST | PY-XYZ | |
+| 02 | CZM | ABL | M | 02-CZM-ABL-M | 2 | 02-CZM-ABL-M-002 | Kat ve Çatı Planları | 1/500 - 1/200 | | | | M-RST | PY-XYZ | |
+| 02 | CZM | ABL | M | 02-CZM-ABL-M | 3 | 02-CZM-ABL-M-003 | Genel Kesitler | 1/500 - 1/200 | | | | M-RST | PY-XYZ | |
+| 02 | CZM | ABL | M | 02-CZM-ABL-M | 4 | 02-CZM-ABL-M-004 | Genel Görünüşler | 1/500 - 1/200 | | | | M-RST | PY-XYZ | |
+| 02 | RPR | GEN | M | 02-RPR-GEN-M | 5 | 02-RPR-GEN-M-005 | Mimari Açıklama Raporu | - | | | | M-RST | PY-XYZ | |
+| 02 | RPR | GEN | M | 02-RPR-GEN-M | 6 | 02-RPR-GEN-M-006 | Disiplinlerarası Tasarım Koordinasyonu için Strateji Raporu | - | | | | M-RST | PY-XYZ | |
+| 02 | RPR | GEN | M | 02-RPR-GEN-M | 7 | 02-RPR-GEN-M-007 | Proje Prosedürleri ve El Kitabı | - | | | | M-RST | PY-XYZ | |
+| 02 | RPR | GEN | M | 02-RPR-GEN-M | 8 | 02-RPR-GEN-M-008 | Mimari Tasarım Sunumu | - | | | | M-RST | PY-XYZ | |
+| 02 | MDL | ABL | M | 02-MDL-ABL-M | 9 | 02-MDL-ABL-M-009 | BIM Model | LOD200 - LOD100 | | | | M-RST | PY-XYZ | |
+| 02 | CZM | ABL | M | 02-CZM-ABL-M | 10 | 02-CZM-ABL-M-010 | Mimari Görselleştirmeler | - | | | | M-RST | PY-XYZ | |
+|{set:cellbgcolor:#C8EEEA} 03 | CZM | ABL | M | 03-CZM-ABL-M | 1 | 03-CZM-ABL-M-001 | Vaziyet Planı | 1/1000 - 1/500 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 2 | 03-CZM-ABL-M-002 | Kat Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 3 | 03-CZM-ABL-M-003 | Çatı Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 4 | 03-CZM-ABL-M-004 | Genel Kesitler | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 5 | 03-CZM-ABL-M-005 | Sistem Detayları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | DGR | GEN | C | 03-DGR-GEN-C | 1 | 03-DGR-GEN-C-001 | Ön Cephe Sistemi Çalışmaları / Stratejisi | - | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 6 | 03-CZM-ABL-M-006 | Islak Alan Anahtar Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 7 | 03-CZM-ABL-M-007 | Islak Alan Detayları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 8 | 03-CZM-ABL-M-008 | Merdiven Anahtar Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 9 | 03-CZM-ABL-M-009 | Merdiven Detayları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | O | 03-CZM-ABL-O | 10 | 03-CZM-ABL-O-010 | Asansör Anahtar Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 11 | 03-CZM-ABL-M-011 | Döşeme Planları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 12 | 03-CZM-ABL-M-012 | Asma Tavan Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 13 | 03-CZM-ABL-M-013 | Duvar Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 14 | 03-CZM-ABL-M-014 | Duvar Detayları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 15 | 03-CZM-ABL-M-015 | Tefriş Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 16 | 03-CZM-ABL-M-016 | Otopark Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | Y | 03-CZM-ABL-Y | 1 | 03-CZM-ABL-Y-001 | Yangın Yönlendirme Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | P | 03-CZM-ABL-P | 1 | 03-CZM-ABL-P -001 | Peyzaj Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | RPR | ABL | P | 03-RPR-ABL-P | 2 | 03-RPR-ABL-P-002 | Peyzaj Raporu | - | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 17 | 03-CZM-ABL-M-017 | Alan ve Fonksiyonel Yerleşim Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | LST | ABL | M | 03-LST-ABL-M | 18 | 03-LST-ABL-M-018 | Mahal Listeleri | - | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 19 | 03-CZM-ABL-M-019 | Kapı Anahtar Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | LST | ABL | M | 03-LST-ABL-M | 20 | 03-LST-ABL-M-020 | Kapı Listeleri | - | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 21 | 03-CZM-ABL-M-021 | Kapı Detayları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 22 | 03-CZM-ABL-M-022 | Pencere Anahtar Planları | 1/200 - 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 03 | LST | ABL | M | 03-LST-ABL-M | 23 | 03-LST-ABL-M-023 | Pencere Listeleri | - | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 24 | 03-CZM-ABL-M-024 | Pencere Detayları | 1/50 - 1/20 | | | | M-RST | PY-XYZ | |
+| 03 | HSP | ABL | M | 03-HSP-ABL-M | 25 | 03-HSP-ABL-M-025 | Yerleşim Programı, Alan ve Hacim Hesapları | - | | | | M-RST | PY-XYZ | |
+| 03 | RPR | ABL | M | 03-RPR-ABL-M | 26 | 03-RPR-ABL-M-026 | Kesinleşmemiş Yaklaşık Maliyet Raporu | - | | | | M-RST | PY-XYZ | |
+| 03 | RPR | ABL | E | 03-RPR-ABL-E | 1 | 03-RPR-ABL-E -001 | Kesinleşmemiş Enerji Analiz Raporu | - | | | | M-RST | PY-XYZ | |
+| 03 | MDL | ABL | M | 03-MDL-ABL-M | 27 | 03-MDL-ABL-M-027 | BIM Model | LOD300 - LOD200 | | | | M-RST | PY-XYZ | |
+| 03 | CZM | ABL | M | 03-CZM-ABL-M | 28 | 03-CZM-ABL-M -028 | Mimari Görselleştirmeler | - | | | | M-RST | PY-XYZ | |
+|{set:cellbgcolor:#FFFFFF} 04 | CZM | ABL | M | 04-CZM-ABL-M | 1 | 04-CZM-ABL-M-001 | Vaziyet Planı | 1/500 - 1/200 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 2 | 04-CZM-ABL-M-002 | Kat Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 3 | 04-CZM-ABL-M-003 | Çatı Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 4 | 04-CZM-ABL-M-004 | Genel Kesitler | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 5 | 04-CZM-ABL-M-005 | Sistem Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 6 | 04-CZM-ABL-M-006 | Islak Alan Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 7 | 04-CZM-ABL-M-007 | Islak Alan Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 8 | 04-CZM-ABL-M-008 | Merdiven Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 9 | 04-CZM-ABL-M-009 | Merdiven Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | O | 04-CZM-ABL-O | 1 | 04-CZM-ABL-O-001 | Asansör Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | O | 04-CZM-ABL-O | 2 | 04-CZM-ABL-O-002 | Asansör Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 10 | 04-CZM-ABL-M-010 | Döşeme Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 11 | 04-CZM-ABL-M-011 | Tip Döşeme Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 12 | 04-CZM-ABL-M-012 | Asma Tavan Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 13 | 04-CZM-ABL-M-013 | Tip Asma Tavan Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 14 | 04-CZM-ABL-M-014 | Duvar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 15 | 04-CZM-ABL-M-015 | Tip Duvar Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 16 | 04-CZM-ABL-M-016 | Tefriş Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | LST | ABL | M | 04-LST-ABL-M | 17 | 04-LST-ABL-M-017 | Tefriş ve Malzeme Listeleri | - | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | C | 04-CZM-ABL-C | 1 | 04-CZM-ABL-C-001 | Cephe Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | C | 04-CZM-ABL-C | 2 | 04-CZM-ABL-C-002 | Cephe Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 18 | 04-CZM-ABL-M-018 | Kapı Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | LST | ABL | M | 04-LST-ABL-M | 19 | 04-LST-ABL-M-019 | Kapı Listeleri | - | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 20 | 04-CZM-ABL-M-020 | Kapı Detayları | 1/20 - 1/10 - 1/5 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 21 | 04-CZM-ABL-M-021 | Pencere Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | LST | ABL | M | 04-LST-ABL-M | 22 | 04-LST-ABL-M-022 | Pencere Listeleri | - | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 23 | 04-CZM-ABL-M-023 | Pencere Detayları | 1/20 - 1/10 - 1/5 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 24 | 04-CZM-ABL-M-024 | Otopark Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | RPR | ABL | M | 04-RPR-ABL-M | 25 | 04-RPR-ABL-M-025 | Otopark Hesabı ve Raporu | - | | | | M-RST | PY-XYZ | |
+| 04 | RPR | ABL | Y | 04-RPR-ABL-Y | 1 | 04-RPR-ABL-Y-001 | Yangın Yönlendirme Planları | - | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | P | 04-CZM-ABL-P | 1 | 04-CZM-ABL-P-001 | Peyzaj Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | P | 04-CZM-ABL-P | 2 | 04-CZM-ABL-P-002 | Peyzaj Kesitleri | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | P | 04-CZM-ABL-P | 3 | 04-CZM-ABL-P-003 | Peyzaj Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 04 | RPR | ABL | P | 04-RPR-ABL-P | 4 | 04-RPR-ABL-P-004 | Peyzaj Raporu | - | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 26 | 04-CZM-ABL-M-026 | Alan ve Fonksiyonel Yerleşim Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 04 | LST | ABL | M | 04-LST-ABL-M | 27 | 04-LST-ABL-M-027 | Mahal Listeleri | - | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 28 | 04-CZM-ABL-M-028 | Nokta Detayları | 1/10 - 1/5 | | | | M-RST | PY-XYZ | |
+| 04 | HSP | ABL | M | 04-HSP-ABL-M | 29 | 04-HSP-ABL-M-029 | Yerleşim Programı, Alan ve Hacim Hesapları | - | | | | M-RST | PY-XYZ | |
+| 04 | RPR | ABL | M | 04-RPR-ABL-M | 30 | 04-RPR-ABL-M-030 | Mimari Yapım Teknikleri Raporu | - | | | | M-RST | PY-XYZ | |
+| 04 | SRT | GEN | M | 04-SRT-GEN-M | 31 | 04-SRT-GEN-M-031 | Teknik Şartnameler | - | | | | M-RST | PY-XYZ | |
+| 04 | SRT | ABL | M | 04-SRT-ABL-M | 32 | 04-SRT-ABL-M-032 | Mimari Tasarım Şartnameleri | - | | | | M-RST | PY-XYZ | |
+| 04 | RPR | ABL | M | 04-RPR-ABL-M | 33 | 04-RPR-ABL-M-033 | Yaklaşık Maliyet Raporu | - | | | | M-RST | PY-XYZ | |
+| 04 | RPR | ABL | E | 04-RPR-ABL-E | 1 | 04-RPR-ABL-E-001 | Enerji Analiz Raporu | - | | | | M-RST | PY-XYZ | |
+| 04 | MDL | ABL | M | 04-MDL-ABL-M | 34 | 04-MDL-ABL-M-034 | BIM Model | LOD400 - LOD300 | | | | M-RST | PY-XYZ | |
+| 04 | CZM | ABL | M | 04-CZM-ABL-M | 35 | 04-CZM-ABL-M-035 | Mimari Görselleştirmeler | - | | | | M-RST | PY-XYZ | |
+|{set:cellbgcolor:#C8EEEA} 05 | CZM | ABL | M | 05-CZM-ABL-M | 1 | 05-CZM-ABL-M-001 | Vaziyet Planı | 1/500 - 1/200 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 2 | 05-CZM-ABL-M-002 | Kat Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 3 | 05-CZM-ABL-M-003 | Çatı Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 4 | 05-CZM-ABL-M-004 | Genel Kesitler | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 5 | 05-CZM-ABL-M-005 | Sistem Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 6 | 05-CZM-ABL-M-006 | Islak Alan Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 7 | 05-CZM-ABL-M-007 | Islak Alan Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 8 | 05-CZM-ABL-M-008 | Merdiven Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 9 | 05-CZM-ABL-M-009 | Merdiven Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | O | 05-CZM-ABL-O | 1 | 05-CZM-ABL-O-001 | Asansör Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | O | 05-CZM-ABL-O | 2 | 05-CZM-ABL-O-002 | Asansör Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 10 | 05-CZM-ABL-M-010 | Döşeme Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 11 | 05-CZM-ABL-M-011 | Tip Döşeme Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 12 | 05-CZM-ABL-M-012 | Asma Tavan Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 13 | 05-CZM-ABL-M-013 | Tip Asma Tavan Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 14 | 05-CZM-ABL-M-014 | Duvar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 15 | 05-CZM-ABL-M-015 | Tip Duvar Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 16 | 05-CZM-ABL-M-016 | Tefriş Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | LST | ABL | M | 05-LST-ABL-M | 17 | 05-LST-ABL-M-017 | Tefriş ve Malzeme Listeleri | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | C | 05-CZM-ABL-C | 1 | 05-CZM-ABL-C-001 | Cephe Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | C | 05-CZM-ABL-C | 2 | 05-CZM-ABL-C-002 | Cephe Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 18 | 05-CZM-ABL-M-018 | Kapı Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | LST | ABL | M | 05-LST-ABL-M | 19 | 05-LST-ABL-M-019 | Kapı Listeleri | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 20 | 05-CZM-ABL-M-020 | Kapı Detayları | 1/20 - 1/10 - 1/5 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 21 | 05-CZM-ABL-M-021 | Pencere Anahtar Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | LST | ABL | M | 05-LST-ABL-M | 22 | 05-LST-ABL-M-022 | Pencere Listeleri | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 23 | 05-CZM-ABL-M-023 | Pencere Detayları | 1/20 - 1/10 - 1/5 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 24 | 05-CZM-ABL-M-024 | Otopark Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | RPR | ABL | M | 05-RPR-ABL-M | 25 | 05-RPR-ABL-M-025 | Otopark Raporu ve Hesabı | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | Y | 05-CZM-ABL-Y | 1 | 05-CZM-ABL-Y-001 | Yangın Yönlendirme Planları | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | P | 05-CZM-ABL-P | 1 | 05-CZM-ABL-P-001 | Peyzaj Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | P | 05-CZM-ABL-P | 2 | 05-CZM-ABL-P-002 | Peyzaj Kesitleri | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | P | 05-CZM-ABL-P | 3 | 05-CZM-ABL-P-003 | Peyzaj Detayları | 1/20 - 1/10 | | | | M-RST | PY-XYZ | |
+| 05 | RPR | ABL | P | 05-RPR-ABL-P | 4 | 05-RPR-ABL-P-004 | Peyzaj Raporu | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 26 | 05-CZM-ABL-M-026 | Alan ve Fonksiyonel Yerleşim Planları | 1/100 - 1/50 | | | | M-RST | PY-XYZ | |
+| 05 | LST | ABL | M | 05-LST-ABL-M | 27 | 05-LST-ABL-M-027 | Mahal Listeleri | - | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 28 | 05-CZM-ABL-M-028 | Nokta Detayları | 1/10 - 1/5 | | | | M-RST | PY-XYZ | |
+| 05 | HSP | ABL | M | 05-HSP-ABL-M | 29 | 05-HSP-ABL-M-029 | Yerleşim Programı, Alan ve Hacim Hesapları | - | | | | M-RST | PY-XYZ | |
+| 05 | RPR | GEN | M | 05-RPR-GEN-M | 30 | 05-RPR-GEN-M-030 | Mimari Yapım Teknikleri Raporu | - | | | | M-RST | PY-XYZ | |
+| 05 | SRT | GEN | M | 05-SRT-GEN-M | 31 | 05-SRT-GEN-M-031 | Teknik Şartnameler | - | | | | M-RST | PY-XYZ | |
+| 05 | SRT | ABL | M | 05-SRT-ABL-M | 32 | 05-SRT-ABL-M-032 | Mimari Tasarım Şartnameleri | - | | | | M-RST | PY-XYZ | |
+| 05 | RPR | ABL | M | 05-RPR-ABL-M | 33 | 05-RPR-ABL-M-033 | Maliyet Raporu | - | | | | M-RST | PY-XYZ | |
+| 05 | RPR | ABL | PY | 05-RPR-ABL-PY | 1 | 05-RPR-ABL-PY-001 | Bütçe Takip Tablosu | - | | | | PY-XYZ | İşveren | |
+| 05 | RPR | ABL | E | 05-RPR-ABL-E | 1 | 05-RPR-ABL-E-001 | Enerji Analiz Raporu | - | | | | M-RST | PY-XYZ | |
+| 05 | MDL | ABL | M | 05-MDL-ABL-M | 34 | 05-MDL-ABL-M-034 | BIM Model | LOD400 - LOD300 | | | | M-RST | PY-XYZ | |
+| 05 | CZM | ABL | M | 05-CZM-ABL-M | 35 | 05-CZM-ABL-M-035 | Mimari Görselleştirmeler | - | | | | M-RST | PY-XYZ | |
+| 05 | DGR | ABL | M | 05-DGR-ABL-M | 36 | 05-DGR-ABL-M-036 | Keşiflerin Hazırlanması | - | | | | M-RST | PY-XYZ | |
+| 05 | DGR | ABL | M | 05-DGR-ABL-M | 37 | 05-DGR-ABL-M-037 | İhale Dosyasının Hazırlanıp İhaleye Çıkılması | - | | | | M-RST | PY-XYZ | |
+|{set:cellbgcolor:#FFFFFF} 06 | CZM | ABL | M | 06-CZM-ABL-M | 1 | 06-CZM-ABL-M-001 | Vaziyet Planı | 1/500 - 1/200 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 2 | 06-CZM-ABL-M-002 | Kat Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 3 | 06-CZM-ABL-M-003 | Çatı Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 4 | 06-CZM-ABL-M-004 | Genel Kesitler | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 5 | 06-CZM-ABL-M-005 | Sistem Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 6 | 06-CZM-ABL-M-006 | Islak Alan Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 7 | 06-CZM-ABL-M-007 | Islak Alan Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 8 | 06-CZM-ABL-M-008 | Merdiven Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 9 | 06-CZM-ABL-M-009 | Merdiven Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | O | 06-CZM-ABL-O | 1 | 06-CZM-ABL-O-001 | Asansör Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | O | 06-CZM-ABL-O | 2 | 06-CZM-ABL-O-002 | Asansör Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 10 | 06-CZM-ABL-M-010 | Döşeme Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 11 | 06-CZM-ABL-M-011 | Tip Döşeme Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 12 | 06-CZM-ABL-M-012 | Asma Tavan Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 13 | 06-CZM-ABL-M-013 | Tip Asma Tavan Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 14 | 06-CZM-ABL-M-014 | Duvar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 15 | 06-CZM-ABL-M-015 | Tip Duvar Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 16 | 06-CZM-ABL-M-016 | Tefriş Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | LST | ABL | M | 06-LST-ABL-M | 17 | 06-LST-ABL-M-017 | Tefriş ve Malzeme Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | C | 06-CZM-ABL-C | 1 | 06-CZM-ABL-C-001 | Cephe Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | C | 06-CZM-ABL-C | 2 | 06-CZM-ABL-C-002 | Cephe Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 18 | 06-CZM-ABL-M-018 | Kapı Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | LST | ABL | M | 06-LST-ABL-M | 19 | 06-LST-ABL-M-019 | Kapı Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 20 | 06-CZM-ABL-M-020 | Kapı Detayları | 1/20 - 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 21 | 06-CZM-ABL-M-021 | Pencere Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | LST | ABL | M | 06-LST-ABL-M | 22 | 06-LST-ABL-M-022 | Pencere Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 23 | 06-CZM-ABL-M-023 | Pencere Detayları | 1/20 - 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 24 | 06-CZM-ABL-M-024 | Otopark Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | RPR | ABL | M | 06-RPR-ABL-M | 25 | 06-RPR-ABL-M-025 | Otopark Raporu ve Hesabı | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | Y | 06-CZM-ABL-Y | 1 | 06-CZM-ABL-Y-001 | Yangın Yönlendirme Planları | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | P | 06-CZM-ABL-P | 1 | 06-CZM-ABL-P-001 | Peyzaj Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | P | 06-CZM-ABL-P | 2 | 06-CZM-ABL-P-002 | Peyzaj Kesitleri | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | P | 06-CZM-ABL-P | 3 | 06-CZM-ABL-P-003 | Peyzaj Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 06 | RPR | ABL | P | 06-RPR-ABL-P | 4 | 06-RPR-ABL-P-004 | Peyzaj Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 26 | 06-CZM-ABL-M-026 | Alan ve Fonksiyonel Yerleşim Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 06 | LST | ABL | M | 06-LST-ABL-M | 27 | 06-LST-ABL-M-027 | Mahal Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 28 | 06-CZM-ABL-M-028 | Nokta Detayları | 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 06 | HSP | ABL | M | 06-HSP-ABL-M | 29 | 06-HSP-ABL-M-029 | Yerleşim Programı, Alan ve Hacim Hesapları | - | | | | AY-MNO | PY-XYZ | |
+| 06 | RPR | ABL | M | 06-RPR-ABL-M | 30 | 06-RPR-ABL-M-030 | Mimari Yapım Teknikleri Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 06 | SRT | ABL | M | 06-SRT-ABL-M | 31 | 06-SRT-ABL-M-031 | Teknik Şartnameler | - | | | | AY-MNO | PY-XYZ | |
+| 06 | SRT | ABL | M | 06-SRT-ABL-M | 32 | 06-SRT-ABL-M-032 | Mimari Tasarım Şartnameleri | - | | | | AY-MNO | PY-XYZ | |
+| 06 | RPR | ABL | M | 06-RPR-ABL-M | 33 | 06-RPR-ABL-M-033 | Maliyet Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 06 | RPR | ABL | PY | 06-RPR-ABL-PY | 1 | 06-RPR-ABL-PY-001 | Bütçe Takip Tablosu | - | | | | PY-XYZ | İşveren | |
+| 06 | RPR | ABL | E | 06-RPR-ABL-E | 1 | 06-RPR-ABL-E-001 | Enerji Analiz Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 06 | MDL | ABL | M | 06-MDL-ABL-M | 34 | 06-MDL-ABL-M-034 | BIM Model | LOD400 - LOD300 | | | | AY-MNO | PY-XYZ | |
+| 06 | CZM | ABL | M | 06-CZM-ABL-M | 35 | 06-CZM-ABL-M-035 | Mimari Görselleştirmeler | - | | | | AY-MNO | PY-XYZ | |
+|{set:cellbgcolor:#C8EEEA} 07 | CZM | ABL | M | 07-CZM-ABL-M | 1 | 07-CZM-ABL-M-001 | Vaziyet Planı | 1/500 - 1/200 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 2 | 07-CZM-ABL-M-002 | Kat Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 3 | 07-CZM-ABL-M-003 | Çatı Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 4 | 07-CZM-ABL-M-004 | Genel Kesitler | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 5 | 07-CZM-ABL-M-005 | Sistem Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 6 | 07-CZM-ABL-M-006 | Islak Alan Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 7 | 07-CZM-ABL-M-007 | Islak Alan Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 8 | 07-CZM-ABL-M-008 | Merdiven Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 9 | 07-CZM-ABL-M-009 | Merdiven Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | O | 07-CZM-ABL-O | 1 | 07-CZM-ABL-O-001 | Asansör Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | O | 07-CZM-ABL-O | 1 | 07-CZM-ABL-O-001 | Asansör Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 10 | 07-CZM-ABL-M-010 | Döşeme Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 11 | 07-CZM-ABL-M-011 | Tip Döşeme Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 12 | 07-CZM-ABL-M-012 | Asma Tavan Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 13 | 07-CZM-ABL-M-013 | Tip Asma Tavan Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 14 | 07-CZM-ABL-M-014 | Duvar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 15 | 07-CZM-ABL-M-015 | Tip Duvar Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 16 | 07-CZM-ABL-M-016 | Tefriş Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | LST | ABL | M | 07-LST-ABL-M | 17 | 07-LST-ABL-M-017 | Tefriş ve Malzeme Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | C | 07-CZM-ABL-C | 1 | 07-CZM-ABL-C-001 | Cephe Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | C | 07-CZM-ABL-C | 2 | 07-CZM-ABL-C-002 | Cephe Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 18 | 07-CZM-ABL-M-018 | Kapı Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | LST | ABL | M | 07-LST-ABL-M | 19 | 07-LST-ABL-M-019 | Kapı Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 20 | 07-CZM-ABL-M-020 | Kapı Detayları | 1/20 - 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 21 | 07-CZM-ABL-M-021 | Pencere Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | LST | ABL | M | 07-LST-ABL-M | 22 | 07-LST-ABL-M-022 | Pencere Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 23 | 07-CZM-ABL-M-023 | Pencere Detayları | 1/20 - 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 24 | 07-CZM-ABL-M-024 | Otopark Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | M | 07-RPR-ABL-M | 25 | 07-RPR-ABL-M-025 | Otopark Raporu ve Hesabı | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | Y | 07-CZM-ABL-Y | 1 | 07-CZM-ABL-Y-001 | Yangın Yönlendirme Planları | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | P | 07-CZM-ABL-P | 1 | 07-CZM-ABL-P-001 | Peyzaj Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | P | 07-CZM-ABL-P | 2 | 07-CZM-ABL-P-002 | Peyzaj Kesitleri | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | P | 07-CZM-ABL-P | 3 | 07-CZM-ABL-P-003 | Peyzaj Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | P | 07-RPR-ABL-P | 4 | 07-RPR-ABL-P-004 | Peyzaj Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 26 | 07-CZM-ABL-M-026 | Alan ve Fonksiyonel Yerleşim Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 07 | LST | ABL | M | 07-LST-ABL-M | 27 | 07-LST-ABL-M-027 | Mahal Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 28 | 07-CZM-ABL-M-028 | Nokta Detayları | 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 07 | HSP | ABL | M | 07-HSP-ABL-M | 29 | 07-HSP-ABL-M-029 | Yerleşim Programı, Alan ve Hacim Hesapları | - | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | M | 07-RPR-ABL-M | 30 | 07-RPR-ABL-M-030 | Mimari Yapım Teknikleri Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 07 | SRT | GEN | M | 07-SRT-GEN-M | 31 | 07-SRT-GEN-M-031 | Teknik Şartnameler | - | | | | AY-MNO | PY-XYZ | |
+| 07 | SRT | ABL | M | 07-SRT-ABL-M | 32 | 07-SRT-ABL-M-032 | Mimari Tasarım Şartnameleri | - | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | M | 07-RPR-ABL-M | 33 | 07-RPR-ABL-M-033 | Maliyet Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | E | 07-RPR-ABL-E | 1 | 07-RPR-ABL-E-001 | Enerji Analiz Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 1 | 07-RPR-ABL-AY-001 | İş İlerlemesi Periyodik Takip Raporları | - | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 2 | 07-RPR-ABL-AY-002 | İş Programı | - | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 3 | 07-RPR-ABL-AY-003 | Bütçe Takip Tablosu | - | | | | PY-XYZ | V-ABC | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 4 | 07-RPR-ABL-AY-004 | Günlük İlerleme Raporu | | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 5 | 07-RPR-ABL-AY-005 | Haftalık İlerleme Raporıu | | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 6 | 07-RPR-ABL-AY-006 | Aylık İlerleme Raporu | | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 7 | 07-RPR-ABL-AY-007 | İmalat Tasarımı Onay Takip Raporu | | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 8 | 07-RPR-ABL-AY-008 | Malzeme Onayı Onay Takip Raporu | | | | | AY-MNO | PY-XYZ | |
+| 07 | RPR | ABL | AY | 07-RPR-ABL-AY | 9 | 07-RPR-ABL-AY-009 | Detay İş Programı | | | | | AY-MNO | PY-XYZ | |
+| 07 | MDL | ABL | M | 07-MDL-ABL-M | 34 | 07-MDL-ABL-M-034 | BIM Model | LOD400 - LOD300 | | | | AY-MNO | PY-XYZ | |
+| 07 | CZM | ABL | M | 07-CZM-ABL-M | 35 | 07-CZM-ABL-M-035 | Mimari Görselleştirmeler | - | | | | AY-MNO | PY-XYZ | |
+|{set:cellbgcolor:#FFFFFF} 08 | CZM | ABL | M | 08-CZM-ABL-M | 1 | 08-CZM-ABL-M-001 | Vaziyet Planı | 1/500 - 1/200 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 2 | 08-CZM-ABL-M-002 | Kat Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 3 | 08-CZM-ABL-M-003 | Çatı Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 4 | 08-CZM-ABL-M-004 | Genel Kesitler | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 5 | 08-CZM-ABL-M-005 | Sistem Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 6 | 08-CZM-ABL-M-006 | Islak Alan Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 7 | 08-CZM-ABL-M-007 | Islak Alan Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 8 | 08-CZM-ABL-M-008 | Merdiven Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 9 | 08-CZM-ABL-M-009 | Merdiven Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | O | 08-CZM-ABL-O | 1 | 08-CZM-ABL-O-001 | Asansör Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | O | 08-CZM-ABL-O | 2 | 08-CZM-ABL-O-002 | Asansör Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 10 | 08-CZM-ABL-M-010 | Döşeme Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 11 | 08-CZM-ABL-M-011 | Tip Döşeme Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 12 | 08-CZM-ABL-M-012 | Asma Tavan Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 13 | 08-CZM-ABL-M-013 | Tip Asma Tavan Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 14 | 08-CZM-ABL-M-014 | Duvar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 15 | 08-CZM-ABL-M-015 | Tip Duvar Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 16 | 08-CZM-ABL-M-016 | Tefriş Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | LST | ABL | M | 08-LST-ABL-M | 17 | 08-LST-ABL-M-017 | Tefriş ve Malzeme Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | C | 08-CZM-ABL-C | 1 | 08-CZM-ABL-C-001 | Cephe Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | C | 08-CZM-ABL-C | 2 | 08-CZM-ABL-C-002 | Cephe Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 18 | 08-CZM-ABL-M-018 | Kapı Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | LST | ABL | M | 08-LST-ABL-M | 19 | 08-LST-ABL-M-019 | Kapı Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 20 | 08-CZM-ABL-M-020 | Kapı Detayları | 1/20 - 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 21 | 08-CZM-ABL-M-021 | Pencere Anahtar Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | LST | ABL | M | 08-LST-ABL-M | 22 | 08-LST-ABL-M-022 | Pencere Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 23 | 08-CZM-ABL-M-023 | Pencere Detayları | 1/20 - 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 24 | 08-CZM-ABL-M-024 | Otopark Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | RPR | ABL | M | 08-RPR-ABL-M | 25 | 08-RPR-ABL-M-025 | Otopark Raporu ve Hesabı | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | Y | 08-CZM-ABL-Y | 1 | 08-CZM-ABL-Y-001 | Yangın Yönlendirme Planları | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | P | 08-CZM-ABL-P | 1 | 08-CZM-ABL-P-001 | Peyzaj Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | P | 08-CZM-ABL-P | 2 | 08-CZM-ABL-P-002 | Peyzaj Kesitleri | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | P | 08-CZM-ABL-P | 3 | 08-CZM-ABL-P-003 | Peyzaj Detayları | 1/20 - 1/10 | | | | AY-MNO | PY-XYZ | |
+| 08 | RPR | ABL | P | 08-RPR-ABL-P | 4 | 08-RPR-ABL-P-004 | Peyzaj Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 26 | 08-CZM-ABL-M-026 | Alan ve Fonksiyonel Yerleşim Planları | 1/100 - 1/50 | | | | AY-MNO | PY-XYZ | |
+| 08 | LST | ABL | M | 08-LST-ABL-M | 27 | 08-LST-ABL-M-027 | Mahal Listeleri | - | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 28 | 08-CZM-ABL-M-028 | Nokta Detayları | 1/10 - 1/5 | | | | AY-MNO | PY-XYZ | |
+| 08 | HSP | ABL | M | 08-HSP-ABL-M | 29 | 08-HSP-ABL-M-029 | Yerleşim Programı, Alan ve Hacim Hesapları | - | | | | AY-MNO | PY-XYZ | |
+| 08 | RPR | ABL | M | 08-RPR-ABL-M | 30 | 08-RPR-ABL-M-030 | Mimari Yapım Teknikleri Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 08 | SRT | GEN | M | 08-SRT-GEN-M | 31 | 08-SRT-GEN-M-031 | Teknik Şartnameler | - | | | | AY-MNO | PY-XYZ | |
+| 08 | SRT | ABL | M | 08-SRT-ABL-M | 32 | 08-SRT-ABL-M-032 | Mimari Tasarım Şartnameleri | - | | | | AY-MNO | PY-XYZ | |
+| 08 | RPR | ABL | M | 08-RPR-ABL-M | 33 | 08-RPR-ABL-M-033 | Maliyet Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 08 | RPR | ABL | E | 08-RPR-ABL-E | 1 | 08-RPR-ABL-E-001 | Enerji Analiz Raporu | - | | | | AY-MNO | PY-XYZ | |
+| 08 | MDL | ABL | M | 08-MDL-ABL-M | 34 | 08-MDL-ABL-M-034 | BIM Model | LOD400 - LOD300 | | | | AY-MNO | PY-XYZ | |
+| 08 | CZM | ABL | M | 08-CZM-ABL-M | 35 | 08-CZM-ABL-M-035 | Mimari Görselleştirmeler | - | | | | AY-MNO | PY-XYZ | |
+|===
+
+
+<<<
+
+=== Ek 6 BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP)
+
+.bSTR İş ve Ana Bilgi Teslim Planı Tablosu Şablonu
+[header,cols="^1,1,1,1,2,1,2,3,2,1,1,1,1,1,1,1,2,2,2,4"]
+|===
+^.^s|{set:cellbgcolor:#FFFFFF} [.tbltights]#Yapı Geliştirme Aşaması Kodu#
+^.^s|[.tbltights]#Bilgi Kodu#
+^.^s|[.tbltights]#Bina Kodu#
+^.^s|[.tbltights]#Disiplin Kodu#
+^.^s|[.tbltights]#Teslim Kategori#
+^.^s|[.tbltights]#Sıra No.#
+^.^s|[.tbltights]#Teslim Kodu#
+^.^s|[.tbltights]#Tanım ve Açıklama#
+^.^s|[.tbltights]#Ölçek / Detay Seviyesi#
+^.^s|[.tbltights]#Öncül Teslim Kodu / Kategori#
+^.^s|[.tbltights]#Bağımlı Teslim Kodu / Kategori#
+^.^s|[.tbltights]#Teslim Açıklaması#
+^.^s|[.tbltights]#Sorumlu Disiplin / Rol - Kurum / Firma#
+^.^s|[.tbltights]#Süreç Onayı Disiplin / Rol - Kurum / Firma#
+^.^s|[.tbltights]#İdari Onay Otoritesi#
+^.^s|[.tbltights]#Planlanan Pafta Adedi#
+^.^s|[.tbltights]#İş Ekibi (Atanan) Teslim Tarihi#
+^.^s|[.tbltights]#Ana Atanan Teslim Tarihi#
+^.^s|[.tbltights]#Planlanan Onay Tarihi#
+^.^s|[.tbltights]#Bilgi Kabı Kodu#
+
+16+^s|{set:cellbgcolor:#F1DEC6} Bilgi Teslim Planlama Sürecinde Doldurulacak Kısım (*)
+4+^s|{set:cellbgcolor:#C6D9F1} İş ve Ana Bilgi Teslim Planı Sürecinde Doldurulacak Kısım
+
+|{set:cellbgcolor:#00FFFFFF} 01 19*|
+|... 19*|
+|01 19*|
+|... 19*|
+|02 19*|
+|... 19*|
+|03 19*|
+|... 19*|
+|04 19*|
+|... 19*|
+|05 19*|
+|... 19*|
+|06 19*|
+|... 19*|
+|07 19*|
+|... 19*|
+|08 19*|
+|... 19*|
+|09 19*|
+|... 19*|
+20+<| _* Not_: Bilgi Teslim Planlama sürecinde doldurulacak kolonların açıklamaları için BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP) şablonun verildiği eke bakınız.
+|===
+
+[horizontal]
+İş Ekibi (Atanan) Teslim Tarihi	:: Atanan iş ekibinin bilgi kabını ana atanana teslimi için planlanan tarih.
+Ana Atanan Teslim Tarihi :: Ana atananın bilgi kabını atayana teslimi için planlanan tarih.
+Planlanan Onay Tarihi :: Atayanın teslim edilen bilgi kabının onaylaması için planlanan tarih, doldurulması zorunlu olmayan alan olarak önerilmiştir.
+Bilgi Kabı Kodu :: Her bilgi kabı  için verilmiş benzersiz koddur.
+
+
+<<<
+
+.bSTR İş ve Ana Bilgi Teslim Planı Tablosu Örneği
+[header,cols="1,1,1,1,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,4"]
+|===
+^.^s|{set:cellbgcolor:#FFFFFF} [.tbltights]#Yapı Geliştirme Aşaması Kodu#
+^.^s|[.tbltights]#Bilgi Kodu#
+^.^s|[.tbltights]#Bina Kodu#
+^.^s|[.tbltights]#Disiplin Kodu#
+^.^s|[.tbltights]#Teslim Kategori#
+^.^s|[.tbltights]#Sıra No.#
+^.^s|[.tbltights]#Teslim Kodu#
+^.^s|[.tbltights]#Tanım ve Açıklama#
+^.^s|[.tbltights]#Ölçek / Detay Seviyesi#
+^.^s|[.tbltights]#Öncül Teslim Kodu / Kategori#
+^.^s|[.tbltights]#Bağımlı Teslim Kodu / Kategori#
+^.^s|[.tbltights]#Teslim Açıklaması#
+^.^s|[.tbltights]#Sorumlu Disiplin / Rol - Kurum / Firma#
+^.^s|[.tbltights]#Süreç Onayı Disiplin / Rol - Kurum / Firma#
+^.^s|[.tbltights]#İdari Onay Otoritesi#
+^.^s|[.tbltights]#Planlanan Pafta Adedi#
+^.^s|[.tbltights]#İş Ekibi (Atanan) Teslim Tarihi#
+^.^s|[.tbltights]#Ana Atanan Teslim Tarihi#
+^.^s|[.tbltights]#Planlanan Onay Tarihi#
+^.^s|[.tbltights]#Bilgi Kabı Kodu#
+
+16+^s|{set:cellbgcolor:#F1DEC6} Bilgi Teslim Planlama Sürecinde Doldurulacak Kısım
+4+^s|{set:cellbgcolor:#C6D9F1} İş ve Ana Bilgi Teslim Planı Sürecinde Doldurulacak Kısım
+
+^s|{set:cellbgcolor:#FFFFFF}... 19*|
+^s|{set:cellbgcolor:#78D6CD} 04 ^s| CZM ^s| ABL ^s| M ^s| 04-CZM-ABL-M ^s| 1 ^s| 04-CZM-ABL-M-001 ^s| Vaziyet Planı ^s| 1/500 - 1/200 ^s| ^s| ^s| ^s| M-RST ^s| PY-XYZ ^s| ^s| 4*|
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 1 >e| 04-CZM-ABL-M-001 >e| Vaziyet Planı >e| 1/500 | | | >e| M-RST >e| PY-XYZ >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-XX-M-VAZ-RST-001-00
+^s|{set:cellbgcolor:#78D6CD}  04 ^s| CZM ^s| ABL ^s| M ^s| 04-CZM-ABL-M ^s| 2 ^s| 04-CZM-ABL-M-002 ^s| Kat Planları ^s| 1/100 - 1/50 ^s| ^s| ^s| ^s| M-RST ^s| PY-XYZ ^s| ^s| 4*|
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 2 >e| 04-CZM-ABL-M-002 >e| Zemin Kat Planı >e| 1/100 | | | >e| M-RST >e| PY-XYZ >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZK-M-KAT-RST-001-00
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 2 >e| 04-CZM-ABL-M-002 >e| 1. Kat Planı >e| 1/100 | | | >e| M-RST >e| PY-XYZ >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-01-M-KAT-RST-002-00
+^s|{set:cellbgcolor:#78D6CD}  04 ^s| CZM ^s| ABL ^s| M ^s| 04-CZM-ABL-M ^s| 3 ^s| 04-CZM-ABL-M-003 ^s| Çatı Planları ^s| 1/100 - 1/50 ^s| ^s| ^s| ^s| M-RST ^s| PY-XYZ ^s| ^s| 4*|
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 3 >e| 04-CZM-ABL-M-003 >e| Çatı Kat Planı >e| 1/100 | | | >e| M-RST >e| PY-XYZ >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-CK-M-KAT-RST-001-00
+^s|{set:cellbgcolor:#78D6CD}  04 ^s| CZM ^s| ABL ^s| M ^s| 04-CZM-ABL-M ^s| 4 ^s| 04-CZM-ABL-M-004 ^s| Genel Kesitler ^s| 1/100 - 1/50 ^s| ^s| ^s| ^s| M-RST ^s| PY-XYZ ^s| ^s| 4*|
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 4 >e| 04-CZM-ABL-M-004 >e| 1-1 Kesit >e| 1/100 | | | >e| M-RST >e| PY-XYZ >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZZ-M-KES-RST-001-00
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 4 >e| 04-CZM-ABL-M-004 >e| 2-2 Kesit >e| 1/100 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZZ-M-KES-RST-002-00
+^s|{set:cellbgcolor:#78D6CD}  04 ^s| CZM ^s| ABL ^s| M ^s| 04-CZM-ABL-M ^s| 5 ^s| 04-CZM-ABL-M-005 ^s| Genel Görünüşler ^s| 1/100 - 1/50 ^s| ^s| ^s| ^s| M-RST ^s| PY-XYZ ^s| ^s| 4*|
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 5 >e| 04-CZM-ABL-M-005 >e| Kuzey Cephe >e| 1/100 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZZ-M-GOR-RST-001-00
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 5 >e| 04-CZM-ABL-M-005 >e| Güney Cephe >e| 1/100 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZZ-M-GOR-RST-002-00
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 5 >e| 04-CZM-ABL-M-005 >e| Doğu Cephe >e| 1/100 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZZ-M-GOR-RST-003-00
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 5 >e| 04-CZM-ABL-M-005 >e| Batı Cephe >e| 1/100 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-ZZ-M-GOR-RST-004-00
+^s|{set:cellbgcolor:#78D6CD}  04 ^s| CZM ^s| ABL ^s| M ^s| 04-CZM-ABL-M ^s| 6 ^s| 04-CZM-ABL-M-005 ^s| Sistem Detayları ^s| 1/20 - 1/10 ^s| ^s| ^s| ^s| M-RST ^s| PY-XYZ ^s| ^s| 4*|
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 6 >e| 04-CZM-ABL-M-006 >e| Sistem Detay 1 >e| 1/20 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-XX-M-DET-RST-001-00
+>e|{set:cellbgcolor:#C8EEEA} 04 >e| CZM >e| ABL >e| M >e| 04-CZM-ABL-M >e| 6 >e| 04-CZM-ABL-M-006 >e| Sistem Detay 2 >e| 1/20 | | | >e| M-RST >e| PY-XY2 >e| D-BEL | >e| 01.01.23 >e| 10.01.23 >e| 25.01.23 >e| BST-04-CZM-ABL-XX-M-DET-RST-002-00
+^s|{set:cellbgcolor:#FFFFFF}... 19*|
+|===
+
+
+[.portrait]
+<<<

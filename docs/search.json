@@ -1,0 +1,1089 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı",
+    "section": "",
+    "text": "Önsöz\n\nMuhammed Maraşlı\n\nbuildingSMART Türkiye Yürütme Kurulu Başkanı\n\n\nDünyada kullanımı son 15 yılda hızla yayılan BIM ile inşaat ve yapı sektörü; hız, verimlilik, sürdürülebilirlik ve ekip çalışması avantajlarına kavuşuyor. Dolayısıyla BIM’in önemi, hem yurt dışındaki projelerdeki gereksinimler hem de Türkiye’de sektörün bu yönde evrilmesi doğrultusunda her geçen gün artıyor. Yurt dışı müteahhitlik hizmetlerinde ilk üç sıra içinde yer alan Türk müteahhitlerin daha fazla değer yaratması adına istihdam, malzeme ve projelerin de birlikte hareket etmesi için özel sektörün yanı sıra kamu kuruluşlarının da BIM uygulamalarına yönelik desteğinin sağlanması gerekli görünüyor.\nÜlkemizde BIM kullanımı konusunda hala yolun başında olduğumuzu biliyoruz. Ama yine de birçok önemli projede BIM kullanıldığını; mimar, mühendis, müteahhit ve müşavirlerimizin bu konudaki çabalarını görmek sevindirici. Kamudaki sözleşmelerin bazılarında BIM zorunluluğunun getirilmesi de ülkemizdeki projelerde BIM kullanım oranını artırdı. Diğer bazı ülkelerde olduğu gibi ülkemizde de tüm kamu kurumlarının belli büyüklükteki projelerde BIM kullanımını zorunlu hale getirmesi süreci daha da hızlandıracaktır. Büyük ölçekli firmalar BIM’e ciddi yatırım yaparken küçük ölçekli firmalarda da BIM’e geçiş konusunda bir gayret söz konusu. Fakat BIM’e tam anlamda geçiş için sadece finansal kaynaklar değil ciddi bir süreçe ve bilince ihtiyaç var. Bunun yanı sıra eğitim, araştırma ve üniversite-sanayi işbirliği çerçevesinde pek çok çalışma yürütüldüğünü biliyoruz.\nÜlkemizde bu konuda yapılacak çok fazla görev ve sorumluluk olduğu bilincinden hareketle; inşaat sektörünün tüm paydaşlarının ortak çabasıyla kurulan buildingSMART Türkiye, tüm yapı sektörü paydaşlarının yapıların yaşam döngüsü boyunca iş süreçlerini iyileştirmeye yönelik veri oluşturma, verinin ortak paylaşımını sağlama ve güncelleme konusunda anlayış birliği ve iş metotları geliştirmiş bir Türkiye yapı sektörü yaratma vizyonuyla çalışmalarını yürütüyor. buildingSMART Türkiye olarak misyonumuz yapı sektörü paydaşlarının açık standartlarla, işbirlikçi süreçler ve bileşik uygulamalarla çalışmasını sağlamaya yönelik açık işbirliği ve iletişim ortamını sağlayan bir odak olarak; üyelerine destek, öğrenim fırsatları ve iyi örnek uygulamaları sunarken buildingSMART International çalışmalarına katkıda bulunmaktır.\nBu çalışmayla sektörümüzün tüm paydaşların kendi çalışma alanlarıyla ilgili yapının tüm yaşam döngüsün boyunca üretilen bilgilerin düzenlenmesi, sayısallaştırılması ve yönetilmesi konusunda uzun zamandır talep edilen bu rehberi yayınlamaktan büyük bir mutluluk duyuyoruz.\nBirçok buildingSMART Türkiye üyemiz bu çalışmaya katkıda bulundu. Titiz çalışmalarından dolayı başta buildingSMART Türkiye Yürütme Kurulu Başkan Yardımcısı ve Standartlar ve Yayınlar Çalışma Grubu Koordinatörü Dr. Ahmet Çıtıpıtıoğlu ile buildingSMART Türkiye Yürütme Kurulu Üyesi ve Proje Geliştirme Çalışma Grubu Koordinatörü Serkan Elibollar’a, emeği geçen tüm üyelerimize buildingSMART Türkiye adına teşekkür ediyoruz. Çalışmalarımız konusunda daha detaylı bilgi edinmek ve çalışma gruplarımıza katılmak için web sitemizi ziyaret edebilirsiniz: www.buildingsmartturkiye.org\nGelin yapı sektörünün sayısal geleceğini beraber kurgulayalım…",
+    "crumbs": [
+      "Önsöz"
+    ]
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "Giriş",
+    "section": "",
+    "text": "Bu Rehber Nasıl Kullanılmalı?\nBu rehber buildingSMART Türkiye (bSTR) vizyonu doğrultusunda Çalışma Grupları tarafından tüm yapı sektörü paydaşlarının yapıların yasam döngüsü boyunca iş süreçlerini iyileştirmeye yönelik sayısal altyapılarla veri oluşturmak, verinin ortak paylaşımını sağlamak ve güncellemek konusunda anlayış̧ birliği ve iş metotları tanımlamak üzere hazırlanmıştır.\nÇalışmanın içeriği sektörden geniş̧ bir paydaş̧ yelpazesini temsil eden: kamu ve özel sektör işverenleri ile işletmeciler, müşavirler, danışmanlar, inşaat malzemeleri üreticileri, müteahhitler, yükleniciler, akademisyen ve yazılım tedarikçileri ile geliştiricilerin bir araya geldiği bSTR Çalışma Grupları ile yorumlarıyla katkıda bulunan destekleyen kurumların ortak eseridir.\nİlgili dünya standartlarına uyumlu olarak, bu çalışma Türkiye’de yapının planlaması, tasarımı, inşası ile varlık teslim ve işletme aşamasında yer alan tüm paydaşların kendi ihtiyaçlarıyla birlikte proje ihtiyaçlarını karşılayan, uyumlu süreçlerin ve kurguların oluşturulmasını sağlayacak bilgileri içermektedir. Kurgulanan sayısal süreçler ile altyapıların mevcut süreçlerle mümkün olduğunca bütünleştirilmesi önemlidir. Bu belgede tanımlanan bilgi yönetimi kavram ve ilkeleri, varlık yönetimi veya proje kapsamın özel şartlarına ve gereksinimlerine uygun olarak uyarlanmalı ve uygulanmalıdır.\nSektörde bilgilerin ve süreçlerin sayısallaştırılmasındaki ana amaç: inşaat projelerinde, varlık teslim ve işletme aşamasında, geniş anlamda bilgi modellerinin üretimi ve kullanımını sağlayacak süreçlerin tesis edilmesiyle sektör genelinde risklerin ve maliyetlerin azaltılması yoluyla, sektör genelinde verimliliğin ve karlılığın arttırılmasını sağlamaktır.\nProjelerdeki bilgi yönetim süreçlerinin genelinde ortak anlayış sağlamak için ilk bölümler yapı geliştirme aşamalarını ve bu aşamalarda paydaşlar arasındaki bilgi yönetimi süreci aşamalarını tarif ederek başlıyor. Rehberin diğer bölümleri ise projelerin farklı aşamalarında görev alan paydaşlara yönelik, birbirleriyle bağlantılı olacak şekilde, kendi kapsam ve ihtiyaçları doğrultusunda geliştirilmiştir. Son bölümde rehberde tarif edilen belge ve süreçlerin farklı proje türleri için uygulama örnekleri ve açıklamaları verilmiştir.",
+    "crumbs": [
+      "Giriş"
+    ]
+  },
+  {
+    "objectID": "preface.html#bim-ve-sayısal-süreçlerin-sektörde-kullanımları-nelerdir-neden-kullanılmalıdır",
+    "href": "preface.html#bim-ve-sayısal-süreçlerin-sektörde-kullanımları-nelerdir-neden-kullanılmalıdır",
+    "title": "Giriş",
+    "section": "BIM ve Sayısal Süreçlerin Sektörde Kullanımları Nelerdir, Neden Kullanılmalıdır?",
+    "text": "BIM ve Sayısal Süreçlerin Sektörde Kullanımları Nelerdir, Neden Kullanılmalıdır?\nTasarım, inşaat ve işletmeyi kapsayan yapı sektörü genelinde çalışma süreçleri, yeni gelişen teknolojilerle sayısallaşıyor. BIM yani Türkçesiyle “Yapı Bilgi Modellemesi” sayesinde inşaat sektörü; hız, verimlilik, sürdürülebilirlik ve ekip çalışması avantajlarına kavuşuyor. Ülke ekonomisinde yapı sektörünün büyük bir payı bulunuyor dolayısıyla BIM’in önemi hem yurt dışındaki projelerdeki gereksinimler hem de Türkiye’de sektörün bu yönde evrilmesi doğrultusunda her geçen gün artıyor. Bölge ve dünya pazarlarında rekabet edebilmek ve verimliliği artırmak için BIM ve beraberinde getirdiği sayısal uygulamaların tüm paydaşlarca doğru anlaşılıp yönlendirilmesi, geliştirilmesi ve yaygın olarak uygulanması kaçınılmaz bir gerek haline gelmiş durumda.",
+    "crumbs": [
+      "Giriş"
+    ]
+  },
+  {
+    "objectID": "preface.html#buildingsmart-international-bsi-ve-buildingsmart-türkiye-bstr",
+    "href": "preface.html#buildingsmart-international-bsi-ve-buildingsmart-türkiye-bstr",
+    "title": "Giriş",
+    "section": "buildingSMART International (bSI) ve buildingSMART Türkiye (bSTR)",
+    "text": "buildingSMART International (bSI) ve buildingSMART Türkiye (bSTR)\nbuildingSMART dünya çapında yapı sektörünün kullanımına yönelik açık ve uluslararası veri standartları geliştirmek yoluyla endüstrinin sayısal dönüşümünde öncülük eden açık, tarafsız ve uluslararası kar amacı gütmeyen bir organizasyondur.\nYapı endüstrisi ülke ekonomisi için büyük önem taşımaktadır. Bölge ve dünya pazarlarında rekabet edebilmek ve verimliliği arttırmak için BIM ve beraberinde getirdiği sayısal uygulamaların tüm paydaşlarca doğru anlaşılıp yönlendirilmesi, geliştirilmesi ve yaygın olarak uygulanması kaçınılmaz bir gerek haline gelmiştir. buildingSMART Türkiye, yapı sektöründe openBIM ve sayısal uygulamaların doğru ve yaygın kullanımını destekleyecek faaliyetlerde bulunmak amacıyla kurulmuştur.\nbSTR Vizyonu :: Tüm yapı sektörü paydaşlarının yapıların yaşam döngüsü boyunca iş süreçlerini iyileştirmeye yönelik veri oluşturma, verinin ortak paylaşımını sağlama ve güncelleme konusunda anlayış birliği ve iş metotları geliştirmiş bir Türkiye yapı sektörü.\nbSTR Misyonu :: Tüm yapı sektörü paydaşlarının açık standartlarla, işbirlikçi süreçler ve bileşik uygulamalarla çalışmasını sağlamaya yönelik açık işbirliği ve iletişim ortamını sağlayan bir odak olarak; üyelerine destek, öğrenim fırsatları ve örnek iyi uygulamaları sunarken buildingSMART International çalışmalarına katkıda bulunmak.\nbSTR vizyonuna ulaşmak için tanımlanan misyon doğrultusunda yapılacak çalışmaların ana kapsamı aşağıda özetlenmiştir:\nÖncülük\n\nTürkiye’de BIM kullanımı konusunda odak olarak, ülke çapında sorumluluk almak\nYapı endüstrisine fayda sağlayacak ileri seviyedeki kültürel, ticari ve teknik uygulama ve iş akışlarına önayak olmak\nKamu, üniversite ve özel sektör işbirliğine destek sağlamak\n\nEtkileşim ve Açılım\n\nGeniş katılımlı, dinamik bir kullanıcı kitlesi oluşturmak\nFaaliyetlerin, tüm seviyelerdeki gerçek kullanıcıların ihtiyaçlarına yönelik olmasını sağlamak\nGüncel sorunlar ve çözümleri konularında buildingSMART International programları ile ilgili paylaşımlarda bulunmak\nopenBIM ile girişimleri teşvik etmek ve geliştirmek\nBenzer amaçları paylaşan kurum ve kuruluşlarla işbirliği sağlamak\n\nYerelleştirme\n\nYerel ihtiyaçlara hitap eden uygulama rehberleri ve şartnameler geliştirmek\nGüncel, teknik, fonksiyonel ihtiyaçları belirleyip bunları bSI standart ve/veya uyumluluk programlarına yansıtmak\nEğitim ihtiyaçlarını belirleyerek BIM eğitimi yapan kuruluşlarla işbirliği içinde buildingSMART sertifikasyonu sağlamak\nBelgelendirme ve sertifikasyon ihtiyaçlarını belirlemek\nÜlke çapında geliştirilen yeni standartları yaymak ve yerel ihtiyaçlara göre uyarlamak",
+    "crumbs": [
+      "Giriş"
+    ]
+  },
+  {
+    "objectID": "preface.html#tanımlar-ve-terimler",
+    "href": "preface.html#tanımlar-ve-terimler",
+    "title": "Giriş",
+    "section": "Tanımlar ve Terimler",
+    "text": "Tanımlar ve Terimler\n\nBIM\n\nYapı Bilgi Modellemesi [Building Information Modeling]\n\nCDE\n\nOrtak Veri Ortamı (OVO) [Common Data Environment]\n\nInformation Container\n\nBilgi Kabı: Bir dosyanın benzersiz kimliğini ifade eder. Projedeki bir bilgi kabı bir maliyet planı, bir program, bir çizim, bir geometrik model vb. olabilir. Her bilgi kabı belgelendirilmiş bir kurala dayanan benzersiz bir kimliğe sahip olması gerekmektedir. [TS EN ISO 19650 Information Container]\n\nOIR\n\nKurumsal Bilgi Gereksinimleri [Organizational Information Requirements]\n\nEIR\n\nBilgi Alışverişi Gereksinimleri [Exchange Information Requirements]\n\nTIDP\n\nİş Bilgi Teslim Planı (İBTP) [Task Information Delivery Plan]\n\nMIDP\n\nAna Bilgi Teslim Planı (ABTP) [Master Information Delivery Plan]\n\nPIR\n\nProje Bilgi Gereksinimleri [Project Information Requirements]\n\nAIR\n\nVarlık Bilgi Gereksinimleri [Asset Information Requirements]\n\nPIM\n\nProje Bilgi Modeli [Project Information Model]\n\nAIM\n\nVarlık Bilgi Modeli [Asset Information Model]",
+    "crumbs": [
+      "Giriş"
+    ]
+  },
+  {
+    "objectID": "preface.html#künye",
+    "href": "preface.html#künye",
+    "title": "Giriş",
+    "section": "Künye",
+    "text": "Künye\n\nDÜZELTİ\n\nFuçin Ermurat\n\nISBN\n\n978-625-99686-1-2\n\nTÜRKİYE İMSAD YAYIN NO.\n\nİMSAD-R/2023-04/394\n\nİLETİŞİM BİLGİLERİ\n\nRüzgarlıbahçe Mah. Feragat Sok No:3 Kat:5 Demir Plaza, Kavacık / Beykoz Tel: +90 216 322 23 00 (pbx) / Fax: +90 216 322 10 68 www.imsad.org / info@imsad.org\n\n\nNisan 2025 İstanbul-Türkiye\nBu kitabın çevrimiçi pdf formatındaki sürümüne https://www.buildingsmartturkiye.org:3001/Uploads/bstr.rehberkitabi.pdf adresinden ulaşabilirsiniz. Kitabın fiziksel baskılarının yeniden yapılması arasında, çevrimiçi sürüm gelişmeye devam edecektir. Kitabın kaynak kodlarına https://github.com/ahmetcit/bstr_kılavuz adresinden erişebilirsiniz. Kitap, sadece ascii dosyalarıyla metin yazmayı kolaylaştıran Quarto ile oluşturulmuştur.\n© 2023 buildingSMART Türkiye\nBu çalışma Creative Commons Atıf 4.0 Uluslararası Lisansı ile lisanslanmıştır. This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "crumbs": [
+      "Giriş"
+    ]
+  },
+  {
+    "objectID": "01.bolum.html",
+    "href": "01.bolum.html",
+    "title": "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+    "section": "",
+    "text": "Hazırlayan:\nProje Geliştirme Çalışma Grubu ve Standartlar & Yayınlar Çalışma Grubu\n\n\nTarih:\n25.05.2023\n\n\nVersiyon:\n01\n\n\n\n \nİnşaat projelerinin başarılı yürütülmesi için görev alan tüm disiplinlerin iş birliği ve iletişimi her zaman önemli olmuştur. Bu bölümde, inşaat proje süreçlerinde artan bir şekilde kullanılan sayısal araçların anlamlı katkı sağlayabilmesi amacıyla ortak yapı geliştirme aşamaları belirlenmiş ve her aşamada tüm disiplinlerden temel beklentiler tanımlanmıştır. Teslim gereksinimlerin tanımı için sağlanan tablolar, aynı zamanda işleri yürüten paydaşların, teslim edeceği bilgi ve modellerin planlamasını için bir referans olacaktır.\n \n\nEditör\n\nSerkan ELİBOLLAR, bSTR Proje Geliştirme Çalışma Grubu Koordinatörü (ProCS Mühendislik)\n\n\n \nKatkıda Bulunanlar\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n\nPROJE GELİŞTİRME ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nFigen İnam BAKIRCIALİOĞLU, Turner\n\n\nAhu ÜMMETOĞLU, Prefabrik Yapı\nGizem YILDIRIM, BIMChief\n\n\nYrd. Doç. Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nİlayda ÖNER, Turner\n\n\nAygen ERKAL, Türkiye İMSAD\nOsman ÖZKAN, EAE Elektrik\n\n\nBahadır DEMİRTAŞ, Emay\nSaniye ÖKTEM, Prota Mühendislik\n\n\nBerke ÇELİKEL, Arup\nSerkan ELİBOLLAR, ProCS Mühendislik\n\n\nBurcu Esen BARUTCU, Drees & Sommer\nSinan ALEMDAR, Emay\n\n\nCenk ÇETİN, Dorçe\nUğur ÇELİK, Emay\n\n\nDaniel KAZADO, ProCS Mühendislik\nUğur KAYA, Emay\n\n\nDinçer KÖSE, Turner\nUtku BAŞYAZICI, Doxa87\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\n\n\n\n\n \nGörüş Verenler\n\n\nYapı Geliştirme Aşamaları\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nKerem BUĞDAYCIOĞLU, Archimco\n\n\nAlp Eren ÇON, Freelance\nM. Bilgehan ŞAHİN, Rönesans Endüstri Tesisleri\n\n\nAlparslan GÜRE, Freelance\nMeltem YILMAZ, BİTÜDER\n\n\nDr. Atila GÜRSES, Onduline Avrasya\nMuhammed MARAŞLI, Fibrobeton\n\n\nAyşe Hasol ERKTİN, Has Mimarlık\nDr. Nuray Benli YILDIZ, Düzce Üniversitesi\n\n\nBerke ÇELİKEL, Arup\nOnur ERKAN, ProCS Mühendislik\n\n\nBuket SAĞIROĞLU, ÇŞB Yüksek Fen Kurulu\nOnur İŞBİLİR, Beos Cephe Danışmanlığı\n\n\nBurak GÖKÇEN, Freelance\nProf. Dr. Salih OFLUOĞLU, ABÜ\n\n\nBurcu Esen BARUTÇU, Drees & Sommer\nSaniye ÖKTEM, Prota Mühendislik\n\n\nDeniz PEHLİVAN, TAV İnşaat\nSinan ALEMDAR, Emay\n\n\nDurmuş DİLEKÇİ, İSMD\nSüleyman AKIM, Akım Mühendislik\n\n\nDr. Duygu ERTEN, İstanbul Medipol Üniversitesi\nTMMOB İnşaat Mühendisleri Odası\n\n\nErkan ŞAHMALI, Proud Proje Yönetim\nTuna ÖZYURT, arCHitect TO-tasarım\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nUğur KAYA, Emay\n\n\nEvren ÖZSOY, İGA\nÜmit BALABAN, Anel\n\n\nGöker Malik ALTUNTAŞ, Klafs Technical\nUtku BAŞYAZICI, Doxa87\n\n\nDr. Hasan Burak ÇAVKA, İzmir İleri Teknoloji Enstitüsü\nYasin ENGİN, Freelance\n\n\nHasan Furkan YILDIZ, Oytaş-Yıldız Uluslararası İnşaat\n\n\n\n\n \n\n\nYapı Geliştirme Aşamaları Teslim Gereksinimleri\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\n\n\nAyşe Hasol ERKTİN, HAS Mimarlık Ltd.\nFigen İnam BAKIRCIALİOĞLU, Turner\n\n\nBahadır DEMİRTAŞ, Emay\nKerem İlhami BUĞDAYCIOĞLU, Archimco\n\n\nDaniel KAZADO. ProCS Mühendislik\nDr. Nuray Benli YILDIZ, Düzce Üniversitesi\n\n\nDinçer KÖSE, Turner\nOnur ERKAN, ProCS Mühendislik\n\n\nElif Zeynep CEYLAN, MSGSÜ\nUğur KAYA, Emay",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri"
+    ]
+  },
+  {
+    "objectID": "01.01.html",
+    "href": "01.01.html",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "",
+    "text": "Aşama 0: Stratejik Planlama\nÜlkemizde yürürlükte olan, farklı disiplinler için ayrı ayrı hazırlanan tasarım hizmetlerine esas asgari ücret yönetmelikleri, en az bedel tarifsinde yapı geliştirme aşama tariflerinin birbirleri ile ilişkilendirilememesi ve benzer aşama isimlerinin altında disiplinlerden beklentilerin farklı olmasından dolayı, ortak bir anlayış sağlayabilmek amacıyla bu çalışma hazırlanmıştır. Bu çalışma kapsamında yeni veya mevcut üstyapı projelerinin yanı sıra, altyapı projelerine yönelik yapı geliştirme aşamaları da birlikte değerlendirilmiştir. Önerilen yapı geliştirme aşamaları için, disiplinlerin özelinde gerekli detay tanımlamalar, teslim edilmesi gereken dokümanlar ile aralarındaki ilişkilerin ve sorumlulukların netleştirilmesi için ayrı bir “Teslim Gereksinimleri” çalışması yapılmıştır.\nİnşaat projelerinde gelişen farklı tedarik stratejileri ve sözleşme tipleri, tasarımın ilerlemesini ve farklı aşamalardaki çalışmaları etkilemeyeceğinden, teknik şartnamelerin, keşif listelerinin, ihale belgelerinin hazırlanması, ihale yapılması ve mobilizasyon vb. süreçler aşamalara dahil edilmemiştir. Proje özelinde tedarik stratejilerine uygun bilgi paylaşım ve teslim süreçleri planlanması önerilmektedir. Aynı zamanda, yerel ve idari yönetimlerin inceleme yapabilecekleri, inşaat ruhsat işlemleri için talep edilen bilgileri içeren çalışmaların en geç Kesin Tasarım aşamasında tamamlanması önerilmektedir.\nÇalışmanın ilk aşamasında, “T.C. Bayındırlık Ve İskan Bakanlığı Yapı İşleri Genel Müdürlüğü Mimari Proje Düzenleme Esasları”, “TMMOB Mimarlar Odası Mimarlık Hizmetleri Şartnamesi Ve En Az Bedel Tarifesi”, “TMMOB MMO Serbest Müşavirlik Mühendislik Hizmetleri Ve Asgari Ücret Yönetmeliği”, “TMMOB EMO Elektrik İç Tesisleri Proje Hazırlama Yönetmeliği” ve “RIBA Plan Of Work 2020” dokümanları incelenmiş, çalışmaya katılanların ulusal ve uluslararası tecrübeleri ile değerlendirilerek bir öneri geliştirilmiş ve sektör paydaşlarının görüş ve yorumuna sunulmuştur.\nİşveren gereksinimlerinin farklı inşaat projesi seçenekleri veya başka yöntemler (inşaat projesi dışında olası seçenekler) ile karşılanması durumlarının tümünün avantaj ve dezavantajları ile irdelendiği, benzer projelerdeki geçmiş deneyimleri de dikkate alarak proje risk ve bütçesinin değerlendirildiği, en uygun çözüm ile yatırım vizyonunun tespit edildiği aşamadır. Bu aşama aynı zamanda ömrünü tamamlamış yapıların yenilenmesi, yeniden tasarlanması, yıkımı, geri dönüşüm ve atık yönetimi çalışmalarına ait stratejik kararları da içererek, yapı yaşam döngüsünün tamamlanmasını sağlar.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-1-etüt",
+    "href": "01.01.html#aşama-1-etüt",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 1: Etüt",
+    "text": "Aşama 1: Etüt\nEtüt aşamasında işverenin yatırım vizyonu doğrultusunda ihtiyaçlar ve talepler belirlenip, bunların gerçekleşmesi için standartlara uygun olanaklar ve seçenekler tespit edilecektir. Proje için ihtiyaç programının ve mekânsal kullanım alanlarının tanımlanması, mekân ve işlev şemasının hazırlanması, imar durumu, kadastro, arsanın doğal ve zemin özelliklerinin saptanması, yapının çevre ile ilişkisinin analiz edilmesi çalışmaları yürütülecek, projenin ileriki aşamalarında izlenecek yol ve uygulanacak çalışma yöntemi, sözleşme tipi ve zaman planı kararlaştırılacaktır. Bu aşamada, projenin kaynak kullanım ihtiyacı, sürdürülebilirlik hedefleri ve tesis yönetim stratejisi belirlenir. Diğer paydaşların yapacağı çalışmalar ve bunların koordinasyon ve iletişim şeklinin netleştirilmesi amacı ile öncül hazırlık çalışmaları gerçekleştirilecek; etüt raporu, gerekli çizimler ve görseller hazırlanacak; gerekli idari, hukuki, teknik belgeler derlenecek ve bütçe çalışmaları yapılacaktır.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-2-kavramsal-tasarım",
+    "href": "01.01.html#aşama-2-kavramsal-tasarım",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 2: Kavramsal Tasarım",
+    "text": "Aşama 2: Kavramsal Tasarım\nKavramsal Tasarım Aşaması, Etüt Aşaması çalışmalarında onaylanmış bilgilerin tasarıma yansıtılması ile erken evre tasarım önerilerinin oluşturulması amacını taşır. Güncel etüt çalışmalarına, projenin ihtiyaç programına, öngörülen bütçeye, arazi ve iklim verilerine, geoteknik (zemin) özelliklerine, İşveren ve gereksinim durumunda proje paydaşlarının idari ve teknik önerilerine uygun olarak şekillenen kavramsal tasarım için belirlenen içerik, ölçek ve detayda vaziyet planı, planlar, kesitler, görünüşler, görseller ve raporlar hazırlanır. Raporlarda, gerekli sistem seçimleri, işletme fonksiyonlarını sağlayacak teknik tesisat türleri, yapının ihtiyaç duyacağı enerji, su, yakıt vb. kaynakların nereden ve ne şekilde sağlanacağı açıklanır. Bu seçimlerin teknik, ekonomik ve mali gerekçeleri irdelenir.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-3-ön-tasarım",
+    "href": "01.01.html#aşama-3-ön-tasarım",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 3: Ön Tasarım",
+    "text": "Aşama 3: Ön Tasarım\nÖn Tasarım Aşaması, Kavramsal Tasarım Aşaması çalışmalarında belirlenmiş ve onaylanmış üst düzey kararlar çerçevesinde tasarımın geliştirilmesi, tüm disiplinlerin sistem kararlarını içerecek bilgilerin tasarıma yansıtılması amacını taşır. Projenin mekan ve eleman gerekliliklerini tümüyle kurgulayan temel proje öğeleri olan altyapı, dış saha işleri, kabuk, iç mekânlar, ekipmanlar (cihazlar) , teknik tesisatlar, tefrişat, yapım ve varsa yıkım çalışmaları ile ilgili şematik çizimlerin oluşturulması hedeflenir. Bu aşama sonunda tüm disiplinler tarafından geliştirilen tasarım, maliyet bilgileriyle proje bütçesiyle karşılaştırılması amacıyla kontrol edilecektir. Bu aşamanın sonunda, tasarım ekibinin tüm paydaşlarının kendilerine gerekli olan alanları / mekânları / hacimleri yaklaşık olarak yapı(lar) dahilinde rezerve etmiş olması beklenir. Buna uygun olarak teknik ekipmanların ve tesisatların geçiş yerleri ile yaklaşık ölçüleri; makina ve ekipmanların yaklaşık ağırlıkları, tüketimleri ve yerleşimi belirlenir. Ayrıca tasarım ve hesaplara esas olacak verilerin tespit edildiği, hesap tarzlarının da teklif edildiği çalışmalar yapılır.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-4-kesin-tasarım",
+    "href": "01.01.html#aşama-4-kesin-tasarım",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 4: Kesin Tasarım",
+    "text": "Aşama 4: Kesin Tasarım\nKesin tasarım aşamasında, onaylanmış ön tasarıma uygun olarak çalışmalar yürütülür. Daha ayrıntılı ve kesinleşmiş bilgiler üretilir ve çalışmalar gerçekleştirilir. Ön tasarım çalışmaları aşamasından sonra meydana gelen değişiklikleri yansıtmak ya da ön tasarım aşamasında prensipleri belirlenmiş bazı teknik özelliklerin detaylandırılması ve kesinleştirilmesi amacıyla hazırlanır. Disiplinler arası koordinasyonun tamamlanmadığı ancak tüm disiplinler için kendi içerisinde uygulanabilir, gerekli ulusal veya uluslararası yönetmeliklere uygunluğun teyit edildiği ve kesinleşmiş tasarımın hazırlandığı, ekipman ve malzeme bilgilerinin tümüyle tanımlandığı aşamadır.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-5-uygulama-tasarımı",
+    "href": "01.01.html#aşama-5-uygulama-tasarımı",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 5: Uygulama Tasarımı",
+    "text": "Aşama 5: Uygulama Tasarımı\nUygulama Tasarımı aşaması, bir önceki aşamada kesinleştirilmiş çalışmalar ile yayınlanan tasarımda, disiplin içi ve disiplinler arası detaylı koordinasyonun tamamlanmasını hedeflemektedir ve geliştirilen tasarımı uygulamaya bağlayan aşamadır. Söz konusu koordinasyon, satın alma bilgileri kesinleşmemiş ancak yapının inşa edilebilmesi için gerekli tüm detayları doğrulamaya esas bilgiler ile yapılacaktır. Yapının inşa edilebilmesi için, yapıda yer alan tüm donatım sistemleri, yapıyı etkileyen bütün elemanları, tipik birleşme şekillerini ve sistem detaylarını, imalatlarla ilgili tüm bilgileri ve referansları ile Yapı Malzemeleri Yönetmeliği’ne, Resmi Gazete’de yayınlanan Uygulama Teknik Şartnameleri’ne ve varsa Uygulama Kural Standartları’na uygunluğunun teyit edildiği, montaj ve yapım özelliklerini içeren; gerekli tüm ölçülerin ve malzemelerin işlendiği, büro ve şantiyede her türlü imalat aşamasında kullanılabilecek nitelikte ve yeterlilikte hazırlanmış çizimler, şartnameler, hesap raporları vb. dokümanların hazırlandığı aşamadır. Yapıda yer alan farklı disiplinlerin sorumluluk sınırlarını belirleyen belgelerdir. Yapının maliyet üst sınırının belirlenmesi amacıyla yapılan metraj ve keşiflerinin esasını teşkil eder.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-6-imalat-tasarımı",
+    "href": "01.01.html#aşama-6-imalat-tasarımı",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 6: İmalat Tasarımı",
+    "text": "Aşama 6: İmalat Tasarımı\nBu aşamada, bir önceki aşamada koordine edilmiş tüm disiplinlerin tasarımları, projenin teknik tanımını tamamlamak üzere detaylandırılır ve ayrıca uzman alt yüklenicilerin tasarım çalışmalarıyla sonuçlandırılır. Satın alma bilgilerinin kesinleşmesi ile seçilen malzeme / ürün bilgilerine göre sahada imalatının yapılması öncesinde disiplin içi ve disiplinler arası detaylı koordinasyon tekrar gözden geçirilir. Bu aşama sırasında, yapım aşamasında sahadan kaynaklanan sorunların çözümü hariç, üretime esas çizimlerin seçilen yapım yöntemine uygun ve tedarikçiler ile koordineli bir şekilde oluşturulması ile tasarımın tüm yönleri ile tamamlanmış olması gerekmektedir.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-7-yapım",
+    "href": "01.01.html#aşama-7-yapım",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 7: Yapım",
+    "text": "Aşama 7: Yapım\nYapım aşaması, tüm disiplinlere ait imalatların iş programına uygun olarak sahada gerekli mesleki ve kalite kontrol süreçleri denetiminde gerçekleştirilmesini kapsar. İmalat tasarımının tamamlanması sonrasında, projenin sahada gerçekleştirilmesi sürecinde, sahadan kaynaklanan sorunları çözmek veya farklı seçenekleri değerlendirmek amacıyla tasarım üzerinde güncellemeler yapılabilir. Birçok projede İmalat Tasarımı Aşaması ile Yapım Aşaması eş zamanlı olarak gerçekleşebilir, bu sebeple kademeli olarak tamamlanan İmalat Tasarımı ile ilgili sahada imalatlar gerçekleştirilir. Bu aşamada, imalat ve montajı tamamlanarak işletmeye alınma aşamasına gelmiş olan yapının tamamlanmış, gerçekleşen durumunu gösteren “Kayıt Belgeleri’’ hazırlanır, güncel tutulur ve kurulumu gerçekleşen varlıklar ile ilgili bilgiler ileriki aşamalar için kaydedilir.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-8-kabul-teslim",
+    "href": "01.01.html#aşama-8-kabul-teslim",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 8: Kabul-Teslim",
+    "text": "Aşama 8: Kabul-Teslim\nProjenin sözleşme dahilindeki yönetmelik, standart, şartname ile çizimlerine ve genel olarak bilinen fen ve sanat kurallarına uygun yapılıp yapılmadığının tespitinin gerekli test, ayar ve dengeleme ölçüm ve doğrulama yöntemlerinin de kullanarak yapıldığı hizmete alma aşamasıdır. Tespit edilen eksiklikler tamamlanarak proje tasarımında planlanan işlevleri ile birlikte kullanım veya işletme için devredilir. “Kayıt Belgeleri” ve kurulumu gerçekleşen varlıkla ilgili bilgiler (bakım ve işletme kılavuzları dahil) sonlandırılarak teslim edilir.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.01.html#aşama-9-işletme-ve-bakım",
+    "href": "01.01.html#aşama-9-işletme-ve-bakım",
+    "title": "Yapı Geliştirme Aşamaları",
+    "section": "Aşama 9: İşletme ve Bakım",
+    "text": "Aşama 9: İşletme ve Bakım\nProje tasarım ve inşa bilgilerinden faydalanarak yapının kullanıldığı, işletildiği, bakım ve onarımının yürütüldüğü ve yaşam döngüsünün bir parçası olarak kısmi veya tümüyle yenilendiği, onarıldığı veya tadil edildiği aşamadır. İşveren ve/veya proje ekibi, hizmetlerini iyileştirmek ve yapının kullanım sonrası performans ile memnuniyeti ölçmek üzere “Kullanım Sonrası Değerlendirme” gerçekleştirilebilir. Bu aşamada, yenileme, revizyon vb. çalışmalar, yeni proje niteliği ile ihtiyaç duyulan aşamalardan geçmeli ve “Kayıt Belgeleri” güncellenmelidir.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Yapı Geliştirme Aşamaları</span>"
+    ]
+  },
+  {
+    "objectID": "01.02.html",
+    "href": "01.02.html",
+    "title": "Yapı Geliştirme Aşamaları Teslim Gereksinimleri",
+    "section": "",
+    "text": "Ek Bölüm İçeriklerine Sektörden Gelen Yorumlar\nİşveren veya işletmeci kuruluş, yatırımı sonucunda geliştirilen varlıklarla ilgili kendi stratejik hedeflerine ulaşmak için ihtiyaç duyduğu tüm bilgileri Kurumsal Bilgi Gereksinimleri [Organizational Information Requierments (OIR)] aracılığıyla tanımlar. Bu bilgiler uzun vadede yatırımın işletilmesi, varlık yönetimi sistemleri ve diğer kurumsal işlevler için gerekli olan bilgilerdir. Proje geliştirme aşamaları boyunca teslim edilecek bilgiler ve bilgilerin nitelikleri konusunda genel anlamdan Kurumsal Bilgi Gereksinimleri belirleyici olacaktır.\nProjenin farklı geliştirme aşamalarındaki teslim gereksinimleri, bu rehberin 3. bölümü İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi ’nde tarif edildiği gibi, proje şartnamesinin ekinde yer alan “Bilgi Gereksinimleri” çalışmasında tanımlanacaktır. Proje şartnamesi, Bilgi Alışverişi Gereksinimlerini [Exchange Information Requirements (EIR)] kapsayacak şekilde proje aşamalarında üretilecek bilgilerin standartlarının, üretim yöntemlerinin ve süreçlerinin onay kriterlerini tarif edecektir.\nHer yapı geliştirme aşamasında, farklı paydaşlara farklı sorumluluklar yüklenmektedir. Bu sorumlulukların yerine getirilebilmesi için bilgi alışverişinin anlaşılır bir şekilde planlanması gerekmektedir. Bu rehberin 2. bölümü Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci ’nde detaylı olarak aktarılan TS EN ISO 19650-2 ile tanımlanan bilgi yönetim sürecinde, bir proje başlangıcında her paydaşın kendi kapsamı için İş Bilgi Teslim Planı (İBTP) [Task Information Delivery Plan (TIDP)] hazırlayıp, bunların bir araya getirilmesiyle bilgi üretimi ve teslimini topluca tarif eden bir Ana Bilgi Teslim Planı (ABTP) [Master Information Delivery Plan (MIDP)] oluşturulması gerekmektedir.\nProje yüklenicileri, şartnamede tanımlanan bilgi teslim gereksinimlerini esas alarak, bu rehberin 4. bölümü Yükleniciler için bSTR BIM Uygulama Planı Rehberi ’nde tarif edildiği gibi bilgi gereksinimlerinin kırımlarıyla detaylandırarak, İş ve Ana Bilgi Teslim Planı’na altlık olacak “Bilgi Teslim Planlama Dökümü”nü hazırlayacaktır.\nYapı Geliştirme Aşamaları çalışmasına, buildingSMART Türkiye Proje Geliştirme Çalışma Grubu İcra Kurulu bünyesinde ilk taslağının hazırlanmasından, mevcut haline gelmesine kadar geçen süreçte, buildingSMART Türkiye tüm çalışma grubu üyeleri ve buildingSMART Türkiye web sitesi üzerinden çalışmaları takip edenlerin görüşleri alınmıştır. Gelen öneriler, buildingSMART Türkiye Proje Geliştirme Çalışma Grubu İcra Kurulu’nda görüşülmüş, değerlendirilmiş ve içerikte gerekli düzenlemeler yapılarak çalışma son haline kavuşturulmuştur.\nBu bölümde, çalışmanın gelişimi süresince geniş bir kullanıcı yelpazesinden alınan görüşleri ve buildingSMART Türkiye Proje Geliştirme Çalışma Grubu İcra Kurulu cevaplarını derleyerek, sektör geri dönüşlerinin de paylaşımı ile çalışmanın daha iyi anlaşılmasını sağlamak ve kullanımı sırasında karşılaşılabilecek yorum hatalarını azaltmak amacıyla bir içerik hazırlanmıştır. Çalışmanın geneli hakkında yapılan değerlendirmelerden sonra aynı konu hakkında birbirine benzer gelen yorumlar birleştirilerek Yapı Geliştirme Aşamaları özelinde gruplandırılmıştır.",
+    "crumbs": [
+      "I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri",
+      "Yapı Geliştirme Aşamaları Teslim Gereksinimleri"
+    ]
+  },
+  {
+    "objectID": "02.bolum.html",
+    "href": "02.bolum.html",
+    "title": "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+    "section": "",
+    "text": "Hazırlayan:\nStandartlar & Yayınlar Çalışma Grubu\n\n\nTarih:\n25.03.2023\n\n\nVersiyon:\n01\n\n\n\n \nTS EN ISO 19650 serisinde Yapı Bilgi Modellemesi yoluyla, yapı ve varlıkların işletmesine yönelik ilgili bilgilerin düzenlenmesi ve sayısallaştırılması için gerekli bilgi yönetim süreçi tariflenmiştir. Tasarım ve yapımı kapsayan teslim ile işletme süreçlerini kapsar. Bilgi Yönetimi Süreci etkin ve verimli bilginin tedariği, üretimi, kullanımı ve yönetimiyle tüm paydaşların iş hedeflerine ulaşmalarına yönelik ortak bir anlayış sağlanması amaçlanmıştır. Tarif edilen Bilgi Yönetim Süreci, kullanılan tedarik stratejisinden bağımsız, her türlü inşaat projesi ve varlıklarıyla, her türlü ve ölçekteki kuruluşlar tarafından uygulanabilir. Bu bölümde, TS EN ISO 19650-2’de bilgilerin oluşturulup, kullanılması ve teslim edilmesi için tarif edilen Bilgi Yönetim Süreci özetlenmiştir.\n \n\nEditör\n\nDr. Ahmet ÇITIPITIOĞLU, bSTR Standartlar ve Yayınlar Çalışma Grubu Koordinatörü (TAV İnşaat)\n\n\n \nKatkıda Bulunanlar\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n\nSTANDARTLAR ve YAYINLAR ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nOsman ÖZKAN, EAE Elektrik\n\n\nYrd. Doç. Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nSaniye ÖKTEM, Prota Mühendislik\n\n\nAygen ERKAL, Türkiye İMSAD\nSerkan ELİBOLLAR, ProCS Mühendislik\n\n\nBahadır DEMİRTAŞ, Emay\nSerhat KAŞ, Yüksel Proje\n\n\nBehnam AGHBALİ, Saina\nUğur KAYA, Emay\n\n\nBerke ÇELİKEL, Arup\nÜmit BALABAN, Anel\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nUtku BAŞYAZICI, Doxa87\n\n\nFazlı BULUT, Sika\nYudum DEMİRKOL, Şişecam\n\n\nİdris BAHADUR, Dome+Partners\n\n\n\n\n \nGörüş Verenler\n\n\n\n\n\n\n\nBilgehan ŞAHİN, Rönesans Endüstri Tesisleri\nDr. Kerem ERCOŞKUN, we/arch Alliance, İstanbul Okan Üniv.\n\n\nBurak GÖKÇEN, Freelance\nKerem İlhami BUĞDAYCIOĞLU, Archimco\n\n\nBurcu Esen BARUTÇU, Drees & Sommer\nDr. Nuray Benli YILDIZ, Düzce Üniversitesi\n\n\nDeniz PEHLİVAN, TAV İnşaat\nUfuk AYDIN, Gülermak\n\n\nGöker Malik ALTUNTAŞ, Klafs Technical\nÜmit BALABAN, Anel",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci"
+    ]
+  },
+  {
+    "objectID": "02.01.html",
+    "href": "02.01.html",
+    "title": "Bilgi Yönetimi Sürecinde Taraflar",
+    "section": "",
+    "text": "TS EN ISO 19650-2’de tarif edilen sayısal bilgi yönetimi süreçlerinde yer alan paydaşların tanımı ile aralarındaki bilgi akışı şematik olarak aşağıda gösterilmiştir. Standarttaki paydaş tanımı taraflar arasındaki sözleşmesel hiyerarşi bakımından jenerik bir şekilde: atayan, ana atanan ve atanan taraf olarak yapılmaktadır. Farklı senaryolarda, paydaşların bu tanımlarla nasıl ilişkilendirilebileceği aşağıda gösterilmektedir.\n\n\n\nTS EN ISO 19650’da tanımlanan inşaat projesinde sayısal bilgilerin düzenlenmesi ve bilgi yönetimi sürecindeki paydaşlar ve ilişkileri.",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bilgi Yönetimi Sürecinde Taraflar</span>"
+    ]
+  },
+  {
+    "objectID": "02.02.html",
+    "href": "02.02.html",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "",
+    "text": "Değerlendirme ve İhtiyaçlar\nTS EN ISO 19650 serisi her boyutta ve her karmaşıklık seviyesindeki inşa edilmiş varlıklar ve inşaat projeleri için geçerlidir. Buna, büyük mülkler, altyapı ağları, tekil binalar ve altyapı bölümleri ile bunların teslimini sağlayan projeler veya programlar dahildir. Ancak, süreç için tanımlanan gereksinimler, varlığın veya projenin ölçeği ve karmaşıklığı ile orantılı ve uygun bir şekilde uygulanmalıdır. Atanan tarafların tedarik ve mobilizasyonu, tanımlanan teknik tedarik ve mobilizasyon süreçleriyle mümkün olduğunca uyumlu olmalıdır.\nProjenin başında “Değerlendirme ve İhtiyaçları” aşamasında, atayan taraf tarafından belirlenen bilgi gereksinimlerine girdi olacak şekilde aşağıdakilerin belgelenmesi gerekmektedir:\nTeslim aşamasının başlangıcında atayan tarafın yapacağı işler:",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#değerlendirme-ve-ihtiyaçlar",
+    "href": "02.02.html#değerlendirme-ve-ihtiyaçlar",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "",
+    "text": "Bilgi yönetimi işlevini üstlenecek kişilerin atanması\nProjenin bilgi gereksinimlerinin belirlenmesi\nProjenin bilgi teslim aşamalarının belirlenmesi\nProjenin bilgi standardının belirlenmesi\nProjenin bilgi üretimi yöntem ve prosedürlerin belirlenmesi\nProjenin referans bilgilerinin ve müşterek kaynaklarının belirlenmesi\nProjenin ortak veri ortamının oluşturulması\nProjenin bilgi protokolünün belirlenmesi",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#teklif-daveti",
+    "href": "02.02.html#teklif-daveti",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "Teklif Daveti",
+    "text": "Teklif Daveti\nProje sürecindeki tedarik aşamasında her bir atamada atayan tarafından gerçekleştirilen faaliyetler:\n\nAtayan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi\nReferans bilgilerinin ve müşterek kaynakların derlenmesi\nTeklif gereksinimleri ve değerlendirme kriterlerinin oluşturulması\nİhale daveti için ilgili bilgilerin derlenmesi",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#teklif-hazırlığı",
+    "href": "02.02.html#teklif-hazırlığı",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "Teklif Hazırlığı",
+    "text": "Teklif Hazırlığı\nTeklif hazırlayan olası ana atanan tarafın çalışacağı bir veya birden fazla olası iş ekibi ile yapacağı işler:\n\nBilgi yönetimi görevini üstlenecek kişilerin tayin edilmesi\nTeslim ekibinin (atama öncesi) BIM uygulama planının belirlenmesi\nİş ekibinin/ekiplerinin yetenek ve kapasitesinin değerlendirilmesi\nTeslim ekibinin yetenek ve kapasitesinin belirlenmesi\nÖnerilen teslim ekibinin mobilizasyon planının oluşturulması\nTeslim ekibinin risk kaydının oluşturulması\nTeslim ekibinin ihale davetine yanıtlarının derlenmesi",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#proje-atama",
+    "href": "02.02.html#proje-atama",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "Proje Atama",
+    "text": "Proje Atama\nProje sürecindeki bilgi planlama aşamasında her bir atamadaki ana atanan tarafın çalışacağı iş ekipleriyle gerçekleştirilen faaliyetler:\n\nTeslim ekibinin BIM uygulama planının teyit edilmesi\nTeslim ekibinin ayrıntılı sorumluluk matrisinin oluşturulması\nAna atanan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi\nİş bilgi teslim plan(lar)ının oluşturulması\nAna bilgi teslim planının oluşturulması\nAna atanan tarafın atanmasında gerekli belgelerin tamamlanması\nAtanan taraf(lar)ın atanmasında gerekli belgelerin tamamlanması",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#mobilizasyon",
+    "href": "02.02.html#mobilizasyon",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "Mobilizasyon",
+    "text": "Mobilizasyon\nHer bir atamadaki ana atanan tarafın yapacağı işler:\n\nKaynakların mobilize edilmesi\nBilişim altyapısının mobilize edilmesi\nProjenin bilgi üretim yöntem ve prosedürlerin sınanması",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#işbirliği-ile-bilgi-üretimi",
+    "href": "02.02.html#işbirliği-ile-bilgi-üretimi",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "İşbirliği ile Bilgi Üretimi",
+    "text": "İşbirliği ile Bilgi Üretimi\nProje sürecindeki bilgi üretim aşamasında her bir atamadaki iş ekiplerinin teslim ekibiyle gerçekleştirilen faaliyetler:\n\nReferans bilgilerinin ve müşterek kaynaklarının kullanılabilirliğinin kontrol edilmesi\nBilgilerin üretilmesi\nKalite güvence kontrolünün tamamlanması\nBilgilerin değerlendirilip paylaşım için onaylanması\nBilgi modelinin değerlendirilmesi",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#bilgi-modeli-teslimi",
+    "href": "02.02.html#bilgi-modeli-teslimi",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "Bilgi Modeli Teslimi",
+    "text": "Bilgi Modeli Teslimi\nHer bir atamadaki iş ekipleri ile ana atanan tarafın yapacağı işler:\n\nAna atanan tarafın onaylaması için bilgi modelinin sunulması\nBilgi modelinin değerlendirilmesi ve onaylanması\nBilgi modelinin atayan tarafın onayı için sunulması\nBilgi modelinin değerlendirilmesi ve kabul edilmesi",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.02.html#proje-kapanışı",
+    "href": "02.02.html#proje-kapanışı",
+    "title": "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları",
+    "section": "Proje Kapanışı",
+    "text": "Proje Kapanışı\nTeslim aşamasının sonunda atayan tarafın yapacağı işler:\n\nProje bilgi modelinin arşivlenmesi\nGelecek projeler için öğrenilen derslerin derlenmesi",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları"
+    ]
+  },
+  {
+    "objectID": "02.03.html",
+    "href": "02.03.html",
+    "title": "İnşaat Projesi Bilgi Yönetimi Süreci Şeması",
+    "section": "",
+    "text": "Aşağıdaki şemada TS EN ISO 19650-2’de tanımlanan bilgi yönetim süreci akışında, &lt;&gt; bölümünde tanımlanan her paydaşın sorumlulukları ve aralarındaki ilişki verilmektedir. Aşağıdaki görseldeki her adım, sorumlu paydaşın kısaltmasıyla etiketlenmiştir. Etiket kısaltmaları sağ taraftaki Sorumlular kısmında tanımlanmıştır.\n\n\n\nTS EN ISO 19650’da tanımlanan inşaat projesinde sayısal bilgilerin düzenlenmesi ve bilgi yönetimi süreci.",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "İnşaat Projesi Bilgi Yönetimi Süreci Şeması"
+    ]
+  },
+  {
+    "objectID": "02.04.html",
+    "href": "02.04.html",
+    "title": "Bilgi Gereksinimlerinin Tanımı ve Bilgi Modelleri",
+    "section": "",
+    "text": "Atayan taraf olarak işveren, kurumsal veya proje hedeflerini desteklemek için varlıkları veya projeleri ile ilgili hangi bilgilerin gerekli olduğunu tanımlamalıdır. Bu gereksinimler kurum içinden veya ilgili paydaşlardan gelebilir. Atayan taraf, bu gereksinimleri, bilmesi gereken diğer paydaşların çalışmalarını belirlemek veya bilgilendirmek için aktarmalıdır. Bu, her büyüklükteki varlık ve projeler için geçerlidir, ancak bu gereksinimler proje büyüklüğüne göre uyarlanabilir. Az deneyimli atayan taraflar, bu konuda uzman yardımı alabilirler.\nAna atanan ve atanan taraflar, ihtiyaçlarına göre kendi bilgi gereksinimlerini ekleyebilirler. Bilgi gereksinimlerinin bir kısmı taraflardan birinin kendi çalışmasında gerekli olduğu durumlarda, sadece kendi içindeki iş ekiplerine iletilebilir ve atayan tarafla paylaşılmayabilir.\nFarklı tipte bilgi gereksinimleri ve bilgi modelleri, aşağıdaki şekilde gösterilmekte ve ilgili bölüm başlıklarıyla açıklanmaktadır. Projenin yeni bir yatırım olması, mevcut varlığın yenilenmesi veya genişleme olmasına bağlı olarak görseldeki oklarla gösterilen uygun farklı süreçler takip edilecektir.\n\n\n\nTS EN ISO 19650’da tanımlanan inşaat projesinde sayısal bilgi gereksinimleri ile üretim ilişkisi.\n\n\n\nKurumsal bilgi gereksinimleri (OIR)\n\nAtayan taraftaki üst düzey stratejik hedefleri cevaplamak veya bilgilendirmek için gereken bilgileri açıklar. Bu gereksinimler, aşağıdakiler de dahil olmak üzere çeşitli nedenlerle ortaya çıkabilir: stratejik iş operasyonu, stratejik varlık yönetimi, portföy planlaması, düzenleyici görevler veya politika oluşturma.\n\nVarlık bilgi gereksinimleri (AIR)\n\nVarlık bilgisi üretmenin yönetimsel, ticari ve teknik yönlerini ortaya koyar. Yönetimsel ve ticari yönler, bilgi standardını ve teslim ekibi tarafından uygulanacak üretim yöntem ve prosedürlerini içermelidir.\n\nProje bilgi gereksinimleri (PIR)\n\nVarlık projesiyle ilgili olarak atayan tarafın üst düzey stratejik hedeflerine yönelik gerekli bilgileri açıklar. Hem proje yönetimi, hem de varlık yönetimi sürecinde tanımlanır.\n\nBilgi alışverişi gereksinimleri (EIR)\n\nProje bilgisi üretmenin yönetimsel, ticari ve teknik yönlerini ortaya koymaktadır. Yönetimsel ve ticari yönler, bilgi standardını ve teslim ekibi tarafından uygulanacak üretim yöntem ve prosedürlerini içermelidir.\n\nVarlık bilgi modeli (AIM)\n\nAtayan tarafça oluşturulan stratejik ve günlük varlık yönetimi süreçlerini destekler. Ayrıca proje teslim sürecinin başlangıcında bilgi sağlayabilir. Örneğin Varlık Bilgi Modeli ekipman kayıtları, bakım maliyetleri, kurulum ve bakım kayıtları, mülk sahipliği ayrıntılarıyla atayan tarafın önemli görüp sistematik bir şekilde takip edip yönetmek istediği diğer ayrıntıları içerebilir.\n\nProje bilgi modeli (PIM)\n\nProjenin teslimini destekler ve varlık yönetimi faaliyetlerini desteklemek için Varlık Bilgi Modeline girdi sağlar. Proje Bilgi Modeli projenin uzun vadeli bir arşivini sağlamak için ve denetim amacıyla saklanmalıdır. Örneğin Proje Bilgi Modeli proje geometrisi, ekipman konumları, proje tasarımı sırasındaki performans gereksinimleri, yapım yöntemi, planlama, maliyet ve bakım gereksinimleri de dahil olmak üzere yapım sırasında kurulu sistemlerin, bileşenlerin ve ekipmanın ayrıntılarını içerebilir.\n\n\nYapı Bilgi Modellemesi (BIM), teslim ve işletme süreçlerinde oluşturulan Proje Bilgi Modelleri (PIM) ile Varlık Bilgi Modelleri’nin (AIM) üst ölçekte derlenmesiyle meydana gelen bilgi modellerinin tümü olarak düşünülebilir.\nAtayan taraf, varlığın yönetilmesi amaçlanan yönleriyle birlikte teslim edilecek bilgileri talep etme isteğini belirtmelidir. Bu amaçlar şunları içerebilir:\n\nVarlık kaydı: doğru denetim ve raporlamayı desteklemek için bir varlık kaydı sağlanmalıdır; bu hem mekansal, hem de fiziksel varlıkları ve gruplamalarını içermelidir.\nMevzuatlara uyumluluk ve hukuki sorumluluklar için destek: atayan taraf, varlık kullanıcılarının sağlığını ve güvenliğini desteklemek için gerekli bilgileri belirtmelidir.\nRisk yönetimi: risk yönetimini desteklemek için bilgi talep edilmeli; özellikle projenin veya varlığın maruz kalabileceği doğal afetler, hava olayları veya yangın gibi risklerinin tanımlanması ve değerlendirmesini sağlayacak bilgiler istenmelidir.\nTicari konulara destek: atayan taraf, varlığın mülkiyeti ve işletilmesi için iş gerekçesinin gözden geçirilmesini desteklemek amacıyla gereken bilgileri belirtmelidir; bu, en erken teslimden itibaren varlığın aşağıdaki etkilerinin ve faydalı yönlerinin sürekli gelişimini içermelidir:\n\nKapasite ve kullanım yönetimi: kapasite ile gerçek kullanımın karşılaştırılması ve portföy yönetiminin desteklemesi amacıyla, varlığın planlanan kapasitesinin ve kullanımının belgelenmesi sağlanmalıdır\nGüvenlik ve gözetim yönetimi: güvenlik gereksinimleri doğrultusunda varlığın ve komşu veya bitişik alanların güvenlik ve gözetim yönetimini desteklemek için bilgiler derlenmeli veya gizlenmelidir\nYenileme desteği: her bir mahal ve yer ile tüm varlığın yenilenmesine yönelik, alanlar, hacimler, doluluk, çevre koşulları ve yapısal yük bakımından ayrıntılı bilgilerile destekleyebilmelidir\nÖngörülen ve fiili etkiler: atayan taraf kalite, maliyet, zamanlama, karbon salımı, enerji, atık, su tüketimi veya diğer çevresel etkiler ile ilişkili bilgi istemelidir\nİşletme: atayan tarafın varlık işletme maliyetini öngörmesine yardımcı olmak için varlığın normal işletme koşulları altında ilgili bilgiler sağlanmalıdır\nBakım ve onarım: atayan tarafın bakım maliyetlerini öngörmesine ve planlamasına yardımcı olmak için planlanan önleyici bakım da dahil olmak üzere önerilen bakım işleriyle ilgili bilgi sağlanmalıdır\nYenileme: atayın tarafın yenileme veya beklenen servis ömrü ve maliyetleri ile ilgili bilgiler, değiştirme maliyetlerini öngörmek için ilgili bilgiler sağlanmalıdır; fiziki varlıkların geri dönüşümünü desteklemek için ana bileşen malzemelerle ilgili ayrıntılı bilgi dahil edilmelidir\nServisten çıkarma ve imha: Atayan tarafın hizmet sonu maliyetlerini öngörmesine ve planlamasına yardımcı olmak için önerilen servisten çıkarma ile ilgili bilgi sağlanmalıdır\n\n\nVarlığın teslim aşaması olan tasarım ve inşaat ile ilişkili bilgi gereksinimleri, atayan tarafın veya ana atanan tarafın kullanmak istediği proje aşamasıyla uygun olarak tanımlanmalıdır. Varlığın işletme aşaması ile ilgili bilgi gereksinimleri, planlı veya reaktif bakım, yangın ekipmanı denetimi, sarf malzeme veya parça değişimi veya varlık yönetimi sağlayıcısının değişimi gibi öngörülebilir yaşam döngüsünün tetikleyici olaylarıyla uygun olarak tanımlanmalıdır.",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Bilgi Gereksinimlerinin Tanımı ve Bilgi Modelleri"
+    ]
+  },
+  {
+    "objectID": "02.05.html",
+    "href": "02.05.html",
+    "title": "Ortak Veri Ortamı Kurgusu",
+    "section": "",
+    "text": "TS EN ISO 19650 varlıkların teslimi ve yönetimi sırasında bilgileri yönetmek için bir Ortak Veri Ortamı (OVO) ve tanımlanan süreçlere uygun iş akışları kullanılmasını gerektirmektedir. Teslim aşamasında, OVO çözümü tanımlanan bilgi yönetimi süreçlerini destekler. Bir projenin sonunda, varlık yönetimi için gerekli bilgi kapları Proje Bilgi Modelinden (PIM), Varlık Bilgi Modeline (AIM) taşınmalıdır.\nOVO içindeki her bilgi kabının mevcut durumu Şekil 5’te gösterildiği gibi aşağıdaki üç durumdan birinde olmalıdır\n\nÇalışılan\nPaylaşılan\nYayınlanan\n\nTüm bilgi kabı işlemlerini ve gelişiminin denetim kayıtlarını içeren bir arşiv tutulmalıdır.\nAyrıca OVO aracılığıyla yönetilen her bir bilgi kabı aşağıdaki meta verilere sahip olmalıdır:\n\nTanımlanmış standarda uygun bir revizyon kodu\nİzin verilen bilgilerin kullanımını gösteren bir statü kodu\n\nMeta veriler önce bilgiyi hazırlayan yazar tarafından belirlenir ve ardından onay ve yetkilendirme süreçleri ile güncellenir. Bir bilgi kabının, statü koduyla belirtilen kullanımı dışında herhangi amaç için kullanmanın riski kullanıcıya aittir. OVO çözümü hem bilgi kabı öznitelikleri ve meta verileri yönetmek için bir veritabanı yönetim yeteneği, hem de paydaşlara güncelleme bildirimleri yayınlama ve süreç kayıtlarını tutma yeteneği içermelidir.\n\n\n\nTS EN ISO 19650’da tanımlanan Ortak Veri Ortamındaki bilgi kaplarının tanımlı durum süreci.",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Ortak Veri Ortamı Kurgusu"
+    ]
+  },
+  {
+    "objectID": "02.06.html",
+    "href": "02.06.html",
+    "title": "Bilgi Kabı ile Bilgi ve Belge Kodlama Yapılandırılması",
+    "section": "",
+    "text": "Teslim gereksinimleri için üretilen bilgiler: bir bilgi modeli veya belge olsun, projede paylaşımın yapıldığı ortak veri ortamına içerdiği bilgiyi etiketleyen, benzersiz kimliğini ifade eden bir bilgi kabı aracılığıyla paylaşılacaktır. Bilgi kabı bir maliyet planı, bir program, bir çizim, bir geometrik bilgi modeli vb. olabilir. Her bilgi kabının belgelendirilmiş bir kurala dayanan, tutarlı ve benzersiz bir kimliğe sahip olması gerekmektedir. Aşağıdaki görsel temsili olarak bilgi, bilgi kabı ve kodlamaları göstermektedir.\nBilgi kaplarının ayraçlarla ayrılmış alan kodlama yapısı proje şartnamesinde tanımlanacaktır. Kodlama yapısı bazı ülkelerde EN ISO 19650 Milli Eki’nde standardın bir parçası olarak tanımlanmaktadır. Belli bir alan için tanımlanmış kodlama, proje genelinde tutarlı bir şekilde kullanılmalıdır. BIM modelleri ve belgelerin kodlama yapısı ihtiyaca göre farklı yapılandırılabilir. Aşağıdaki tablo kodlama yapısının temel alanlarını tanımlamaktadır.\nBilgi kabı kodu yapılandırması bu rehberin 3. bölümünde yer alan İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi ’nde tarif edilen şartnamede tanımlanması gerekmektedir. Proje yüklenicilerinin farklı aşamalardaki ihtiyaçlarına göre, şartnamedeki tanım esaslarını bozmadan kodlama yapılandırması genişletilebilir ve/ya güncellenebilir. Bilgi kabının yayın durumu ile revizyon bilgileri ayrıca metaveri olarak kullanılan Ortak Veri Ortamı’nda takip edilecektir.\n\n\n\nBilgi kabı: Herhangi bir bilgi modeli veya belgenin proje Ortak Veri Ortamı’nda paylaşıldığı ve bir kurala dayanan benzersiz bir kimlik.\n\n\n \n\nBilgi kabı kodlama yapısını oluşturan temel alanlar.\n\n\nKodlama Alanı\nKodlama Alanı Tanımı\n\n\n\n\nProje\nProje için tanımlanan kodlama\n\n\nAşama\nProje aşaması için tanımlanan kodlama\n\n\nBelge\nBelge cinsi için tanımlanan kodlama\n\n\nBina\nBina için tanımlanan kodlama\n\n\nKat/Konum\nKat ve/veya konum için tanımlanan kodlama\n\n\nDisiplin/Rol\nDisiplin veya rol için tanımlaman kodlama\n\n\nSistem/Alt Disiplin\nSistem veya alt disiplin için tanımlanan kodlama\n\n\nÜreten\nBilgiyi üreten firma için tanımlamam kodlama\n\n\nSıra\nGönderim sıra numarası veya zon için tanımlanan kodlama",
+    "crumbs": [
+      "II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci",
+      "Bilgi Kabı ile Bilgi ve Belge Kodlama Yapılandırılması"
+    ]
+  },
+  {
+    "objectID": "03.bolum.html",
+    "href": "03.bolum.html",
+    "title": "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+    "section": "",
+    "text": "Hazırlayan:\nStandartlar & Yayınlar Çalışma Grubu\n\n\nTarih:\n29.09.2023\n\n\nVersiyon:\n00\n\n\n\n \nBu bölüm sayısal olarak bilgilerin düzenlenmesi ve süreçlerin kurgulanmasıyla, projelerinin daha etkin bir şekilde yürütülüp, teslim edilmesini talep eden işverenler ve işletmeciler için hazırlanmıştır. Projenin başından itibaren, tedarik aşamasında sözleşme dahilinde ve proje sırasında talep edilen bilgi, belge ve süreçler tanımlanmıştır. BIM protokolü projenin başından itibaren TS EN ISO 19650 bilgi yönetimi süreçleriyle uyumlu olarak tüm paydaşlar için beklentileri ile kapsamlarını netleştiren süreç ve belgelerin oluşturulmasını sağlamaktadır. Ayrıca, yüklenici firmalar bu bölümü kendi proje kapsamlarında işveren tarafından hazırlanan bir BIM protokolü veya başka ilgili gereksinimlerin olmaması durumunda, sayısal bilgi üretimi ve teslim şartlarını sağlamak için veya işveren tarafından kapsamın tanımlanmasını sağlamak için bir referans olarak da kullanabilir.\n \n\nEditör\n\nDr. Ahmet ÇITIPITIOĞLU, bSTR Standartlar ve Yayınlar Çalışma Grubu Koordinatörü (TAV İnşaat)\n\n\n \nKatkıda Bulunanlar\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n\nPROJE GELİŞTİRME ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nHasan Can ÖZDEMİR, SmartBIM\n\n\nYrd. Doç. Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nİbrahim Halil CANSEVEN, NTT Mimarlık\n\n\nAygen ERKAL, Türkiye İMSAD\nKaan TOZKOPARAN, Yüksel Proje\n\n\nBahadır DEMİRTAŞ, Arup\nOsman ÖZKAN, EAE Elektrik\n\n\nBerke ÇELİKEL, Freelance\nSerdar BİRDEN, BIMMade\n\n\nCenk ÇETİN, Dorçe\nSerhat KAŞ, Yüksel Proje\n\n\nDaniel KAZADO, ProCS\nSerkan ELİBOLLAR, ProCS\n\n\nDilistan Bozan, Arup\nSinan ALEMDAR, EMAY\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nUğur KAYA, EMAY\n\n\nGizem YILDIRIM, BIMCHief\nUtku BAŞYAZICI, DoxaA87\n\n\n\n \n\n\nSTANDARTLAR ve YAYINLAR ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nÖncü Ceren Varol ALİCİK, Sika\n\n\nYrd. Doç. Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nOsman ÖZKAN, EAE Elektrik\n\n\nAygen ERKAL, Türkiye İMSAD\nProf. Dr. Salih OFLUOĞLU, ABÜ\n\n\nBahadır DEMİRTAŞ, Arup\nSerdar BİRDEN, BIMMade\n\n\nBehnam AGHBALİ, Saina\nSerhat KAŞ, Yüksel Proje\n\n\nBerke ÇELİKEL, Freelance\nSerkan ELİBOLLAR, ProCS\n\n\nÇağdaş Ilgaz ŞENEL, Hilti\nUğur KAYA, Emay\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nUtku BAŞYAZICI, Doxa87\n\n\nİdris BAHADUR, Saina\nYudum DEMİRKOL, Şişecam\n\n\nMelis ATAY, Turner\n\n\n\n\n \nGörüş Verenler\n\n\n\nErhan ÇEKİN, Emay\nFatih KAYA, Emay",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi"
+    ]
+  },
+  {
+    "objectID": "03.01.html",
+    "href": "03.01.html",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "",
+    "text": "Bilgi Yönetimi Süreci Öncesi\nTasarım, yapım ve işletme sürecindeki her bir hizmet tedarikinde, bilgi yönetim sürecinde hizmetlerin tedarikini yapan taraf olarak işverenler ve işletmeciler TS EN ISO 19650’de atayan taraf olarak tanımlanmaktadır. Aşağıdaki görselde TS EN ISO 19650’de tanımlanan bilgi yönetim süreci akışında atayan tarafın sorumlu olduğu adımlar AT (Atayan Taraf) olarak etiketlenmiştir. Bilgi yönetim sürecindeki taraflar Bölüm 2’de tanımlanmaktadır. Atayan taraf tedarik sürecinde kapsamı belirleyici girdiler sağlar. Aşağıdaki bölümlerde atayan tarafın süreç boyunca yapacağı işler anlatılmıştır. Bu girdilerin BIM Teknik Şartnamesi’nin şekillendirilmesinde önemli bir payı vardır.\nTedarik öncesinde atayan tarafın aşağıda listelenen gereksinimleri, BIM Teknik Şartnamesi’ne girdi olacak şekilde belirleyip, belgelemesi gerekmektedir:",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.01.html#bilgi-yönetimi-süreci-öncesi",
+    "href": "03.01.html#bilgi-yönetimi-süreci-öncesi",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "",
+    "text": "Atayan tarafın kurumsal bilgi gereksinimlerini belirlemesi: kurumsal hedeflerle ilgili bilgi gereksinimleri (TS EN ISO 19650-1)\nAtayan tarafın varlık bilgi gereksinimlerini belirlemesi: varlıkların işletilmesiyle ilgili bilgi gereksinimleri (TS EN ISO 19650-1)\nAtayan tarafın bilgi güvenliği gereksinimlerini belirlemesi: bilgiye yetkisiz erişim, bilgi kaybı veya kirlenmesi, bozulması gibi konuları ele almak için varlığın tüm ömrü boyunca bilgi güvenliği ile ilgili gereksinimleri (TS EN ISO 19650-5)",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.01.html#değerlendirme-ve-ihtiyaçlar",
+    "href": "03.01.html#değerlendirme-ve-ihtiyaçlar",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "Değerlendirme ve İhtiyaçlar",
+    "text": "Değerlendirme ve İhtiyaçlar\nTeslim aşamasının başlangıcında atayan tarafın yapacağı işler:\n\nBilgi yönetimi işlevini üstlenecek kişilerin atanması\nProjenin bilgi gereksinimlerinin belirlenmesi\nProjenin bilgi teslim aşamalarının belirlenmesi\nProjenin bilgi standardının belirlenmesi\nProjenin bilgi üretimi yöntem ve prosedürlerin belirlenmesi\nProjenin referans bilgilerinin ve müşterek kaynaklarının belirlenmesi\nProjenin ortak veri ortamının oluşturulması\nProjenin bilgi protokolünün belirlenmesi",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.01.html#teklif-daveti",
+    "href": "03.01.html#teklif-daveti",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "Teklif Daveti",
+    "text": "Teklif Daveti\nProje sürecindeki tedarik aşamasında her bir atamada atayan tarafından gerçekleştirilen faaliyetler:\n\nAtayan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi\nReferans bilgilerinin ve müşterek kaynakların derlenmesi\nTeklif gereksinimleri ve değerlendirme kriterlerinin oluşturulması\nİhale daveti için ilgili bilgilerin derlenmesi",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.01.html#proje-atama",
+    "href": "03.01.html#proje-atama",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "Proje Atama",
+    "text": "Proje Atama\nProje sürecindeki bilgi planlama aşamasında her bir atamadaki ana atanan tarafın çalışacağı iş ekipleriyle gerçekleştirilen faaliyetler:\n\nAna atanan tarafın atanmasında gerekli belgelerin tamamlanması",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.01.html#bilgi-modeli-teslimi",
+    "href": "03.01.html#bilgi-modeli-teslimi",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "Bilgi Modeli Teslimi",
+    "text": "Bilgi Modeli Teslimi\nHer bir atamadaki iş ekipleri ile ana atanan tarafın yapacağı işler:\n\nBilgi modelinin değerlendirilmesi ve kabul edilmesi",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.01.html#proje-kapanışı",
+    "href": "03.01.html#proje-kapanışı",
+    "title": "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü",
+    "section": "Proje Kapanışı",
+    "text": "Proje Kapanışı\nTeslim aşamasının sonunda atayan tarafın yapacağı işler:\n\nProje bilgi modelinin arşivlenmesi\nGelecek projeler için öğrenilen derslerin derlenmesi",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "03.02.html",
+    "href": "03.02.html",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "",
+    "text": "Genel\nProje kapsamı ve künye bilgisi verilecektir.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#temel-hedefler",
+    "href": "03.02.html#temel-hedefler",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Temel Hedefler",
+    "text": "Temel Hedefler\nProje kapsamında BIM kullanımıyla amaçlanan temel hedefler listelenecektir.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#kısaltmalar-ve-tanımlar",
+    "href": "03.02.html#kısaltmalar-ve-tanımlar",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Kısaltmalar ve Tanımlar",
+    "text": "Kısaltmalar ve Tanımlar\nTeknik şartnamede geçen tüm kısaltmaların ve teknik terimlerin tanımı yapılacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#geçerli-standartlar-ve-şartnameler",
+    "href": "03.02.html#geçerli-standartlar-ve-şartnameler",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Geçerli Standartlar ve Şartnameler",
+    "text": "Geçerli Standartlar ve Şartnameler\nProjede geçerli referans standartlar ve şartnameler belirtilecektir.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#bilgi-modellerinin-kullanımı",
+    "href": "03.02.html#bilgi-modellerinin-kullanımı",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Bilgi Modellerinin Kullanımı",
+    "text": "Bilgi Modellerinin Kullanımı\nProjede oluşturulacak bilgi modellerinin kullanımı tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#görev-ve-sorumluluklar",
+    "href": "03.02.html#görev-ve-sorumluluklar",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Görev ve Sorumluluklar",
+    "text": "Görev ve Sorumluluklar\nBilgi yönetimi ve BIM süreçleriyle ilgili görev ve sorumluluklar Ek 1 Bilgi Yönetimi Sorumluluk Matrisi doldurularak tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#süreçsel-gereksinimler-yönetimi",
+    "href": "03.02.html#süreçsel-gereksinimler-yönetimi",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Süreçsel Gereksinimler Yönetimi",
+    "text": "Süreçsel Gereksinimler Yönetimi\nBIM Uygulama Planı’nda tarif edilecek uygulamaların kapsamların ile süreçlerine esas olan sözleşme maddeleri ve referans dokümanlar özetlenecektir.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#bilgi-süreçleri",
+    "href": "03.02.html#bilgi-süreçleri",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Bilgi Süreçleri",
+    "text": "Bilgi Süreçleri\nBilgi süreçleri ve bu süreçlerdeki paydaşların sorumlulukları tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#veri-güvenliği",
+    "href": "03.02.html#veri-güvenliği",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Veri Güvenliği",
+    "text": "Veri Güvenliği\nSaklanması ve paylaşımı sırasında verinin güvenliğiyle ilgili proje gereksinimleri tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#eğitim-ve-destek",
+    "href": "03.02.html#eğitim-ve-destek",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Eğitim ve Destek",
+    "text": "Eğitim ve Destek\nProje boyunca BIM süreçlerin ihtiyaca yönelik yürütülmesinin sağlanması; tüm paydaşların ortak bir anlayışla çalışması için gerekli eğitim ve destek kapsamı ile sorumlu paydaşlar tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#teknik-altyapı-gereksinimleri",
+    "href": "03.02.html#teknik-altyapı-gereksinimleri",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Teknik Altyapı Gereksinimleri",
+    "text": "Teknik Altyapı Gereksinimleri\nProjede bilgi ve BIM süreçlerin yürütülmesi için gerekli yazılım ve donanımsal altyapı gereksinimleri tanımlanacaktır. Ortak Veri Ortamı (OVO) kurgusu ve kullanım sorumlulukları detaylı olarak tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#bilgi-kapları-kodlama-yapısı",
+    "href": "03.02.html#bilgi-kapları-kodlama-yapısı",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Bilgi Kapları Kodlama Yapısı",
+    "text": "Bilgi Kapları Kodlama Yapısı\nProjede üretilecek tüm bilgi kaplarının, (2b ve 3b) bilgi modelleri ile belge kodlama yapısı tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#bilgi-modellerinin-yapısı",
+    "href": "03.02.html#bilgi-modellerinin-yapısı",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Bilgi Modellerinin Yapısı",
+    "text": "Bilgi Modellerinin Yapısı\nÜretilen bilgilerin ve modellerin kullanım alanlarına göre yapıları tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#sec-bilgi-model-içerikleri",
+    "href": "03.02.html#sec-bilgi-model-içerikleri",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Bilgi Model İçerikleri ve Detayları",
+    "text": "Bilgi Model İçerikleri ve Detayları\nProje aşamalarına uygun model içerikleri ve detayları tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#bilgi-modellerin-teslimi",
+    "href": "03.02.html#bilgi-modellerin-teslimi",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "Bilgi Modellerin Teslimi",
+    "text": "Bilgi Modellerin Teslimi\nÜretilen bilgilerin ve modellerin teslimleriyle ilgili gereksinimler tanımlanacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "03.02.html#bim-teknik-şartnamesi-ekleri",
+    "href": "03.02.html#bim-teknik-şartnamesi-ekleri",
+    "title": "BIM Teknik Şartname Şablonu",
+    "section": "BIM Teknik Şartnamesi Ekleri",
+    "text": "BIM Teknik Şartnamesi Ekleri\n\nEk 1 Bilgi Yönetimi Sorumluluk Matrisi\nTS EN ISO 19650-2’de tanımlanan faaliyetlerin paydaşlar tarafından sorumlulukları Bilgi Yönetimi Sorumluluk Matrisi’yle tanımlanacaktır. Her faaliyet için projede tanımlanan farklı paydaşların sorumlulukları, kodlamalarla matrise işlenecektir. Kullanılacak matris, rehberin 7. bölümü BIM Teknik Şartname Ek Örnekleri altında, Ek 1 Bilgi Yönetimi Sorumluluk Matrisi ’de verilmiştir.\n\n\nEk 2 Bilgi Gereksinimleri\nProjenin farklı aşamalarında yükleniciler [ana atanan taraf ve iş ekipleri] tarafından hazırlanacak bilgilerin dökümü tanımlanacaktır. Her aşamadaki bilgilerin kapsamı, ölçeği ve detay seviyeleri belirtilecektir. Bir bina projesi için örnek bilgi gereksinimleri, rehberin 7. bölümü BIM Teknik Şartname Ek Örnekleri altında, Ek 2 Bilgi Gereksinimleri ’de verilmiştir.\n\n\nEk 3 Bilgi Kapları Kodlama Yapısı\nProjenin farklı aşamalarında yükleniciler [ana atanan taraf ve iş ekipleri] tarafından hazırlanacak bilgi kaplarının kodlama yapısı tanımlanacaktır. Bir proje için örnek bilgi gereksinimleri, rehberin 7. bölümü BIM Teknik Şartname Ek Örnekleri altında, Ek 3 Bilgi Kapları Kodlama Yapısı ’de verilmiştir.\n\n\nEk 4 BIM Uygulama Planı Şablonu\nRehberin, 4. bölümü Yükleniciler için bSTR BIM Uygulama Planı Rehberi ’nde BIM Uygulama Planı Şablonu esas alınarak, yüklenici(ler) [ana atanan taraf ve iş ekipleri] tarafından doldurulmak üzere şablon olarak veya gerekli görülen eklerlerle beraber kısmi doldurulmuş olarak hazırlanacaktır.\n\n\nEk 5 BIM Modelleme Standardı\nİşveren ve/veya ana atayan taraf, projede BIM modellerinin hazırlanmasında takip edilecek modeleme standartlarını tanımlayacaktır. Kurumsal BIM Modelleme Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.\n\n\nEk 6 Bilgi Standardı\nİşveren ve/veya ana atayan taraf, projede bilgilerin üretilmesinde ve isimlendirilmesinde takip edilecek standartları tanımlayacaktır. Kurumsal Bilgi Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.\n\n\nEK 7 Süreç Akış Şemaları\nİşveren ve/veya ana atayan taraf, proje bilgilerinin üretim, paylaşım ve onay süreçlerinin akış şemalarını paylaşacaktır.\n\n\nEk 8 Mevcut Bilgi Modelleri\nProjenin yürütülmesi için ilgili tüm bilgi (belgeler, çizimler, modeller vb.) veya erişim yöntem ve linkleri paylaşılacaktır.",
+    "crumbs": [
+      "III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi",
+      "BIM Teknik Şartname Şablonu"
+    ]
+  },
+  {
+    "objectID": "04.bolum.html",
+    "href": "04.bolum.html",
+    "title": "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+    "section": "",
+    "text": "Hazırlayan:\nStandartlar & Yayınlar Çalışma Grubu\n\n\nTarih:\n29.09.2022\n\n\nVersiyon:\n00\n\n\n\n \nBu bölüm, projelerini sayısal süreçler ve BIM araçları kullanarak yürütecek tasarım ve uygulama yüklenicileri için hazırlanmıştır. Bölüm 3 İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi ’nde tarif edilen BIM Teknik Şartnamesi’yle uyumlu bir şekilde, yüklenici paydaşların yer alacağı süreçlerle, hazırlayacakları içeriklerin tanımlanması ve planlanması için gerekli belgelerin oluşturulmasını tarifler. Bu bölümden faydalanacak yükleniciler, kendi proje kapsamlarında işveren tarafından hazırlanan şartnamelere ve tanımlanan ilgili gereksinimlerle uyumlu olarak kendi BIM Uygulama Planı’nı oluşturacaktır. TS EN ISO 19650-2 inşaat projesi bilgi yönetimi sürecinde teklif hazırlığı aşamasında, olası ana atanan tarafın, çalışacağı bir veya birden fazla olası iş ekibiyle beraber atama öncesi BIM Uygulama Planı hazırlaması gerekmektedir. Proje ataması yapılan ana atanan taraf, iş ekipleriyle beraber, teklif sürecinde hazırlandıkları BIM Uygulama Planı’nı güncelleyip projeye başlamadan önce teyit eder.\n \n\nEditör\n\nDr. Ahmet ÇITIPITIOĞLU, bSTR Standartlar ve Yayınlar Çalışma Grubu Koordinatörü (TAV İnşaat)\n\n\n \nKatkıda Bulunanlar\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n\nSTANDARTLAR ve YAYINLAR ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nÖncü Ceren Varol ALİCİK, Sika\n\n\nYrd. Doç. Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nOsman ÖZKAN, EAE Elektrik\n\n\nAygen ERKAL, Türkiye İMSAD\nProf. Dr. Salih OFLUOĞLU, ABÜ\n\n\nBahadır DEMİRTAŞ, Arup\nSerdar BİRDEN, BIMMade\n\n\nBehnam AGHBALİ, Saina\nSerhat KAŞ, Yüksel Proje\n\n\nBerke ÇELİKEL, Freelance\nSerkan ELİBOLLAR, ProCS\n\n\nÇağdaş Ilgaz ŞENEL, Hilti\nUğur KAYA, Emay\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nUtku BAŞYAZICI, Doxa87\n\n\nİdris BAHADUR, Saina\nYudum DEMİRKOL, Şişecam\n\n\nMelis ATAY, Turner\n\n\n\n\n \nGörüş Verenler\n\n\n\nBurcu Esen BARUTÇU, Drees & Sommer",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi"
+    ]
+  },
+  {
+    "objectID": "04.01.html",
+    "href": "04.01.html",
+    "title": "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü",
+    "section": "",
+    "text": "Teklif Hazırlığı\nTasarım, yapım ve işletme sürecindeki her bir hizmet tedarikinde, bilgi yönetim sürecindeki taraflar Bilgi Yönetimi Sürecinde Taraflar bölümünde tanımlanmaktadır. Atanan taraflar BIM Teknik Şartnamesi’nde belirlenen kapsama uygun şekilde çalışmalarını yürütür. Aşağıdaki bölümlerde atanan taraf(lar)ın süreç boyunca yapacağı işler verilmiştir. Bu girdilerin BIM Uygulama Planı’nın şekillendirilmesinde önemli bir payı vardır.\nTeklif hazırlayan olası ana atanan tarafın çalışacağı bir veya birden fazla olası iş ekibi ile yapacağı işler:",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "04.01.html#teklif-hazırlığı",
+    "href": "04.01.html#teklif-hazırlığı",
+    "title": "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü",
+    "section": "",
+    "text": "Bilgi yönetimi görevini üstlenecek kişilerin tayin edilmesi\nTeslim ekibinin (atama öncesi) BIM Uygulama Planı’nın belirlenmesi\nİş ekibinin/ekiplerinin yetenek ve kapasitesinin değerlendirilmesi\nTeslim ekibinin yetenek ve kapasitesinin belirlenmesi\nÖnerilen teslim ekibinin mobilizasyon planının oluşturulması\nTeslim ekibinin risk kaydının oluşturulması\nTeslim ekibinin ihale davetine yanıtlarının derlenmesi",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "04.01.html#proje-atama",
+    "href": "04.01.html#proje-atama",
+    "title": "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü",
+    "section": "Proje Atama",
+    "text": "Proje Atama\nProje sürecindeki bilgi planlama aşamasında her bir atamadaki ana atanan tarafın çalışacağı iş ekipleriyle gerçekleştirilen faaliyetler:\n\nTeslim ekibinin BIM Uygulama Planı’nın teyit edilmesi\nTeslim ekibinin ayrıntılı sorumluluk matrisinin oluşturulması\nAna atanan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi\nİş bilgi teslim plan(lar)ının oluşturulması\nAna bilgi teslim planının oluşturulması\nAna atanan tarafın atanmasında gerekli belgelerin tamamlanması\nAtanan taraf(lar)ın atanmasında gerekli belgelerin tamamlanması",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "04.01.html#mobilizasyon",
+    "href": "04.01.html#mobilizasyon",
+    "title": "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü",
+    "section": "Mobilizasyon",
+    "text": "Mobilizasyon\nHer bir atamadaki ana atanan tarafın yapacağı işler:\n\nKaynakların mobilize edilmesi\nBilişim altyapısının mobilize edilmesi\nProjenin bilgi üretim yöntemlerinin ve prosedürlerinin sınanması",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "04.01.html#işbirliği-ile-bilgi-üretimi",
+    "href": "04.01.html#işbirliği-ile-bilgi-üretimi",
+    "title": "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü",
+    "section": "İşbirliği ile Bilgi Üretimi",
+    "text": "İşbirliği ile Bilgi Üretimi\nProje sürecindeki bilgi üretim aşamasında her bir atamadaki iş ekiplerinin teslim ekibiyle gerçekleştirdikleri faaliyetler:\n\nReferans bilgilerin ve müşterek kaynakların kullanılabilirliğinin kontrol edilmesi\nBilgilerin üretilmesi\nKalite güvence kontrolünün tamamlanması\nBilgilerin değerlendirilip paylaşım için onaylanması\nBilgi modelinin değerlendirilmesi",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "04.01.html#bilgi-modeli-teslimi",
+    "href": "04.01.html#bilgi-modeli-teslimi",
+    "title": "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü",
+    "section": "Bilgi Modeli Teslimi",
+    "text": "Bilgi Modeli Teslimi\nHer bir atamadaki iş ekipleri ile ana atanan tarafın yapacağı işler:\n\nAna atanan tarafın onaylaması için bilgi modelinin sunulması\nBilgi modelinin değerlendirilmesi ve onaylanması\nBilgi modelinin atayan tarafın onayı için sunulması\nBilgi modelinin değerlendirilmesi ve kabul edilmesi",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "Bilgi Yönetim Sürecinde Yüklenicilerin Rolü"
+    ]
+  },
+  {
+    "objectID": "04.02.html",
+    "href": "04.02.html",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "",
+    "text": "Kapsam\nBIM Uygulama Planı’nın hazırlanmasıyla ilgili proje kapsamındaki şartname ve sözleşme şartlarına dair açıklama girilecektir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#kısaltmalar-ve-tanımlar",
+    "href": "04.02.html#kısaltmalar-ve-tanımlar",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "Kısaltmalar ve Tanımlar",
+    "text": "Kısaltmalar ve Tanımlar\nBIM Uygulama Planı’nda geçen tüm kısaltmaların ve teknik terimlerin tanımı yapılmalıdır.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#proje-bilgisi",
+    "href": "04.02.html#proje-bilgisi",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "Proje Bilgisi",
+    "text": "Proje Bilgisi\n\nProje İsmi\nProjenin sözleşmedeki ve/veya çizimlerdeki resmi ismi yazılacaktır.\n\n\nProje Özeti\nProje hakkında genel bilgiler verilecektir. Proje çıktılarıyla birlikte inşaat kapsamı, süresi, yapılan işin boyutu, yapıların tarifi ve özellikleri özetlenecektir.\n\n\nProje Paydaşları\nTüm proje paydaşları listelenecektir: İşveren, işveren temsilcileri, müşavir firmalar, ana müteahhit v.b.\n\n\nProje Süresi ve Hedef Tarihler\nSözleşmede belirtilen proje süresi ile belirtilen ana terminler listelenecektir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#projedeki-bim-kapsamı-ve-hedefleri",
+    "href": "04.02.html#projedeki-bim-kapsamı-ve-hedefleri",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "Projedeki BIM Kapsamı ve Hedefleri",
+    "text": "Projedeki BIM Kapsamı ve Hedefleri\n\nReferans Standartlar ve Dokümanlar\nProjede BIM Uygulama Planı’nda tarif edilecek uygulama kapsam ve süreçlerine esas olan sözleşme maddeleri ile referans dokümanları burada özetlenecektir.\n\n\nHedeflenen BIM Uygulamaları\nBIM Uygulama Planı’nı hazırlayan tarafın, sözleşmesel kapsamla birlikte kendi süreçlerine yönelik hangi uygulamaları yapmayı amaçladığı listelenecektir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#görevler-ve-sorumluluklar",
+    "href": "04.02.html#görevler-ve-sorumluluklar",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "Görevler ve Sorumluluklar",
+    "text": "Görevler ve Sorumluluklar\n\nProje Paydaşları İletişim Listesi\nBIM uygulamalarının tüm süreç paydaşlarının iletişim bilgileri listelenecektir.\n\nProje paydaşları iletişim listesi\n\n\nAdı Soyadı\nGörevi\nFirma\nİletişim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGörev Tanımları ve Sorumlulukları\nBu bölümde BIM süreçleriyle ilgili çalışan pozisyonlarının tarifi ve sorumlulukları belirlenir. Aşağıdaki pozisyon isim ve tanımları proje kapsam ve sözleşme şartlarına göre farklı olabilir. Sorumluluk tablosunda geçen tüm görev tanımları aşağıdaki bölümde yer almalıdır.\n\nBIM Yöneticisinin Sorumlulukları\n\n\nBilgi Yöneticisinin Sorumlulukları\n\n\nBIM Koordinatörün Sorumlulukları\n\n\nBIM Modelleyicilerin Sorumlulukları\n\n\n\nOrganizasyon Yapısı\nProje yönetiminden başlayarak, BIM süreçlerine dahil tüm pozisyonların ağaç yapısıyla organizasyon şeması paylaşılacaktır.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#bim-süreçleri",
+    "href": "04.02.html#bim-süreçleri",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "BIM Süreçleri",
+    "text": "BIM Süreçleri\nModellerin ana atanan, teslim ve iş ekipleri arasında, proje boyunca geliştirilmesi ve tüketilmesiyle ilgili tüm süreçler açıkça tanımlanacaktır.\n// todo: reorder Eks to make logical text order - add refs to each Ek im the text\n\nBIM Süreçlerine Yönelik Yapılacak Çalışma Toplantıları ve Eğitimler\nSüreçlerin geliştirilmesiyle ilgili paydaşların yapacağı farklı çalışma toplantıları, bu süreçlerin pekişmesini sağlamak ve/veya sözleşme şartları gereği yapılacak eğitimlerin tanımlanmaları yapılacaktır.\n\n\nBIM Modelleme ve Koordinasyon Süreçleri\nModellerin oluşturulması ve koordinasyonu için, gerekli detayda, adım adım tüm aşamaların görsel iş akış şemalarıyla desteklenerek net bir şekilde tarifi yapılacaktır. Sorumluluk tablosunda yer alan paydaşlarla tutarlı bir şekilde süreç boyunca paydaşların işleri açıkça ifade edilecektir.\n\n\nDisiplinler Arası Koordinasyon ve Çakışma Süreçleri\nDisiplinler arasındaki koordinasyon süreçleri ve bunu destekleyen model çakışma süreçleri için, gerekli detayda, adım adım tüm aşamaların görsel iş akış şemalarıyla desteklenerek net bir şekilde tarifi yapılacaktır. Süreç boyunca, sorumluluk tablosunda yer alan paydaşların işleri açıkça ve tutarlı bir şeklide ifade edilecektir.\n\n\nBIM Modellerinden İki Boyutlu (2b) Çizim Oluşturma Süreçleri\nModel oluşturma süreçleriyle uyumlu olarak bu modellerden iki boyutlu (2b) çizim oluşturma süreçleri için, gerekli detayda, adım adım tüm aşamaların görsel iş akış şemalarıyla desteklenerek net bir şekilde tarifi yapılacaktır. Süreç boyunca, sorumluluk tablosunda yer alan paydaşların işleri açıkça ve tutarlı bir şeklide ifade edilecektir. Oluşturulan (2b) çizim için takip edilecek ulusal, kurumsal, veya proje özelindeki çizim CAD standardı belirtilerek, kullanılan yazılımlara uygun ayarlar, dosyalar ve referans dokümanlarına atıfta bulunulabilir.\n\n\nModel Kalite Kontrol Süreçleri\nModellerin içerik ve uygulama planına uygunluğu için kalite kontrol süreçleri ile yapılan kontrollerin belgelendirilmesi amacıyla Ek 1 Model Kalite Kontrol Formu bölümünde tanımlanan formun nasıl kullanılacağı tarif edilecektir.\n\n\nGörselleştirme\nModellerden toplantı, rapor vs. için oluşturulacak görseller ile ilgili gerekli beklentiler ve bilgiler verilecektir.\n\n\nBIM Modellerin Saha Durumuyla Güncelleştirilmesi (As-built)\nKapsamda bulunması halinde, modellerin proje sonunda sahada gerçekleştirilen haliyle uyumlu olarak güncelleştirilmesinin yöntemi, süreci ve belgelendirilmesi tarif edilecektir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#bim-modellemesi-için-gereksinimler",
+    "href": "04.02.html#bim-modellemesi-için-gereksinimler",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "BIM Modellemesi için Gereksinimler",
+    "text": "BIM Modellemesi için Gereksinimler\n\nModelde Kullanılacak Dil(ler)\nModel içeriğinde kullanılacak dil tanımlanacaktır. Eğer birden fazla dil kullanılacaksa, iki dilin bir arada hangi şartlarda kullanılacağı tarif edilecektir.\n\n\nBirimler & Koordinatlar\n\nÖlçü Birimleri\nModeleme için kullanılacak temel ölçü birimleri verilecektir. Kullanılan yazılım(lar) için gerekli ayarlamalar tarif edilebilir veya yapılandırma (konfigürasyon) dosyası verilebilir.\n\n\nProje Referans Koordinatları\nModeleme için kullanılacak referans koordinatlar ile projedeki referans noktanın konumu tanımlanacaktır. Projenin farklı yazılımlarda doğru olarak yerleştirilmesi için kullanılan coğrafi koordinat sistemi verilmelidir. Kullanılan yazılım(lar) için gerekli ayarlamalar tarif edilebilir veya yapılandırma (konfigürasyon) dosyası verilebilir.\n\n\nProje Referans Kot Seviyeleri\nModeleme için kullanılacak referans kat kotları verilecektir. Doğru tanımlama yapılması için, verilen kotların nereye göre verildiği ve mutlak ve/veya göreceli olarak ölçüldüğü açıkça tarif edilmelidir.\n\n\n\nModel İçerikleri ve Eleman Bilgi Gereksinimleri\nAlt başlıklarda belirtilen kapsamlar için modelde dahil edilecek elemanların dökümü yapılacaktır. Proje şartnamesinin Bilgi Model İçerikleri ve Detayları bölümünde belirtilen elemanlarla birlikte, koordinasyon ve simülasyon gibi tariflenen BIM hedeflerine yönelik modellenecek diğer tüm elemanlar belirtilecektir. Modellenecek elemanlar ile birlikte modelde dahil edilmeyecek elemanlar belirtilecektir. Model içinde dahil edilecek elemanların dökümü, detay seviyeleri ve hazırlanmasından sorumlu paydaşları Ek 3 Model Eleman Bilgi Gereksinimleri Tablosu’da verilecektir.\nCONTINUE EDITING FROM HERE!!!\n\nMimari Elemanlar\n\n\nYapısal Elemanlar\n\n\nHavalandırma Sistemleri Elemanları\n\n\nElektrik ve Bilişim Sistemleri Elemanları\n\n\nSıhhi Tesisat ve Yangın Koruma Sistemleri Elemanları\n\n\nİnşaat ve Altyapı Elemanları\n\n\nÖzel Sistemler ve Elemanları\n\n\nDiğer Elemanlar\n\n\n\nModel İçerik Adlandırmaları\n\nModel Dosya Adlandırması\nModel dosyaların adlandırma kuralları tarif edilecektir. Her bir modelin özgün olarak tanımlanmasını sağlayacak farklı isim katmanlarıyla, tutarlı olarak yapılandırmak gerekmektedir. Adlandırmada disiplin, sistem, kat, bölge vb. değişik özellikleri tanımlayacak katmanlar için kullanılan kodlamalar bilgi kapları kodlamalarıyla tutarlı olacaktır. Proje boyunca oluşturulan modeller Model Dosyaları Listesi’nde güncel tutulan bir ek olarak paylaşılacaktır.\n\n\nMalzeme Adlandırması\nModellerde kullanılan malzeme tanımlarının adlandırma kuralları tarif edilecektir. Her bir malzeme türünün özgün olarak tanımlanmasını sağlayacak farklı isim katmanlarıyla, tutarlı olarak yapılandırılması gerekmektedir.\n\n\nModel Görüntülerin Adlandırması\nModellerde oluşturulan farklı görüntülerin adlandırma kuralları tarif edilecektir. Her bir görünümün özgün olarak tanımlanmasını sağlayacak farklı ve tutarlı olarak yapılandırılması gerekmektedir.\n\n\nÇalışma Gruplarının Adlandırması\nModelleri oluştururken ve/veya kullanılırken eleman, sistem ve disiplin vb. bazında oluşturulan gruplar ve adlandırmalar tarif edilecektir. Her bir grubun özgün olarak tanımlanmasını sağlayacak farklı ve tutarlı olarak yapılandırılması gerekmektedir.\n\n\n\nModel Dosya Şablonu\nOluşturulacak model dosyaları için kullanılacak yapılandırma (configuration) verileri ile referans içerikleri bulunduran dosya şablonu verilecektir.\n\n\nModel İçerik Renklendirme Düzeni\nModellenen elemanlara nasıl renk verileceği tarif edilecektir. Renklerin disiplin veya eleman bazında, eleman veya malzeme aracılığıyla nasıl renklendirileceği detaylandırılmalıdır.\n\n\nDiğer Gereksinimler\nVerilen başlıklar dışında, varsa diğer genel gereksinimlere burada yer verilebilir.\n\n\nBIM Model Yapılanması\nBir araya geldiğinde bir bütün olarak projeyi tarifleyen BIM model dosyalarının nasıl bölümleneceği tarif edilecektir. Projenin boyutu ve yapısına uygun olarak ayrı bölümler, katlar ve disiplineler için ayrı BIM model dosyaları oluşturulabilir. Gerekli olması halinde, tüm paydaşların BIM modellerle sorunsuz bir şekilde çalışmasını sağlamak amacıyla, dosya boyutu gibi, belli koşullar tarif edilebilir.\n\n\nDiğer Gereksinimler\nVerilen başlıklar dışında, varsa diğer genel gereksinimlere burada yer verilebilir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#iletişim-ve-teslim-kuralları",
+    "href": "04.02.html#iletişim-ve-teslim-kuralları",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "İletişim ve Teslim Kuralları",
+    "text": "İletişim ve Teslim Kuralları\nProje boyunca tanımlanan kapsamların yerine getirilmesi için gerekli süreçler ve süreç sahiplerinin işbirliği içinde nasıl çalışacağı tanımlanacaktır.\n\nResmi İletişim Yöntemleri\nProje paydaşları arasındaki iletişim süreci ve yöntemleri tarif edilecektir. İletişimin hangi paydaşlar arasında gerçekleşeceği ile birlikte, belli paydaşlarla formal süreçler dışında gerçekleşmemesi gereken iletişimler tanımlanacaktır.\n\n\nYapılacak Toplantılar\nİlgili her proje aşamasında paydaşlar arasında yapılacak toplantılar tanımlanacaktır. Proje başında ve sonunda periyodik olarak yapılması gereken toplantılarla, bu toplantıların hangi paydaşlar arasında ve hangi sıklıkta yapılacağı ile katılım zorunlulukları tarif edilecektir.\n\n\nTeslim Edilecek BIM Çıktıları\nBIM süreçleriyle elde edilen model ve veri çıktılarının, hangi aşamalarda, hangi formatlarda, nasıl iletileceği tarif edilecektir. Teslimlerin tanımlanması Ek 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü ile yapılacaktır. Bu döküm aracılığıyla bilgi üretimi ve onaylar için gerekli iş yükü tanımlanacaktır. Her iş ekibin kendi kapsamıyla ilgili oluşturulan planlama dökümlerine teslim tarihlerinin eklenmesiyle İş Bilgi Teslim Planları’nın (İBTP) biraraya getirilmesiyle Ana Bilgi Teslim Planı (ABTP) proje boyunca güncellenerek takip edilecektir. İBTP ve ABTP için Ek 6’da planlama şablonuyla örnek plan verilmektedir.\n\n\nResmi Doküman ve Model Teslim Kuralları\nSözleşmede tanımlanmış tüm belge ve modellerin projede kullanılan ortak veri ortamı üzerinden hangi sıklıkta ve formatlarda, kimlerle paylaşılacağı tarif edilecektir.\n\n\nResmi Olmayan Gündelik Doküman ve Model Paylaşım Kuralları\nGündelik çalışmalar sırasında iş ekiplerinin içinde veya ekiplerın aralarında, projede tanımlı olmayan teslimler ve doğacak ihtiyaçlar için resmi olmayan iletişimler ile yöntemler paylaşılacaktır.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#teknoloji-ve-donanım-altyapısı",
+    "href": "04.02.html#teknoloji-ve-donanım-altyapısı",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "Teknoloji ve Donanım Altyapısı",
+    "text": "Teknoloji ve Donanım Altyapısı\nBIM süreçlerinin gerçeklenmesi için gerekli tüm teknoloji ve donanım altyapısı tarif edilecektir.Kullanılacak donanımlar (bilgisayar, sunucular ve bulut tabanlı servisler), ortak veri ortamı, yazılımlar ile sürümleri listelenecektir. Uzun sürecek projelerde gerekli görülmesi halinde hangi sıklıkta ve yöntemle sürüm güncellemeleri yapılacağı tarif edilebilir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "04.02.html#bim-uygulama-planı-ekleri",
+    "href": "04.02.html#bim-uygulama-planı-ekleri",
+    "title": "BIM Uygulama Planı Şablonu",
+    "section": "BIM Uygulama Planı Ekleri",
+    "text": "BIM Uygulama Planı Ekleri\n\nEk 1 Model Kalite Kontrol Formları\nBIM modellerinin teslimiyle beraber, kontrollerin modelleri hazırlayanlardan farklı kişiler tarafından yapıldığının belgelendiği formlar iletilecektir. Bu yapılan kontrolle, hazırlanan BIM modellerinin proje BIM Şartnamesi, BIM Uygulama Planı ve BIM Standardı’na uygunluğu kontrol edilecektir ve gerekli uygunsuzlukların tespit edilip düzeltilmesi sağlanacaktır. Kalite kontrollerinin projede hangi aşamalarda kimler tarafından yapılacağı proje BIM Uygulama Planı’nda ve BIM Modelleri Oluşturma Süreç ve Yöntemleri ekinde tanımlanacaktır. Örnek model kalite kontrol formları, rehberin BIM Uygulama Planı Ek Örnekleri bölümünde, Ek 1 Model Kalite Kontrol Formu olarak verilmiştir.\n\n\nEk 2 Model İçerik Oluşturmada Kullanılan Kaynak Takip Listesi\nBIM modellerinin hazırlanması sırasında referans olarak kullanılan çizimler ve belgeler gibi kaynakların belgelenmesi için listeler tutulacaktır. Bu liste ayrı bir belge veya model dosyasının içinde bir tablo olarak paylaşılabilir. Model içeriklerinin doğruluğu, güncelliği ve/veya amacına uygunluğunun teyit ve takip edilebilmesi bakımından gereklidir. Örnek kaynak takip listesi formu, rehberin BIM Uygulama Planı Ek Örnekleri bölümünde, Ek 2 Model İçerik Oluşturmada Kullanılan Kaynak Takip Listesi olarak verilmiştir.\n\n\nEk 3 Model Eleman Bilgi Gereksinimleri Tablosu\nProjedeki BIM hedeflerine yönelik modele dahil edilecek elemanların dökümü yapılacaktır. Farklı aşamalarda modellere dahil edilecek elemanlar, detay seviyeleri ve parametreleri verilecektir. Model eleman bilgi gereksinimleri tablosu şablonu ve örneği, rehberin BIM Uygulama Planı Ek Örnekleri bölümünde, Ek 3 Model Eleman Bilgi Gereksinimleri Tablosu olarak verilmiştir.\n\n\nEk 4 Model Dosyaları Listesi\nProje kapsam ve yapısına uygun şekilde bölge, bina, kat, disiplin gibi gruplamalara göre BIM modellerin nasıl ayrılacağı listelenecektir. BIM modelleri projede belirlenen isimlendirmelere uygun olarak listelenip, ayrımları çizim veya görsellerle, farklı renklendirmelerle gösterilebilir.\n\n\nEk 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü\nFarklı yapı geliştirme aşamalarında üretilecek bilgi kaplarına dair üst başlıkların belirlenmesi ile bilgi alışverişi sürecinin anlaşılır bir şekilde planlanması ve ileride yaşanması muhtemel sorumluluk, bilgi üretim ve değişim karmaşasının engellenmesi amaçlanmaktadır. Örnek teslim planlama döküm şablonu, rehberin BIM Uygulama Planı Ek Örnekleri bölümünde, Ek 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü olarak verilmiştir. Teslim planı öncesi bilgi kaplarının üst ölçekten üretim kapsamlarının ve sayılarının belirlenmesine yönelik doldurulacaktır. Ekte mimari bilgi kabı örnek olarak veirlmektedir.\n\n\nEk 6 BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP)\nProjede görev alan teslim ve iş ekipleri tarafından oluşturulacak tüm bilgi modellerinin listesi ve teslim tarihlerinin planlandığı dökümler hazırlanacaktır. Her iş ekibinin kendi kapsamındaki bilgi modellerinin dökümünü ve teslim tarihlerinin listelendiği İş Bilgi Teslim Planları (İBTP) derlenerek, tüm projenin bilgi modellerinin dökümü ve teslim tarihlerinin takip edilebildiği Ana Bilgi Teslim Planı (ABTP) oluşturulur. Bu planlar proje fazlarıyla uyumlu olarak hazırlanıp, proje boyunca güncellenerek, iş ekiplerinin ilerlemelerinin ve projelerin takibi için kullanılacaktır. Örnek teslim planı şablonu, rehberin BIM Uygulama Planı Ek Örnekleri bölümünde, Ek 6 BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP) olarak verilmiştir.\n\n\nEk 7 BIM Stardardı\nİşveren ve/veya ana atayan taraf, projede BIM modellerinin hazırlanmasında takip edilecek modelleme standartlarını tanımlayacaktır. Kurumsal BIM Modelleme Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.\n\n\nEk 8 BIM Modelleri Oluşturma Süreç ve Yöntemleri\nBIM modellerini oluşturmak için tanımlanan süreci görsel iş akışı olarak adım adım tarif eden şema(lar) hazırlanacaktır. Modellerin oluşturulması sürecindeki: referans bilgi kaynaklarının sağlanması, modellerin kalite kontrolünün yapılması, onaylanması, düzeltmelerin yapılması, paydaşlar arasında teslimlerin yapılması, modelden bilgilerin çekilmesi dahil; her adım iş akışında gösterilecektir.\n\n\nEk 9 BIM Modellerinden Pafta Oluşturma Süreç ve Yöntemleri\nBIM modelleriyle 2b paftaların oluşturulması için tanımlanan süreci görsel iş akışı olarak adım adım tarif eden şema(lar) hazırlanacaktır. Ayrıca modellerden paftaların oluşturulmasında kullanılan yazılımlar, ayarları ve varsa şablonlar tarif edilecektir.\n\n\nEk 10 BIM Modelleriyle Proje Planlama (4b) Simülasyon Oluşturma Süreç ve Yöntemleri\nBIM modelleriyle proje planlama (4b) simülasyonlarının oluşturulması için tanımlanan süreci görsel iş akışı olarak adım adım tarif eden şema(lar) hazırlanacaktır. Ayrıca modellerle proje planlama (4b) simülasyonlarıyla raporlamaların oluşturulmasında kullanılan yazılımlar ve ayarları tarif edilecektir.\n\n\nEk 11 BIM Modellerinin Saha Durumuyla Güncelleştirilmesi Süreç ve Yöntemleri\nProje sırasında tasarımdaki talep ve koordinasyon ile teslim kontrollerinde yapılan düzeltmeler sonucundaki değişikliklerin BIM modellerine aktarılması için tanımlanan süreci görsel iş akışı olarak adım adım tarif eden şema(lar) hazırlanacaktır. Değişikliklerin sahadan doğrudan takip edilmesi veya saha rapor ve belgelerden dolaylı olarak takip edilmesi için gerekenler ve sorumlu paydaşlar tarif edilecektir. Kayıt modellerinin oluşturulması için farklı ek süreçler de tarif edilmesi gerekebilir.\n\n\nEk 12 BIM Süreçlerinde Takip Edilen Ana Performans Göstergeleri\nProjede BIM uygulamalarının takibi ve planlanması gibi farklı amaçlara yönelik anahtar performans göstergelerinin tanımı ve takibin nasıl yapılacağı tarif edilecektir. Başlıca göstergeler modelleme üretkenliği, model kalitesi, pafta üretimi, koordinasyon problemlerinin takibi konusunda belirlenebilir.",
+    "crumbs": [
+      "IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>BIM Uygulama Planı Şablonu</span>"
+    ]
+  },
+  {
+    "objectID": "05.bolum.html",
+    "href": "05.bolum.html",
+    "title": "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+    "section": "",
+    "text": "Hazırlayan:\nProje Geliştirme Çalışma Grubu\n\n\nTarih:\n11.11.2022\n\n\nVersiyon:\n00\n\n\n\n \nDünya çapında inşaat sektörü sayısallaşırken, inşaat malzemesi üreticilerinin de bu akıma katılması ve sürece katkı sağlaması gerekmektedir. İnşaat sektöründe sayısallaşmanın anahtarlarından olan BIM (Yapı Bilgi Modellemesi) yaklaşımının benimsenmesinde malzeme üreticileri de diğer sektör paydaşları gibi bazı çalışmalar yürütmelidir.\nBIM modeli fiziki binanın sanal bir prototipidir. Bu prototipin gerçekliği, içermiş olduğu gerçek ürün bilgileri ile güçlenir. Üreticilerin ürünleri ile ilgili bilgileri paylaşmaları ve projelerde bu bilgilerin kullanılması BIM’in yaygınlaşması için çok önemlidir. Üretici tarafından sağlanan bilgiler sayesinde hatalı veri girişleri önlenir ve tesis yönetimi gibi alfasayısal veriye en çok ihtiyaç duyulan evreler için önemli faydalar sağlanabilir.\nTürkiye’deki inşaat malzemesi üreticileri, Türk ekonomisinde ihracata katkı sağlayan ana paydaşlardandır ve yurtdışı pazarlarında BIM’in benimsenmesindeki artışla birlikte, Türkiye’deki üreticilerden de hem yurt dışından hem de yurt içinden BIM içerikleri talep edilmeye başlanmıştır. Bu üreticilerin BIM’i benimsemesi ve müşterilerine BIM nesneleri sağlamaları ile yurt dışı pazarlarda daha iyi rekabet etmeleri, sayısallaşmanın etkisi ile iç süreçlerindeki verimsizlikleri gidermeleri ve Türk ekonomisine katkı sağlamaları beklenmektedir.\nAncak birçok üretici firma bu süreci nasıl yürütebileceği konusunda bilgi sahibi değildir. Rehberimn bu bölümünün amacı, malzeme üreticilerinin BIM’i benimseme sürecinde BIM içeriklerinin geliştirilmesinde ve sunulmasında karşılaştıkları sorunlar ile genel eğilimlerin tespit edilmesi ve buna dayanarak BIM’in bu süreçte üretici firmalara rehberlik edebilecek öneriler geliştirmektir.\n \n\nEditör\n\nSerkan Elibollar, bSTR Proje Geliştirme Çalışma Grubu Koordinatörü (ProCS)\n\n\n \nKatkıda Bulunanlar\nBu bölümün hazırlanması amacına da destek vermesi amacıyla başlatılan Sn. Kerim Kaan KARAKOÇ’un yüksek lisans tezi çalışması sonuçları bu bölümde doğrudan kullanılmıştır. Bu sebeple tezi hazırlayan Sn. Kerim Kaan KARAKOÇ’a, tez danışmanı Prof. Dr. Esin Ergen PEHLEVAN’a ve sektörel tecrübelerini tez çalışmalarında kullandırarak katkı sağlayan Serkan ELİBOLLAR’a teşekkür ederiz.\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n \nGörüş Verenler\n\n\n\nProf. Dr. Salih OFLUOĞLU, ABÜ",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası"
+    ]
+  },
+  {
+    "objectID": "05.01.html",
+    "href": "05.01.html",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "",
+    "text": "BIM Hakkında Bilgilenme\nBir üreticinin başarılı bir şekilde BIM nesneleri sunabilmesi için izleyebileceği on adım aşağıda listelenmiştir. Bu adımlar üreticinin BIM’in farkında olması ve BIM’e yatırım yapma kararı sonrasında başlar.\nBIM’e yatırım yapma kararı alan üretici, ilk olarak hedeflerini belirlemek ve sonraki aşamalarda ihtiyaç duyacağı kararları alabilmek için BIM konusunda bilgilenmelidir. Bu bilgilenme bu alandaki eğitim programları ya da BIM danışmanlık hizmeti veren firmaların sağladığı eğitimler ile sağlanabilir. Bu aşamadaki amaç üreticinin ürünlerini BIM ortamında nasıl temsil edeceğine karar verebilir hale gelmesi ve mevcut teknolojiler kullanıldığında BIM ile ilgili sınırların farkına varmasıdır. Bazı ürün tipleri için bir BIM nesnesi sağlamak doğru karar bile olmayabilir ancak BIM kullanan projelerin şartnamelerine girebilecek nitelikte ürün bilgilerinin sağlanabilmesi için neler yapılması gerektiği bu aşamada belirlenebilir. Bu şekilde üretici hem kullanışlı BIM içerikleri geliştirebilir hem de BIM hakkında doğru beklentilere sahip olur. Ayrıca üretici BIM’i kendi süreçlerinde BIM nesnesi sağlamanın ötesinde nasıl kullanabileceğinin de değerlendirmesini yapabilir hale gelir.\nBu aşamadaki üreticilerin en çok dikkat etmesi gereken BIM’e yatırımı kendileri için doğru amaçlarla yaptıklarını anlamalarını sağlamaktır. Birçok üretici rakiplerinden etkilenerek bir BIM nesnesi kütüphanesi platformunda yer alarak ürünlerinin görünürlüğünü artırmak istemektedir. Bu platformlarda ürünlerin tanıtılması bu ürünlerin şartnamelere girebilmesi için tek başına yeterli değildir. Sunulan BIM nesnelerinin ihtiyaçları karşılayabilecek nitelikte olması BIM modellerinde kullanılma olasılıklarını ve dolayısıyla ürünlerin projede kullanılma ihtimallerini arttırır. Üreticinin BIM’e yatırım yaparken bu durumun bilincinde olması yatırımının karşılığını almasında yardımcı olacaktır.\nBunların yanı sıra üreticinin BIM konusunda bilgi ve deneyim edinmeye devam etmesi BIM içerikleri sunmanın ötesinde şartname hazırlayıcılarının taleplerini daha iyi anlamasını sağlayabilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bimi-benimseme-sürecinin-kurgulanması",
+    "href": "05.01.html#bimi-benimseme-sürecinin-kurgulanması",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM’i Benimseme Sürecinin Kurgulanması",
+    "text": "BIM’i Benimseme Sürecinin Kurgulanması\nÜretici bu aşamada kendi kaynaklarını değerlendirerek süreci kendi bünyesinde yürütmeye ya da kendisine destek olacak bir BIM danışmanı ile çalışmaya karar verebilir. Eğer kendi bünyesinde yürütecekse BIM süreçlerinde görev alacak çalışanları bu aşamada seçebilir ya da istenen yeterlilikte uzmanları bulmak için personel alımı yapabilir. Üreticinin süreci kendi yürütmesi durumunda kullanılacak donanım ve yazılımlar için gerekli alt yapı da bu aşamada sağlamalıdır. Üretici, bir danışmanla çalışmaya karar verdiği durumunda danışman ile yapacağı sözleşmeyi hazırlamalı ve danışman firmanın üretici firmada hangi çalışanlar ile iletişim içinde olacağını belirlemelidir. Ayrıca üretici bu aşamada BIM ya da sayısallaşma ile ilgili teşvik programlarını inceleyerek bunlardan faydalanmaya karar verebilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi",
+    "href": "05.01.html#bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnesi Hazırlanacak Ürünlerin Seçilmesi",
+    "text": "BIM Nesnesi Hazırlanacak Ürünlerin Seçilmesi\nBu aşamada üretici kendi ürün yelpazesini inceleyerek hangi ürünleri için BIM nesnesi sunacağına karar verebilir. Üreticiler bu aşamada tüm ürünleri için BIM nesnesi hazırlamak isteyebilir ancak faklı özelliklere sahip çok sayıda ürün için bu nesnelerin hazırlanması birbirine daha benzer ve daha az sayıdaki ürüne kıyasla daha maliyetli olabilir ve daha fazla zaman gerektirebilir. Bu değerlendirmeyi yaparken ürünlerini sunduğu pazarların taleplerini, ürünlerin satış miktarını ve rakiplerinin eğilimlerini göz önüne alabilir. Bu sayede BIM nesnelerini geliştirmek için harcayacağı kaynakları azaltırken nesnelerden sağlayacağı faydayı artırabilir. Üretici zamanla taleplerdeki ve kendi kaynaklarının yeterliliğindeki değişiklikler ile BIM nesnesi sunduğu ürün miktarını artırabilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi",
+    "href": "05.01.html#şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "Şartname Hazırlayıcıların Bilgi İhtiyaçlarının Belirlenmesi",
+    "text": "Şartname Hazırlayıcıların Bilgi İhtiyaçlarının Belirlenmesi\nÜreticinin BIM nesnesi sunmadaki amacı ne olursa olsun şartname hazırlayıcıların bu nesneleri kullanmadaki amacı ürün bilgilerini modellerinde tanımlayabilmek olacaktır. Bu durum dikkate alındığında bu aşamanın süreç içerisindeki en önemli aşama olduğu söylenebilir. Bu aşamada üretici şunları belirlemelidir:\n\nBIM nesnelerinin hangi BIM modelleme yazılımlarında hazırlanacağı ve hangi biçimlerde sunulacağı: Üreticiler BIM nesnelerini şartname hazırlayıcılarının projelerinde kullandığı BIM modelleme yazılımların en iyi uyum sağlayan sürümlerinde hazırlayarak ürün bilgilerinin değişiklik geçirmeden kullanıcıya iletilmesini sağlayabilirler. Üreticinin sektörde kullanılan her yazılım için BIM nesnesi geliştirmesi elverişli olmayacağından geliştirilen BIM nesnesi bu yazılımlarda kullanılabilecek biçimlerde dışarı aktarılabilir.\nBIM nesnelerinin hangi bilgileri içereceği ve bu bilgilerin nasıl temsil edileceği: Üreticiler BIM nesnelerinin olası kullanıcıların talep edebileceği sınıflandırma bilgileri, malzeme bilgileri, geometrik bilgiler ve üretici bilgileri gibi genel bilgiler.\nBIM nesnelerinin hangi aşamada kullanılmak üzere oluşturulacağı: BIM nesneleri BIM modeline projenin farklı aşamalarında dahil edilebilir ve projenin farklı aşamaları farklı ihtiyaçlara sahiptir. Örneğin tesis yönetimi aşamasında kullanılacak olan kurulum tarihi gibi bilgilere tasarım aşamasında ihtiyaç duyulmayacaktır. Bu nedenle üretici BIM nesnesini farklı aşamalar için ayrı ayrı geliştirmek isteyebilir. Üreticilerin sağladığı BIM nesnelerinin hangi aşamada kullanılmak üzere geliştirildiğinin belirli olmaması sektördeki BIM uzmanlarının dile getirdiği bir sorundur. Üreticinin BIM nesnesini sunarken bunu belirtmesi şartname hazırlayıcıların nesneyi kullanma olasılığını arttırabilir.\nBIM nesnelerinin hangi geometrik detay seviyesinde olacağı: 3b modellerde geometriler poligonlardan oluşmaktadır ve detay seviyesi arttıkça poligon sayısı da artmaktadır. Poligon sayısının fazla olması modellerin performansını olumsuz etkileyebilir. Bu nedenle farklı ihtiyaçlara göre farklı detay seviyeleri kullanılmaktadır. Üreticiler ürünlerinin görsel olarak tanınabilirliğini sağlarken nesnenin çok fazla detay içermemesini de sağlamalıdır.\nBIM nesnelerinde kullanıcılara hangi yapılandırma seçeneklerinin sunulacağı: Üretici ürünlerinde farklı boyut ve malzeme gibi seçenekler sunuyor olabilir, bu seçenekleri BIM nesnesi içerisinde de kullanıcıya sunabilir. Ürünün yapılandırılması dışında nesnenin kullanımı için de yapılandırma seçenekleri sunulabilir. Örneğin müdahale ve servis alanları çakışma analizlerinde oldukça kullanışlı iken, soyut hacimler oldukları için modelde devamlı bulunmaları istenmeyebilir. Bu sebeple bu tür geometrilerin görünüşünün kullanıcı tarafından yönetilebilmesi sağlanmalıdır. Bu hacimlerin görünürlüğü de bir seçenek olarak sunulabilir. Şartname hazırlayıcılarının ihtiyaçlarının yanı sıra modelleme sürecindeki taleplerini de göz önüne almalıdır. Benzer bir örnek de projedeki çizimlerde ürünlerin iki boyutta temsil edilmesinde kullanılacak semboller için verilebilir, bu sembollerin ölçeği, konumu ve görünürlüğü gibi niteliklerin kullanıcının kontrolünde olması önerilmektedir. BIM modelleme yazılımlarının kullanıcıları BIM nesnelerinde modelleme süreçlerinde faydalanacakları bu örneklere benzer işlevsellikler bekleyebilir.\nBIM nesnelerine yapılandırılmamış veri eklenmesi: Örneğin PDF formatında şartnameler, kullanım kılavuzları harici olarak nesnelere eklenebilir.\n\nÜreticilerin bu aşamada dikkat etmesi gereken bir konu da çok az bilgi sağlama riski olduğu kadar çok fazla bilgi sağlama riski de bulunmasıdır. Birçok üretici BIM nesnelerine olabildiğince çok görsel detay ekleyerek nesnelerini tasarımcılara çekici hale getirmeye çalışmaktadır. Projelerde zaman ilerledikçe ve bilgi miktarı arttıkça bu şekilde hazırlanan nesnelerin modellerde kullanımı model performansını olumsuz etkileyebilir, bu durumda şartname hazırlayıcılar üreticilerin geliştirdiği BIM nesneleri yerine kendi geliştirdikleri alternatifleri tercih edebilirler. Benzer şekilde üreticiler çok fazla semantik veriyi de nesnelerine ekleyebilir. Kullanıcıların ihtiyaç duymayacağı çok sayıda bilgi dosya boyutlarını arttırabilir ve üretici için hassas olan telif hakkına tabii bilgiler firma dışına çıkabilir. Bu nedenlerden ötürü üretici hangi bilgileri sağlayacağına karar verirken hangi bilgileri sağlamayacağına da karar vermelidir.\nDikkat edilmesi gereken diğer bir konu ise sağlanan bilgilerin güvenilirliğidir. Üreticilerin performans verileri gibi sayısal bilgileri beyan ederken aldıkları sorumluluk bu bilgilerin BIM nesneleri olarak sunmalarında da geçerlidir. Bu nedenden ötürü üretici sayısal verilerde ne kadar isabetli sayılar verileceği gibi kararları da bu aşamada vermelidir.\nÜreticiler BIM’in farkında olmalarından önce ürünleri ile ilgili birçok bilgiyi yapılandırılmış veya yapılandırılmamış bir şekilde ellerinde bulundurabilir. Ancak şartname hazırlayıcıların BIM süreçlerinde ihtiyaç duyacağı bilgileri öngörmekte zorlanabilirler. Bu durumda üreticilerin birkaç seçeneği vardır:\n\nSektörde sunulan BIM nesnelerinde sağlanan bilgileri inceleyebilirler: Sektördeki nesneleri incelemek, üreticinin rakiplerinin sunduğu BIM nesneleri hakkında bilgi edinmesini sağlarken, rakiplerinin sağlamayı ihmal ettiği bilgileri ve yaptığı hataları belirlemede yeterli olmayacaktır.\nOlası şartname hazırlayıcılarına hangi bilgilere ihtiyaç duyduklarını çalıştaylar ve yüz yüze görüşmeler yoluyla doğrudan sorabilirler: Şartname hazırlayıcılar ile görüşmek BIM nesnelerinin bu uzmanlar tarafından kullanılmasını sağlayabilse de farklı projelerin farklı ihtiyaçları olacağından, görüşülen uzman sayısı edinilen bilginin kalitesini belirleyecektir.\nBIM standartlarını inceleyebilirler: Üreticiler bilgi ihtiyaçlarını belirlemede ve BIM nesnelerinin içeriği ile ilgili kararları vermede TS EN ISO 19650’nin bilgi ihtiyaçları ile ilgili bölümlerini, TS EN 17412 bilgi ihtiyacı seviyesi standardı, BS 8541 standart serisini, NBS ve BIMobject gibi BIM nesnesi kütüphanesi platformlarının geliştirdiği BIM nesnesi standartlarını kullanabilirler.\nVarsa BIM danışmanlarının deneyimlerinden yararlanabilirler: Standartlardan yararlanmada güçlük çeken üreticiler eğer bir BIM danışmanı ile çalışmayı tercih ettilerse daha fazla destek için danışmanlarına başvurabilirler.\nMeslek örgütlerinin geliştirdiği araçlardan yararlanabilirler: Bu seçenekler dışında ise meslek örgütlerinin, BIM’i benimseme sürecini kolaylaştırmak için hazırladığı pratik araçlardan yararlanılabilir. Bu araçlardan belirli bir ürün sınıfı için sağlanması gereken geometrik detay seviyesi ve nesneye işlenmesi gereken ürün bilgilerinin neler olduğu edinilebilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi",
+    "href": "05.01.html#bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnelerini Oluşturmada Kullanılacak Girdilerin Derlenmesi",
+    "text": "BIM Nesnelerini Oluşturmada Kullanılacak Girdilerin Derlenmesi\nBu aşamada, üretici bir önceki aşamada belirlediği bilgileri derlemeye başlar. Birçok üreticinin elinde, üretim süreçlerinde kullanılmak üzere ürünleri ile ilgili teknik çizimler, veri paftaları ve kataloglar bulunmaktadır. Ancak bu belgelerin içerdiği bilgilerin BIM nesnesi oluşturmada kullanılabilmesi için verilerin birbiri ile ilişkilendirilebilmesi ve yapılı bir biçime getirilmesi gerekmektedir.\nÜreticilerin üretim için hazırladığı çizimler ve modeller, bir BIM nesnesi için çok fazla detay içeriyor olabilir. Üreticiler bu detayları sağlayabildikleri için BIM nesnelerinin bu geometrik detaylara sahip olmasını beklememelidir ve bu konuda bir önceki aşamada verdikleri kararlara sadık kalmalıdırlar. Ayrıca BIM nesnelerinin geometrisinin yapılandırılabilir olması için teknik çizimlerde ilgili ölçülerin parametrik bir biçimde verilmesi gerekebilir. Bu sayede farklı ürün tiplerinde değişecek ölçüler bir sonraki aşamada parametreler ile yönetilebilir olacaktır. Örneğin bir soğutma ünitesinin bir bağlantı noktasının çapı nesne üzerinde bir parametre ile ifade edilebilir ve aynı parametre ürün verilerinin derlendiği tabloda bir sütun olabilir. Tabloda bu bilginin verilmesi ve bir sonraki aşamada tablodaki bilgilerin nesneye aktarılması, nesne içindeki bu parametrenin alacağı değerlerin tek bir kaynaktan yönetilmesini sağlar. Ünitenin her bir tipi için farklı değerler girilebilir ve bu şekilde çok sayıda ürün tipindeki boyut, tablodaki tek bir sütun ile değiştirilebilir. Bu bilgide değişiklik yapıldığında da tablodaki bilgiler tekrar nesneye aktarılarak güncelleme yapılabilir.\nÜreticiler ürün bilgilerini tablo biçiminde derlerken ürün veri şablonlarından yararlanabilirler. Bir önceki aşamada bahsedilen meslek örgütlerinin sağladığı pratik araçlardan ürün tipine özgü ürün veri şablonları edinilebilir. Üretici kendisine özgü bir şablondan da yararlanabilir, bu aşamada önemli olan verilerin makineler tarafından okunabilir ve yapılı bir biçime getirilmesidir.\nBunu sağlamak için üretici şunları yapabilir:\n\nSütun başlıklarındaki isimlendirmeler anlaşılır ve standart olmalıdır\nTabloların oluşturulduğu yazılımlarda hesap için kullanılan formüller yerine hesap sonuçları olmalıdır. Yani hazırlanan tablo herhangi bir işlem içermemeli, yalnızca ham verileri içermelidir. Aksi halde veriler dışarı aktarılırken formüllerin sonuç verileri yerine formülün kendisi aktarılabilir.\nHücrelere veri girişlerinde satır atlamalar ya da diğer yazılımların desteklemediği karakterler kullanılmamalıdır. Bu durum, verilerin makineler tarafından okunmasında hatalara neden olabilir.\nÇizimlerde verilen parametrik ölçüler veri tablolarında da verilmelidir. Bu şekilde ürün tipleri arasındaki farklar tek bir dosyada toplanabilir.\nHer satır için bilgilerin hangi kaynaklardan edinildiğini belirten bir sütunun kullanılması, verilerin doğrulanmasını kolaylaştırması açısından önerilmektedir.\n\nAyrıca üreticiler kendi ürün veri şablonlarını geliştirirken bu konudaki standartlardan yararlanabilir. Üretici, hazırladığı ürün veri paftalarının ürünleri için BIM kullanan projelerde bir pasaport gibi çalışacağını göz önünde bulundurmalıdır. Bu nedenle ürün veri paftalarını, ürün bilgileri için tek doğruluk kaynağı olarak kullanmalıdır. BIM nesneleri gibi başka veri biçimlerine veri aktarımı yapılırken veriler bu kaynaktan gelmelidir ve bu takip edilebilmelidir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması",
+    "href": "05.01.html#bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnelerinin BIM Modelleme Yazılımları Yardımıyla Oluşturulması",
+    "text": "BIM Nesnelerinin BIM Modelleme Yazılımları Yardımıyla Oluşturulması\nBu bölümde herhangi bir yazılımın kullanımının anlatılmasındansa yazılımları kullanırken verilmesi gereken kararlar ve dikkat edilmesi gereken konular anlatılmıştır.\nBu aşamada verilmesi gereken ilk karar önceki aşamada yapılandırılan ürün veri paftalarının içeriklerinin ve teknik çizimlerde verilen geometrilerin, nesnelerin modellenmesinde kullanılacak BIM modelleme yazılımında nasıl temsil edileceğidir. Üretici nesnede sağlayacağı bilgilerin, nesnelerin sunulduğu platformda, kullanıcıların beklediği gibi işleyebilmesini sağlamalıdır. Bunun için öncelikli olarak sadece çizimlerdeki parametrik ölçülerin yapılandırılabildiği, semantik bilgileri içermeyen örnek BIM nesneleri oluşturulabilir ve temel modelleme işlevleri ile kullanım, yapılandırma kurgusu ve sınırları test edilebilir. Bu sayede üretici, üçüncü aşamada belirlemiş olduğu ihtiyaçlardan modelleme süreci ile ilgili olanların karşılandığını doğrulayabilir.\nSemantik bilgiler içinse üretici, bilgileri niteliğine göre ayırarak BIM modelleme yazılımında bu niteliklere uygun parametreler tanımlamalıdır. Ayrıca kullanıcıların aradıkları bilgileri kolayca bulabilmeleri için bu parametrelere kimlik bilgileri tanımlanabilir. Örneğin bir cam panel için geometrik parametreler bir grupta, malzeme parametreleri bir grupta ve performans parametreleri bir grupta ayrı ayrı görüntülenecek şekilde tanımlanabilir. Bu şekilde kullanıcılar bilgileri süzebilir. Aynı zamanda parametrelerin tanımlarının doğru yapılması BIM modelleme yazılımları içindeki tasarım araçlarının da bilgileri doğru şekilde kullanmasını sağlayacaktır. Örneğin bir ürünün su bağlantı noktasındaki debi bilgisini temsil eden parametrenin debiyi belirttiği BIM modelleme yazılımı tarafından anlaşılamazsa ilgili hesap araçları BIM nesnesi ile kullanıldığında doğru sonuçlar vermeyebilir. Benzer şekilde sayısal veri tutan parametreler için verilerin birimi doğru tanımlanmalıdır. Birçok BIM yazılımı birim dönüşümlerini otomatik yapabilmektedir. Üreticiler bu verileri girerken doğru birimleri kullandıklarına dikkat etmelidirler.\nÜreticiler veri girişlerinde mümkün oldukça elle veri girilmesinden kaçınmalıdır. Bu hem sürecin uzamasına hem de insan hatalarının artmasına neden olabilir. Veri girişlerinin otomasyonu için BIM modelleme yazılımlarının sağladığı farklı imkanlar vardır ancak önemli olan üreticilerin verilerinin makineler tarafından okunabilir olmasıdır. Aksi halde otomasyon için kullanılan araçlar beklenenden farklı sonuçlar verebilir veya çalışmayabilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnelerinin-birlikte-işlerliğinin-sağlanması",
+    "href": "05.01.html#bim-nesnelerinin-birlikte-işlerliğinin-sağlanması",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnelerinin Birlikte İşlerliğinin Sağlanması",
+    "text": "BIM Nesnelerinin Birlikte İşlerliğinin Sağlanması\nBIM süreçlerinde birden fazla BIM modelleme yazılımı kullanılabilir, bu nedenden ötürü üreticilerin BIM nesnelerinin oluşturuldukları yazılım dışında da kullanılabilmesini sağlamaları önerilmektedir. Birlikte işlerliğin sağlanabilmesi için IFC dosya biçimleri kullanılmaktadır. Üreticiler BIM nesnelerinde bilgilerin bu dosya biçimine nasıl aktarıldığını yönetmelidir. Bu amaçla, buildingSMART’ın IFC biçiminin kullanımı için hazırladığı kılavuzlardan ve nesnelerin hazırlandığı BIM modelleme yazılımının IFC’ye aktarım modülünün kullanımını açıklayan belgelerden yararlanabilirler. Önemli olan ürünün farklı yazılımlarda doğru bir şekilde tanınmasıdır. Bu nedenden ötürü üretici BIM nesnesinde doğru sınıflandırma bilgilerini girmeye dikkat etmelidir. Bu bilgiler, geliştirilen BIM nesnesinin farklı yazılımlarda doğru şekilde tanınmasını sağlar.\nAncak, her BIM nesnesi için IFC biçiminde bir dosya sağlanmasına gerek yoktur. IFC dosyaları bilgi aktarımında kullanılmak için tasarlandığından dosyaların içinde yapılandırma yapılamaz. Bu nedenden ötürü sonsuz şekilde yapılandırılabilecek nesneler için, başka bir deyişle, boyutlarına kullanıcının karar verdiği nesneler için hazırlanan bir IFC dosyasını kullanıcılar modellerinde kullanamazlar. Bu dosyaları sadece modelleme yazılımlarından bağımsız bir şekilde ürün bilgilerini görüntülemek için kullanabilirler, üreticiler dilerlerse ürünleri için bu şekilde sanal sergiler hazırlayabilir. Bunun dışında, sınırlı sayıda yapılandırması olan ürünler için her yapılandırma kombinasyonu ayrı bir IFC dosyasında sunulabilir. Bu durumda kullanıcı istediği yapılandırmayı barındıran dosyayı seçerek modeline ekleyebilir ve yapılandırmayı değiştirmek istediğinde farklı bir dosyayı kullanabilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnelerinin-kalite-kontrolü",
+    "href": "05.01.html#bim-nesnelerinin-kalite-kontrolü",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnelerinin Kalite Kontrolü",
+    "text": "BIM Nesnelerinin Kalite Kontrolü\nÜreticiler, geliştirdikleri BIM nesnelerini şartname hazırlayıcılarının kullanımına sunmadan önce nesnelerin önceki aşamalarda karar verilen ihtiyaçları karşıladığı ve BIM modelleme yazılımlarında beklenen şekilde işlediğini belirlemek için, nesnelere kalite kontrol süreci uygulamalıdır. Üreticiler bu süreçte şu kontrolleri yapabilir:\n\nNesnenin herhangi bir 3b modelleme yazılımda kullanılabilecek öteleme, döndürme ve kopyalama gibi işlevleri sağlayabilmesi; bu temel işlevler modelleme sırasında sıklıkla kullanılacağı için, nesnenin bu işlevlerde sorun yaşamaması gerekir. Bu işlemlerde karşılaşılan sorunlar genellikle nesnenin içerisindeki yapılandırma kurallarında yapılan hatalara işaret eder. Üretici BIM nesnelerini kullanıma sunmadan önce bu hataları gidermelidir.\nNesnenin yapılandırma kurgusunun beklenen şekilde işlediğinin doğrulanması; BIM nesnesinin parametrelerine farklı değerler verilerek nesnenin bu değişiklikleri beklenen şekilde yaptığının belirlenmesi gerekir.\nNesnenin gereksiz veya paylaşılmak istenmeyen bilgiler içermemesinin sağlanması; BIM nesnesinin içerdiği bilgilerin önceki aşamalarda belirlenenlerin kapsamını aşmaması gerekir. Örneğin; nesnenin, üründeki her geometrik detayı içermesine gerek yoktur. Belirlenen kapsamdan daha fazla detay içermesi nesnenin kullanıldığı modellerin performansını olumsuz etkileyebilir.\nNesnenin ihtiyaçlar doğrultusunda mümkün olan en küçük dosya boyutunun sağlanması; nesnenin hazırlanma sürecinde dosyanın içerisine alınan ancak artık kullanılmayan bilgiler nesneden temizlenmelidir, bu şekilde nesne boyutu düşürülebilir ve nesnesinin kullanıldığı modellerin performansına olumsuz etkileri en aza indirilebilir.\nNesnenin içerdiği bilgilerin belirlenen ihtiyaçlar doğrultusunda derlenen bilgiler ile uyuşması; oluşturulan ürün veri paftası ile nesnenin parametreleri ve bu parametrelere girilen değerlerin birbiri ile uyuştuğunun kontrol edilmesi bilginin güvenilirliğini ve doğruluğunu sağlamak için gereklidir.\nNesnenin 2b ve 3b görünüşlerdeki temsilinin, belirlenen ihtiyaçlar doğrultusunda derlenen bilgilerle uyuşması; bu kontrol ile nesnede ihtiyaç duyulmayan geometrik detaylardan kaçınılırken ürünün görsel olarak tanınabilir olması için kullanılan temsillerin belirlenen kapsam ile uyuşması sağlanır.\nNesnenin içerdiği bilgilerin farklı BIM modelleme yazılımlarında kurgulanan birlikte işlerlik süreci ile doğru aktarıldığının belirlenmesi; farklı sağlayıcıların sunduğu BIM modelleme yazılımlarından bazıları birbirinin dosya biçimlerini destekleyebilirken bu destek sağlanmadığında IFC biçimini kullanabilir. Her yazılımda IFC biçiminde dosya oluşturmak farklı bir süreç olabilir, ancak üreticiler kullandıkları yazılımın IFC oluşturma sürecinin doğru işlediğini belirlemek için IFC dışarı aktarma aracını, nesneyi dışarı aktararak test edebilirler. Bu şekilde IFC dosya biçimine istenilen tüm bilgilerin doğru bir şekilde aktarılıp aktarılmadığını belirleyebilirler.\nÜreticiler, nesnelerinin yapılandırılmasını test ederken, nesnenin geometrisinin üreticinin belirlediği sınırları aşmamasına ve eğer BIM modelleme yazılımı bu boyutların aşılmasına izin veriyorsa kullanıcının bu sınırlardan haberdar edilmesine dikkat etmelidir. Böylelikle BIM nesnesi üreticinin üretemeyeceği şekilde yapılandırılamayacak ve kullanıcının yanlış yönlendirilmesi önlenecektir. Bu durumda, özellikle sipariş yapılandırması BIM modelleri üzerinden yapıldığında dikkat edilmelidir.\nÖnceki aşamalarda bahsedildiği gibi BIM nesnelerinin gereksiz bilgiler içermesi model performansını kötü etkileyebilir ve BIM nesnesinin şartname hazırlayıcılar tarafından tercih edilmemesine neden olabilir. Aynı zamanda üretici sağlayabildiği her bilgiyi BIM nesnesine dahil etmek istemeyebilir. Bu nedenle üretici BIM nesnelerinde bu tür bilgilerin olmadığını kontrol etmelidir.\nÜreticiler, BIM nesnelerine işledikleri bilgileri bu nesnelerden dışarı aktararak önceki aşamada hazırladıkları ürün veri paftaları ile karşılaştırabilir. Bu sayede BIM nesnelerinin içerdiği veriler doğrulanabilir. Bu, nesnesin içerdiği bilgilerin, üreticinin onayından geçen bilgilerden farklı olmamasını sağlar. Bu kontrole nesnelerin boyutları ve semantik bilgilerin yanı sıra dosya ve tip isimleri gibi derlenen, ürün veri paftasında yer alan diğer tüm bilgiler de dahil edilmelidir.\nNesnelerin farklı detay seviyelerinde ve farklı niteliklerde, görünüşlerdeki temsilleri üreticinin belirlediği şekilde olmalıdır. Bu nesnenin BIM modelleme yazılımında bir örneği modellendikten sonra farklı görünüşlerin oluşturulması ve nesnenin istenen şekilde temsil edildiğinin doğrulanması ile kontrol edilebilir.\nÜreticiler, BIM nesneleri için kurguladıkları birlikte işlerlik sürecini, BIM nesnesini farklı modelleme yazılımlarında modelleyip içeriğini kontrol ederek ya da birlikte işlerlik için oluşturdukları IFC gibi dosya biçimlerini, bu biçimleri görüntülemek için geliştirilen farklı yazılımlarda açarak kontrol edebilirler. Burada dikkat edilmesi gereken, aktarılmak istenen bilgilerin BIM nesnesinin hazırlandığı platformdaki bilgiler ile uyuşması ve kayıpların olmamasıdır. Örneğin bir BIM nesnesinin hazırlandığı platformdaki bir parametrenin ismi ve değeri aktarıldığı IFC dosyasında aynı isim ve değer ile temsil edilmelidir. Bunlar arasında farklılıklar olması IFC oluşturma sürecinin beklendiği gibi çalışmadığına işaret edebilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnelerinin-yayınlanması",
+    "href": "05.01.html#bim-nesnelerinin-yayınlanması",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnelerinin Yayınlanması",
+    "text": "BIM Nesnelerinin Yayınlanması\nÜretici, BIM nesnelerini başarılı bir şekilde geliştirdikten sonra bunları nasıl paylaşacağına ve nasıl güncelleyeceğine karar vermelidir. Bunun için üç farklı yöntem kullanılabilir. Birinci yöntem, BIM nesnesi kütüphanesi platformlarının kullanılmasıdır. Farklı üreticilerden birçok BIM nesnesine ev sahipliği yapan BIM nesnesi kütüphanesi platformları şartname hazırlayıcılar için sanal pazaryeri işlevi görürler. Üreticiler bu platformlara abone olarak dönemsel ücretler karşılığında ürünlerini platformlarda tanıtabilir ve ürünleri için hazırladıkları BIM nesnelerini burada saklayabilirler. Bu platformların ana avantajı, ürünlerin görünürlüğünü arttırmak ve üreticilere ürünlerinin platformdaki performansı ile ilgili analitik bilgiler sağlamaktır. Örneğin; BIM nesnelerini indiren kullanıcıların hangi konumdan bağlantı yaptığı, BIM nesnesini indirmeden önce hangi ürünleri incelediği gibi veriler, üreticinin daha iyi rekabet etmesini sağlayacak iç görüler ortaya çıkarabilir.\nBenzer şekilde, üreticiler ürünlerini kendi web sayfalarında yayınlamayı da tercih edebilir. Eğer gerekli altyapı sağlanabilirse üretici bu şekilde de analitik veriler edinebilir. Bu yöntem üreticiyi periyodik ödemelerden korusa da ilk yatırım maliyeti daha fazla olabilir. Aynı zamanda bu yöntem kullanıldığında şartname hazırlayıcılar, doğrudan üreticinin ürünlerini aramadıklarında ürünleri görmezler, bu nedenden ürünlerin görünürlüğü kütüphane platformlarına göre daha azdır. Bu yöntemin türevi sayılabilecek bir yayınlama şekli de BIM modelleme yazılımları için geliştirilen eklentilerdir. Üreticilerin web sitesinden ya da BIM yazılımı sağlayıcılarının eklenti pazaryerlerinden indirilebilen eklentiler yardımıyla kullanıcılar, BIM modelleme yazılımları içinden erişebildikleri bir ara yüzden BIM nesnelerini seçerek indirebilir.\nBaşka bir yöntem ise BIM nesnelerini talep üzerine paylaşmaktır. Bu ürünlerin görünürlüğünü en aza indirse de BIM nesnelerine erişimi kontrol etmek için en iyi yöntemdir. BIM nesnelerinde ürünleri hakkında hassas bilgiler sunan üreticiler, bu seçeneği tercih edebilir. Ancak kullanıcılar talep sürecine zaman ayırmak istemeyebilir, bu durumda üreticinin BIM nesnesinin kullanımı daha az olabilir.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "05.01.html#bim-nesnelerinin-güncellenmesi",
+    "href": "05.01.html#bim-nesnelerinin-güncellenmesi",
+    "title": "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler",
+    "section": "BIM Nesnelerinin Güncellenmesi",
+    "text": "BIM Nesnelerinin Güncellenmesi\nÜrün tasarımlarındaki ve ürün bilgilerindeki değişiklikler ya da daha yeni sürümlerin yayınlanması ile BIM yazılımlarındaki değişiklikler, üreticilerin BIM nesnelerini güncellemesini gerektirebilir. BIM nesnelerinin güncellenmesinde, üretici süreci kendi üstlendiyse süreçte görev alan çalışanlar, ürünler geliştikçe nesneleri geliştirme sorumluluğunu alabilir. Ancak bunun için firma içerisinde kurulan donanımsal ve yazılımsal altyapının sürekliliği sağlanmalıdır. Dolayısıyla bu altyapının getirdiği maliyetler de sürekli olacaktır. Ayrıca bu görevi üstlenen çalışanların şartname hazırlayıcılar kadar modelleme süreçleri konusunda deneyimli olması, BIM nesnelerinin kullanıcı ihtiyaçlarını daha iyi karşılamasını sağlayabilir. BIM danışmanları ile çalışan üreticiler ise, benzer şekilde danışmanların güncelleme süreçlerini üstlenmesi için firma içinden çalışanlara eğitim verilmesini isteyebilir. Bu şekilde üretici BIM danışmanına bağlı kalmadan kendi kütüphanesini yönetebilir ancak donanımsal ve yazılımsal altyapının sürekliliği yine gerekli olacaktır. Bu üreticiler için başka bir seçenek ise nesnelerde güncelleme yapılmak istendiğinde BIM danışmanı ile tekrar anlaşılmasıdır, bu durumda üretici BIM nesnesi kütüphanesinin yönetiminde dışa bağımlı olacaktır. Bu yöntem toplam maliyetleri düşürebilirken, firmanın BIM’i içselleştirmesinin önünde bir engel olabilir. Üreticiler, firmalarının ve ürünlerinin niteliklerini değerlendirerek kendileri için en uygun yayınlama ve güncelleme seçeneğine karar vermelidir.\nBIM nesneleri, ürünler geliştikçe ve ürün bilgileri değiştiğinde güncellenebildiği gibi kullanıcılardan gelen geri dönüşler üzerine de güncellenebilir. Üreticiler bir BIM nesnesini güncellediklerinde, bu nesnenin paylaşıldığı tüm platformda güncel olmasına dikkat etmelidir ve sürümlerin takibini yapmalıdır. Bu sayede ürün bilgileri için tek bir gerçeklik kaynağı olacaktır ve bilginin akışını takip etmede altın iplik prensibine uyulacaktır.",
+    "crumbs": [
+      "V Malzeme Üreticileri için bSTR BIM Yol Haritası",
+      "Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler"
+    ]
+  },
+  {
+    "objectID": "06.bolum.html",
+    "href": "06.bolum.html",
+    "title": "VI Açık Veri Standartları ve Kullanımları",
+    "section": "",
+    "text": "Hazırlayan:\nTeknoloji Çalışma Grubu\n\n\nTarih:\n25.09.2023\n\n\nVersiyon:\n00\n\n\n\n \nBu bölüm, buildingSMART International tarafından geliştirilen açık ve uluslararası standartlar, kullanımları ve beraberinde gelen bazı kavramlar hakkında genel bilgilerin paylaşılması için hazırlanmıştır. Bu bölüm hazırlanırken, Teknoloji Çalışma Grubu tarafından hazırlanan “IFC Aktarım El Kitabı” çalışmasından faydalanılmıştır. “IFC Aktarım El Kitabı” farklı yazılımlarda yapılan çalışmaların, proje paydaşları arasında bilgi alışverişi yapabilmesi için IFC aktarım örnekleri ile sektör kullanımına sunulmuş önemli bir çalışmadır. Bu çalışmaya link üzerinden ulaşabilirsiniz: https://www.buildingsmartturkiye.org/paylasimlar/yayinlar\n \n\nEditör\n\nSerkan ELİBOLLAR, bSTR Proje Geliştirme Çalışma Grubu Koordinatörü (ProCS Mühendislik)\n\n\n \nKatkıda Bulunanlar\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n\nTEKNOLOJİ ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nA. Sinan ALEMDAR, Emay\nOrhan ERTUĞRUL, Prota Mühendislik\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV\nOsman ÖZKAN, EAE Elektrik\n\n\nAhmet Melih DİNEKLİ, Aluplan\nOzan KÜÇÜK, Penguen\n\n\nAlev YALÇINKAYA, Rönesans Türkiye İnşaat Grubu\nSerdar BİRDEN, BIMMADE\n\n\nYrd. Doç Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nSerhat KAŞ, Yüksel Proje\n\n\nAygen ERKAL, Türkiye İMSAD\nSerkan ELİBOLLAR, ProCS Mühendislik\n\n\nBahadır DEMİRTAŞ, Emay\nSongül BİLGE, Prota Bilgisayar\n\n\nDaniel KAZADO, ProCS Mühendislik\nTolga CANÖZKAN, Penguen\n\n\nEmrah KINAV, Ford Otosan\nTuğçe N. Güney MERMER, HILTI-BIM Competence Center\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nTunç KARABOĞALI, Ejot Tezmak\n\n\nFatih GÜNDOĞDU, Bimsoft\nUğur KAYA, Emay\n\n\nİlknur ÖZ, Nika Proje\nÜmit BALABAN, Anel\n\n\nMüge SÜMEROL, RamaIS\n\n\n\n\n \n\n\nIFC AKTARIM EL KİTABI’NI HAZIRLAYAN EDİTÖRLER\n\n\n\nAlev YALÇINKAYA, Rönesans Türkiye\nİsmail BESLER, ideCAD\n\n\nAltuğ GÜLER, Prota Yazılım\nMelih DİNEKLİ, Aluplan\n\n\nBahadır DEMİRTAŞ, Emay\nRamazan BELLEK, İdeCAD\n\n\nEmre TEPE, FGA Mimarlık\nSongül BİLGE, Prota Bilgisayar\n\n\nFatih GÜNDOĞDU, Bimsoft\nUğur KAYA, Emay",
+    "crumbs": [
+      "VI Açık Veri Standartları ve Kullanımları"
+    ]
+  },
+  {
+    "objectID": "06.01.html",
+    "href": "06.01.html",
+    "title": "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları",
+    "section": "",
+    "text": "Endüstri Temel Sınıfları (Industry Foundation Classes - IFC)\nİnşaat projeleri, birden çok disiplinin ortak çalışması ile yürütülmektedir. Farklı süreçlere veya disiplinlere özgü BIM yazılımları ile her bir disiplin ihtiyacına uygun modelleme yapılabilmektedir. Farklı disiplinlerin birlikte yürüttüğü çalışmaların verimi, doğrudan birbirleri ile bilgi paylaşma yeteneklerine bağlıdır. Bu sebeple, BIM yazılımlarının farklı formattaki dosyalarının birbiri ile veri aktarımı, iki insanın farklı dilde konuşmaya çalışmasına benzer bir durum oluşturmaktadır. Akla gelen ilk çözüm tüm yazılımların birbirlerinin dilini anlamasıdır. Kullanılan yazılımların sayısı ve sürekli güncellenen veritabanları göz önüne alındığında her birinin uyumluluğunu sağlamak pratikte mümkün değildir. Başka bir çözüm ise, iki yabancının ortak bir dilde konuşmayı tercih etmesi gibi, farklı yazılımların birbirlerine verileri ortak bir formatta aktarmasıdır. Farklı disiplinlerin ürettikleri sayısal bilgileri birbirlerine aktarırken bilgi kayıplarını azaltmak veya önlemek amacıyla ortak ve açık veri standartları kullanılmaktadır.\nIFC, inşaat projelerinde çalışan ekiplerin farklı BIM yazılımlarını kullanmalarına olanak sağlar. Bu sayede ekibe özel ihtiyaçları en iyi destekleyen yazılımları seçme özgürlüğünü verir. IFC’nin temel amacı, “akıllı” üç boyutlu (3b) BIM elemanlarının geometrisini ve özellik verilerini etkili bir şekilde farklı disiplinler veya proje paydaşları arasında paylaşabilmektir. Farklı yazılımlarla oluşturulmuş üç boyutlu modeller arasında koordinasyon çalışmalarını yapmak için yaygın olarak modelleme yazılımlarından IFC formatına dışa aktarım yapılmaktadır.\nYapı yaşam döngüsünde üretilen bilginin, üretildiği yazılımdan bağımsız olarak kullanabilmesi, birçok paydaşın katıldığı iş akışlarının ortak anlayış ve erişilebilirlik ile işbirlikçi bir şekilde kurulması amacıyla openBIM olarak adlandırılan açık veri paylaşım standartları geliştirilmektedir. IFC ile bilgi paylaşımı imkanı beraberinde, açık ve ortak iletişim standartlarının ve paylaşılacak bilginin yapısının standartlarının geliştirmesine de yol açmıştır.\nopenBIM açık veri standartları ile paylaşım ve işbirliği süreçleri bir çok yazılım firması tarafından da desteklenmektedir. buildingSMART International tarafından geliştirilen standartlar ve beraberinde gelen bazı kavramlar bu bölümde tarif edilmiştir ve daha detaylı bilgi edinilebilecek kaynaklara ulaşım sağlanması hedeflenmiştir.",
+    "crumbs": [
+      "VI Açık Veri Standartları ve Kullanımları",
+      "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları"
+    ]
+  },
+  {
+    "objectID": "06.01.html#endüstri-temel-sınıfları-industry-foundation-classes---ifc",
+    "href": "06.01.html#endüstri-temel-sınıfları-industry-foundation-classes---ifc",
+    "title": "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları",
+    "section": "",
+    "text": "IFC Nedir?\nGenel olarak, IFC veya “Industry Foundation Classes”, binalar ve altyapı dahil olmak üzere yapılı çevrenin standartlaştırılmış, dijital bir tanımıdır. Tedarikçiden bağımsız veya agnostik olması amaçlanan açık, uluslararası bir standarttır (TS EN ISO 16739-1:2018) ve birçok farklı kullanım durumu için çok çeşitli donanım aygıtlarında, yazılım platformlarında ve arabirimlerde kullanılabilir. IFC şema spesifikasyonu, openBIM’i teşvik etme hedefini gerçekleştirmek için buildingSMART International’ın ana teknik çıktısıdır.\nDaha spesifik olarak, IFC şeması:\n\nnesnelerin (kolonlar veya döşemeler gibi)\nsoyut kavramların (performans, maliyet)\nsüreçlerin (kurulum, işlemler)\nve insanların (mal sahibi, tasarımcılar, müteahhitler, tedarikçiler vb.)\nkimliğini ve anlambilimini (ad, makine tarafından okunabilen benzersiz tanımlayıcı, nesne tipi veya işlevi)…\nözelliklerini veya özniteliklerini (malzeme, renk ve termal özellikler gibi)…\nve ilişkilerini (konumlar, bağlantılar ve sahiplik dahil) mantıksal bir şekilde kodlayan standartlaştırılmış bir veri modelidir.\n\nŞema spesifikasyonu, bir tesisin veya kurulumun nasıl kullanıldığını, nasıl inşa edildiğini ve nasıl işletildiğini açıklayabilir. IFC, yapıların fiziksel bileşenlerini, üretilen ürünleri, mekanik/elektrik sistemlerini ve ayrıca daha soyut yapısal analiz modellerini, enerji analiz modellerini, maliyet dağılımlarını, çalışma programlarını ve çok daha fazlasını tanımlayabilir.\n\n\nIFC Nasıl Kullanılır?\nGünümüzde, IFC tipik olarak belirli bir ticari işlem için bir taraftan diğerine bilgi alışverişinde bulunmak için kullanılmaktadır. Örneğin, bir mimar mal sahibine yeni bir tesis tasarımının bir modelini sağlayabilir, bir mal sahibi bu yapı modelini müteahhitlere ihale aşamasında taleplerini iletmek için paylaşabilir ve bir müteahhit mal sahibine kurulu ekipmanı ve üretici bilgilerini açıklayan ayrıntıları içeren bir bitmiş model sağlayabilir. IFC, ister tasarım, tedarik ve inşaat aşamalarında aşamalı olarak, isterse uzun vadeli saklama ve işletme amaçları için “as-built” bir bilgi koleksiyonu olarak, proje bilgilerini arşivleme aracı olarak da kullanılabilir.\nİstenen IFC verileri XML, JSON ve STEP gibi çeşitli formatlarda kodlanabilir ve internet servisleri üzerinden iletilebilir, dosyalarda içe/dışa aktarılabilir, merkezi veya bağlantılı veritabanlarında yönetilebilir. Model oluşturma, tasarım, simülasyon ve analiz, görüntüleme ve daha fazlasını içeren bilgi modelleme araçları oluşturan yazılım firmaları, son kullanıcılara bazı IFC formatındaki verileri dışa aktarma, içe aktarma ve iletme içi arayüzler sağlayacaktır. IFC aracılığıyla neyi paylaşmak istediklerine karar vermek kullanıcılara kalmıştır.\n\n\nIFC’yi Kimler Kullanır?\nSüreçte birçok farklı paydaş tarafından kullanılmak üzere yüzlerce yazılım uygulaması IFC verilerini gönderip alabilir. 1997’den beri, IFC birçok defa denenmiş ve test edilmiş, dünyanın her yerinden projeler sunmanın bir yolu olarak dünya çapında güven kazanmıştır.\n\n\nIFC Dosya Formatları\nIFC, her biri yazılım desteği, ölçeklenebilirlik ve okunabilirlik avantajlarına sahip olan çeşitli elektronik formatlarda kodlanabilir.\nDosya tabanlı içe ve dışa aktarmada, en geniş uyumluluk ve en küçük boyut için STEP Physical File Format (SPFF) önerilir. STEP için dosya uzantısı .ifc’dir. .ifcZIP, çok daha düşük dosya boyutuna sahip sıkıştırılmış bir .ifc dosyasıdır. IFC’yi destekleyen çoğu yazılım uygulaması tarafından okunabilir. Sıkıştırılmamış .ifc dosyası ZIP paketinden çıkarılabilir.\nBağlantıdan IFC versiyonları ve açıklamaları ile ilgili detaylara ulaşılabilir: https://technical.buildingsmart.org/standards/ifc/ifc-formats\n\n\nIFC Versiyonları ve Kullanım Amaçları\nIFC versiyonları, buildingSMART tarafından sürekli olarak güncellenmektedir. Bağlantıdan IFC resmi yayınları ve güncel versiyonlar takip edilebilir: https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications\nGünümüzde birçok BIM yazılımı, IFC model verilerinin içe aktarılmasını ve/veya dışa aktarılmasını desteklemektedir. buildingSMART, belli kriterlere uygun bir şekilde IFC verilerini işleyebilen uygulamaları test edip, tasdik eder. IFC ile sağlanan bilgi akışı, tesis yönetimi, yapısal modelleme ve analiz uygulamaları gibi farklı uygulamaların bir arada uyumlu olarak kullanıma izin verir. Paydaşlar arasındaki iş birliği açısından bu imkan kritik bir öneme sahiptir.\nbuildingSMART International, yazılım firmaları için IFC sertifikasyonlarından sorumlu tek yönetim organıdır. Bağlantıdan buildingSMART International’ın sertifikasyon gereksinimlerini karşılayan yazılım uygulamalarının listesine erişilebilir: https://www.buildingsmart.org/compliance/software-certification/certified-software\n\n\nIFC Model Hiyerarşisi\nIFC dosya formatını destekleyen modelleme yazılımları, modellenen her bir elemanın gerçek hayattaki anlamlarını sayısal ortama aktarabilme yeteneğine sahiptir. Bu elemanlar fiziksel hayatta ihtiyacımız olan bilgileri depolamanın yanında diğer elemanlarla belirli kurallar çerçevesinde haberleşebilmektedir. Yine bu kurallar sayesinde IFC dosyaları diğer BIM yazılımları ile ortak bir dilde iletişim kurabilmektedir. Bu kuralların yazıldığı programlama diline “nesne yönelimli programlama” denilmektedir. Nesne yönelimli programlama dili model elemanlarına anlam yüklemek için onları bir veritabanı içinde, belirli sınıflar altında, hiyerarşik olarak konumlandırmaktadır. Sınıflar, model elemanlarını benzer kategorilerde kümelemek için kullanılır.\nIFC dosyaları ile yazılımlar arasında bilgi aktarırken, bu yazılımların özgün veritabanlarının IFC veritabanı ile ilişkisi doğru kurgulanmalıdır. Bilgi kayıplarını önlemek için sınıfların kimlikleri doğru bir şekilde eşleştirilmelidir. IFC dosya formatı, IFC sınıflarını hiyerarşik olarak sıralar.\nBir IFC nesnesi, IFC veri modelinde benzersiz olarak tanımlanır. Sınıf atamasına ve tip tanımına bağlı olarak, nesnenin IFC versiyonu içinde varsayılan belirli parametreleri ve ilişkileri vardır. Örneğin; hangi nesne olduğu, hangi nesneleri etkilediği, ölçülerinin ne olduğu, hangi nesnelerden daha üst seviyede olduğu veya olmadığı, ya da genellikle hangi bilgileri sağladığı gibi.\nBIM modelini IFC olarak dışa aktarırken nesneler için doğru sınıfların/kategorilerin (Class/Category) seçilmesi çok önemlidir: Eğer duvar IfcWall sınıfına/kategorisine atanmamışsa, tanımlanabilmesi için gereken parametrelerin tümü duvara tanımlanmaz. Bu da, diğer koordinasyon veya değerlendirme yazılımları tarafından doğru şekilde yorumlanamamasına neden olur.\nSadece belirli kategoriler arasında ayrım yapılmaz, bazen bir bileşenin IFC veri modeli içinde daha doğru bir şekilde yeniden üretilmesi için tip olarak atanması da gerekebilir. Örneğin, kullanım amacına göre bir bileşenin tip olarak atanması gibi.\nKarmaşık yapılar bu sistem temelinde ortaya çıkar ve her bir elemanın geometrik ve alfa-nümerik olarak temsil edilebildiği ve açıkça tanımlanabildiği bir veri modelinin oluşturulması sağlanır. Bağlantıdan buildingSMART International tarafından tanımlanmış olan “IFC Specifications Database” tablosundan her birinin ayrıntılarına erişilebilir: https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications",
+    "crumbs": [
+      "VI Açık Veri Standartları ve Kullanımları",
+      "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları"
+    ]
+  },
+  {
+    "objectID": "06.01.html#bilgi-teslim-rehberi-information-delivery-manual---idm",
+    "href": "06.01.html#bilgi-teslim-rehberi-information-delivery-manual---idm",
+    "title": "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları",
+    "section": "Bilgi Teslim Rehberi (Information Delivery Manual - IDM)",
+    "text": "Bilgi Teslim Rehberi (Information Delivery Manual - IDM)\nYapı varlık endüstrisi (binalar ve altyapı dahil), birçok farklı şirketi ve otoriteyi projeye özel bir organizasyonda bir araya getirmesiyle karakterize edilir. Verimli çalışmak için organizasyondaki tüm katılımcıların, hangi tür bilgilerin ne zaman iletilmesi gerektiğini bilmesi gerekir. Dijital verileri yorumlama yeteneği söz konusu olduğunda, çoğu endüstri aracının çok düşük bir tolerans eşiğine sahip olması nedeniyle dijital araçlar kullanıldığında konu daha da önem kazanır. TS EN ISO 29481 1:2010 “Yapı Bilgi Modellemesi - Bilgi Teslim Rehberi - Bölüm 1: Metodoloji ve Format” standardı, bir tesisin yaşam döngüsü boyunca süreçleri ve bilgi akışını yakalamak ve belirlemek için bir metodolojiye sahip olmak amacıyla buildSMART tarafından geliştirilmiştir.\nIDM içeriği, üretilen modelin diğer paydaşlar ile paylaşımı için gerekli tüm bilgileri tanımlamaktadır. Özellikle tasarım ekiplerinin birbirleri ile olan koordinasyon sorunlarının çoğu, BIM modellerinin yapılmasına başlamadan önceki anlaşma eksikliğinden kaynaklanmaktadır. Farklı tasarım ekipleri tarafından üretilen modellerin birleştirilmesindeki temel sorunlar, ortak bir koordinat sistemi, yapının kuzeye olan açısı ve proje kotları gibi konularla ilgilidir. Bununla birlikte, birleştirilen modelde her ekibin çalışmasını net bir şekilde ayırmak ve farklı yazılımlara içeriği eksiksiz aktarmak için teslim edilecek bilgiler gereksiz içeriklerden arındırılmış olmalıdır. Belirli kapsamda model içeriklerinin yazılımlar arası alışverişinde Model Görünüm Tanımları (MVD – Model View Definition) kullanılmaktadır. IFC sertifikalı yazılımlarda MVD içeriklerine ait şablonlar da ayrıca yer almaktadır. BIM tabanlı iş birliği, paydaşlar arasındaki açık anlaşmalarla en iyi sonucu verir. Bu nedenle, paydaşların IFC kullanım hedeflerine yönelik bilgi gereksinimleri öncelikli olarak BIM teknik şartnamesinde yer almalıdır. Tasarım ekipleri arasında bilgi alışverişinin nasıl yapılacağı ise BIM uygulama planında detaylandırılarak uygulamaya aktarılmalıdır.\nIFC uzantılı dosya kullanılarak bilgi paylaşımı yapılacak projelerde IDM ve MVD, BIM uygulama planının bir parçası olarak projeye dahil edilmelidir. Bağlantıdan IDM ile ilgili kılavuz ve şablonlara ulaşılabilir: https://technical.buildingsmart.org/standards/information-delivery-manual/",
+    "crumbs": [
+      "VI Açık Veri Standartları ve Kullanımları",
+      "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları"
+    ]
+  },
+  {
+    "objectID": "06.01.html#model-görünümü-tanımımodel-view-definition---mvd",
+    "href": "06.01.html#model-görünümü-tanımımodel-view-definition---mvd",
+    "title": "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları",
+    "section": "Model Görünümü Tanımı(Model View Definition - MVD)",
+    "text": "Model Görünümü Tanımı(Model View Definition - MVD)\nBir IFC dosyası genellikle çok büyük miktarda veri içerdiğinden buildingSMART, MVD (Model View Definitions) adı verilen bir dizi özel veri seti tanımlamıştır. MVD’ler, tanımlanan ihtiyaca yönelik ilgili verilerin dışa aktarılan IFC dosyasıyla birlikte gelmesini sağlar.\nBağlantıdan buildingSMART International tarafından tanımlanmış olan MVD’lerin listesine erişilebilir: https://technical.buildingsmart.org/standards/ifc/mvd/mvd-database",
+    "crumbs": [
+      "VI Açık Veri Standartları ve Kullanımları",
+      "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları"
+    ]
+  },
+  {
+    "objectID": "06.01.html#bim-işbirliği-formatı-bim-collaboration-format---bcf",
+    "href": "06.01.html#bim-işbirliği-formatı-bim-collaboration-format---bcf",
+    "title": "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları",
+    "section": "BIM İşbirliği Formatı (BIM Collaboration Format - BCF)",
+    "text": "BIM İşbirliği Formatı (BIM Collaboration Format - BCF)\nBahsedilen tüm açık veri standartlarını kullanarak veri paylaşımı yapıldığında, modeldeki nesneler hakkında iletişim kurmak istenir. Bunu e-posta üzerinden veya telefon ile yapmak riskler ve açıklıklar getirir. Bu nedenle BCF oluşturulmuştur.\nBCF, daha önce proje ortak çalışanları arasında paylaşılan IFC verilerinden yararlanarak farklı BIM uygulamalarının model tabanlı sorunları birbirlerine iletmesine olanak tanır. BCF, tescilli formatları ve iş akışlarını atlayarak BIM yazılım araçları arasındaki model tabanlı sorunları daha kolay tanımlamak, alışverişi için açık iletişimi kolaylaştırmak ve IFC tabanlı süreçleri iyileştirmek için oluşturulmuştur.\nBağlantıdan BCF ile ilgili detaylı bilgilere ulaşılabilir: https://www.buildingsmart.org/standards/bsi-standards/bim-collaboration-format-bcf/",
+    "crumbs": [
+      "VI Açık Veri Standartları ve Kullanımları",
+      "Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları"
+    ]
+  },
+  {
+    "objectID": "07.bolum.html",
+    "href": "07.bolum.html",
+    "title": "VII Uygulama Örnekleri",
+    "section": "",
+    "text": "Hazırlayan:\nProje Geliştirme Çalışma Grubu ve Standartlar & Yayınlar Çalışma Grubu\n\n\nTarih:\n29.09.2022\n\n\nVersiyon:\n00\n\n\n\n \nBu bölümde İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi ve Yükleniciler için bSTR BIM Uygulama Planı Rehberi ile birlikte dahil edilebilecek ekler için örnekler yer almaktadır. Her proje için gerekli ekler ve içerikleri farklı olacaktır.\n \n\nEditör\n\nDr. Ahmet ÇITIPITIOĞLU, bSTR Standartlar ve Yayınlar Çalışma Grubu Koordinatörü (TAV İnşaat)\n\n\n \nKatkıda Bulunanlar\nÇalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.\n\nSTANDARTLAR ve YAYINLAR ÇALIŞMA GRUBU İCRA KURULU\n\n\n\n\n\n\n\nDr. Ahmet ÇITIPITIOĞLU, TAV İnşaat\nÖncü Ceren Varol ALİCİK, Sika\n\n\nYrd. Doç. Dr. Aslı Akçamete GÜNGÖR, ODTÜ\nOsman ÖZKAN, EAE Elektrik\n\n\nAygen ERKAL, Türkiye İMSAD\nProf. Dr. Salih OFLUOĞLU, ABÜ\n\n\nBahadır DEMİRTAŞ, Arup\nSerdar BİRDEN, BIMMade\n\n\nBehnam AGHBALİ, Saina\nSerhat KAŞ, Yüksel Proje\n\n\nBerke ÇELİKEL, Freelance\nSerkan ELİBOLLAR, ProCS\n\n\nÇağdaş Ilgaz ŞENEL, Hilti\nUğur KAYA, Emay\n\n\nProf. Dr. Esin Ergen PEHLEVAN, İTÜ\nUtku BAŞYAZICI, Doxa87\n\n\nİdris BAHADUR, Saina\nYudum DEMİRKOL, Şişecam\n\n\nMelis ATAY, Turner",
+    "crumbs": [
+      "VII Uygulama Örnekleri"
+    ]
+  },
+  {
+    "objectID": "07.01.html",
+    "href": "07.01.html",
+    "title": "BIM Teknik Şartname Ek Örnekleri",
+    "section": "",
+    "text": "Ek 1 Bilgi Yönetimi Sorumluluk Matrisi\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>BIM Teknik Şartname Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.01.html#sec-şartname-ek2",
+    "href": "07.01.html#sec-şartname-ek2",
+    "title": "BIM Teknik Şartname Ek Örnekleri",
+    "section": "Ek 2 Bilgi Gereksinimleri",
+    "text": "Ek 2 Bilgi Gereksinimleri\n\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>BIM Teknik Şartname Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.01.html#sec-şartname-ek3",
+    "href": "07.01.html#sec-şartname-ek3",
+    "title": "BIM Teknik Şartname Ek Örnekleri",
+    "section": "Ek 3 Bilgi Kapları Kodlama Yapısı",
+    "text": "Ek 3 Bilgi Kapları Kodlama Yapısı\n\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>BIM Teknik Şartname Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.02.html",
+    "href": "07.02.html",
+    "title": "BIM Uygulama Planı Ek Örnekleri",
+    "section": "",
+    "text": "Ek 1 Model Kalite Kontrol Formu\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BIM Uygulama Planı Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.02.html#sec-bim-plan-ek2",
+    "href": "07.02.html#sec-bim-plan-ek2",
+    "title": "BIM Uygulama Planı Ek Örnekleri",
+    "section": "Ek 2 Model İçerik Oluşturmada Kullanılan Kaynak Takip Listesi",
+    "text": "Ek 2 Model İçerik Oluşturmada Kullanılan Kaynak Takip Listesi\n\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BIM Uygulama Planı Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.02.html#sec-bim-plan-ek3",
+    "href": "07.02.html#sec-bim-plan-ek3",
+    "title": "BIM Uygulama Planı Ek Örnekleri",
+    "section": "Ek 3 Model Eleman Bilgi Gereksinimleri Tablosu",
+    "text": "Ek 3 Model Eleman Bilgi Gereksinimleri Tablosu\n\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BIM Uygulama Planı Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.02.html#sec-bim-plan-ek5",
+    "href": "07.02.html#sec-bim-plan-ek5",
+    "title": "BIM Uygulama Planı Ek Örnekleri",
+    "section": "Ek 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü",
+    "text": "Ek 5 BIM Modelleri ve Bilgi Teslim Planlama Dökümü\n\n⬇ PDF dosyasını indirin\n\nbSTR Bilgi Teslimi Planlama Dökümü Örneği\n\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BIM Uygulama Planı Ek Örnekleri</span>"
+    ]
+  },
+  {
+    "objectID": "07.02.html#sec-bim-plan-ek6",
+    "href": "07.02.html#sec-bim-plan-ek6",
+    "title": "BIM Uygulama Planı Ek Örnekleri",
+    "section": "Ek 6 BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP)",
+    "text": "Ek 6 BIM Modelleri ve Bilgi Teslim Planı (İBTP, ABTP)\n\n⬇ PDF dosyasını indirin\n\nbSTR İş ve Ana Bilgi Teslim Planı Tablosu Örneği\n\n⬇ PDF dosyasını indirin",
+    "crumbs": [
+      "VII Uygulama Örnekleri",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>BIM Uygulama Planı Ek Örnekleri</span>"
+    ]
+  }
+]

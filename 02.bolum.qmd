@@ -1,0 +1,49 @@
+# II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci {.unnumbered}
+
+| | |
+|-|--------------|
+|**Hazırlayan:**| Standartlar & Yayınlar Çalışma Grubu |
+|**Tarih:**|25.03.2023     |
+|**Versiyon:**|01     |
+
+&nbsp;
+
+TS EN ISO 19650 serisinde Yapı Bilgi Modellemesi yoluyla, yapı ve varlıkların işletmesine yönelik ilgili bilgilerin düzenlenmesi ve sayısallaştırılması için gerekli bilgi yönetim süreçi tariflenmiştir. Tasarım ve yapımı kapsayan teslim ile işletme süreçlerini kapsar. Bilgi Yönetimi Süreci etkin ve verimli bilginin tedariği, üretimi, kullanımı ve yönetimiyle tüm paydaşların iş hedeflerine ulaşmalarına yönelik ortak bir anlayış sağlanması amaçlanmıştır. Tarif edilen Bilgi Yönetim Süreci, kullanılan tedarik stratejisinden bağımsız, her türlü inşaat projesi ve varlıklarıyla, her türlü ve ölçekteki kuruluşlar tarafından uygulanabilir. Bu bölümde, TS EN ISO 19650-2'de bilgilerin oluşturulup, kullanılması ve teslim edilmesi için tarif edilen Bilgi Yönetim Süreci özetlenmiştir.
+
+&nbsp;
+
+Editör
+: Dr. Ahmet ÇITIPITIOĞLU, *bSTR Standartlar ve Yayınlar Çalışma Grubu Koordinatörü (TAV İnşaat)*
+
+&nbsp;
+
+**Katkıda Bulunanlar**
+
+Çalışma grubu bünyesinde taslak hazırlanmasına destek olan ve hazırlanan taslaklara görüş, yorum ve tekliflerini ileten, konu hakkında
+tecrübelerini paylaşan uzman gönüllülerimize teşekkür ederiz.
+
+##### STANDARTLAR ve YAYINLAR ÇALIŞMA GRUBU İCRA KURULU
+| | |
+|---|---|
+| Dr. Ahmet ÇITIPITIOĞLU, *TAV İnşaat* | Osman ÖZKAN, *EAE Elektrik* |
+| Yrd. Doç. Dr. Aslı Akçamete GÜNGÖR, *ODTÜ* | Saniye ÖKTEM, *Prota Mühendislik* |
+| Aygen ERKAL, *Türkiye İMSAD* | Serkan ELİBOLLAR, *ProCS Mühendislik* |
+| Bahadır DEMİRTAŞ, *Emay* | Serhat KAŞ, *Yüksel Proje* |
+| Behnam AGHBALİ, *Saina* | Uğur KAYA, *Emay* |
+| Berke ÇELİKEL, *Arup* | Ümit BALABAN, *Anel* |
+| Prof. Dr. Esin Ergen PEHLEVAN, *İTÜ* | Utku BAŞYAZICI, *Doxa87* |
+| Fazlı BULUT, *Sika* | Yudum DEMİRKOL, *Şişecam* |
+| İdris BAHADUR, *Dome+Partners* | |
+
+&nbsp;
+
+**Görüş Verenler**
+
+| | |
+|---|---|
+| Bilgehan ŞAHİN, *Rönesans Endüstri Tesisleri* | Dr. Kerem ERCOŞKUN, *we/arch Alliance, İstanbul Okan Üniv.* |
+| Burak GÖKÇEN, *Freelance* | Kerem İlhami BUĞDAYCIOĞLU, *Archimco* |
+| Burcu Esen BARUTÇU, *Drees & Sommer* | Dr. Nuray Benli YILDIZ, *Düzce Üniversitesi* |
+| Deniz PEHLİVAN, *TAV İnşaat* | Ufuk AYDIN, *Gülermak* |
+| Göker Malik ALTUNTAŞ, *Klafs Technical* | Ümit BALABAN, *Anel* |
+

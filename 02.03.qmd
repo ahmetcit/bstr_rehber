@@ -1,0 +1,5 @@
+# İnşaat Projesi Bilgi Yönetimi Süreci Şeması {.unnumbered}
+
+Aşağıdaki şemada TS EN ISO 19650-2’de tanımlanan bilgi yönetim süreci akışında, <<Bilgi Yönetimi Sürecinde Taraflar>> bölümünde tanımlanan her paydaşın sorumlulukları ve aralarındaki ilişki verilmektedir. Aşağıdaki görseldeki her adım, sorumlu paydaşın kısaltmasıyla etiketlenmiştir. Etiket kısaltmaları sağ taraftaki Sorumlular kısmında tanımlanmıştır.
+
+![TS EN ISO 19650'da tanımlanan inşaat projesinde sayısal bilgilerin düzenlenmesi ve bilgi yönetimi süreci.](/images/rehber-surec-iso-01.jpg){width=100% .lightbox}

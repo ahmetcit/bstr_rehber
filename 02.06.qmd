@@ -1,0 +1,25 @@
+# Bilgi Kabı ile Bilgi ve Belge Kodlama Yapılandırılması {.unnumbered}
+
+Teslim gereksinimleri için üretilen bilgiler: bir bilgi modeli veya belge olsun, projede paylaşımın yapıldığı ortak veri ortamına içerdiği bilgiyi etiketleyen, benzersiz kimliğini ifade eden bir bilgi kabı aracılığıyla paylaşılacaktır. Bilgi kabı bir maliyet planı, bir program, bir çizim, bir geometrik bilgi modeli vb. olabilir. Her bilgi kabının belgelendirilmiş bir kurala dayanan, tutarlı ve benzersiz bir kimliğe sahip olması gerekmektedir. Aşağıdaki görsel temsili olarak bilgi, bilgi kabı ve kodlamaları göstermektedir.
+
+Bilgi kaplarının ayraçlarla ayrılmış alan kodlama yapısı proje şartnamesinde tanımlanacaktır. Kodlama yapısı bazı ülkelerde EN ISO 19650 Milli Eki'nde standardın bir parçası olarak tanımlanmaktadır. Belli bir alan için tanımlanmış kodlama, proje genelinde tutarlı bir şekilde kullanılmalıdır. BIM modelleri ve belgelerin kodlama yapısı ihtiyaca göre farklı yapılandırılabilir. Aşağıdaki tablo kodlama yapısının temel alanlarını tanımlamaktadır.
+
+Bilgi kabı kodu yapılandırması bu rehberin 3. bölümünde yer alan *İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi *'nde tarif edilen şartnamede tanımlanması gerekmektedir. Proje yüklenicilerinin farklı aşamalardaki ihtiyaçlarına göre, şartnamedeki tanım esaslarını bozmadan kodlama yapılandırması genişletilebilir ve/ya güncellenebilir. Bilgi kabının yayın durumu ile revizyon bilgileri ayrıca metaveri olarak kullanılan Ortak Veri Ortamı'nda takip edilecektir.
+
+![Bilgi kabı: Herhangi bir bilgi modeli veya belgenin proje Ortak Veri Ortamı'nda paylaşıldığı ve bir kurala dayanan benzersiz bir kimlik.](/images/rehber-asamalar-bilgikabi.png){width=80% .lightbox}
+
+&nbsp;
+
+| Kodlama Alanı | **Kodlama Alanı Tanımı**
+|--|------|
+|Proje |Proje için tanımlanan kodlama |
+|Aşama |Proje aşaması için tanımlanan kodlama |
+|Belge |Belge cinsi için tanımlanan kodlama |
+|Bina |Bina için tanımlanan kodlama |
+|Kat/Konum |Kat ve/veya konum için tanımlanan kodlama |
+|Disiplin/Rol |Disiplin veya rol için tanımlaman kodlama |
+|Sistem/Alt Disiplin |Sistem veya alt disiplin için tanımlanan kodlama |
+|Üreten |Bilgiyi üreten firma için tanımlamam kodlama |
+|Sıra |Gönderim sıra numarası veya zon için tanımlanan kodlama |
+
+: Bilgi kabı kodlama yapısını oluşturan temel alanlar.

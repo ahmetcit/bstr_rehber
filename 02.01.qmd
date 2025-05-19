@@ -1,0 +1,5 @@
+# Bilgi Yönetimi Sürecinde Taraflar {#sec-bim-taraflar}
+
+TS EN ISO 19650-2'de tarif edilen sayısal bilgi yönetimi süreçlerinde yer alan paydaşların tanımı ile aralarındaki bilgi akışı şematik olarak aşağıda gösterilmiştir. Standarttaki paydaş tanımı taraflar arasındaki sözleşmesel hiyerarşi bakımından jenerik bir şekilde: atayan, ana atanan ve atanan taraf olarak yapılmaktadır. Farklı senaryolarda, paydaşların bu tanımlarla nasıl ilişkilendirilebileceği aşağıda gösterilmektedir.
+
+![TS EN ISO 19650'da tanımlanan inşaat projesinde sayısal bilgilerin düzenlenmesi ve bilgi yönetimi sürecindeki paydaşlar ve ilişkileri.](/images/rehber-surec-taraflar.png){width=90%}

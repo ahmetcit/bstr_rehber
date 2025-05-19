@@ -1,0 +1,89 @@
+# Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları {.unnumbered}
+
+TS EN ISO 19650 serisi her boyutta ve her karmaşıklık seviyesindeki inşa edilmiş varlıklar ve inşaat projeleri için geçerlidir. Buna, büyük mülkler, altyapı ağları, tekil binalar ve altyapı bölümleri ile bunların teslimini sağlayan projeler veya programlar dahildir. Ancak, süreç için tanımlanan gereksinimler, varlığın veya projenin ölçeği ve karmaşıklığı ile orantılı ve uygun bir şekilde uygulanmalıdır. Atanan tarafların tedarik ve mobilizasyonu, tanımlanan teknik tedarik ve mobilizasyon süreçleriyle mümkün olduğunca uyumlu olmalıdır.
+
+Projenin başında "Değerlendirme ve İhtiyaçları" aşamasında, *atayan taraf* tarafından belirlenen bilgi gereksinimlerine girdi olacak şekilde aşağıdakilerin belgelenmesi gerekmektedir:
+
+* Atayan tarafın kurumsal bilgi gereksinimleri (TS EN ISO 19650-1)
+* Atayan tarafın varlık bilgi gereksinimleri (TS EN ISO 19650-1)
+* Atayan tarafın bilgi güvenliği gereksinimleri (TS EN ISO 19650-5)
+
+## Değerlendirme ve İhtiyaçlar
+
+*Teslim aşaması*nın başlangıcında *atayan tarafı*n yapacağı işler:
+
+* Bilgi yönetimi işlevini üstlenecek kişilerin atanması
+* Projenin bilgi gereksinimlerinin belirlenmesi
+* Projenin bilgi teslim aşamalarının belirlenmesi
+* Projenin bilgi standardının belirlenmesi
+* Projenin bilgi üretimi yöntem ve prosedürlerin belirlenmesi
+* Projenin referans bilgilerinin ve müşterek kaynaklarının belirlenmesi
+* Projenin ortak veri ortamının oluşturulması
+* Projenin bilgi protokolünün belirlenmesi
+
+## Teklif Daveti
+
+Proje sürecindeki *tedarik aşaması*nda her bir atamada *atayan taraf*ından gerçekleştirilen faaliyetler:
+
+* Atayan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi
+* Referans bilgilerinin ve müşterek kaynakların derlenmesi
+* Teklif gereksinimleri ve değerlendirme kriterlerinin oluşturulması
+* İhale daveti için ilgili bilgilerin derlenmesi
+
+## Teklif Hazırlığı
+
+Teklif hazırlayan *olası ana atanan taraf*ın çalışacağı bir veya birden fazla olası *iş ekibi* ile yapacağı işler:
+
+* Bilgi yönetimi görevini üstlenecek kişilerin tayin edilmesi
+* Teslim ekibinin (atama öncesi) BIM uygulama planının belirlenmesi
+* İş ekibinin/ekiplerinin yetenek ve kapasitesinin değerlendirilmesi
+* Teslim ekibinin yetenek ve kapasitesinin belirlenmesi
+* Önerilen teslim ekibinin mobilizasyon planının oluşturulması
+* Teslim ekibinin risk kaydının oluşturulması
+* Teslim ekibinin ihale davetine yanıtlarının derlenmesi
+
+## Proje Atama
+
+Proje sürecindeki *bilgi planlama aşaması*nda her bir atamadaki *ana atanan* tarafın çalışacağı *iş ekipleri*yle gerçekleştirilen faaliyetler:
+
+* Teslim ekibinin BIM uygulama planının teyit edilmesi
+* Teslim ekibinin ayrıntılı sorumluluk matrisinin oluşturulması
+* Ana atanan tarafın bilgi alışverişi gereksinimlerinin belirlenmesi
+* İş bilgi teslim plan(lar)ının oluşturulması
+* Ana bilgi teslim planının oluşturulması
+* Ana atanan tarafın atanmasında gerekli belgelerin tamamlanması
+* Atanan taraf(lar)ın atanmasında gerekli belgelerin tamamlanması
+
+## Mobilizasyon
+
+Her bir atamadaki *ana atanan* tarafın yapacağı işler:
+
+* Kaynakların mobilize edilmesi
+* Bilişim altyapısının mobilize edilmesi
+* Projenin bilgi üretim yöntem ve prosedürlerin sınanması
+
+## İşbirliği ile Bilgi Üretimi
+
+Proje sürecindeki *bilgi üretim aşaması*nda her bir atamadaki *iş ekipleri*nin *teslim ekibi*yle gerçekleştirilen faaliyetler:
+
+* Referans bilgilerinin ve müşterek kaynaklarının kullanılabilirliğinin kontrol edilmesi
+* Bilgilerin üretilmesi
+* Kalite güvence kontrolünün tamamlanması
+* Bilgilerin değerlendirilip paylaşım için onaylanması
+* Bilgi modelinin değerlendirilmesi
+
+## Bilgi Modeli Teslimi
+
+Her bir atamadaki *iş ekipleri* ile *ana atanan* tarafın yapacağı işler:
+
+* Ana atanan tarafın onaylaması için bilgi modelinin sunulması
+* Bilgi modelinin değerlendirilmesi ve onaylanması
+* Bilgi modelinin atayan tarafın onayı için sunulması
+* Bilgi modelinin değerlendirilmesi ve kabul edilmesi
+
+## Proje Kapanışı
+
+Teslim aşamasının sonunda *atayan* tarafın yapacağı işler:
+
+* Proje bilgi modelinin arşivlenmesi
+* Gelecek projeler için öğrenilen derslerin derlenmesi

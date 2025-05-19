@@ -1,0 +1,113 @@
+# Giriş {.unnumbered}
+
+Bu rehber buildingSMART Türkiye (bSTR) vizyonu doğrultusunda Çalışma Grupları tarafından tüm yapı sektörü paydaşlarının yapıların yasam döngüsü boyunca iş süreçlerini iyileştirmeye yönelik sayısal altyapılarla veri oluşturmak, verinin ortak paylaşımını sağlamak ve güncellemek konusunda anlayış̧ birliği ve iş metotları tanımlamak üzere hazırlanmıştır.
+
+Çalışmanın içeriği sektörden geniş̧ bir paydaş̧ yelpazesini temsil eden: kamu ve özel sektör işverenleri ile işletmeciler, müşavirler, danışmanlar, inşaat malzemeleri üreticileri, müteahhitler, yükleniciler, akademisyen ve yazılım tedarikçileri ile geliştiricilerin bir araya geldiği bSTR Çalışma Grupları ile yorumlarıyla katkıda bulunan destekleyen kurumların ortak eseridir.
+
+İlgili dünya standartlarına uyumlu olarak, bu çalışma Türkiye'de yapının planlaması, tasarımı, inşası ile varlık teslim ve işletme aşamasında yer alan tüm paydaşların kendi ihtiyaçlarıyla birlikte proje ihtiyaçlarını karşılayan, uyumlu süreçlerin ve kurguların oluşturulmasını sağlayacak bilgileri içermektedir. Kurgulanan sayısal süreçler ile altyapıların mevcut süreçlerle mümkün olduğunca bütünleştirilmesi önemlidir. Bu belgede tanımlanan bilgi yönetimi kavram ve ilkeleri, varlık yönetimi veya proje kapsamın özel şartlarına ve gereksinimlerine uygun olarak uyarlanmalı ve uygulanmalıdır.
+
+Sektörde bilgilerin ve süreçlerin sayısallaştırılmasındaki ana amaç: inşaat projelerinde, varlık teslim ve işletme aşamasında, geniş anlamda bilgi modellerinin üretimi ve kullanımını sağlayacak süreçlerin tesis edilmesiyle sektör genelinde risklerin ve maliyetlerin azaltılması yoluyla, sektör genelinde verimliliğin ve karlılığın arttırılmasını sağlamaktır.
+
+## Bu Rehber Nasıl Kullanılmalı?
+
+Projelerdeki bilgi yönetim süreçlerinin genelinde ortak anlayış sağlamak için ilk bölümler yapı geliştirme aşamalarını ve bu aşamalarda paydaşlar arasındaki bilgi yönetimi süreci aşamalarını tarif ederek başlıyor. Rehberin diğer bölümleri ise projelerin farklı aşamalarında görev alan paydaşlara yönelik, birbirleriyle bağlantılı olacak şekilde, kendi kapsam ve ihtiyaçları doğrultusunda geliştirilmiştir. Son bölümde rehberde tarif edilen belge ve süreçlerin farklı proje türleri için uygulama örnekleri ve açıklamaları verilmiştir.
+
+## BIM ve Sayısal Süreçlerin Sektörde Kullanımları Nelerdir, Neden Kullanılmalıdır?
+
+Tasarım, inşaat ve işletmeyi kapsayan yapı sektörü genelinde çalışma süreçleri, yeni gelişen teknolojilerle sayısallaşıyor. BIM yani Türkçesiyle "Yapı Bilgi Modellemesi" sayesinde inşaat sektörü; hız, verimlilik, sürdürülebilirlik ve ekip çalışması avantajlarına kavuşuyor. Ülke ekonomisinde yapı sektörünün büyük bir payı bulunuyor dolayısıyla BIM'in önemi hem yurt dışındaki projelerdeki gereksinimler hem de Türkiye'de sektörün bu yönde evrilmesi doğrultusunda her geçen gün artıyor. Bölge ve dünya pazarlarında rekabet edebilmek ve verimliliği artırmak için BIM ve beraberinde getirdiği sayısal uygulamaların tüm paydaşlarca doğru anlaşılıp yönlendirilmesi, geliştirilmesi ve yaygın olarak uygulanması kaçınılmaz bir gerek haline gelmiş durumda.
+
+## buildingSMART International (bSI) ve buildingSMART Türkiye (bSTR)
+
+buildingSMART dünya çapında yapı sektörünün kullanımına yönelik açık ve uluslararası veri standartları geliştirmek yoluyla endüstrinin sayısal dönüşümünde öncülük eden açık, tarafsız ve uluslararası kar amacı gütmeyen bir organizasyondur.
+
+Yapı endüstrisi ülke ekonomisi için büyük önem taşımaktadır. Bölge ve dünya pazarlarında rekabet edebilmek ve verimliliği arttırmak için BIM ve beraberinde getirdiği sayısal uygulamaların tüm paydaşlarca doğru anlaşılıp yönlendirilmesi, geliştirilmesi ve yaygın olarak uygulanması kaçınılmaz bir gerek haline gelmiştir. buildingSMART Türkiye, yapı sektöründe openBIM ve sayısal uygulamaların doğru ve yaygın kullanımını destekleyecek faaliyetlerde bulunmak amacıyla kurulmuştur.
+
+bSTR Vizyonu :: Tüm yapı sektörü paydaşlarının yapıların yaşam döngüsü boyunca iş süreçlerini iyileştirmeye yönelik veri oluşturma, verinin ortak paylaşımını sağlama ve güncelleme konusunda anlayış birliği ve iş metotları geliştirmiş bir Türkiye yapı sektörü.
+
+bSTR Misyonu :: Tüm yapı sektörü paydaşlarının açık standartlarla, işbirlikçi süreçler ve bileşik uygulamalarla çalışmasını sağlamaya yönelik açık işbirliği ve iletişim ortamını sağlayan bir odak olarak; üyelerine destek, öğrenim fırsatları ve örnek iyi uygulamaları sunarken buildingSMART International çalışmalarına katkıda bulunmak.
+
+bSTR vizyonuna ulaşmak için tanımlanan misyon doğrultusunda yapılacak çalışmaların ana kapsamı aşağıda özetlenmiştir:
+
+*_Öncülük_*
+
+* Türkiye'de BIM kullanımı konusunda odak olarak, ülke çapında sorumluluk almak
+* Yapı endüstrisine fayda sağlayacak ileri seviyedeki kültürel, ticari ve teknik uygulama ve iş akışlarına önayak olmak
+* Kamu, üniversite ve özel sektör işbirliğine destek sağlamak
+
+***Etkileşim ve Açılım***
+
+* Geniş katılımlı, dinamik bir kullanıcı kitlesi oluşturmak
+* Faaliyetlerin, tüm seviyelerdeki gerçek kullanıcıların ihtiyaçlarına yönelik olmasını sağlamak
+* Güncel sorunlar ve çözümleri konularında buildingSMART International programları ile ilgili paylaşımlarda bulunmak
+* openBIM ile girişimleri teşvik etmek ve geliştirmek
+* Benzer amaçları paylaşan kurum ve kuruluşlarla işbirliği sağlamak
+
+***Yerelleştirme***
+
+* Yerel ihtiyaçlara hitap eden uygulama rehberleri ve şartnameler geliştirmek
+* Güncel, teknik, fonksiyonel ihtiyaçları belirleyip bunları bSI standart ve/veya uyumluluk programlarına yansıtmak
+* Eğitim ihtiyaçlarını belirleyerek BIM eğitimi yapan kuruluşlarla işbirliği içinde buildingSMART sertifikasyonu sağlamak
+* Belgelendirme ve sertifikasyon ihtiyaçlarını belirlemek
+* Ülke çapında geliştirilen yeni standartları yaymak ve yerel ihtiyaçlara göre uyarlamak
+
+## Tanımlar ve Terimler
+
+BIM
+: Yapı Bilgi Modellemesi [_Building Information Modeling_]
+
+CDE
+: Ortak Veri Ortamı (OVO) [_Common Data Environment_]
+
+Information Container
+: Bilgi Kabı: Bir dosyanın benzersiz kimliğini ifade eder. Projedeki bir bilgi kabı bir maliyet planı, bir program, bir çizim, bir geometrik model vb. olabilir. Her bilgi kabı belgelendirilmiş bir kurala dayanan benzersiz bir kimliğe sahip olması gerekmektedir. [TS EN ISO 19650 _Information Container_]
+
+OIR
+: Kurumsal Bilgi Gereksinimleri [_Organizational Information Requirements_]
+
+EIR
+: Bilgi Alışverişi Gereksinimleri [_Exchange Information Requirements_]
+
+TIDP
+: İş Bilgi Teslim Planı (İBTP) [_Task Information Delivery Plan_]
+
+MIDP
+: Ana Bilgi Teslim Planı (ABTP) [_Master Information Delivery Plan_]
+
+PIR
+: Proje Bilgi Gereksinimleri [_Project Information Requirements_]
+
+AIR
+: Varlık Bilgi Gereksinimleri [_Asset Information Requirements_]
+
+PIM
+: Proje Bilgi Modeli [_Project Information Model_]
+
+AIM
+: Varlık Bilgi Modeli [_Asset Information Model_]
+
+## Künye
+
+DÜZELTİ
+: Fuçin Ermurat
+
+ISBN
+: 978-625-99686-1-2
+
+TÜRKİYE İMSAD YAYIN NO.
+: İMSAD-R/2023-04/394
+
+İLETİŞİM BİLGİLERİ
+: Rüzgarlıbahçe Mah. Feragat Sok No:3 Kat:5 Demir Plaza, Kavacık / Beykoz
+  Tel: +90 216 322 23 00 (pbx) / Fax: +90 216 322 10 68
+  www.imsad.org / info@imsad.org
+
+Nisan 2025 İstanbul-Türkiye
+
+Bu kitabın çevrimiçi pdf formatındaki sürümüne https://www.buildingsmartturkiye.org:3001/Uploads/bstr.rehberkitabi.pdf adresinden ulaşabilirsiniz. Kitabın fiziksel baskılarının yeniden yapılması arasında, çevrimiçi sürüm gelişmeye devam edecektir. Kitabın kaynak kodlarına https://github.com/ahmetcit/bstr_kılavuz adresinden erişebilirsiniz. Kitap, sadece ascii dosyalarıyla metin yazmayı kolaylaştıran **Quarto** ile oluşturulmuştur.
+
+© 2023 buildingSMART Türkiye
+
+Bu çalışma Creative Commons Atıf 4.0 Uluslararası Lisansı ile lisanslanmıştır.
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+[![](./images/cc_by.png)](https://creativecommons.org/licenses/by/4.0/)

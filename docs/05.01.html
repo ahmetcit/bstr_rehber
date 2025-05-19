@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler – Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./06.bolum.html" rel="next">
+<link href="./05.bolum.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05.bolum.html">V Malzeme Üreticileri için bSTR BIM Yol Haritası</a></li><li class="breadcrumb-item"><a href="./05.01.html">Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Önsöz</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Giriş</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./01.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I Yapı Geliştirme Aşamaları ve Teslim Gereksinimleri</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01.01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Yapı Geliştirme Aşamaları</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01.02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yapı Geliştirme Aşamaları Teslim Gereksinimleri</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./02.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bilgi Yönetimi Sürecinde Taraflar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yapı Yaşam Döngüsünde Sayısal Bilgi Yönetimi Süreci Adımları</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">İnşaat Projesi Bilgi Yönetimi Süreci Şeması</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bilgi Gereksinimlerinin Tanımı ve Bilgi Modelleri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ortak Veri Ortamı Kurgusu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bilgi Kabı ile Bilgi ve Belge Kodlama Yapılandırılması</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./03.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III İşverenler ve İşletmeciler için bSTR BIM Teknik Şartname Rehberi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03.01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bilgi Yönetim Sürecinde İşverenler ve İşletmecilerin Rolü</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03.02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BIM Teknik Şartname Şablonu</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./04.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV Yükleniciler için bSTR BIM Uygulama Planı Rehberi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04.01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bilgi Yönetim Sürecinde Yüklenicilerin Rolü</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04.02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">BIM Uygulama Planı Şablonu</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./05.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">V Malzeme Üreticileri için bSTR BIM Yol Haritası</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05.01.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./06.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VI Açık Veri Standartları ve Kullanımları</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06.01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Açık Veri Standartları Hakkında Genel Bilgiler ve Kullanımları</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./07.bolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VII Uygulama Örnekleri</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07.01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">BIM Teknik Şartname Ek Örnekleri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07.02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">BIM Uygulama Planı Ek Örnekleri</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#bim-hakkında-bilgilenme" id="toc-bim-hakkında-bilgilenme" class="nav-link active" data-scroll-target="#bim-hakkında-bilgilenme">BIM Hakkında Bilgilenme</a></li>
+  <li><a href="#bimi-benimseme-sürecinin-kurgulanması" id="toc-bimi-benimseme-sürecinin-kurgulanması" class="nav-link" data-scroll-target="#bimi-benimseme-sürecinin-kurgulanması">BIM’i Benimseme Sürecinin Kurgulanması</a></li>
+  <li><a href="#bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi" id="toc-bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi" class="nav-link" data-scroll-target="#bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi">BIM Nesnesi Hazırlanacak Ürünlerin Seçilmesi</a></li>
+  <li><a href="#şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi" id="toc-şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi" class="nav-link" data-scroll-target="#şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi">Şartname Hazırlayıcıların Bilgi İhtiyaçlarının Belirlenmesi</a></li>
+  <li><a href="#bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi" id="toc-bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi" class="nav-link" data-scroll-target="#bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi">BIM Nesnelerini Oluşturmada Kullanılacak Girdilerin Derlenmesi</a></li>
+  <li><a href="#bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması" id="toc-bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması" class="nav-link" data-scroll-target="#bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması">BIM Nesnelerinin BIM Modelleme Yazılımları Yardımıyla Oluşturulması</a></li>
+  <li><a href="#bim-nesnelerinin-birlikte-işlerliğinin-sağlanması" id="toc-bim-nesnelerinin-birlikte-işlerliğinin-sağlanması" class="nav-link" data-scroll-target="#bim-nesnelerinin-birlikte-işlerliğinin-sağlanması">BIM Nesnelerinin Birlikte İşlerliğinin Sağlanması</a></li>
+  <li><a href="#bim-nesnelerinin-kalite-kontrolü" id="toc-bim-nesnelerinin-kalite-kontrolü" class="nav-link" data-scroll-target="#bim-nesnelerinin-kalite-kontrolü">BIM Nesnelerinin Kalite Kontrolü</a></li>
+  <li><a href="#bim-nesnelerinin-yayınlanması" id="toc-bim-nesnelerinin-yayınlanması" class="nav-link" data-scroll-target="#bim-nesnelerinin-yayınlanması">BIM Nesnelerinin Yayınlanması</a></li>
+  <li><a href="#bim-nesnelerinin-güncellenmesi" id="toc-bim-nesnelerinin-güncellenmesi" class="nav-link" data-scroll-target="#bim-nesnelerinin-güncellenmesi">BIM Nesnelerinin Güncellenmesi</a></li>
+  <li><a href="#kaynakça" id="toc-kaynakça" class="nav-link" data-scroll-target="#kaynakça">Kaynakça</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05.bolum.html">V Malzeme Üreticileri için bSTR BIM Yol Haritası</a></li><li class="breadcrumb-item"><a href="./05.01.html">Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Malzeme Üreticilerinin BIM Nesneleri Geliştirebilmesi İçin Öneriler</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Bir üreticinin başarılı bir şekilde BIM nesneleri sunabilmesi için izleyebileceği on adım aşağıda listelenmiştir. Bu adımlar üreticinin BIM’in farkında olması ve BIM’e yatırım yapma kararı sonrasında başlar.</p>
+<ul>
+<li>BIM hakkında bilgilenme</li>
+<li>BIM’i benimseme sürecinin kurgulanması</li>
+<li>BIM nesnesi hazırlanacak ürünlerin seçilmesi</li>
+<li>Şartname hazırlayıcıların bilgi ihtiyaçlarının belirlenmesi</li>
+<li>BIM nesnelerini oluşturmada kullanılacak girdilerin derlenmesi</li>
+<li>BIM nesnelerinin BIM modelleme yazılımlarında oluşturulması</li>
+<li>BIM nesnelerinin birlikte işlerliğinin sağlanması</li>
+<li>BIM nesnelerinin kalite kontrolü</li>
+<li>BIM nesnelerinin yayınlanması</li>
+<li>BIM nesnelerinin güncellenmesi</li>
+</ul>
+<section id="bim-hakkında-bilgilenme" class="level2">
+<h2 class="anchored" data-anchor-id="bim-hakkında-bilgilenme">BIM Hakkında Bilgilenme</h2>
+<p>BIM’e yatırım yapma kararı alan üretici, ilk olarak hedeflerini belirlemek ve sonraki aşamalarda ihtiyaç duyacağı kararları alabilmek için BIM konusunda bilgilenmelidir. Bu bilgilenme bu alandaki eğitim programları ya da BIM danışmanlık hizmeti veren firmaların sağladığı eğitimler ile sağlanabilir. Bu aşamadaki amaç üreticinin ürünlerini BIM ortamında nasıl temsil edeceğine karar verebilir hale gelmesi ve mevcut teknolojiler kullanıldığında BIM ile ilgili sınırların farkına varmasıdır. Bazı ürün tipleri için bir BIM nesnesi sağlamak doğru karar bile olmayabilir ancak BIM kullanan projelerin şartnamelerine girebilecek nitelikte ürün bilgilerinin sağlanabilmesi için neler yapılması gerektiği bu aşamada belirlenebilir. Bu şekilde üretici hem kullanışlı BIM içerikleri geliştirebilir hem de BIM hakkında doğru beklentilere sahip olur. Ayrıca üretici BIM’i kendi süreçlerinde BIM nesnesi sağlamanın ötesinde nasıl kullanabileceğinin de değerlendirmesini yapabilir hale gelir.</p>
+<p>Bu aşamadaki üreticilerin en çok dikkat etmesi gereken BIM’e yatırımı kendileri için doğru amaçlarla yaptıklarını anlamalarını sağlamaktır. Birçok üretici rakiplerinden etkilenerek bir BIM nesnesi kütüphanesi platformunda yer alarak ürünlerinin görünürlüğünü artırmak istemektedir. Bu platformlarda ürünlerin tanıtılması bu ürünlerin şartnamelere girebilmesi için tek başına yeterli değildir. Sunulan BIM nesnelerinin ihtiyaçları karşılayabilecek nitelikte olması BIM modellerinde kullanılma olasılıklarını ve dolayısıyla ürünlerin projede kullanılma ihtimallerini arttırır. Üreticinin BIM’e yatırım yaparken bu durumun bilincinde olması yatırımının karşılığını almasında yardımcı olacaktır.</p>
+<p>Bunların yanı sıra üreticinin BIM konusunda bilgi ve deneyim edinmeye devam etmesi BIM içerikleri sunmanın ötesinde şartname hazırlayıcılarının taleplerini daha iyi anlamasını sağlayabilir.</p>
+</section>
+<section id="bimi-benimseme-sürecinin-kurgulanması" class="level2">
+<h2 class="anchored" data-anchor-id="bimi-benimseme-sürecinin-kurgulanması">BIM’i Benimseme Sürecinin Kurgulanması</h2>
+<p>Üretici bu aşamada kendi kaynaklarını değerlendirerek süreci kendi bünyesinde yürütmeye ya da kendisine destek olacak bir BIM danışmanı ile çalışmaya karar verebilir. Eğer kendi bünyesinde yürütecekse BIM süreçlerinde görev alacak çalışanları bu aşamada seçebilir ya da istenen yeterlilikte uzmanları bulmak için personel alımı yapabilir. Üreticinin süreci kendi yürütmesi durumunda kullanılacak donanım ve yazılımlar için gerekli alt yapı da bu aşamada sağlamalıdır. Üretici, bir danışmanla çalışmaya karar verdiği durumunda danışman ile yapacağı sözleşmeyi hazırlamalı ve danışman firmanın üretici firmada hangi çalışanlar ile iletişim içinde olacağını belirlemelidir. Ayrıca üretici bu aşamada BIM ya da sayısallaşma ile ilgili teşvik programlarını inceleyerek bunlardan faydalanmaya karar verebilir.</p>
+</section>
+<section id="bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnesi-hazırlanacak-ürünlerin-seçilmesi">BIM Nesnesi Hazırlanacak Ürünlerin Seçilmesi</h2>
+<p>Bu aşamada üretici kendi ürün yelpazesini inceleyerek hangi ürünleri için BIM nesnesi sunacağına karar verebilir. Üreticiler bu aşamada tüm ürünleri için BIM nesnesi hazırlamak isteyebilir ancak faklı özelliklere sahip çok sayıda ürün için bu nesnelerin hazırlanması birbirine daha benzer ve daha az sayıdaki ürüne kıyasla daha maliyetli olabilir ve daha fazla zaman gerektirebilir. Bu değerlendirmeyi yaparken ürünlerini sunduğu pazarların taleplerini, ürünlerin satış miktarını ve rakiplerinin eğilimlerini göz önüne alabilir. Bu sayede BIM nesnelerini geliştirmek için harcayacağı kaynakları azaltırken nesnelerden sağlayacağı faydayı artırabilir. Üretici zamanla taleplerdeki ve kendi kaynaklarının yeterliliğindeki değişiklikler ile BIM nesnesi sunduğu ürün miktarını artırabilir.</p>
+</section>
+<section id="şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi" class="level2">
+<h2 class="anchored" data-anchor-id="şartname-hazırlayıcıların-bilgi-ihtiyaçlarının-belirlenmesi">Şartname Hazırlayıcıların Bilgi İhtiyaçlarının Belirlenmesi</h2>
+<p>Üreticinin BIM nesnesi sunmadaki amacı ne olursa olsun şartname hazırlayıcıların bu nesneleri kullanmadaki amacı ürün bilgilerini modellerinde tanımlayabilmek olacaktır. Bu durum dikkate alındığında bu aşamanın süreç içerisindeki en önemli aşama olduğu söylenebilir. Bu aşamada üretici şunları belirlemelidir:</p>
+<ul>
+<li><p>BIM nesnelerinin hangi BIM modelleme yazılımlarında hazırlanacağı ve hangi biçimlerde sunulacağı: Üreticiler BIM nesnelerini şartname hazırlayıcılarının projelerinde kullandığı BIM modelleme yazılımların en iyi uyum sağlayan sürümlerinde hazırlayarak ürün bilgilerinin değişiklik geçirmeden kullanıcıya iletilmesini sağlayabilirler. Üreticinin sektörde kullanılan her yazılım için BIM nesnesi geliştirmesi elverişli olmayacağından geliştirilen BIM nesnesi bu yazılımlarda kullanılabilecek biçimlerde dışarı aktarılabilir.</p></li>
+<li><p>BIM nesnelerinin hangi bilgileri içereceği ve bu bilgilerin nasıl temsil edileceği: Üreticiler BIM nesnelerinin olası kullanıcıların talep edebileceği sınıflandırma bilgileri, malzeme bilgileri, geometrik bilgiler ve üretici bilgileri gibi genel bilgiler.</p></li>
+<li><p>BIM nesnelerinin hangi aşamada kullanılmak üzere oluşturulacağı: BIM nesneleri BIM modeline projenin farklı aşamalarında dahil edilebilir ve projenin farklı aşamaları farklı ihtiyaçlara sahiptir. Örneğin tesis yönetimi aşamasında kullanılacak olan kurulum tarihi gibi bilgilere tasarım aşamasında ihtiyaç duyulmayacaktır. Bu nedenle üretici BIM nesnesini farklı aşamalar için ayrı ayrı geliştirmek isteyebilir. Üreticilerin sağladığı BIM nesnelerinin hangi aşamada kullanılmak üzere geliştirildiğinin belirli olmaması sektördeki BIM uzmanlarının dile getirdiği bir sorundur. Üreticinin BIM nesnesini sunarken bunu belirtmesi şartname hazırlayıcıların nesneyi kullanma olasılığını arttırabilir.</p></li>
+<li><p>BIM nesnelerinin hangi geometrik detay seviyesinde olacağı: 3b modellerde geometriler poligonlardan oluşmaktadır ve detay seviyesi arttıkça poligon sayısı da artmaktadır. Poligon sayısının fazla olması modellerin performansını olumsuz etkileyebilir. Bu nedenle farklı ihtiyaçlara göre farklı detay seviyeleri kullanılmaktadır. Üreticiler ürünlerinin görsel olarak tanınabilirliğini sağlarken nesnenin çok fazla detay içermemesini de sağlamalıdır.</p></li>
+<li><p>BIM nesnelerinde kullanıcılara hangi yapılandırma seçeneklerinin sunulacağı: Üretici ürünlerinde farklı boyut ve malzeme gibi seçenekler sunuyor olabilir, bu seçenekleri BIM nesnesi içerisinde de kullanıcıya sunabilir. Ürünün yapılandırılması dışında nesnenin kullanımı için de yapılandırma seçenekleri sunulabilir. Örneğin müdahale ve servis alanları çakışma analizlerinde oldukça kullanışlı iken, soyut hacimler oldukları için modelde devamlı bulunmaları istenmeyebilir. Bu sebeple bu tür geometrilerin görünüşünün kullanıcı tarafından yönetilebilmesi sağlanmalıdır. Bu hacimlerin görünürlüğü de bir seçenek olarak sunulabilir. Şartname hazırlayıcılarının ihtiyaçlarının yanı sıra modelleme sürecindeki taleplerini de göz önüne almalıdır. Benzer bir örnek de projedeki çizimlerde ürünlerin iki boyutta temsil edilmesinde kullanılacak semboller için verilebilir, bu sembollerin ölçeği, konumu ve görünürlüğü gibi niteliklerin kullanıcının kontrolünde olması önerilmektedir. BIM modelleme yazılımlarının kullanıcıları BIM nesnelerinde modelleme süreçlerinde faydalanacakları bu örneklere benzer işlevsellikler bekleyebilir.</p></li>
+<li><p>BIM nesnelerine yapılandırılmamış veri eklenmesi: Örneğin PDF formatında şartnameler, kullanım kılavuzları harici olarak nesnelere eklenebilir.</p></li>
+</ul>
+<p>Üreticilerin bu aşamada dikkat etmesi gereken bir konu da çok az bilgi sağlama riski olduğu kadar çok fazla bilgi sağlama riski de bulunmasıdır. Birçok üretici BIM nesnelerine olabildiğince çok görsel detay ekleyerek nesnelerini tasarımcılara çekici hale getirmeye çalışmaktadır. Projelerde zaman ilerledikçe ve bilgi miktarı arttıkça bu şekilde hazırlanan nesnelerin modellerde kullanımı model performansını olumsuz etkileyebilir, bu durumda şartname hazırlayıcılar üreticilerin geliştirdiği BIM nesneleri yerine kendi geliştirdikleri alternatifleri tercih edebilirler. Benzer şekilde üreticiler çok fazla semantik veriyi de nesnelerine ekleyebilir. Kullanıcıların ihtiyaç duymayacağı çok sayıda bilgi dosya boyutlarını arttırabilir ve üretici için hassas olan telif hakkına tabii bilgiler firma dışına çıkabilir. Bu nedenlerden ötürü üretici hangi bilgileri sağlayacağına karar verirken hangi bilgileri sağlamayacağına da karar vermelidir.</p>
+<p>Dikkat edilmesi gereken diğer bir konu ise sağlanan bilgilerin güvenilirliğidir. Üreticilerin performans verileri gibi sayısal bilgileri beyan ederken aldıkları sorumluluk bu bilgilerin BIM nesneleri olarak sunmalarında da geçerlidir. Bu nedenden ötürü üretici sayısal verilerde ne kadar isabetli sayılar verileceği gibi kararları da bu aşamada vermelidir.</p>
+<p>Üreticiler BIM’in farkında olmalarından önce ürünleri ile ilgili birçok bilgiyi yapılandırılmış veya yapılandırılmamış bir şekilde ellerinde bulundurabilir. Ancak şartname hazırlayıcıların BIM süreçlerinde ihtiyaç duyacağı bilgileri öngörmekte zorlanabilirler. Bu durumda üreticilerin birkaç seçeneği vardır:</p>
+<ul>
+<li><p>Sektörde sunulan BIM nesnelerinde sağlanan bilgileri inceleyebilirler: Sektördeki nesneleri incelemek, üreticinin rakiplerinin sunduğu BIM nesneleri hakkında bilgi edinmesini sağlarken, rakiplerinin sağlamayı ihmal ettiği bilgileri ve yaptığı hataları belirlemede yeterli olmayacaktır.</p></li>
+<li><p>Olası şartname hazırlayıcılarına hangi bilgilere ihtiyaç duyduklarını çalıştaylar ve yüz yüze görüşmeler yoluyla doğrudan sorabilirler: Şartname hazırlayıcılar ile görüşmek BIM nesnelerinin bu uzmanlar tarafından kullanılmasını sağlayabilse de farklı projelerin farklı ihtiyaçları olacağından, görüşülen uzman sayısı edinilen bilginin kalitesini belirleyecektir.</p></li>
+<li><p>BIM standartlarını inceleyebilirler: Üreticiler bilgi ihtiyaçlarını belirlemede ve BIM nesnelerinin içeriği ile ilgili kararları vermede TS EN ISO 19650’nin bilgi ihtiyaçları ile ilgili bölümlerini, TS EN 17412 bilgi ihtiyacı seviyesi standardı, BS 8541 standart serisini, NBS ve BIMobject gibi BIM nesnesi kütüphanesi platformlarının geliştirdiği BIM nesnesi standartlarını kullanabilirler.</p></li>
+<li><p>Varsa BIM danışmanlarının deneyimlerinden yararlanabilirler: Standartlardan yararlanmada güçlük çeken üreticiler eğer bir BIM danışmanı ile çalışmayı tercih ettilerse daha fazla destek için danışmanlarına başvurabilirler.</p></li>
+<li><p>Meslek örgütlerinin geliştirdiği araçlardan yararlanabilirler: Bu seçenekler dışında ise meslek örgütlerinin, BIM’i benimseme sürecini kolaylaştırmak için hazırladığı pratik araçlardan yararlanılabilir. Bu araçlardan belirli bir ürün sınıfı için sağlanması gereken geometrik detay seviyesi ve nesneye işlenmesi gereken ürün bilgilerinin neler olduğu edinilebilir.</p></li>
+</ul>
+</section>
+<section id="bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnelerini-oluşturmada-kullanılacak-girdilerin-derlenmesi">BIM Nesnelerini Oluşturmada Kullanılacak Girdilerin Derlenmesi</h2>
+<p>Bu aşamada, üretici bir önceki aşamada belirlediği bilgileri derlemeye başlar. Birçok üreticinin elinde, üretim süreçlerinde kullanılmak üzere ürünleri ile ilgili teknik çizimler, veri paftaları ve kataloglar bulunmaktadır. Ancak bu belgelerin içerdiği bilgilerin BIM nesnesi oluşturmada kullanılabilmesi için verilerin birbiri ile ilişkilendirilebilmesi ve yapılı bir biçime getirilmesi gerekmektedir.</p>
+<p>Üreticilerin üretim için hazırladığı çizimler ve modeller, bir BIM nesnesi için çok fazla detay içeriyor olabilir. Üreticiler bu detayları sağlayabildikleri için BIM nesnelerinin bu geometrik detaylara sahip olmasını beklememelidir ve bu konuda bir önceki aşamada verdikleri kararlara sadık kalmalıdırlar. Ayrıca BIM nesnelerinin geometrisinin yapılandırılabilir olması için teknik çizimlerde ilgili ölçülerin parametrik bir biçimde verilmesi gerekebilir. Bu sayede farklı ürün tiplerinde değişecek ölçüler bir sonraki aşamada parametreler ile yönetilebilir olacaktır. Örneğin bir soğutma ünitesinin bir bağlantı noktasının çapı nesne üzerinde bir parametre ile ifade edilebilir ve aynı parametre ürün verilerinin derlendiği tabloda bir sütun olabilir. Tabloda bu bilginin verilmesi ve bir sonraki aşamada tablodaki bilgilerin nesneye aktarılması, nesne içindeki bu parametrenin alacağı değerlerin tek bir kaynaktan yönetilmesini sağlar. Ünitenin her bir tipi için farklı değerler girilebilir ve bu şekilde çok sayıda ürün tipindeki boyut, tablodaki tek bir sütun ile değiştirilebilir. Bu bilgide değişiklik yapıldığında da tablodaki bilgiler tekrar nesneye aktarılarak güncelleme yapılabilir.</p>
+<p>Üreticiler ürün bilgilerini tablo biçiminde derlerken ürün veri şablonlarından yararlanabilirler. Bir önceki aşamada bahsedilen meslek örgütlerinin sağladığı pratik araçlardan ürün tipine özgü ürün veri şablonları edinilebilir. Üretici kendisine özgü bir şablondan da yararlanabilir, bu aşamada önemli olan verilerin makineler tarafından okunabilir ve yapılı bir biçime getirilmesidir.</p>
+<p>Bunu sağlamak için üretici şunları yapabilir:</p>
+<ul>
+<li>Sütun başlıklarındaki isimlendirmeler anlaşılır ve standart olmalıdır</li>
+<li>Tabloların oluşturulduğu yazılımlarda hesap için kullanılan formüller yerine hesap sonuçları olmalıdır. Yani hazırlanan tablo herhangi bir işlem içermemeli, yalnızca ham verileri içermelidir. Aksi halde veriler dışarı aktarılırken formüllerin sonuç verileri yerine formülün kendisi aktarılabilir.</li>
+<li>Hücrelere veri girişlerinde satır atlamalar ya da diğer yazılımların desteklemediği karakterler kullanılmamalıdır. Bu durum, verilerin makineler tarafından okunmasında hatalara neden olabilir.</li>
+<li>Çizimlerde verilen parametrik ölçüler veri tablolarında da verilmelidir. Bu şekilde ürün tipleri arasındaki farklar tek bir dosyada toplanabilir.</li>
+<li>Her satır için bilgilerin hangi kaynaklardan edinildiğini belirten bir sütunun kullanılması, verilerin doğrulanmasını kolaylaştırması açısından önerilmektedir.</li>
+</ul>
+<p>Ayrıca üreticiler kendi ürün veri şablonlarını geliştirirken bu konudaki standartlardan yararlanabilir. Üretici, hazırladığı ürün veri paftalarının ürünleri için BIM kullanan projelerde bir pasaport gibi çalışacağını göz önünde bulundurmalıdır. Bu nedenle ürün veri paftalarını, ürün bilgileri için tek doğruluk kaynağı olarak kullanmalıdır. BIM nesneleri gibi başka veri biçimlerine veri aktarımı yapılırken veriler bu kaynaktan gelmelidir ve bu takip edilebilmelidir.</p>
+</section>
+<section id="bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnelerinin-bim-modelleme-yazılımları-yardımıyla-oluşturulması">BIM Nesnelerinin BIM Modelleme Yazılımları Yardımıyla Oluşturulması</h2>
+<p>Bu bölümde herhangi bir yazılımın kullanımının anlatılmasındansa yazılımları kullanırken verilmesi gereken kararlar ve dikkat edilmesi gereken konular anlatılmıştır.</p>
+<p>Bu aşamada verilmesi gereken ilk karar önceki aşamada yapılandırılan ürün veri paftalarının içeriklerinin ve teknik çizimlerde verilen geometrilerin, nesnelerin modellenmesinde kullanılacak BIM modelleme yazılımında nasıl temsil edileceğidir. Üretici nesnede sağlayacağı bilgilerin, nesnelerin sunulduğu platformda, kullanıcıların beklediği gibi işleyebilmesini sağlamalıdır. Bunun için öncelikli olarak sadece çizimlerdeki parametrik ölçülerin yapılandırılabildiği, semantik bilgileri içermeyen örnek BIM nesneleri oluşturulabilir ve temel modelleme işlevleri ile kullanım, yapılandırma kurgusu ve sınırları test edilebilir. Bu sayede üretici, üçüncü aşamada belirlemiş olduğu ihtiyaçlardan modelleme süreci ile ilgili olanların karşılandığını doğrulayabilir.</p>
+<p>Semantik bilgiler içinse üretici, bilgileri niteliğine göre ayırarak BIM modelleme yazılımında bu niteliklere uygun parametreler tanımlamalıdır. Ayrıca kullanıcıların aradıkları bilgileri kolayca bulabilmeleri için bu parametrelere kimlik bilgileri tanımlanabilir. Örneğin bir cam panel için geometrik parametreler bir grupta, malzeme parametreleri bir grupta ve performans parametreleri bir grupta ayrı ayrı görüntülenecek şekilde tanımlanabilir. Bu şekilde kullanıcılar bilgileri süzebilir. Aynı zamanda parametrelerin tanımlarının doğru yapılması BIM modelleme yazılımları içindeki tasarım araçlarının da bilgileri doğru şekilde kullanmasını sağlayacaktır. Örneğin bir ürünün su bağlantı noktasındaki debi bilgisini temsil eden parametrenin debiyi belirttiği BIM modelleme yazılımı tarafından anlaşılamazsa ilgili hesap araçları BIM nesnesi ile kullanıldığında doğru sonuçlar vermeyebilir. Benzer şekilde sayısal veri tutan parametreler için verilerin birimi doğru tanımlanmalıdır. Birçok BIM yazılımı birim dönüşümlerini otomatik yapabilmektedir. Üreticiler bu verileri girerken doğru birimleri kullandıklarına dikkat etmelidirler.</p>
+<p>Üreticiler veri girişlerinde mümkün oldukça elle veri girilmesinden kaçınmalıdır. Bu hem sürecin uzamasına hem de insan hatalarının artmasına neden olabilir. Veri girişlerinin otomasyonu için BIM modelleme yazılımlarının sağladığı farklı imkanlar vardır ancak önemli olan üreticilerin verilerinin makineler tarafından okunabilir olmasıdır. Aksi halde otomasyon için kullanılan araçlar beklenenden farklı sonuçlar verebilir veya çalışmayabilir.</p>
+</section>
+<section id="bim-nesnelerinin-birlikte-işlerliğinin-sağlanması" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnelerinin-birlikte-işlerliğinin-sağlanması">BIM Nesnelerinin Birlikte İşlerliğinin Sağlanması</h2>
+<p>BIM süreçlerinde birden fazla BIM modelleme yazılımı kullanılabilir, bu nedenden ötürü üreticilerin BIM nesnelerinin oluşturuldukları yazılım dışında da kullanılabilmesini sağlamaları önerilmektedir. Birlikte işlerliğin sağlanabilmesi için IFC dosya biçimleri kullanılmaktadır. Üreticiler BIM nesnelerinde bilgilerin bu dosya biçimine nasıl aktarıldığını yönetmelidir. Bu amaçla, buildingSMART’ın IFC biçiminin kullanımı için hazırladığı kılavuzlardan ve nesnelerin hazırlandığı BIM modelleme yazılımının IFC’ye aktarım modülünün kullanımını açıklayan belgelerden yararlanabilirler. Önemli olan ürünün farklı yazılımlarda doğru bir şekilde tanınmasıdır. Bu nedenden ötürü üretici BIM nesnesinde doğru sınıflandırma bilgilerini girmeye dikkat etmelidir. Bu bilgiler, geliştirilen BIM nesnesinin farklı yazılımlarda doğru şekilde tanınmasını sağlar.</p>
+<p>Ancak, her BIM nesnesi için IFC biçiminde bir dosya sağlanmasına gerek yoktur. IFC dosyaları bilgi aktarımında kullanılmak için tasarlandığından dosyaların içinde yapılandırma yapılamaz. Bu nedenden ötürü sonsuz şekilde yapılandırılabilecek nesneler için, başka bir deyişle, boyutlarına kullanıcının karar verdiği nesneler için hazırlanan bir IFC dosyasını kullanıcılar modellerinde kullanamazlar. Bu dosyaları sadece modelleme yazılımlarından bağımsız bir şekilde ürün bilgilerini görüntülemek için kullanabilirler, üreticiler dilerlerse ürünleri için bu şekilde sanal sergiler hazırlayabilir. Bunun dışında, sınırlı sayıda yapılandırması olan ürünler için her yapılandırma kombinasyonu ayrı bir IFC dosyasında sunulabilir. Bu durumda kullanıcı istediği yapılandırmayı barındıran dosyayı seçerek modeline ekleyebilir ve yapılandırmayı değiştirmek istediğinde farklı bir dosyayı kullanabilir.</p>
+</section>
+<section id="bim-nesnelerinin-kalite-kontrolü" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnelerinin-kalite-kontrolü">BIM Nesnelerinin Kalite Kontrolü</h2>
+<p>Üreticiler, geliştirdikleri BIM nesnelerini şartname hazırlayıcılarının kullanımına sunmadan önce nesnelerin önceki aşamalarda karar verilen ihtiyaçları karşıladığı ve BIM modelleme yazılımlarında beklenen şekilde işlediğini belirlemek için, nesnelere kalite kontrol süreci uygulamalıdır. Üreticiler bu süreçte şu kontrolleri yapabilir:</p>
+<ul>
+<li><p>Nesnenin herhangi bir 3b modelleme yazılımda kullanılabilecek öteleme, döndürme ve kopyalama gibi işlevleri sağlayabilmesi; bu temel işlevler modelleme sırasında sıklıkla kullanılacağı için, nesnenin bu işlevlerde sorun yaşamaması gerekir. Bu işlemlerde karşılaşılan sorunlar genellikle nesnenin içerisindeki yapılandırma kurallarında yapılan hatalara işaret eder. Üretici BIM nesnelerini kullanıma sunmadan önce bu hataları gidermelidir.</p></li>
+<li><p>Nesnenin yapılandırma kurgusunun beklenen şekilde işlediğinin doğrulanması; BIM nesnesinin parametrelerine farklı değerler verilerek nesnenin bu değişiklikleri beklenen şekilde yaptığının belirlenmesi gerekir.</p></li>
+<li><p>Nesnenin gereksiz veya paylaşılmak istenmeyen bilgiler içermemesinin sağlanması; BIM nesnesinin içerdiği bilgilerin önceki aşamalarda belirlenenlerin kapsamını aşmaması gerekir. Örneğin; nesnenin, üründeki her geometrik detayı içermesine gerek yoktur. Belirlenen kapsamdan daha fazla detay içermesi nesnenin kullanıldığı modellerin performansını olumsuz etkileyebilir.</p></li>
+<li><p>Nesnenin ihtiyaçlar doğrultusunda mümkün olan en küçük dosya boyutunun sağlanması; nesnenin hazırlanma sürecinde dosyanın içerisine alınan ancak artık kullanılmayan bilgiler nesneden temizlenmelidir, bu şekilde nesne boyutu düşürülebilir ve nesnesinin kullanıldığı modellerin performansına olumsuz etkileri en aza indirilebilir.</p></li>
+<li><p>Nesnenin içerdiği bilgilerin belirlenen ihtiyaçlar doğrultusunda derlenen bilgiler ile uyuşması; oluşturulan ürün veri paftası ile nesnenin parametreleri ve bu parametrelere girilen değerlerin birbiri ile uyuştuğunun kontrol edilmesi bilginin güvenilirliğini ve doğruluğunu sağlamak için gereklidir.</p></li>
+<li><p>Nesnenin 2b ve 3b görünüşlerdeki temsilinin, belirlenen ihtiyaçlar doğrultusunda derlenen bilgilerle uyuşması; bu kontrol ile nesnede ihtiyaç duyulmayan geometrik detaylardan kaçınılırken ürünün görsel olarak tanınabilir olması için kullanılan temsillerin belirlenen kapsam ile uyuşması sağlanır.</p></li>
+<li><p>Nesnenin içerdiği bilgilerin farklı BIM modelleme yazılımlarında kurgulanan birlikte işlerlik süreci ile doğru aktarıldığının belirlenmesi; farklı sağlayıcıların sunduğu BIM modelleme yazılımlarından bazıları birbirinin dosya biçimlerini destekleyebilirken bu destek sağlanmadığında IFC biçimini kullanabilir. Her yazılımda IFC biçiminde dosya oluşturmak farklı bir süreç olabilir, ancak üreticiler kullandıkları yazılımın IFC oluşturma sürecinin doğru işlediğini belirlemek için IFC dışarı aktarma aracını, nesneyi dışarı aktararak test edebilirler. Bu şekilde IFC dosya biçimine istenilen tüm bilgilerin doğru bir şekilde aktarılıp aktarılmadığını belirleyebilirler.</p></li>
+<li><p>Üreticiler, nesnelerinin yapılandırılmasını test ederken, nesnenin geometrisinin üreticinin belirlediği sınırları aşmamasına ve eğer BIM modelleme yazılımı bu boyutların aşılmasına izin veriyorsa kullanıcının bu sınırlardan haberdar edilmesine dikkat etmelidir. Böylelikle BIM nesnesi üreticinin üretemeyeceği şekilde yapılandırılamayacak ve kullanıcının yanlış yönlendirilmesi önlenecektir. Bu durumda, özellikle sipariş yapılandırması BIM modelleri üzerinden yapıldığında dikkat edilmelidir.</p></li>
+<li><p>Önceki aşamalarda bahsedildiği gibi BIM nesnelerinin gereksiz bilgiler içermesi model performansını kötü etkileyebilir ve BIM nesnesinin şartname hazırlayıcılar tarafından tercih edilmemesine neden olabilir. Aynı zamanda üretici sağlayabildiği her bilgiyi BIM nesnesine dahil etmek istemeyebilir. Bu nedenle üretici BIM nesnelerinde bu tür bilgilerin olmadığını kontrol etmelidir.</p></li>
+<li><p>Üreticiler, BIM nesnelerine işledikleri bilgileri bu nesnelerden dışarı aktararak önceki aşamada hazırladıkları ürün veri paftaları ile karşılaştırabilir. Bu sayede BIM nesnelerinin içerdiği veriler doğrulanabilir. Bu, nesnesin içerdiği bilgilerin, üreticinin onayından geçen bilgilerden farklı olmamasını sağlar. Bu kontrole nesnelerin boyutları ve semantik bilgilerin yanı sıra dosya ve tip isimleri gibi derlenen, ürün veri paftasında yer alan diğer tüm bilgiler de dahil edilmelidir.</p></li>
+<li><p>Nesnelerin farklı detay seviyelerinde ve farklı niteliklerde, görünüşlerdeki temsilleri üreticinin belirlediği şekilde olmalıdır. Bu nesnenin BIM modelleme yazılımında bir örneği modellendikten sonra farklı görünüşlerin oluşturulması ve nesnenin istenen şekilde temsil edildiğinin doğrulanması ile kontrol edilebilir.</p></li>
+<li><p>Üreticiler, BIM nesneleri için kurguladıkları birlikte işlerlik sürecini, BIM nesnesini farklı modelleme yazılımlarında modelleyip içeriğini kontrol ederek ya da birlikte işlerlik için oluşturdukları IFC gibi dosya biçimlerini, bu biçimleri görüntülemek için geliştirilen farklı yazılımlarda açarak kontrol edebilirler. Burada dikkat edilmesi gereken, aktarılmak istenen bilgilerin BIM nesnesinin hazırlandığı platformdaki bilgiler ile uyuşması ve kayıpların olmamasıdır. Örneğin bir BIM nesnesinin hazırlandığı platformdaki bir parametrenin ismi ve değeri aktarıldığı IFC dosyasında aynı isim ve değer ile temsil edilmelidir. Bunlar arasında farklılıklar olması IFC oluşturma sürecinin beklendiği gibi çalışmadığına işaret edebilir.</p></li>
+</ul>
+</section>
+<section id="bim-nesnelerinin-yayınlanması" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnelerinin-yayınlanması">BIM Nesnelerinin Yayınlanması</h2>
+<p>Üretici, BIM nesnelerini başarılı bir şekilde geliştirdikten sonra bunları nasıl paylaşacağına ve nasıl güncelleyeceğine karar vermelidir. Bunun için üç farklı yöntem kullanılabilir. Birinci yöntem, BIM nesnesi kütüphanesi platformlarının kullanılmasıdır. Farklı üreticilerden birçok BIM nesnesine ev sahipliği yapan BIM nesnesi kütüphanesi platformları şartname hazırlayıcılar için sanal pazaryeri işlevi görürler. Üreticiler bu platformlara abone olarak dönemsel ücretler karşılığında ürünlerini platformlarda tanıtabilir ve ürünleri için hazırladıkları BIM nesnelerini burada saklayabilirler. Bu platformların ana avantajı, ürünlerin görünürlüğünü arttırmak ve üreticilere ürünlerinin platformdaki performansı ile ilgili analitik bilgiler sağlamaktır. Örneğin; BIM nesnelerini indiren kullanıcıların hangi konumdan bağlantı yaptığı, BIM nesnesini indirmeden önce hangi ürünleri incelediği gibi veriler, üreticinin daha iyi rekabet etmesini sağlayacak iç görüler ortaya çıkarabilir.</p>
+<p>Benzer şekilde, üreticiler ürünlerini kendi web sayfalarında yayınlamayı da tercih edebilir. Eğer gerekli altyapı sağlanabilirse üretici bu şekilde de analitik veriler edinebilir. Bu yöntem üreticiyi periyodik ödemelerden korusa da ilk yatırım maliyeti daha fazla olabilir. Aynı zamanda bu yöntem kullanıldığında şartname hazırlayıcılar, doğrudan üreticinin ürünlerini aramadıklarında ürünleri görmezler, bu nedenden ürünlerin görünürlüğü kütüphane platformlarına göre daha azdır. Bu yöntemin türevi sayılabilecek bir yayınlama şekli de BIM modelleme yazılımları için geliştirilen eklentilerdir. Üreticilerin web sitesinden ya da BIM yazılımı sağlayıcılarının eklenti pazaryerlerinden indirilebilen eklentiler yardımıyla kullanıcılar, BIM modelleme yazılımları içinden erişebildikleri bir ara yüzden BIM nesnelerini seçerek indirebilir.</p>
+<p>Başka bir yöntem ise BIM nesnelerini talep üzerine paylaşmaktır. Bu ürünlerin görünürlüğünü en aza indirse de BIM nesnelerine erişimi kontrol etmek için en iyi yöntemdir. BIM nesnelerinde ürünleri hakkında hassas bilgiler sunan üreticiler, bu seçeneği tercih edebilir. Ancak kullanıcılar talep sürecine zaman ayırmak istemeyebilir, bu durumda üreticinin BIM nesnesinin kullanımı daha az olabilir.</p>
+</section>
+<section id="bim-nesnelerinin-güncellenmesi" class="level2">
+<h2 class="anchored" data-anchor-id="bim-nesnelerinin-güncellenmesi">BIM Nesnelerinin Güncellenmesi</h2>
+<p>Ürün tasarımlarındaki ve ürün bilgilerindeki değişiklikler ya da daha yeni sürümlerin yayınlanması ile BIM yazılımlarındaki değişiklikler, üreticilerin BIM nesnelerini güncellemesini gerektirebilir. BIM nesnelerinin güncellenmesinde, üretici süreci kendi üstlendiyse süreçte görev alan çalışanlar, ürünler geliştikçe nesneleri geliştirme sorumluluğunu alabilir. Ancak bunun için firma içerisinde kurulan donanımsal ve yazılımsal altyapının sürekliliği sağlanmalıdır. Dolayısıyla bu altyapının getirdiği maliyetler de sürekli olacaktır. Ayrıca bu görevi üstlenen çalışanların şartname hazırlayıcılar kadar modelleme süreçleri konusunda deneyimli olması, BIM nesnelerinin kullanıcı ihtiyaçlarını daha iyi karşılamasını sağlayabilir. BIM danışmanları ile çalışan üreticiler ise, benzer şekilde danışmanların güncelleme süreçlerini üstlenmesi için firma içinden çalışanlara eğitim verilmesini isteyebilir. Bu şekilde üretici BIM danışmanına bağlı kalmadan kendi kütüphanesini yönetebilir ancak donanımsal ve yazılımsal altyapının sürekliliği yine gerekli olacaktır. Bu üreticiler için başka bir seçenek ise nesnelerde güncelleme yapılmak istendiğinde BIM danışmanı ile tekrar anlaşılmasıdır, bu durumda üretici BIM nesnesi kütüphanesinin yönetiminde dışa bağımlı olacaktır. Bu yöntem toplam maliyetleri düşürebilirken, firmanın BIM’i içselleştirmesinin önünde bir engel olabilir. Üreticiler, firmalarının ve ürünlerinin niteliklerini değerlendirerek kendileri için en uygun yayınlama ve güncelleme seçeneğine karar vermelidir.</p>
+<p>BIM nesneleri, ürünler geliştikçe ve ürün bilgileri değiştiğinde güncellenebildiği gibi kullanıcılardan gelen geri dönüşler üzerine de güncellenebilir. Üreticiler bir BIM nesnesini güncellediklerinde, bu nesnenin paylaşıldığı tüm platformda güncel olmasına dikkat etmelidir ve sürümlerin takibini yapmalıdır. Bu sayede ürün bilgileri için tek bir gerçeklik kaynağı olacaktır ve bilginin akışını takip etmede altın iplik prensibine uyulacaktır.</p>
+</section>
+<section id="kaynakça" class="level1">
+<h1>Kaynakça</h1>
+<p>KARAKOÇ, Kerim Kaan,(2022). Tez No: 10478375 Türkiye İnşaat Sektöründe Malzeme Üreticilerinin BIM’i Benimsemesi Sürecinin İncelenmesi, Yüksek Lisans Tezi, İnşaat Mühendisliği Anabilim Dalı, Yapı İşletmesi Programı, Tez Danışmanı: Prof.&nbsp;Dr.&nbsp;Esin Ergen PEHLEVAN.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./05.bolum.html" class="pagination-link" aria-label="V Malzeme Üreticileri için bSTR BIM Yol Haritası">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">V Malzeme Üreticileri için bSTR BIM Yol Haritası</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./06.bolum.html" class="pagination-link" aria-label="VI Açık Veri Standartları ve Kullanımları">
+        <span class="nav-page-text">VI Açık Veri Standartları ve Kullanımları</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
