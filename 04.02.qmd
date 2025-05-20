@@ -54,8 +54,6 @@ Proje yönetiminden başlayarak, BIM süreçlerine dahil tüm pozisyonların ağ
 ##	BIM Süreçleri
 Modellerin ana atanan, teslim ve iş ekipleri arasında, proje boyunca geliştirilmesi ve tüketilmesiyle ilgili tüm süreçler açıkça tanımlanacaktır.
 
-// todo: reorder Eks to make logical text order - add refs to each Ek im the text
-
 ### BIM Süreçlerine Yönelik Yapılacak Çalışma Toplantıları ve Eğitimler
 Süreçlerin geliştirilmesiyle ilgili paydaşların yapacağı farklı çalışma toplantıları, bu süreçlerin pekişmesini sağlamak ve/veya sözleşme şartları gereği yapılacak eğitimlerin tanımlanmaları yapılacaktır.
 
@@ -95,8 +93,6 @@ Modeleme için kullanılacak referans kat kotları verilecektir. Doğru tanımla
 
 ### Model İçerikleri ve Eleman Bilgi Gereksinimleri
 Alt başlıklarda belirtilen kapsamlar için modelde dahil edilecek elemanların dökümü yapılacaktır. Proje şartnamesinin @sec-bilgi-model-içerikleri bölümünde belirtilen elemanlarla birlikte, koordinasyon ve simülasyon gibi tariflenen BIM hedeflerine yönelik modellenecek diğer tüm elemanlar belirtilecektir. Modellenecek elemanlar ile birlikte modelde dahil edilmeyecek elemanlar belirtilecektir. Model içinde dahil edilecek elemanların dökümü, detay seviyeleri ve hazırlanmasından sorumlu paydaşları [@sec-bim-plan-ek3]'da verilecektir.
-
-**CONTINUE EDITING FROM HERE!!!**
 
 #### Mimari Elemanlar
 #### Yapısal Elemanlar
