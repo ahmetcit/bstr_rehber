@@ -6,8 +6,8 @@ book:
   title: "Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı"
   author: "Ahmet Çıtıpıtıoğlu, Serkan Elliborlar"
   cover-image: images/cover.png
- # site-url: https://rstudio-education.github.io/hopr/
- # repo-url: https://github.com/jjallaire/hopr/
+  site-url: https://ahmetc.quarto.pub/bstr-rehber/
+  repo-url: https://github.com/ahmetcit/bstr_rehber/
   repo-branch: master
   repo-actions: [edit]
   sharing: [twitter, facebook, linkedin]
@@ -49,6 +49,5 @@ format:
     theme: cosmo
     cover-image: cover.png
     code-link: true
-    number-sections: false 
+    number-sections: false
     anchor-sections: true
-
