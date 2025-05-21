@@ -103,7 +103,9 @@ TÜRKİYE İMSAD YAYIN NO.
 
 Nisan 2025 İstanbul-Türkiye
 
-Bu kitabın çevrimiçi pdf formatındaki sürümüne https://www.buildingsmartturkiye.org:3001/Uploads/bstr.rehberkitabi.pdf adresinden ulaşabilirsiniz. Kitabın fiziksel baskılarının yeniden yapılması arasında, çevrimiçi sürüm gelişmeye devam edecektir. Kitabın kaynak kodlarına https://github.com/ahmetcit/bstr_kılavuz adresinden erişebilirsiniz. Kitap, sadece ascii dosyalarıyla metin yazmayı kolaylaştıran **Quarto** ile oluşturulmuştur.
+Bu kitabın çevrimiçi pdf formatındaki sürümüne [link](https://www.buildingsmartturkiye.org:3001/Uploads/bstr.rehberkitabi.pdf) ile ulaşabilirsiniz. Online verisyon buildingSMART Türkiye üyelerinden gelen talep üzerine erişim ve kullanım kolaylığı için hazırlanmıştır. buildingSMART Türkiye tarafından hazırlanan tüm teknik yayınlara [websayfasından](https://www.buildingsmartturkiye.org/paylasimlar/teknikyayinlar) erişebilirsiniz. Atıf için *978-625-99686-1-2* ISBN numaralı orijinal versiyonun gösterilmesini rica ederiz. Kitabın kaynak kodlarına [github](https://github.com/ahmetcit/bstr_rehber) linkinden erişebilirsiniz.
+
+Bu sayfa, sadece ascii dosyalarıyla metin yazmayı kolaylaştıran **Quarto** ile oluşturulmuştur.
 
 © 2023 buildingSMART Türkiye
 
