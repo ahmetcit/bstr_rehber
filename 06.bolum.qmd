@@ -9,7 +9,7 @@
 
 &nbsp;
 
-Bu bölüm, buildingSMART International tarafından geliştirilen açık ve uluslararası standartlar, kullanımları ve beraberinde gelen bazı kavramlar hakkında genel bilgilerin paylaşılması için hazırlanmıştır. Bu bölüm hazırlanırken, Teknoloji Çalışma Grubu tarafından hazırlanan “IFC Aktarım El Kitabı” çalışmasından faydalanılmıştır. “IFC Aktarım El Kitabı” farklı yazılımlarda yapılan çalışmaların, proje paydaşları arasında bilgi alışverişi yapabilmesi için IFC aktarım örnekleri ile sektör kullanımına sunulmuş önemli bir çalışmadır. Bu çalışmaya link üzerinden ulaşabilirsiniz: https://www.buildingsmartturkiye.org/paylasimlar/yayinlar
+Bu bölüm, buildingSMART International tarafından geliştirilen açık ve uluslararası standartlar, kullanımları ve beraberinde gelen bazı kavramlar hakkında genel bilgilerin paylaşılması için hazırlanmıştır. Bu bölüm hazırlanırken, Teknoloji Çalışma Grubu tarafından hazırlanan “IFC Aktarım El Kitabı” çalışmasından faydalanılmıştır. “IFC Aktarım El Kitabı” farklı yazılımlarda yapılan çalışmaların, proje paydaşları arasında bilgi alışverişi yapabilmesi için IFC aktarım örnekleri ile sektör kullanımına sunulmuş önemli bir çalışmadır. Bu çalışmaya link üzerinden ulaşabilirsiniz: <https://www.buildingsmartturkiye.org/paylasimlar/teknikyayinlar>
 
 &nbsp;
 

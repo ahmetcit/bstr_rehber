@@ -1,0 +1,26 @@
+/* Import fonts (Google Fonts in this case) * /
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto+Condensed:wght@400;600&display=swap');
+*/
+
+/* Import with extended Latin subset for Turkish characters */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Roboto+Condensed:wght@400;600&display=swap&subset=latin-ext');
+
+
+/* Body text */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400; /* Light */
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'RobotoCondensed', sans-serif;
+  font-weight: 600;
+}
+
+/* Tables * /
+table, th, td {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+*/

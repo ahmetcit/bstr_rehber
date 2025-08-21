@@ -16,6 +16,6 @@ Ayrıca OVO aracılığıyla yönetilen her bir bilgi kabı aşağıdaki meta ve
 * Tanımlanmış standarda uygun bir *revizyon kodu*
 * İzin verilen bilgilerin kullanımını gösteren bir *statü kodu*
 
-Meta veriler önce bilgiyi hazırlayan yazar tarafından belirlenir ve ardından onay ve yetkilendirme süreçleri ile güncellenir. Bir bilgi kabının, statü koduyla belirtilen kullanımı dışında herhangi amaç için kullanmanın riski kullanıcıya aittir. OVO çözümü hem bilgi kabı öznitelikleri ve meta verileri yönetmek için bir veritabanı yönetim yeteneği, hem de paydaşlara güncelleme bildirimleri yayınlama ve süreç kayıtlarını tutma yeteneği içermelidir.
+Meta veriler önce bilgiyi hazırlayan yazar tarafından belirlenir ve ardından onay ve yetkilendirme süreçleri ile güncellenir. Bir bilgi kabının, statü koduyla belirtilen kullanımı dışında herhangi amaç için kullanmanın riski kullanıcıya aittir. OVO çözümü hem bilgi kabı öznitelikleri ve meta verileri yönetmek için bir veri tabanı yönetim yeteneği, hem de paydaşlara güncelleme bildirimleri yayınlama ve süreç kayıtlarını tutma yeteneği içermelidir.
 
 ![TS EN ISO 19650'da tanımlanan Ortak Veri Ortamındaki bilgi kaplarının tanımlı durum süreci.](/images/ovo.png){width=70% .lightbox}

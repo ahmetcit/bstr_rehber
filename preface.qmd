@@ -14,7 +14,7 @@ Projelerdeki bilgi yönetim süreçlerinin genelinde ortak anlayış sağlamak i
 
 ## BIM ve Sayısal Süreçlerin Sektörde Kullanımları Nelerdir, Neden Kullanılmalıdır?
 
-Tasarım, inşaat ve işletmeyi kapsayan yapı sektörü genelinde çalışma süreçleri, yeni gelişen teknolojilerle sayısallaşıyor. BIM yani Türkçesiyle "Yapı Bilgi Modellemesi" sayesinde inşaat sektörü; hız, verimlilik, sürdürülebilirlik ve ekip çalışması avantajlarına kavuşuyor. Ülke ekonomisinde yapı sektörünün büyük bir payı bulunuyor dolayısıyla BIM'in önemi hem yurt dışındaki projelerdeki gereksinimler hem de Türkiye'de sektörün bu yönde evrilmesi doğrultusunda her geçen gün artıyor. Bölge ve dünya pazarlarında rekabet edebilmek ve verimliliği artırmak için BIM ve beraberinde getirdiği sayısal uygulamaların tüm paydaşlarca doğru anlaşılıp yönlendirilmesi, geliştirilmesi ve yaygın olarak uygulanması kaçınılmaz bir gerek haline gelmiş durumda.
+Tasarım, inşaat ve işletmeyi kapsayan yapı sektörü genelinde çalışma süreçleri, yeni gelişen teknolojilerle sayısallaşıyor. BIM yani Türkçe'siyle "Yapı Bilgi Modellemesi" sayesinde inşaat sektörü; hız, verimlilik, sürdürülebilirlik ve ekip çalışması avantajlarına kavuşuyor. Ülke ekonomisinde yapı sektörünün büyük bir payı bulunuyor dolayısıyla BIM'in önemi hem yurt dışındaki projelerdeki gereksinimler hem de Türkiye'de sektörün bu yönde evrilmesi doğrultusunda her geçen gün artıyor. Bölge ve dünya pazarlarında rekabet edebilmek ve verimliliği artırmak için BIM ve beraberinde getirdiği sayısal uygulamaların tüm paydaşlarca doğru anlaşılıp yönlendirilmesi, geliştirilmesi ve yaygın olarak uygulanması kaçınılmaz bir gerek haline gelmiş durumda.
 
 ## buildingSMART International (bSI) ve buildingSMART Türkiye (bSTR)
 
@@ -24,7 +24,7 @@ Yapı endüstrisi ülke ekonomisi için büyük önem taşımaktadır. Bölg
 
 bSTR Vizyonu :: Tüm yapı sektörü paydaşlarının yapıların yaşam döngüsü boyunca iş süreçlerini iyileştirmeye yönelik veri oluşturma, verinin ortak paylaşımını sağlama ve güncelleme konusunda anlayış birliği ve iş metotları geliştirmiş bir Türkiye yapı sektörü.
 
-bSTR Misyonu :: Tüm yapı sektörü paydaşlarının açık standartlarla, işbirlikçi süreçler ve bileşik uygulamalarla çalışmasını sağlamaya yönelik açık işbirliği ve iletişim ortamını sağlayan bir odak olarak; üyelerine destek, öğrenim fırsatları ve örnek iyi uygulamaları sunarken buildingSMART International çalışmalarına katkıda bulunmak.
+bSTR Misyonu :: Tüm yapı sektörü paydaşlarının açık standartlarla, iş birlikçi süreçler ve bileşik uygulamalarla çalışmasını sağlamaya yönelik açık iş birliği ve iletişim ortamını sağlayan bir odak olarak; üyelerine destek, öğrenim fırsatları ve örnek iyi uygulamaları sunarken buildingSMART International çalışmalarına katkıda bulunmak.
 
 bSTR vizyonuna ulaşmak için tanımlanan misyon doğrultusunda yapılacak çalışmaların ana kapsamı aşağıda özetlenmiştir:
 
@@ -32,7 +32,7 @@ bSTR vizyonuna ulaşmak için tanımlanan misyon doğrultusunda yapılacak çal�
 
 * Türkiye'de BIM kullanımı konusunda odak olarak, ülke çapında sorumluluk almak
 * Yapı endüstrisine fayda sağlayacak ileri seviyedeki kültürel, ticari ve teknik uygulama ve iş akışlarına önayak olmak
-* Kamu, üniversite ve özel sektör işbirliğine destek sağlamak
+* Kamu, üniversite ve özel sektör iş birliğine destek sağlamak
 
 ***Etkileşim ve Açılım***
 
@@ -40,13 +40,13 @@ bSTR vizyonuna ulaşmak için tanımlanan misyon doğrultusunda yapılacak çal�
 * Faaliyetlerin, tüm seviyelerdeki gerçek kullanıcıların ihtiyaçlarına yönelik olmasını sağlamak
 * Güncel sorunlar ve çözümleri konularında buildingSMART International programları ile ilgili paylaşımlarda bulunmak
 * openBIM ile girişimleri teşvik etmek ve geliştirmek
-* Benzer amaçları paylaşan kurum ve kuruluşlarla işbirliği sağlamak
+* Benzer amaçları paylaşan kurum ve kuruluşlarla iş birliği sağlamak
 
 ***Yerelleştirme***
 
 * Yerel ihtiyaçlara hitap eden uygulama rehberleri ve şartnameler geliştirmek
 * Güncel, teknik, fonksiyonel ihtiyaçları belirleyip bunları bSI standart ve/veya uyumluluk programlarına yansıtmak
-* Eğitim ihtiyaçlarını belirleyerek BIM eğitimi yapan kuruluşlarla işbirliği içinde buildingSMART sertifikasyonu sağlamak
+* Eğitim ihtiyaçlarını belirleyerek BIM eğitimi yapan kuruluşlarla iş birliği içinde buildingSMART sertifikasyonu sağlamak
 * Belgelendirme ve sertifikasyon ihtiyaçlarını belirlemek
 * Ülke çapında geliştirilen yeni standartları yaymak ve yerel ihtiyaçlara göre uyarlamak
 
@@ -96,10 +96,10 @@ ISBN
 TÜRKİYE İMSAD YAYIN NO.
 : İMSAD-R/2023-04/394
 
-İLETİŞİM BİLGİLERİ
-: Rüzgarlıbahçe Mah. Feragat Sok No:3 Kat:5 Demir Plaza, Kavacık / Beykoz
-  Tel: +90 216 322 23 00 (pbx) / Fax: +90 216 322 10 68
-  www.imsad.org / info@imsad.org
+İLETİŞİM BİLGİLERİ  
+:  Park Suit Cadde, Cevizli Mah., Erciyes Sokak, No: 2-4, Kat: 4, D: 47, 34846 Maltepe / İstanbul <br>
+  Tel: +90 216 322 23 00 (pbx) / Fax: +90 216 322 10 68 <br>
+  [www.imsad.org](https://www.imsad.org) / [info@imsad.org](mailto:info@imsad.org)
 
 Nisan 2025 İstanbul-Türkiye
 

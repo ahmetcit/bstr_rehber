@@ -31,7 +31,7 @@ Yapı Bilgi Modellemesi (BIM), teslim ve işletme süreçlerinde oluşturulan Pr
 
 Atayan taraf, varlığın yönetilmesi amaçlanan yönleriyle birlikte teslim edilecek bilgileri talep etme isteğini belirtmelidir. Bu amaçlar şunları içerebilir:
 
-* Varlık kaydı: doğru denetim ve raporlamayı desteklemek için bir varlık kaydı sağlanmalıdır; bu hem mekansal, hem de fiziksel varlıkları ve gruplamalarını içermelidir.
+* Varlık kaydı: doğru denetim ve raporlamayı desteklemek için bir varlık kaydı sağlanmalıdır; bu hem mekansal hem de fiziksel varlıkları ve gruplamalarını içermelidir.
 
 * Mevzuatlara uyumluluk ve hukuki sorumluluklar için destek: atayan taraf, varlık kullanıcılarının sağlığını ve güvenliğini desteklemek için gerekli bilgileri belirtmelidir.
 
@@ -44,7 +44,7 @@ Atayan taraf, varlığın yönetilmesi amaçlanan yönleriyle birlikte teslim ed
 
   + *Güvenlik ve gözetim yönetimi:* güvenlik gereksinimleri doğrultusunda varlığın ve komşu veya bitişik alanların güvenlik ve gözetim yönetimini desteklemek için bilgiler derlenmeli veya gizlenmelidir
 
-  + *Yenileme desteği:* her bir mahal ve yer ile tüm varlığın yenilenmesine yönelik, alanlar, hacimler, doluluk, çevre koşulları ve yapısal yük bakımından ayrıntılı bilgilerile destekleyebilmelidir
+  + *Yenileme desteği:* her bir mahal ve yer ile tüm varlığın yenilenmesine yönelik, alanlar, hacimler, doluluk, çevre koşulları ve yapısal yük bakımından ayrıntılı bilgileri ile destekleyebilmelidir
 
   + *Öngörülen ve fiili etkiler:* atayan taraf kalite, maliyet, zamanlama, karbon salımı, enerji, atık, su tüketimi veya diğer çevresel etkiler ile ilişkili bilgi istemelidir
 

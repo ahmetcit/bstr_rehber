@@ -62,7 +62,7 @@ Her bir atamadaki *ana atanan* tarafın yapacağı işler:
 * Bilişim altyapısının mobilize edilmesi
 * Projenin bilgi üretim yöntem ve prosedürlerin sınanması
 
-## İşbirliği ile Bilgi Üretimi
+## İş birliği ile Bilgi Üretimi
 
 Proje sürecindeki *bilgi üretim aşaması*nda her bir atamadaki *iş ekipleri*nin *teslim ekibi*yle gerçekleştirilen faaliyetler:
 

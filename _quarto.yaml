@@ -51,3 +51,4 @@ format:
     code-link: true
     number-sections: false
     anchor-sections: true
+    css: styles.css   # link your custom stylesheet

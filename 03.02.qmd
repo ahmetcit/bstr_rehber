@@ -60,7 +60,7 @@ Projenin farklı aşamalarında yükleniciler [ana atanan taraf ve iş ekipleri]
 Rehberin, 4. bölümü *Yükleniciler için bSTR BIM Uygulama Planı Rehberi *'nde [@sec-bim-şablonu] esas alınarak, yüklenici(ler) [ana atanan taraf ve iş ekipleri] tarafından doldurulmak üzere şablon olarak veya gerekli görülen eklerlerle beraber kısmi doldurulmuş olarak hazırlanacaktır.
 
 ### Ek 5 BIM Modelleme Standardı
-İşveren ve/veya ana atayan taraf, projede BIM modellerinin hazırlanmasında takip edilecek modeleme standartlarını tanımlayacaktır. Kurumsal BIM Modelleme Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.
+İşveren ve/veya ana atayan taraf, projede BIM modellerinin hazırlanmasında takip edilecek modelleme standartlarını tanımlayacaktır. Kurumsal BIM Modelleme Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.
 
 ### Ek 6 Bilgi Standardı
 İşveren ve/veya ana atayan taraf, projede bilgilerin üretilmesinde ve isimlendirilmesinde takip edilecek standartları tanımlayacaktır. Kurumsal Bilgi Standardı bulunmaması durumunda yüklenici(ler) tarafından teslim gereksinimlerine ve kullanım amaçlarına uygun bir şekilde hazırlanması talep edilecektir.

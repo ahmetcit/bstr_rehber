@@ -14,7 +14,7 @@ BIM modeli fiziki binanın sanal bir prototipidir. Bu prototipin gerçekliği, i
 
 Türkiye'deki inşaat malzemesi üreticileri, Türk ekonomisinde ihracata katkı sağlayan ana paydaşlardandır ve yurtdışı pazarlarında BIM'in benimsenmesindeki artışla birlikte, Türkiye'deki üreticilerden de hem yurt dışından hem de yurt içinden BIM içerikleri talep edilmeye başlanmıştır.  Bu üreticilerin BIM'i benimsemesi ve müşterilerine BIM nesneleri sağlamaları ile yurt dışı pazarlarda daha iyi rekabet etmeleri, sayısallaşmanın etkisi ile iç süreçlerindeki verimsizlikleri gidermeleri ve Türk ekonomisine katkı sağlamaları beklenmektedir.
 
-Ancak birçok üretici firma bu süreci nasıl yürütebileceği konusunda bilgi sahibi değildir. Rehberimn bu bölümünün amacı, malzeme üreticilerinin BIM'i benimseme sürecinde BIM içeriklerinin geliştirilmesinde ve sunulmasında karşılaştıkları sorunlar ile genel eğilimlerin tespit edilmesi ve buna dayanarak BIM'in bu süreçte üretici firmalara rehberlik edebilecek öneriler geliştirmektir.
+Ancak birçok üretici firma bu süreci nasıl yürütebileceği konusunda bilgi sahibi değildir. Rehberin bu bölümünün amacı, malzeme üreticilerinin BIM'i benimseme sürecinde BIM içeriklerinin geliştirilmesinde ve sunulmasında karşılaştıkları sorunlar ile genel eğilimlerin tespit edilmesi ve buna dayanarak BIM'in bu süreçte üretici firmalara rehberlik edebilecek öneriler geliştirmektir.
 
 &nbsp;
 
