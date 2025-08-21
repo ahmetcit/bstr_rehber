@@ -5,12 +5,12 @@ project:
 book:
   title: "Yapı Yaşam Döngüsünde Bilgilerin Düzenlenmesi, Sayısallaştırılması ve Yönetimi Rehber Kitabı"
   author: "Ahmet Çıtıpıtıoğlu, Serkan Elliborlar"
-  cover-image: images/cover.png
+  cover-image: /images/cover.png
   site-url: https://ahmetc.quarto.pub/bstr-rehber/
   repo-url: https://github.com/ahmetcit/bstr_rehber/
   repo-branch: master
   repo-actions: [edit]
-  sharing: [twitter, facebook, linkedin]
+#  sharing: [twitter, facebook, linkedin]
   chapters:
     - index.qmd
     - preface.qmd
@@ -47,8 +47,16 @@ book:
 format:
   html:
     theme: cosmo
-    cover-image: cover.png
     code-link: true
     number-sections: false
     anchor-sections: true
     css: styles.css   # link your custom stylesheet
+#    sharing:
+#    - type: twitter
+#      url: "https://x.com/buildingSMARTTR"
+#    - type: youtube
+#      url: "https://www.youtube.com/c/buildingSMARTTürkiye"
+#    - type: instagram
+#      url: "https://www.instagram.com/buildingsmart_turkiye/e"
+#    - type: linkedin
+#      url: "https://www.linkedin.com/company/buildingsmart-turkiye/"
